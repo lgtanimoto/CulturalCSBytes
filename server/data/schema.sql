@@ -195,7 +195,7 @@ CREATE TABLE IF NOT EXISTS public.student
     id bigint NOT NULL DEFAULT nextval('student_id_seq'::regclass),
     username character varying(32) COLLATE pg_catalog."default" NOT NULL,
     email character varying(64) COLLATE pg_catalog."default",
-    password character varying(512) COLLATE pg_catalog."default",
+    password character varying(512) COLLATE pg_catalog."default" NOT NULL,
     nickname character varying(32) COLLATE pg_catalog."default",
     age smallint,
     registration_date date,
@@ -220,6 +220,7 @@ CREATE TABLE IF NOT EXISTS public.teacher
     first_name character varying(32) COLLATE pg_catalog."default" NOT NULL,
     last_name character varying(32) COLLATE pg_catalog."default" NOT NULL,
     email character varying(32) COLLATE pg_catalog."default" NOT NULL,
+    password character varying(512) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT teacher_pkey PRIMARY KEY (id)
 )
 

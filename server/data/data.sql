@@ -4,8 +4,11 @@ VALUES ('A000','Default Culture','en-us');
 INSERT INTO question_set (code,name)
 VALUES ('A000','Original Question Set');
 
-INSERT INTO teacher (username, first_name, last_name, email)
-VALUES ('TEACHER#ONE', 'Teacher', 'One', 'lt@atcsed');
+INSERT INTO teacher (username, first_name, last_name, email, password)
+VALUES ('TEACHER#ONE', 'Teacher', 'One', 'lt@atcsed', 'teacher123');
+
+INSERT INTO student (username, password)
+VALUES ('STUDENT#ONE', 'student123');
 
 -- These do not work because cannot get casting of foreign keys to work 
 -- These do not work because cannot get casting of foreign keys to work 
