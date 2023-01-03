@@ -16,7 +16,7 @@
 
 -- SEQUENCE: public.student_id_seq
 
-DROP SEQUENCE IF EXISTS public.student_id_seq;
+-- DROP SEQUENCE IF EXISTS public.student_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.student_id_seq
     INCREMENT 1
@@ -30,7 +30,7 @@ ALTER SEQUENCE public.student_id_seq
 
 -- SEQUENCE: public.teacher_id_seq
 
-DROP SEQUENCE IF EXISTS public.teacher_id_seq;
+-- DROP SEQUENCE IF EXISTS public.teacher_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.teacher_id_seq
     INCREMENT 1
@@ -45,7 +45,7 @@ ALTER SEQUENCE public.teacher_id_seq
 
 -- SEQUENCE: public.classroom_id_seq
 
-DROP SEQUENCE IF EXISTS public.classroom_id_seq;
+-- DROP SEQUENCE IF EXISTS public.classroom_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.classroom_id_seq
     INCREMENT 1
@@ -59,7 +59,7 @@ ALTER SEQUENCE public.classroom_id_seq
 
 -- SEQUENCE: public.question_set_culture_id_seq
 
-DROP SEQUENCE IF EXISTS public.question_set_culture_id_seq;
+-- DROP SEQUENCE IF EXISTS public.question_set_culture_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.question_set_culture_id_seq
     INCREMENT 1
@@ -73,7 +73,7 @@ ALTER SEQUENCE public.question_set_culture_id_seq
 
 -- SEQUENCE: public.meta_question_id_seq
 
-DROP SEQUENCE IF EXISTS public.meta_question_id_seq;
+-- DROP SEQUENCE IF EXISTS public.meta_question_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.meta_question_id_seq
     INCREMENT 1
@@ -87,7 +87,7 @@ ALTER SEQUENCE public.meta_question_id_seq
 
 -- SEQUENCE: public.enrollment_id_seq
 
-DROP SEQUENCE IF EXISTS public.enrollment_id_seq;
+-- DROP SEQUENCE IF EXISTS public.enrollment_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.enrollment_id_seq
     INCREMENT 1
@@ -101,7 +101,7 @@ ALTER SEQUENCE public.enrollment_id_seq
 
 -- SEQUENCE: public.question_id_seq
 
-DROP SEQUENCE IF EXISTS public.question_id_seq;
+-- DROP SEQUENCE IF EXISTS public.question_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.question_id_seq
     INCREMENT 1
@@ -115,7 +115,7 @@ ALTER SEQUENCE public.question_id_seq
 
 -- SEQUENCE: public.session_id_seq
 
-DROP SEQUENCE IF EXISTS public.session_id_seq;
+-- DROP SEQUENCE IF EXISTS public.session_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.session_id_seq
     INCREMENT 1
@@ -129,7 +129,7 @@ ALTER SEQUENCE public.session_id_seq
 
 -- SEQUENCE: public.session_question_id_seq
 
-DROP SEQUENCE IF EXISTS public.session_question_id_seq;
+-- DROP SEQUENCE IF EXISTS public.session_question_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.session_question_id_seq
     INCREMENT 1
@@ -143,7 +143,7 @@ ALTER SEQUENCE public.session_question_id_seq
 
 -- SEQUENCE: public.resource_culture_links_id_seq
 
-DROP SEQUENCE IF EXISTS public.resource_culture_links_id_seq;
+-- DROP SEQUENCE IF EXISTS public.resource_culture_links_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.resource_culture_links_id_seq
     INCREMENT 1
@@ -157,7 +157,7 @@ ALTER SEQUENCE public.resource_culture_links_id_seq
 
 -- SEQUENCE: public.resource_qsc_links_id_seq
 
-DROP SEQUENCE IF EXISTS public.resource_qsc_links_id_seq;
+-- DROP SEQUENCE IF EXISTS public.resource_qsc_links_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.resource_qsc_links_id_seq
     INCREMENT 1
@@ -171,7 +171,7 @@ ALTER SEQUENCE public.resource_qsc_links_id_seq
 
 -- SEQUENCE: public.resource_question_links_id_seq
 
-DROP SEQUENCE IF EXISTS public.resource_question_links_id_seq;
+-- DROP SEQUENCE IF EXISTS public.resource_question_links_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.resource_question_links_id_seq
     INCREMENT 1
@@ -188,7 +188,7 @@ ALTER SEQUENCE public.resource_question_links_id_seq
 
 -- Table: public.student
 
-DROP TABLE IF EXISTS public.student;
+-- DROP TABLE IF EXISTS public.student;
 
 CREATE TABLE IF NOT EXISTS public.student
 (
@@ -211,7 +211,7 @@ ALTER TABLE IF EXISTS public.student
 
 -- Table: public.teacher
 
-DROP TABLE IF EXISTS public.teacher;
+-- DROP TABLE IF EXISTS public.teacher;
 
 CREATE TABLE IF NOT EXISTS public.teacher
 (
@@ -232,7 +232,7 @@ ALTER TABLE IF EXISTS public.teacher
 
 -- Table: public.question_set
 
-DROP TABLE IF EXISTS public.question_set;
+-- DROP TABLE IF EXISTS public.question_set;
 
 CREATE TABLE IF NOT EXISTS public.question_set
 (
@@ -249,7 +249,7 @@ ALTER TABLE IF EXISTS public.question_set
 
 -- Table: public.culture
 
-DROP TABLE IF EXISTS public.culture;
+-- DROP TABLE IF EXISTS public.culture;
 
 CREATE TABLE IF NOT EXISTS public.culture
 (
@@ -268,7 +268,7 @@ ALTER TABLE IF EXISTS public.culture
 
 -- Table: public.resources
 
-DROP TABLE IF EXISTS public.resources;
+-- DROP TABLE IF EXISTS public.resources;
 
 CREATE TABLE IF NOT EXISTS public.resources
 (
@@ -289,7 +289,7 @@ ALTER TABLE IF EXISTS public.resources
 
 -- Table: public.classroom
 
-DROP TABLE IF EXISTS public.classroom;
+-- DROP TABLE IF EXISTS public.classroom;
 
 CREATE TABLE IF NOT EXISTS public.classroom
 (
@@ -317,7 +317,7 @@ ALTER TABLE IF EXISTS public.classroom
 
 -- Index: fki_classroom_question_set_code_fk
 
-DROP INDEX IF EXISTS public.fki_classroom_question_set_code_fk;
+-- DROP INDEX IF EXISTS public.fki_classroom_question_set_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_classroom_question_set_code_fk
     ON public.classroom USING btree
@@ -326,7 +326,7 @@ CREATE INDEX IF NOT EXISTS fki_classroom_question_set_code_fk
 
 -- Index: fki_classroom_teacher_fk
 
-DROP INDEX IF EXISTS public.fki_classroom_teacher_fk;
+-- DROP INDEX IF EXISTS public.fki_classroom_teacher_fk;
 
 CREATE INDEX IF NOT EXISTS fki_classroom_teacher_fk
     ON public.classroom USING btree
@@ -336,7 +336,7 @@ CREATE INDEX IF NOT EXISTS fki_classroom_teacher_fk
 
 -- Table: public.question_set_culture
 
-DROP TABLE IF EXISTS public.question_set_culture;
+-- DROP TABLE IF EXISTS public.question_set_culture;
 
 CREATE TABLE IF NOT EXISTS public.question_set_culture
 (
@@ -365,7 +365,7 @@ ALTER TABLE IF EXISTS public.question_set_culture
 
 -- Index: fki_qsc_culture_code_fk
 
-DROP INDEX IF EXISTS public.fki_qsc_culture_code_fk;
+-- DROP INDEX IF EXISTS public.fki_qsc_culture_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_qsc_culture_code_fk
     ON public.question_set_culture USING btree
@@ -374,7 +374,7 @@ CREATE INDEX IF NOT EXISTS fki_qsc_culture_code_fk
 
 -- Index: fki_qsc_question_set_code_fk
 
-DROP INDEX IF EXISTS public.fki_qsc_question_set_code_fk;
+-- DROP INDEX IF EXISTS public.fki_qsc_question_set_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_qsc_question_set_code_fk
     ON public.question_set_culture USING btree
@@ -384,7 +384,7 @@ CREATE INDEX IF NOT EXISTS fki_qsc_question_set_code_fk
 
 -- Table: public.meta_question
 
-DROP TABLE IF EXISTS public.meta_question;
+-- DROP TABLE IF EXISTS public.meta_question;
 
 CREATE TABLE IF NOT EXISTS public.meta_question
 (
@@ -407,7 +407,7 @@ ALTER TABLE IF EXISTS public.meta_question
 
 -- Index: fki_mq_question_set_code_fk
 
-DROP INDEX IF EXISTS public.fki_mq_question_set_code_fk;
+-- DROP INDEX IF EXISTS public.fki_mq_question_set_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_mq_question_set_code_fk
     ON public.meta_question USING btree
@@ -417,7 +417,7 @@ CREATE INDEX IF NOT EXISTS fki_mq_question_set_code_fk
 
 -- Table: public.enrollment
 
-DROP TABLE IF EXISTS public.enrollment;
+-- DROP TABLE IF EXISTS public.enrollment;
 
 CREATE TABLE IF NOT EXISTS public.enrollment
 (
@@ -445,7 +445,7 @@ ALTER TABLE IF EXISTS public.enrollment
 
 -- Index: fki_enrollment_classroom_id_fk
 
-DROP INDEX IF EXISTS public.fki_enrollment_classroom_id_fk;
+-- DROP INDEX IF EXISTS public.fki_enrollment_classroom_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_enrollment_classroom_id_fk
     ON public.enrollment USING btree
@@ -454,7 +454,7 @@ CREATE INDEX IF NOT EXISTS fki_enrollment_classroom_id_fk
 
 -- Index: fki_enrollment_student_id_fk
 
-DROP INDEX IF EXISTS public.fki_enrollment_student_id_fk;
+-- DROP INDEX IF EXISTS public.fki_enrollment_student_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_enrollment_student_id_fk
     ON public.enrollment USING btree
@@ -464,7 +464,7 @@ CREATE INDEX IF NOT EXISTS fki_enrollment_student_id_fk
 
 -- Table: public.question
 
-DROP TABLE IF EXISTS public.question;
+-- DROP TABLE IF EXISTS public.question;
 
 CREATE TABLE IF NOT EXISTS public.question
 (
@@ -497,7 +497,7 @@ ALTER TABLE IF EXISTS public.question
 
 -- Index: fki_question_mq_id_fk
 
-DROP INDEX IF EXISTS public.fki_question_mq_id_fk;
+-- DROP INDEX IF EXISTS public.fki_question_mq_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_question_mq_id_fk
     ON public.question USING btree
@@ -506,7 +506,7 @@ CREATE INDEX IF NOT EXISTS fki_question_mq_id_fk
 
 -- Index: fki_question_qsc_id_fk
 
-DROP INDEX IF EXISTS public.fki_question_qsc_id_fk;
+-- DROP INDEX IF EXISTS public.fki_question_qsc_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_question_qsc_id_fk
     ON public.question USING btree
@@ -545,7 +545,7 @@ ALTER TABLE IF EXISTS public.session
 
 -- Index: fki_session_enrollment_id_fk
 
-DROP INDEX IF EXISTS public.fki_session_enrollment_id_fk;
+-- DROP INDEX IF EXISTS public.fki_session_enrollment_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_session_enrollment_id_fk
     ON public.session USING btree
@@ -555,7 +555,7 @@ CREATE INDEX IF NOT EXISTS fki_session_enrollment_id_fk
 
 -- Table: public.session_question
 
-DROP TABLE IF EXISTS public.session_question;
+-- DROP TABLE IF EXISTS public.session_question;
 
 CREATE TABLE IF NOT EXISTS public.session_question
 (
@@ -589,7 +589,7 @@ ALTER TABLE IF EXISTS public.session_question
 
 -- Index: fki_sq_question_id_fk
 
-DROP INDEX IF EXISTS public.fki_sq_question_id_fk;
+-- DROP INDEX IF EXISTS public.fki_sq_question_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_sq_question_id_fk
     ON public.session_question USING btree
@@ -598,7 +598,7 @@ CREATE INDEX IF NOT EXISTS fki_sq_question_id_fk
 
 -- Index: fki_sq_session_id_fk
 
-DROP INDEX IF EXISTS public.fki_sq_session_id_fk;
+-- DROP INDEX IF EXISTS public.fki_sq_session_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_sq_session_id_fk
     ON public.session_question USING btree
@@ -608,7 +608,7 @@ CREATE INDEX IF NOT EXISTS fki_sq_session_id_fk
 
 -- Table: public.resource_culture_links
 
-DROP TABLE IF EXISTS public.resource_culture_links;
+-- DROP TABLE IF EXISTS public.resource_culture_links;
 
 CREATE TABLE IF NOT EXISTS public.resource_culture_links
 (
@@ -635,7 +635,7 @@ ALTER TABLE IF EXISTS public.resource_culture_links
 
 -- Index: fki_rcl_culture_code_fk
 
-DROP INDEX IF EXISTS public.fki_rcl_culture_code_fk;
+-- DROP INDEX IF EXISTS public.fki_rcl_culture_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rcl_culture_code_fk
     ON public.resource_culture_links USING btree
@@ -644,7 +644,7 @@ CREATE INDEX IF NOT EXISTS fki_rcl_culture_code_fk
 
 -- Index: fki_rcl_resource_code_fk
 
-DROP INDEX IF EXISTS public.fki_rcl_resource_code_fk;
+-- DROP INDEX IF EXISTS public.fki_rcl_resource_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rcl_resource_code_fk
     ON public.resource_culture_links USING btree
@@ -654,7 +654,7 @@ CREATE INDEX IF NOT EXISTS fki_rcl_resource_code_fk
 
 -- Table: public.resource_qsc_links
 
-DROP TABLE IF EXISTS public.resource_qsc_links;
+-- DROP TABLE IF EXISTS public.resource_qsc_links;
 
 CREATE TABLE IF NOT EXISTS public.resource_qsc_links
 (
@@ -681,7 +681,7 @@ ALTER TABLE IF EXISTS public.resource_qsc_links
 
 -- Index: fki_f
 
-DROP INDEX IF EXISTS public.fki_f;
+-- DROP INDEX IF EXISTS public.fki_f;
 
 CREATE INDEX IF NOT EXISTS fki_f
     ON public.resource_qsc_links USING btree
@@ -690,7 +690,7 @@ CREATE INDEX IF NOT EXISTS fki_f
 
 -- Index: fki_rqsc_qsc_id_fk
 
-DROP INDEX IF EXISTS public.fki_rqsc_qsc_id_fk;
+-- DROP INDEX IF EXISTS public.fki_rqsc_qsc_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rqsc_qsc_id_fk
     ON public.resource_qsc_links USING btree
@@ -700,7 +700,7 @@ CREATE INDEX IF NOT EXISTS fki_rqsc_qsc_id_fk
 
 -- Table: public.resource_question_links
 
-DROP TABLE IF EXISTS public.resource_question_links;
+-- DROP TABLE IF EXISTS public.resource_question_links;
 
 CREATE TABLE IF NOT EXISTS public.resource_question_links
 (
@@ -727,7 +727,7 @@ ALTER TABLE IF EXISTS public.resource_question_links
 
 -- Index: fki_rql_question_id_fk
 
-DROP INDEX IF EXISTS public.fki_rql_question_id_fk;
+-- DROP INDEX IF EXISTS public.fki_rql_question_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rql_question_id_fk
     ON public.resource_question_links USING btree
@@ -736,7 +736,7 @@ CREATE INDEX IF NOT EXISTS fki_rql_question_id_fk
 
 -- Index: fki_rql_resource_code_fk
 
-DROP INDEX IF EXISTS public.fki_rql_resource_code_fk;
+-- DROP INDEX IF EXISTS public.fki_rql_resource_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rql_resource_code_fk
     ON public.resource_question_links USING btree

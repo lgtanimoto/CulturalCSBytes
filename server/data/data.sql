@@ -7,12 +7,6 @@ VALUES ('A000','Original Question Set');
 INSERT INTO teacher (username, first_name, last_name, email, password)
 VALUES ('TEACHER#ONE', 'Teacher', 'One', 'lt@atcsed', 'teacher123');
 
-INSERT INTO student (username, password)
-VALUES ('STUDENT#ONE', 'student123');
-
--- These do not work because cannot get casting of foreign keys to work 
--- These do not work because cannot get casting of foreign keys to work 
-
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
 VALUES ('A000','A000','Default QuestionSetCulture',TRUE);
 
