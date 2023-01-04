@@ -9,13 +9,10 @@ const authorization = require('../middleware/authorization');
 
 router.post('/register', validInfo, async (req, res) => {
     try {
-
         // 1. Destructure the req.body (name, email, password)
-        
         const { username, password } = req.body;
         
         // 2. Check if user (student or teacher) exists (if user exists, then throw error)
-
         const student = await pool.query(
             'SELECT * FROM student WHERE username = $1', 
             [username]
@@ -32,24 +29,20 @@ router.post('/register', validInfo, async (req, res) => {
         }
 
         // 3. Bcrypt the user password
-
         const saltRounds = 10;
         const salt = await bcrypt.genSalt(saltRounds);
         const bcryptPassword = await bcrypt.hash(password, salt);
 
         // 4. Enter the new user inside our database
-
         const newUser = await pool.query(
             'INSERT INTO student (username, password) VALUES ($1, $2) RETURNING *',
             [username, bcryptPassword]
         );
         
         // 5. Generate our jwt token
-
         const token = jwtGenerator(newUser.rows[0].id);
 
         res.json({ token });
-
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error');
@@ -60,13 +53,10 @@ router.post('/register', validInfo, async (req, res) => {
 
 router.post('/login', validInfo, async (req, res) => {
     try {
-
         // 1. Destructure the req.body
-
         const { username, password } = req.body;
         
         // 2. Check if user doesn't exist (if not, then throw error)
-
         const student = await pool.query(
             'SELECT * FROM student WHERE username = $1',
             [username]
@@ -77,19 +67,16 @@ router.post('/login', validInfo, async (req, res) => {
         }
         
         // 3. Check if incoming password is the same as the database password
-
         const isValidPassword = await bcrypt.compare(password, student.rows[0].password);
-        
+
         if (!isValidPassword) {
             return res.status(401).json('Username or password is incorrect');
         }
 
         // 4. Give them the jwt token
-
         const token = jwtGenerator(student.rows[0].id);
 
         res.json({ token });
-        
     } catch (err) {
         console.error(err.message);
         res.status(500).send('Server Error');
