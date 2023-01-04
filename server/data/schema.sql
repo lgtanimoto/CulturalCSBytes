@@ -198,7 +198,7 @@ CREATE TABLE IF NOT EXISTS public.student
     password character varying(512) COLLATE pg_catalog."default" NOT NULL,
     nickname character varying(32) COLLATE pg_catalog."default",
     age smallint,
-    registration_date date,
+    registration_date date NOT NULL DEFAULT CURRENT_DATE,
     zip character varying(5) COLLATE pg_catalog."default",
     CONSTRAINT student_pkey PRIMARY KEY (id)
 )
@@ -425,6 +425,7 @@ CREATE TABLE IF NOT EXISTS public.enrollment
     classroom_id integer,
     student_id integer,
     status integer,
+    registration_date date NOT NULL DEFAULT CURRENT_DATE,
     CONSTRAINT enrollment_pkey PRIMARY KEY (id),
     CONSTRAINT enrollment_classroom_id_fk FOREIGN KEY (classroom_id)
         REFERENCES public.classroom (id) MATCH SIMPLE
@@ -527,7 +528,7 @@ CREATE TABLE IF NOT EXISTS public.session
     status integer DEFAULT 0,
     expected_start date,
     start_time timestamp with time zone,
-    complete timestamp with time zone,
+    end_time timestamp with time zone,
     correct integer,
     wrong integer,
     CONSTRAINT session_pkey PRIMARY KEY (id),
