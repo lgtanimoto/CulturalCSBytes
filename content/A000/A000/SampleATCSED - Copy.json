@@ -1,0 +1,29 @@
+{
+	"__comment__": "This information is not stored in runtime database at all.  Only stored in GitHub files.   Still need to define HTML style tags that may be used in questions/answers and how to handle images" 
+	"QuestionSetCode": "AAAA",
+	"CultureCode": "AAAA",
+	"MQCode": "AAAA",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON" : {
+		"Question" : "Why did the chicken cross the road?",
+		"QuestionImage" : null
+		"Answer1": "This is answer 1",
+		"Answer2": "This is answer 2",
+		"Answer3": "This is optional answer 3",
+		"Answer4": "This is optional answer 4",
+		"Answer5": "This is optional answer 5",
+		"CorrectAnswer": 2,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "Chickens like to cross roads.",
+		"AnswerImage" : null
+	}
+}
+
+
+		
+		
+	
+	
+	
