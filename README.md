@@ -25,15 +25,19 @@ We need to take care of several things to ensure the backend works smoothly. You
     - Run `npm start`
     - Run `npm run dev` if you don't want to restart the server every time you make changes (for **development** mode only).
 
-### Tools
-Here are some recommended add-ons while working on the backend:
-- **Postman** is especially useful when building and testing your APIs to make sure that they are working properly. After all, the backend is just a large-scale REST API, and **Postman** is what allows us to test that extended API.
-    - Before you can access any services, you need to make a **POST** request to the **/auth/login** route and retrieve the token that is returned.
-    - Then when you want to make an API request that uses the `authorization` middleware, you need to add, in **Headers**, the `token` header to the token that was returned by the login request.
+### Postman
+**Postman** is especially useful when building and testing your APIs to make sure that they are working properly. After all, the backend is just a large-scale REST API, and **Postman** is what allows us to test that extended API.
+- Before you can access any services, you need to make a **POST** request to the **/auth/login** route and retrieve the token that is returned.
+- Then when you want to make an API request that uses the `authorization` middleware, you need to add, in **Headers**, the `token` header to the token that was returned by the login request.
 
-### Resources
+## Resources
 I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) especially useful for the backend development of the portion. It provides useful information on both building the REST API and the JWT authentication and authorization, as well as how to combine the two together. Many YouTube tutorials neglect the authentication and authorization piece, which is a must-have when working with any industry project. However, this channel provides it all.
 
 Here are the videos I specifically recommend checking out:
-- [Learn JWT with the PERN stack by building a Registration/Login system Part 1](https://www.youtube.com/watch?v=7UQBMb8ZpuE).
+- [PERN Stack Walkthrough](https://www.youtube.com/watch?v=ldYcgPKEZC8)
+- [PERN JWT Authentication/Authorization (Backend)](https://www.youtube.com/watch?v=7UQBMb8ZpuE).
+- [PERN JWT Authentication/Authorization (Frontend)](https://www.youtube.com/watch?v=cjqfF5hyZFg)
+- [Combining JWT and Application (Part 1)](https://www.youtube.com/watch?v=l3njf_tU8us)
+- [Combining JWT and Application (Part 2)](https://www.youtube.com/watch?v=25kouonvUbg)
+
 
