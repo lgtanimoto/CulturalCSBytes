@@ -2,7 +2,7 @@ INSERT INTO culture (code,name,lang)
 VALUES ('A000','Default Culture','en-us');
 
 INSERT INTO question_set (code,name)
-VALUES ('A000','Original Question Set');
+VALUES ('A000','Computer Science Principles Basics');
 
 INSERT INTO teacher (username, first_name, last_name, email, password)
 VALUES ('TEACHER#ONE', 'Teacher', 'One', 'lt@atcsed', 'teacher123');
