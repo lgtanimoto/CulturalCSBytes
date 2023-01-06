@@ -1,10 +1,8 @@
 # CulturalCSBytes
 
-## Frontend (Client)
-Navigate to the **client** folder.
+## Frontend
 
-## Backend (Server)
-Navigate to the **server** folder.
+## Backend
 
 ### Database
 First we need to setup the database. These steps assume that you have PostgreSQL installed. If not, you can download it from the [official website](https://www.postgresql.org/download/). If you are using Windows Subsystem for Linux (WSL), which is probably recommended if you use Windows, you can follow the steps in [this tutorial](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database), which also include instructions for starting and connecting to the postgres service and opening the psql shell.

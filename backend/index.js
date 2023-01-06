@@ -10,7 +10,7 @@ app.use(cors());
 
 /* Routes */
 
-app.use('/auth', require('./routes/jwtAuth'));
+app.use('/authentication', require('./routes/authentication'));
 app.use('/enrollments', require('./routes/enrollments'));
 app.use('/question-sets', require('./routes/questionSets'));
 

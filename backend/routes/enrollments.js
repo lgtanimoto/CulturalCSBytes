@@ -23,7 +23,7 @@ function getEnabledActions(sessions, status) {
     let canPractice = true;
     let canContinue = false;
 
-    let lastOfficialDate = null;
+    let lastCompletionDate = null;
     let currentSession = 1;
 
     sessions.forEach(session => {
@@ -46,7 +46,7 @@ function getEnabledActions(sessions, status) {
         }
         // If no session is in progress so far and is latest completed official session
         if (!canContinue && isOfficialSession && status === 2 && attempt > currentSession) {
-            lastOfficialDate = sessionDate;
+            lastCompletionDate = sessionDate;
             currentSession = attempt + 1;
         }
     });
@@ -54,8 +54,8 @@ function getEnabledActions(sessions, status) {
     // If not continuing session so far
     if (!canContinue) {
         // If completed at least one official session, check time since
-        if (lastOfficialDate) {
-            const weeks = Math.floor((Date.now() - lastOfficialDate) / 1000 / 60 / 60 / 24 / 7);
+        if (lastCompletionDate) {
+            const weeks = Math.floor((Date.now() - lastCompletionDate) / 1000 / 60 / 60 / 24 / 7);
             canStart = canStart && weeks >= 1;
         }
         // Else, cannot practice
@@ -73,10 +73,12 @@ function getEnabledActions(sessions, status) {
     }
 
     return {
-        canStart,
-        canPractice,
-        canContinue,
-        lastOfficialDate,
+        actions: {
+            start: canStart,
+            practice: canPractice,
+            continue: canContinue,
+        },
+        lastCompletionDate,
         currentSession,
     }
 }
@@ -235,8 +237,8 @@ router.get('/', authorization, async (req, res) => {
                     return {
                         id: enrollmentId,
                         enrollmentName,
-                        completedSessions: `${completedSessions}/5`,
-                        highScore: `${highScore}%`,
+                        completedSessions,
+                        highScore,
                         status: statusStr,
                         action: actionStr,
                         canGetStats,
