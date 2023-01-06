@@ -12,7 +12,6 @@ app.use(cors());
 
 app.use('/authentication', require('./routes/authentication'));
 app.use('/enrollments', require('./routes/enrollments'));
-app.use('/question-sets', require('./routes/questionSets'));
 
 app.listen(5000, () => {
     console.log('Server is running on port 5000');
