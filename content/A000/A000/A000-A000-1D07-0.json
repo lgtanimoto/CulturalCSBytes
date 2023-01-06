@@ -1,0 +1,29 @@
+{
+	"__comment__": "" 
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "1D07",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON" : {
+		"Question" : "<p><span class=\"qname\">Drew</span> is tracking the number of water bottles sold at soccer games against the temperature at the start of the game.  After 9 games, <span class=\"qname\">Drew</span> has created the charts below.   Knowing that today’s temperature at game time will be 85 degrees, how many bottles of water should <span class=\"qname\">Drew</span> expect to sell?</p>"
+		"QuestionImage" : "A000-A000-1D07-0Q.png"
+		"Answer1": "70 bottles",
+		"Answer2": "45 bottles",
+		"Answer3": "80 bottles",
+		"Answer4": "90 bottles",
+		"CorrectAnswer": 3,
+		"FixedOrderFromBottom": 1,
+		"Explanation": "<p>The dotted blue trend line in the top graph crosses 80 bottles at 85 degrees F.   While the bar chart at the bottom contains valid data, it is very difficult to use for prediction purposes.</p>",
+		"AnswerImage" : null
+	}
+}
+
+
+		
+		
+	
+	
+	

@@ -1,0 +1,29 @@
+{
+	"__comment__": "" 
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "1D06",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON" : {
+		"Question" : "<p>After asking each member of the track team, <span class=\"qname\">Juneau</span> determined that 5 had birthdays in spring, 10 in summer, 8 in fall, and 6 in winter.   Which of the following are appropriate charts to visualize this information? </p>",
+		"QuestionImage" : "A000-A000-1D06-0Q.png"
+		"Answer1": "Bar chart only",
+		"Answer2": "Pie chart only",
+		"Answer3": "Line chart only",
+		"Answer4": "Both the bar chart and the pie chart",
+		"CorrectAnswer": 4,
+		"FixedOrderFromBottom": 1,
+		"Explanation": "<p>Both the bar chart and pie chart are appropriate for visualizing categorical data.   The line chart implies that each point happened in sequence.  But because team members may be born in different years, there is none.</p>",
+		"AnswerImage" : null
+	}
+}
+
+
+		
+		
+	
+	
+	
