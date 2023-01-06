@@ -173,10 +173,10 @@ router.get('/', authorization, async (req, res) => {
     try {
         // Getting the enrollment summary can be done concurrently with student names
         async function getEnrollmentSummary() {
-            // req.user has the payload
+            // req.user.id has the payload
             const studentEnrollments = await pool.query(
                 'SELECT * FROM enrollment WHERE student_id = $1 ORDER BY registration_date DESC LIMIT 5',
-                [req.user]
+                [req.user.id]
             );
 
             let canAddEnrollment = true;
@@ -255,7 +255,7 @@ router.get('/', authorization, async (req, res) => {
         }
 
         const [{ username, nickname }, { enrollments, canAddEnrollment }] = await Promise.all([
-            getStudentNames(req.user),
+            getStudentNames(req.user.id),
             getEnrollmentSummary()
         ]);
 
@@ -288,7 +288,7 @@ router.get('/:id', authorization, async (req, res) => {
             // Need to make sure student_id matches for authorization reasons
             const enrollments = await pool.query(
                 'SELECT * FROM enrollment WHERE student_id = $1 AND id = $2',
-                [req.user, id]
+                [req.user.id, id]
             );
 
             if (enrollments.rows.length === 0) {
@@ -356,7 +356,7 @@ router.get('/:id', authorization, async (req, res) => {
             { username, nickname },
             { enrollmentName, sessions, canStart, canPractice, canContinue, currentSession }
         ] = await Promise.all([
-            getStudentNames(req.user),
+            getStudentNames(req.user.id),
             getEnrollmentMetrics()
         ]);
 
@@ -383,7 +383,7 @@ router.post('/', authorization, async (req, res) => {
     try {
         const newEnrollment = await pool.query(
             'INSERT INTO enrollment (classroom_id, student_id, status) VALUES ($1, $2, $3) RETURNING *',
-            [DEFAULT_CLASSROOM_ID, req.user, 0]
+            [DEFAULT_CLASSROOM_ID, req.user.id, 0]
         );
 
         // Later we will redirect to confirmation screen for initial session
