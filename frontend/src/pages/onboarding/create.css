@@ -1,0 +1,27 @@
+.Create {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  margin-top: 28px;
+  margin-left: 20px;
+}
+
+input{
+  margin: 20px;
+  height: 30px;
+}
+
+#feedback {
+  color: red;
+}
