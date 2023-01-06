@@ -18,7 +18,7 @@ First we need to setup the database. These steps assume that you have PostgreSQL
 5. Populate the tables with initial data by running `\i data/data.sql`.
 
 ### Server
-We need to take care of several things to ensure the backend works smoothly. You also need to make sure that the postgres service has started. Although you do not necessarily be in the psql shell, it is recommended to test changes quickly.
+We need to take care of several things to ensure the backend works smoothly. You also need to make sure that the postgres service has started. Although you do not necessarily be in the psql shell, it is recommended to test changes quickly. If you use the psql shell conjunctly, you need to open a **separate terminal session**.
 1. Run `npm i` to install the packages.
 2. Create a **.env** file and define an environment variable called `JWTSECRET`. Details for how to do this are given in the [official documentation](https://www.npmjs.com/package/dotenv). This will be important for authentication and authorization purposes.
 2. Start the server in two different ways.
@@ -35,7 +35,7 @@ I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) es
 
 Here are the videos I specifically recommend checking out:
 - [PERN Stack Walkthrough](https://www.youtube.com/watch?v=ldYcgPKEZC8)
-- [PERN JWT Authentication/Authorization (Backend)](https://www.youtube.com/watch?v=7UQBMb8ZpuE).
+- [PERN JWT Authentication/Authorization (Backend)](https://www.youtube.com/watch?v=7UQBMb8ZpuE)
 - [PERN JWT Authentication/Authorization (Frontend)](https://www.youtube.com/watch?v=cjqfF5hyZFg)
 - [Combining JWT and Application (Part 1)](https://www.youtube.com/watch?v=l3njf_tU8us)
 - [Combining JWT and Application (Part 2)](https://www.youtube.com/watch?v=25kouonvUbg)
