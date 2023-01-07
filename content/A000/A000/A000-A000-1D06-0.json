@@ -9,7 +9,7 @@
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
 		"Question" : "<p>After asking each member of the track team, <span class=\"qname\">Juneau</span> determined that 5 had birthdays in spring, 10 in summer, 8 in fall, and 6 in winter.   Which of the following are appropriate charts to visualize this information? </p>",
-		"QuestionImage" : "A000-A000-1D06-0Q.png"
+		"QuestionImage" : "A000-A000-1D06-0Q.png",
 		"Answer1": "Bar chart only",
 		"Answer2": "Pie chart only",
 		"Answer3": "Line chart only",

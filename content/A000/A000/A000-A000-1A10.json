@@ -1,0 +1,29 @@
+{
+	"__comment__": "" 
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "1A10",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON" : {
+		"Question" : "<p><span class=\"qname\">Rory</span> is programming a humanoid robot to get off the sofa, walk to the light switch, and turn off the lights in a room.  Which of the following most closely represents the code that <span class=\"qname\">Rory</span> needs to write:</p>",
+		"QuestionImage" : null,
+		"Answer1": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while not= AtLocation(lightSwitch)<br><div class=\"ci4\">RightWalk(1)<br>LeftWalk(1)</div><br>end<br>TurnOffLight()</div>",    
+		"Answer2": "<div class=\"code\">TurnOffLight()<br>repeat while not= AtLocation(lightSwitch)<br><div class=\"ci4\">RightWalk(1)<br>LeftWalk(1)</div><br>end<br>TurnToward(lightSwitch)<br>StandUp()</div>",
+		"Answer3": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat 1000 times<br><div class=\"ci4\">RightWalk(1)</div><br>end<br>LeftWalk(1)<br>TurnOffLight()</div>",    
+		"Answer4": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while AtLocation(lightSwitch)<br><div class=\"ci4\">RightWalk(1)<br>LeftWalk(1)<br>TurnOffLight()</div><br>end</div>",
+		"CorrectAnswer": 1,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>First, robot stands up so it can walk.  Second, robot turns toward the light switch so it walks in the correct direction.  Third, it walks right-left until it reaches the light switch.  Finally, robot turns off the light. </p>",
+		"AnswerImage" : null
+	}
+}
+
+
+		
+		
+	
+	
+	

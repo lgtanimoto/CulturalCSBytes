@@ -9,7 +9,7 @@
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
 		"Question" : "<p><span class=\"qname\">Drew</span> is tracking the number of water bottles sold at soccer games against the temperature at the start of the game.  After 9 games, <span class=\"qname\">Drew</span> has created the charts below.   Knowing that today’s temperature at game time will be 85 degrees, how many bottles of water should <span class=\"qname\">Drew</span> expect to sell?</p>"
-		"QuestionImage" : "A000-A000-1D07-0Q.png"
+		"QuestionImage" : "A000-A000-1D07-0Q.png",
 		"Answer1": "70 bottles",
 		"Answer2": "45 bottles",
 		"Answer3": "80 bottles",

@@ -1,0 +1,29 @@
+{
+	"__comment__": "" 
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "1A08",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON" : {
+		"Question" : "<p><span class=\"qname\">Chris</span> is eating cold cereal for breakfast before school.   Which of the following best describes the <em>algorithm</em> <span class=\"qname\">Chris</span> should use to make breakfast?</p>",
+		"QuestionImage" : null,
+		"Answer1": "Cereal, Milk, Bowl, Spoon",
+		"Answer2": "After waking up, ask parent to make cornflakes for breakfast",
+		"Answer3": "Get out bowl and spoon.  Pour cereal out of box into bowl. Pour milk into bowl. Eat with spoon until cereal and milk are gone.",
+		"Answer4": "Eat.  Put pot on stove, turn on stove, and boil for seven minutes. Turn off stove.  Puts two eggs in pot.  Put water in pot.",
+		"CorrectAnswer": 3,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>An algorithm is a step-by-step series of instructions to accomplish a given task.</p>",
+		"AnswerImage" : null
+	}
+}
+
+
+		
+		
+	
+	
+	
