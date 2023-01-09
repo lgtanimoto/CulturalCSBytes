@@ -47,10 +47,22 @@ router.post('/register', async (req, res) => {
         }
 
         // Enroll student into the default classroom
-        await pool.query(
-            'INSERT INTO enrollment (classroom_id, student_id, status) VALUES ($1, $2, $3)',
+        const enrollment = await pool.query(
+            'INSERT INTO enrollment (classroom_id, student_id, status) VALUES ($1, $2, $3) RETURNING id',
             [DEFAULT_CLASSROOM_ID, student.rows[0].id, 0]
         );
+
+        // Add the sessions for the enrollment
+        const now = Date.now();
+
+        for (let attempt = 1; attempt <= 5; attempt++) {
+            // The expected dates are four weeks apart
+            const date = now + 1000 * 60 * 60 * 24 * 7 * 4 * (attempt - 1);
+            await pool.query(
+                'INSERT INTO session (enrollment_id, attempt, total_questions, expected_start) VALUES ($1, $2, $3, $4)',
+                [enrollment.rows[0].id, attempt, 50, new Date(date)]
+            );
+        }
         
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {

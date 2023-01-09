@@ -1,14 +1,67 @@
 const router = require('express').Router();
 const pool = require('../db');
 const authorization = require('../middleware/authorization');
-const { DEFAULT_CLASSROOM_ID, INITIAL_SESSION } = require('../constants');
+const { DEFAULT_CLASSROOM_ID, INITIAL_SESSION, PRACTICE_SESSION } = require('../constants');
 
-/* Here is a breakdown of the status codes (for both enrollment and session):
- *     status = 0 -> Not Started
- *     status = 1 -> In Progress
- *     status = 2 -> Completed
- * The status code should be represented appropriately in the frontend
- */
+/* Helper Functions */
+
+function getSessionName(attempt) {
+    switch (attempt) {
+        case 1:
+            return 'Initial Session';
+        case 5:
+            return 'Final Session';
+        case 2:
+        case 3:
+        case 4:
+            return `Session ${attempt}`;
+        default:
+            return 'Practice Session';
+    }
+}
+
+function getSessionData(sessions, status) {
+    let completedSessions = 0;
+    let highScore = 0;
+    let currentSession = null;
+    let currentDate = null;
+
+    if (status !== 0) {
+        sessions.forEach(session => {
+            const {
+                id: sessionId,
+                attempt,
+                total_questions, 
+                status,
+                correct,
+                end_time
+            } = session;
+
+            if (attempt >= 1 && attempt <= 5 && status === 2) {
+                completedSessions++;
+
+                // Current date is the most recently completed official session
+                if (!currentDate || end_time > currentDate) {
+                    currentDate = end_time;
+                }
+            }
+
+            highScore = Math.max(highScore, Math.round(correct * 100.0) / total_questions);
+
+            // Set current session if status is 1
+            currentSession = status === 1 && sessionId;
+        });
+    }
+
+    return {
+        completedSessions,
+        highScore,
+        currentSession,
+        currentDate
+    }
+}
+
+/* Queries */
 
 async function getStudentNames(studentId) {
     const students = await pool.query(
@@ -52,86 +105,52 @@ async function getEnrollmentData(enrollment) {
         id,
         enrollmentName: `${questionSets[0].name} ${registration_date.toLocaleDateString()}`,
         sessions,
-        status,
+        status: {
+            started: status !== 0,
+            completed: status === 2
+        }
     };
 }
 
-// async function getSessionFormData(attempt) {
-//     const questionSets = await pool.query('SELECT * FROM question_set');
-//     const cultures = await pool.query('SELECT * FROM culture');
-//     const sessionName = getSessionName(attempt);
+async function getFormData(attempt) {
+    const cultures = await pool.query('SELECT * FROM culture');
+    const sessionName = getSessionName(attempt);
 
-//     let formName = '';
-//     let difficulties = null;
+    let formName = '';
+    let difficulties = null;
 
-//     // Switch for form name
-//     switch (attempt) {
-//         case 1:
-//             formName = 'Classroom Enrollment/Initial Session';
-//             break;
-//         case 5:
-//             formName = 'Final Session';
-//             break;
-//         default:
-//             formName = 'Session Start';
-//     }
+    // Switch for form name
+    switch (attempt) {
+        case 1:
+            formName = 'Classroom Enrollment/Initial Session';
+            break;
+        case 5:
+            formName = 'Final Session';
+            break;
+        default:
+            formName = 'Session Start';
+    }
 
-//     // Switch for difficulties
-//     switch (attempt) {
-//         case 1:
-//         case 5:
-//             difficulties = ['Medium'];
-//             break;
-//         default:
-//             difficulties = ['Easy', 'Medium', 'Difficult'];
-//     }
-
-//     return {
-//         formName,
-//         questionSets,
-//         cultures,
-//         sessionName,
-//         difficulties,
-//     };
-// }
-
-function getSessionData(sessions, status) {
-    let completedSessions = 0;
-    let highScore = 0;
-    let currentSession = false;
-    let currentDate = null;
-
-    if (status !== 0) {
-        sessions.forEach(session => {
-            const {
-                attempt,
-                total_questions, 
-                status,
-                correct,
-                end_time
-            } = session;
-
-            if (attempt >= 1 && attempt <= 5 && status === 2) {
-                completedSessions++;
-
-                // Current date is the most recently completed official session
-                if (!currentDate || end_time > currentDate) {
-                    currentDate = end_time.toDate();
-                }
-            }
-
-            highScore = Math.max(highScore, Math.round(correct * 100.0) / total_questions);
-            currentSession = currentSession || status === 1;
-        });
+    // Switch for difficulties
+    switch (attempt) {
+        case 1:
+        case 5:
+            difficulties = ['Medium'];
+            break;
+        default:
+            difficulties = ['Easy', 'Medium', 'Difficult'];
     }
 
     return {
-        completedSessions,
-        highScore,
-        currentSession,
-        currentDate
-    }
+        attempt,
+        formName,
+        cultures: cultures.rows,
+        sessionName,
+        difficulties
+    };
 }
+
+/* Routes */
 
 // GET enrollments
 router.get('/', authorization, async (req, res) => {
@@ -170,13 +189,10 @@ router.get('/', authorization, async (req, res) => {
                 })
             );
 
-            return {
-                enrollments: summary,
-                canAddEnrollment: summary.reduce((acc, cur) => acc && cur.completedSessions >= 1, true)
-            }
+            return summary
         }
 
-        const [{ username, nickname }, { enrollments, canAddEnrollment }] = await Promise.all([
+        const [{ username, nickname }, summary] = await Promise.all([
             getStudentNames(req.user.id),
             getEnrollmentSummary()
         ]);
@@ -184,20 +200,13 @@ router.get('/', authorization, async (req, res) => {
         const data = {
             username,
             nickname,
-            enrollments,
-            canAddEnrollment
+            enrollments: summary
         };
         res.json(data);
     } catch (err) {
         console.error(err.message);
         res.status(500).json('Server Error');
     }
-});
-
-// GET enrollments/add
-router.get('/add', authorization, async (req, res) => {
-    const data = await sessionForm(INITIAL_SESSION);
-    res.json(data);
 });
 
 // GET enrollments/:id
@@ -207,15 +216,21 @@ router.get('/:id', authorization, async (req, res) => {
 
         async function getEnrollmentMetrics() {
             const enrollments = await pool.query(
-                'SELECT * FROM enrollment WHERE id = $1',
-                [enrollmentId]
+                'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
+                [enrollmentId, req.user.id]
             );
+            if (enrollments.rows.length === 0) {
+                res.status(403).json('Student does not have this enrollment.');
+            }
 
             const {
                 enrollmentName,
                 sessions,
                 status
             } = await getEnrollmentData(enrollments.rows[0]);
+            if (!status.started) {
+                res.status(403).json('Student cannot access metrics until started initial session.');
+            }
 
             // Sort sessions by end date, start date, or expected start
             sessions.sort((a, b) => (a.end_date || a.start_date || a.expected_start) - (b.end_date || b.start_date || b.expected_start));
@@ -232,29 +247,14 @@ router.get('/:id', authorization, async (req, res) => {
                     correct,
                 } = session;
 
-                function getSessionName() {
-                    switch (attempt) {
-                        case 1:
-                            return 'Initial Session';
-                        case 5:
-                            return 'Final Session';
-                        case 2:
-                        case 3:
-                        case 4:
-                            return `Session ${attempt}`;
-                        default:
-                            return 'Practice Session';
-                    }
-                }
-
                 function getSessionDate() {
                     switch (status) {
                         case 1:
-                            return start_time.toDate();
+                            return start_time;
                         case 2:
-                            return end_time.toDate();
+                            return end_time;
                         default:
-                            return expected_start.toDate();
+                            return expected_start;
                     }
                 }
 
@@ -291,7 +291,7 @@ router.get('/:id', authorization, async (req, res) => {
             };
 
             // If in progress, need to determine what we can do for the current enrollment
-            if (status === 1) {
+            if (status.started && !status.completed) {
                 const {
                     currentSession,
                     currentDate
@@ -306,21 +306,22 @@ router.get('/:id', authorization, async (req, res) => {
             }
 
             return {
-                name: enrollmentName,
+                enrollmentName,
                 sessions: sessionsData,
+                status,
                 actions
             };
         }
 
         const [
             { username, nickname },
-            { enrollmentName, sessions, actions }
+            { enrollmentName, sessions, status, actions }
         ] = await Promise.all([
             getStudentNames(req.user.id),
             getEnrollmentMetrics()
         ]);
 
-        data = {
+        const data = {
             username,
             nickname,
             enrollmentName,
@@ -335,16 +336,83 @@ router.get('/:id', authorization, async (req, res) => {
     }
 });
 
-// POST enrollments
-router.post('/', authorization, async (req, res) => {
+/* In Progress - Not Ready to Test Yet!!! */
+
+// GET enrollments/:id/start
+router.get('/:id/sessions/start', authorization, async (req, res) => {
+    /* Get the form data for starting a new official session */
     try {
-        const newEnrollment = await pool.query(
-            'INSERT INTO enrollment (classroom_id, student_id, status) VALUES ($1, $2, $3) RETURNING *',
-            [DEFAULT_CLASSROOM_ID, req.user.id, 0]
+        const { id: enrollmentId } = req.params;
+
+        const enrollments = await pool.query(
+            'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
+            [enrollmentId, req.user.id]
         );
 
-        // Later we will redirect to confirmation screen for initial session
-        res.json(newEnrollment);
+        if (enrollments.rows.length === 0) {
+            res.status(403).json('Cannot access enrollment for student.');
+        }
+
+        const {
+            sessions,
+            status
+        } = await getEnrollmentData(enrollments.rows[0]);
+
+        const { completedSessions } = getSessionData(sessions, status);
+
+        // Get the session start form for the next official session
+        const data = await getFormData(completedSessions + 1);
+        res.json(data);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json('Server Error');
+    }
+});
+
+// GET enrollments/practice
+router.get(':id/sessions/practice', authorization, async (req, res) => {
+    /* Get the form data for practicing a */
+    try {
+        const { id: enrollmentId } = req.params;
+
+        const enrollments = await pool.query(
+            'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
+            [enrollmentId, req.user.id]
+        );
+
+        if (enrollments.rows.length === 0) {
+            res.status(403).json('Cannot access enrollment for student.');
+        }
+
+        const data = await getFormData(PRACTICE_SESSION);
+        res.json(data);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json('Server Error');
+    }
+});
+
+// GET enrollments/:id/continue
+router.get('/:id/sessions/continue', authorization, async (req, res) => {
+    /* Continue a session */
+    try {
+        const { id: enrollmentId } = req.params;
+
+        const enrollments = await pool.query(
+            'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
+            [enrollmentId, req.user.id]
+        );
+
+        if (enrollments.rows.length === 0) {
+            res.status(403).json('Cannot access enrollment for student.');
+        }
+
+        const { sessions } = await getEnrollmentData(enrollments.rows[0]);
+        const session = sessions.filter(session => session.status === 1);
+
+        // TODO: Get the current question for the session
+
+        res.json(session);
     } catch (err) {
         console.error(err.message);
         res.status(500).json('Server Error');
