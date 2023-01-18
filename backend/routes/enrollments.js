@@ -1,67 +1,9 @@
 const router = require('express').Router();
 const pool = require('../db');
 const authorization = require('../middleware/authorization');
-const { DEFAULT_CLASSROOM_ID, INITIAL_SESSION, PRACTICE_SESSION } = require('../constants');
+const { getEnrollmentData, getSessionData, getSessionName } = require('../utils/helpers');
 
 /* Helper Functions */
-
-function getSessionName(attempt) {
-    switch (attempt) {
-        case 1:
-            return 'Initial Session';
-        case 5:
-            return 'Final Session';
-        case 2:
-        case 3:
-        case 4:
-            return `Session ${attempt}`;
-        default:
-            return 'Practice Session';
-    }
-}
-
-function getSessionData(sessions, status) {
-    let completedSessions = 0;
-    let highScore = 0;
-    let currentSession = null;
-    let currentDate = null;
-
-    if (status !== 0) {
-        sessions.forEach(session => {
-            const {
-                id: sessionId,
-                attempt,
-                total_questions, 
-                status,
-                correct,
-                end_time
-            } = session;
-
-            if (attempt >= 1 && attempt <= 5 && status === 2) {
-                completedSessions++;
-
-                // Current date is the most recently completed official session
-                if (!currentDate || end_time > currentDate) {
-                    currentDate = end_time;
-                }
-            }
-
-            highScore = Math.max(highScore, Math.round(correct * 100.0) / total_questions);
-
-            // Set current session if status is 1
-            currentSession = status === 1 && sessionId;
-        });
-    }
-
-    return {
-        completedSessions,
-        highScore,
-        currentSession,
-        currentDate
-    }
-}
-
-/* Queries */
 
 async function getStudentNames(studentId) {
     const students = await pool.query(
@@ -71,86 +13,9 @@ async function getStudentNames(studentId) {
     return students.rows[0];
 }
 
-async function getEnrollmentData(enrollment) {
-    const { 
-        id, 
-        classroom_id, 
-        status, 
-        registration_date
-    } = enrollment;
-
-    // Get the question set name and sessions concurrently
-    async function findQuestionSets() {
-        const questionSets = await pool.query(
-            'SELECT question_set.name FROM question_set JOIN classroom ON question_set.code = classroom.question_set_code WHERE classroom.id = $1',
-            [classroom_id]
-        );
-        return questionSets.rows;
-    }
-
-    async function findSessions() {
-        const sessions = await pool.query(
-            'SELECT * FROM session WHERE enrollment_id = $1',
-            [id]
-        );
-        return sessions.rows;
-    }
-
-    const [questionSets, sessions] = await Promise.all([
-        findQuestionSets(),
-        findSessions()
-    ]);
-
-    return {
-        id,
-        enrollmentName: `${questionSets[0].name} ${registration_date.toLocaleDateString()}`,
-        sessions,
-        status: {
-            started: status !== 0,
-            completed: status === 2
-        }
-    };
-}
-
-async function getFormData(attempt) {
-    const cultures = await pool.query('SELECT * FROM culture');
-    const sessionName = getSessionName(attempt);
-
-    let formName = '';
-    let difficulties = null;
-
-    // Switch for form name
-    switch (attempt) {
-        case 1:
-            formName = 'Classroom Enrollment/Initial Session';
-            break;
-        case 5:
-            formName = 'Final Session';
-            break;
-        default:
-            formName = 'Session Start';
-    }
-
-    // Switch for difficulties
-    switch (attempt) {
-        case 1:
-        case 5:
-            difficulties = ['Medium'];
-            break;
-        default:
-            difficulties = ['Easy', 'Medium', 'Difficult'];
-    }
-
-    return {
-        attempt,
-        formName,
-        cultures: cultures.rows,
-        sessionName,
-        difficulties
-    };
-}
-
 /* Routes */
+
+router.use('/:enrollmentId/sessions', require('./sessions'));
 
 // GET enrollments
 router.get('/', authorization, async (req, res) => {
@@ -189,7 +54,7 @@ router.get('/', authorization, async (req, res) => {
                 })
             );
 
-            return summary
+            return summary;
         }
 
         const [{ username, nickname }, summary] = await Promise.all([
@@ -209,10 +74,10 @@ router.get('/', authorization, async (req, res) => {
     }
 });
 
-// GET enrollments/:id
-router.get('/:id', authorization, async (req, res) => {
+// GET enrollments/:enrollmentId
+router.get('/:enrollmentId', authorization, async (req, res) => {
     try {
-        const { id: enrollmentId } = req.params;
+        const { enrollmentId } = req.params;
 
         async function getEnrollmentMetrics() {
             const enrollments = await pool.query(
@@ -228,9 +93,9 @@ router.get('/:id', authorization, async (req, res) => {
                 sessions,
                 status
             } = await getEnrollmentData(enrollments.rows[0]);
-            if (!status.started) {
-                res.status(403).json('Student cannot access metrics until started initial session.');
-            }
+            // if (!status.started) {
+            //     res.status(403).json('Student cannot access metrics until started initial session.');
+            // }
 
             // Sort sessions by end date, start date, or expected start
             sessions.sort((a, b) => (a.end_date || a.start_date || a.expected_start) - (b.end_date || b.start_date || b.expected_start));
@@ -292,10 +157,7 @@ router.get('/:id', authorization, async (req, res) => {
 
             // If in progress, need to determine what we can do for the current enrollment
             if (status.started && !status.completed) {
-                const {
-                    currentSession,
-                    currentDate
-                } = getSessionData(sessions, status);
+                const { currentSession, currentDate } = getSessionData(sessions, status);
 
                 actions.continue = currentSession;
                 actions.practice = !currentSession;
@@ -308,14 +170,13 @@ router.get('/:id', authorization, async (req, res) => {
             return {
                 enrollmentName,
                 sessions: sessionsData,
-                status,
                 actions
             };
         }
 
         const [
             { username, nickname },
-            { enrollmentName, sessions, status, actions }
+            { enrollmentName, sessions, actions }
         ] = await Promise.all([
             getStudentNames(req.user.id),
             getEnrollmentMetrics()
@@ -330,89 +191,6 @@ router.get('/:id', authorization, async (req, res) => {
         };
 
         res.json(data);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).json('Server Error');
-    }
-});
-
-/* In Progress - Not Ready to Test Yet!!! */
-
-// GET enrollments/:id/start
-router.get('/:id/sessions/start', authorization, async (req, res) => {
-    /* Get the form data for starting a new official session */
-    try {
-        const { id: enrollmentId } = req.params;
-
-        const enrollments = await pool.query(
-            'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
-            [enrollmentId, req.user.id]
-        );
-
-        if (enrollments.rows.length === 0) {
-            res.status(403).json('Cannot access enrollment for student.');
-        }
-
-        const {
-            sessions,
-            status
-        } = await getEnrollmentData(enrollments.rows[0]);
-
-        const { completedSessions } = getSessionData(sessions, status);
-
-        // Get the session start form for the next official session
-        const data = await getFormData(completedSessions + 1);
-        res.json(data);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).json('Server Error');
-    }
-});
-
-// GET enrollments/practice
-router.get(':id/sessions/practice', authorization, async (req, res) => {
-    /* Get the form data for practicing a */
-    try {
-        const { id: enrollmentId } = req.params;
-
-        const enrollments = await pool.query(
-            'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
-            [enrollmentId, req.user.id]
-        );
-
-        if (enrollments.rows.length === 0) {
-            res.status(403).json('Cannot access enrollment for student.');
-        }
-
-        const data = await getFormData(PRACTICE_SESSION);
-        res.json(data);
-    } catch (err) {
-        console.error(err.message);
-        res.status(500).json('Server Error');
-    }
-});
-
-// GET enrollments/:id/continue
-router.get('/:id/sessions/continue', authorization, async (req, res) => {
-    /* Continue a session */
-    try {
-        const { id: enrollmentId } = req.params;
-
-        const enrollments = await pool.query(
-            'SELECT * FROM enrollment WHERE id = $1 AND student_id = $2',
-            [enrollmentId, req.user.id]
-        );
-
-        if (enrollments.rows.length === 0) {
-            res.status(403).json('Cannot access enrollment for student.');
-        }
-
-        const { sessions } = await getEnrollmentData(enrollments.rows[0]);
-        const session = sessions.filter(session => session.status === 1);
-
-        // TODO: Get the current question for the session
-
-        res.json(session);
     } catch (err) {
         console.error(err.message);
         res.status(500).json('Server Error');
