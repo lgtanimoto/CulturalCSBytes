@@ -1,6 +1,6 @@
 {
-	"__comment__": "" 
-	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
 	"QuestionSetCode": "A000",
 	"CultureCode": "A000",
 	"MQCode": "1N04",
@@ -9,10 +9,10 @@
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
 		"Question" : "<p><span class=\"qname\">Jordan</span> is watching a video on the importance of good passwords to protect your personal information.   Two important aspects of a good password are length and complexity.  Which of the following is the best password for <span class=\"qname\">Jordan</span> for use on their accounts on school computers?</p>",
-		"QuestionImage" : null
+		"QuestionImage" : null,
 		"Answer1": "!dadsPizzaisthegr8est",
 		"Answer2": "password",
-		"Answer3": "808-555-1212 <i>(note: student’s cell phone number</i>",
+		"Answer3": "808-555-1212 <i>(note: student's cell phone number</i>",
 		"Answer4": "@^0*)zeq(&%#!$",
 		"CorrectAnswer": 4,
 		"FixedOrderFromBottom": 0,

@@ -1,6 +1,6 @@
 {
-	"__comment__": "" 
-	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
 	"QuestionSetCode": "A000",
 	"CultureCode": "A0000",
 	"MQCode": "1C01",
@@ -8,8 +8,8 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
-		"Question" : "<p>The students in Pat’s science class are trying to determine how the weight of a marble affects its speed down a curved and twisted ramp.  They have 25 marbles to test.   What type of software should the students use to track this information and start analyzing this information?</p>",
-		"QuestionImage" : null
+		"Question" : "<p>The students in Pat's science class are trying to determine how the weight of a marble affects its speed down a curved and twisted ramp.  They have 25 marbles to test.   What type of software should the students use to track this information and start analyzing this information?</p>",
+		"QuestionImage" : null,
 		"Answer1": "Word processor software (e.g., Google Docs, Microsoft Word)",
 		"Answer2": "Spreadsheet software (e.g., Google Sheets, Microsoft Excel)",
 		"Answer3": "Social media software (e.g., Facebook, TikTok)",
