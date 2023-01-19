@@ -1,6 +1,6 @@
 {
-	"__comment__": "" 
-	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
 	"QuestionSetCode": "A000",
 	"CultureCode": "A000",
 	"MQCode": "1C03",
@@ -9,7 +9,7 @@
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
 		"Question" : "<p>When <span class=\"qname\">Rowan</span> runs one or two applications on a school laptop, these applications run fast even if the applications need to retrieve big files from the Internet.   However, if <span class=\"qname\">Rowan</span> has several applications and several browser windows and tabs open at the same time, everything seems to slow down.  Where is the likely source of the bottleneck causing this slowdown<p>",
-		"QuestionImage" : null
+		"QuestionImage" : null,
 		"Answer1": "A computer virus",
 		"Answer2": "A slow remote Internet server",
 		"Answer3": "A slow graphics card",
