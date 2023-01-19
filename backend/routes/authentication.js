@@ -60,7 +60,7 @@ router.post('/register', async (req, res) => {
             const date = now + 1000 * 60 * 60 * 24 * 7 * 4 * (attempt - 1);
             await pool.query(
                 'INSERT INTO session (enrollment_id, attempt, total_questions, expected_start) VALUES ($1, $2, $3, $4)',
-                [enrollment.rows[0].id, attempt, 50, new Date(date)]
+                [enrollment.rows[0].id, attempt, 20, new Date(date)]
             );
         }
         
