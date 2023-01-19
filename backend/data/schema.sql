@@ -237,7 +237,7 @@ ALTER TABLE IF EXISTS public.teacher
 CREATE TABLE IF NOT EXISTS public.question_set
 (
     code character(4) COLLATE pg_catalog."default" NOT NULL,
-    name character varying(32) COLLATE pg_catalog."default",
+    name character varying(64) COLLATE pg_catalog."default",
     CONSTRAINT question_set_pkey PRIMARY KEY (code)
 )
 

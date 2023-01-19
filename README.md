@@ -28,6 +28,16 @@ We need to take care of several things to ensure the backend works smoothly. You
 - Before you can access any services, you need to make a **POST** request to the **/auth/login** route and retrieve the token that is returned.
 - Then when you want to make an API request that uses the `authorization` middleware, you need to add, in **Headers**, the `token` header to the token that was returned by the login request.
 
+## Testing
+
+**NOTE**: You will need at least **TWO** separate terminal sessions open so that both the frontend and backend sessions can communicate to each other.
+
+### Backend
+Navigate to the **backend** folder via `cd backend` and run `npm run dev` to start the backend session.
+
+### Frontend
+Navigate to the **frontend** folder via `cd frontend` and run `npm start` to start the frontend session.
+
 ## Resources
 I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) especially useful for the backend development of the portion. It provides useful information on both building the REST API and the JWT authentication and authorization, as well as how to combine the two together. Many YouTube tutorials neglect the authentication and authorization piece, which is a must-have when working with any industry project. However, this channel provides it all.
 
