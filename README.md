@@ -33,12 +33,10 @@ We need to take care of several things to ensure the backend works smoothly. You
 **NOTE**: You will need at least **TWO** separate terminal sessions open so that both the frontend and backend sessions can communicate to each other.
 
 ### Backend
-1. Navigate to the **backend** folder using: `cd backend`.
-2. Run `npm run dev` to start the backend session.
+Navigate to the **backend** folder via `cd backend` and run `npm run dev` to start the backend session.
 
 ### Frontend
-1. Navigate to the **frontend** folder using: `cd frontend`.
-2. Run `npm start` to start the frontend session.
+Navigate to the **frontend** folder via `cd frontend` and run `npm start` to start the frontend session.
 
 ## Resources
 I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) especially useful for the backend development of the portion. It provides useful information on both building the REST API and the JWT authentication and authorization, as well as how to combine the two together. Many YouTube tutorials neglect the authentication and authorization piece, which is a must-have when working with any industry project. However, this channel provides it all.
