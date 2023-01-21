@@ -55,22 +55,26 @@ const helpers = {
                     total_questions, 
                     status,
                     correct,
+                    start_time,
                     end_time
                 } = session;
 
                 if (attempt >= 1 && attempt <= 5 && status === 2) {
                     completedSessions++;
+                }
 
-                    // Current date is the most recently completed official session
-                    if (!currentDate || end_time > currentDate) {
-                        currentDate = end_time;
-                    }
+                switch (status) {
+                    case 1:
+                        currentDate = start_time > currentDate ? start_time : currentDate;
+                        currentSession = status === 1 && sessionId;
+                        break;
+                    case 2:
+                        currentDate = end_time > currentDate ? end_time : currentDate;
+                        break;
+                    default:
                 }
 
                 highScore = Math.max(highScore, Math.round(correct * 100.0) / total_questions);
-
-                // Set current session if status is 1
-                currentSession = status === 1 && sessionId;
             });
         }
 

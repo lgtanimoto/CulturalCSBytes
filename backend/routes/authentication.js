@@ -4,8 +4,7 @@ const bcrypt = require('bcrypt');
 const jwtGenerator = require('../utils/jwtGenerator');
 const { DEFAULT_CLASSROOM_ID } = require('../constants');
 
-/* Registration */
-
+// Registration
 router.post('/register', async (req, res) => {
     try {
         const {
@@ -71,8 +70,7 @@ router.post('/register', async (req, res) => {
     }
 });
 
-/* Login */
-
+// Login
 router.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;

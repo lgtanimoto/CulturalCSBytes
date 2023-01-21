@@ -17,7 +17,7 @@ async function getStudentNames(studentId) {
 
 router.use('/:enrollmentId/sessions', require('./sessions'));
 
-// GET enrollments
+// Section 3
 router.get('/', authorization, async (req, res) => {
     try {
         // Getting the enrollment summary can be done concurrently with student names
@@ -74,7 +74,7 @@ router.get('/', authorization, async (req, res) => {
     }
 });
 
-// GET enrollments/:enrollmentId
+// Section 4
 router.get('/:enrollmentId', authorization, async (req, res) => {
     try {
         const { enrollmentId } = req.params;
@@ -93,9 +93,9 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
                 sessions,
                 status
             } = await getEnrollmentData(enrollments.rows[0]);
-            // if (!status.started) {
-            //     res.status(403).json('Student cannot access metrics until started initial session.');
-            // }
+            if (!status.started) {
+                res.status(403).json('Student cannot access metrics until started initial session.');
+            }
 
             // Sort sessions by end date, start date, or expected start
             sessions.sort((a, b) => (a.end_date || a.start_date || a.expected_start) - (b.end_date || b.start_date || b.expected_start));
@@ -108,8 +108,9 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
                     cultures,
                     status,
                     expected_start,
+                    start_time,
                     end_time,
-                    correct,
+                    correct
                 } = session;
 
                 function getSessionDate() {
@@ -159,8 +160,8 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
             if (status.started && !status.completed) {
                 const { currentSession, currentDate } = getSessionData(sessions, status);
 
-                actions.continue = currentSession;
-                actions.practice = !currentSession;
+                actions.continue = currentSession ? true : false;
+                actions.practice = currentSession ? false : true;
 
                 // Can only start if not continuing and last official date was at least one week prior
                 const weeks = Math.floor((Date.now() - currentDate) / 1000 / 60 / 60 / 24 / 7);

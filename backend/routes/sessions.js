@@ -24,8 +24,8 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
 
     async function updateSession() {
         await pool.query(
-            'UPDATE session SET difficulty = $1, cultures = $2, status = $3, start_time = $4 WHERE id = $5',
-            [difficultyCode, cultures, 1, new Date(Date.now()), sessionId]
+            'UPDATE session SET difficulty = $1, cultures = $2, status = $3, start_time = $4, correct = $5, wrong = $6 WHERE id = $7',
+            [difficultyCode, cultures, 1, new Date(Date.now()), 0, 0, sessionId]
         );
     }
 
@@ -51,10 +51,8 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
 
 /* Routes */
 
-// GET enrollments/:enrollmentId/sessions/new
-// Session Form
+// Section 5
 router.get('/new', authorization, async (req, res) => {
-    /* Session Form */
     try {
         const { enrollmentId } = req.params;
         const { practice } = req.query;
@@ -77,9 +75,12 @@ router.get('/new', authorization, async (req, res) => {
             const { sessions, status } = await getEnrollmentData(enrollments.rows[0]);
 
             if (status === 2) {
-                res.status(403).json('Student has already completed enrollment.')
+                res.status(403).json('Student has already completed enrollment.');
             } else {
-                const { completedSessions } = getSessionData(sessions, status);
+                const { completedSessions, currentSession } = getSessionData(sessions, status);
+                if (currentSession) {
+                    res.status(403).json('Cannot start new session until completed current session.');
+                }
                 const session = await pool.query(
                     'SELECT id, attempt FROM session WHERE enrollment_id = $1 AND attempt = $2',
                     [enrollmentId, completedSessions + 1]
@@ -93,11 +94,12 @@ router.get('/new', authorization, async (req, res) => {
             getNextSession()
         ]);
 
-        const attempt = practice ? 0 : nextSession.attempt;
+        const isPractice = practice && nextSession.attempt !== 1;
+        const attempt = isPractice ? 0 : nextSession.attempt;
         const difficulties = attempt != 1 && attempt != 5 ? ['Easy', 'Medium', 'Difficult'] : ['Medium'];
         
         const data = {
-            sessionId: !practice && nextSession.id,
+            sessionId: !isPractice && nextSession.id,
             cultures,
             sessionName: getSessionName(attempt),
             difficulties
@@ -110,8 +112,7 @@ router.get('/new', authorization, async (req, res) => {
     }
 });
 
-// POST enrollments/:enrollmentId/sessions
-// Practice Session
+// Section 6 - Practice Session
 router.post('/', authorization, async (req, res) => {
     try {
         const { enrollmentId } = req.params;
@@ -135,8 +136,7 @@ router.post('/', authorization, async (req, res) => {
     }
 });
 
-// PATCH enrollments/:enrollmentId/sessions/:sessionId
-// Official Session
+// Section 6 - Official Session
 router.patch('/:sessionId', authorization, async (req, res) => {
     try {
         const { 
