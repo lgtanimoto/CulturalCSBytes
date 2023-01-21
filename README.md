@@ -18,7 +18,7 @@ First we need to setup the database. These steps assume that you have PostgreSQL
 5. Populate the tables with initial data by running `\i data/data.sql`.
 
 ### Miscellaneous steps
-We need to take care of several things to ensure the backend works smoothly. You also need to make sure that the postgres service has started. Although you do not necessarily be in the psql shell, it is recommended to test changes quickly. If you use the psql shell conjunctly, you need to open a **separate terminal session**.
+We need to take care of several things to ensure the backend works smoothly. You also need to make sure that the postgres service has started. Although you do not necessarily be in the psql shell, it is recommended to test changes quickly. If you use the psql shell conjunctly, you need to open a **separate terminal session** with the **backend** folder as the current directory, again.
 1. Run `npm i` to install the packages.
 2. Create a **.env** file and define an environment variable called `JWTSECRET`. Details for how to do this are given in the [official documentation](https://www.npmjs.com/package/dotenv). This will be important for authentication and authorization purposes.
 3. Run `node content.js`. This will load the questions that are in a JSON format in **content/A000/A000/*.json** into the database.
@@ -42,7 +42,7 @@ You can do it in two ways:
 Navigate to the **backend** folder via `cd backend` and run `npm run dev` to start the backend session.
 
 ### Frontend
-Navigate to the **frontend** folder via `cd frontend` and run `npm start` to start the frontend session.
+Navigate to the **frontend** folder via `cd frontend` and run `npm start` to start the frontend session. Then go to `http://localhost:3000` to test interactively.
 
 ## Resources
 I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) especially useful for the backend development of the portion. It provides useful information on both building the REST API and the JWT authentication and authorization, as well as how to combine the two together. Many YouTube tutorials neglect the authentication and authorization piece, which is a must-have when working with any industry project. However, this channel provides it all.
