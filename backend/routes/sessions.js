@@ -51,6 +51,8 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
 
 /* Routes */
 
+router.use('/:sessionId/questions', require('./questions'));
+
 // Section 5
 router.get('/new', authorization, async (req, res) => {
     try {
@@ -69,7 +71,7 @@ router.get('/new', authorization, async (req, res) => {
                 [enrollmentId, req.user.id]
             );
             if (enrollments.rows.length === 0) {
-                res.status(403).json('Student does not have this enrollment.');
+                res.status(404).json('Could not find enrollment for student.');
             }
 
             const { sessions, status } = await getEnrollmentData(enrollments.rows[0]);

@@ -85,7 +85,7 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
                 [enrollmentId, req.user.id]
             );
             if (enrollments.rows.length === 0) {
-                res.status(403).json('Student does not have this enrollment.');
+                res.status(404).json('Could not find enrollment for student.');
             }
 
             const {
