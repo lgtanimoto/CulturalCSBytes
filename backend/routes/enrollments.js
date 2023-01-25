@@ -156,10 +156,18 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
                 continue: false
             };
 
+            const current = {
+                session: null,
+                question: null
+            }
+
             // If in progress, need to determine what we can do for the current enrollment
             if (status.started && !status.completed) {
-                const { currentSession, currentDate } = getSessionData(sessions, status);
+                const { currentSession, currentQuestion, currentDate } = getSessionData(sessions, status);
 
+                current.session = currentSession;
+                current.question = currentQuestion;
+                
                 actions.continue = currentSession ? true : false;
                 actions.practice = currentSession ? false : true;
 
@@ -171,13 +179,14 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
             return {
                 enrollmentName,
                 sessions: sessionsData,
-                actions
+                actions,
+                current
             };
         }
 
         const [
             { username, nickname },
-            { enrollmentName, sessions, actions }
+            { enrollmentName, sessions, actions, current }
         ] = await Promise.all([
             getStudentNames(req.user.id),
             getEnrollmentMetrics()
@@ -188,7 +197,8 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
             nickname,
             enrollmentName,
             sessions,
-            actions
+            actions,
+            current
         };
 
         res.json(data);

@@ -45,6 +45,7 @@ const helpers = {
         let completedSessions = 0;
         let highScore = 0;
         let currentSession = null;
+        let currentQuestion = null;
         let currentDate = null;
 
         if (status !== 0) {
@@ -55,6 +56,7 @@ const helpers = {
                     total_questions, 
                     status,
                     correct,
+                    wrong,
                     start_time,
                     end_time
                 } = session;
@@ -66,7 +68,8 @@ const helpers = {
                 switch (status) {
                     case 1:
                         currentDate = start_time > currentDate ? start_time : currentDate;
-                        currentSession = status === 1 && sessionId;
+                        currentSession = sessionId;
+                        currentQuestion = correct + wrong + 1;
                         break;
                     case 2:
                         currentDate = end_time > currentDate ? end_time : currentDate;
@@ -82,6 +85,7 @@ const helpers = {
             completedSessions,
             highScore,
             currentSession,
+            currentQuestion,
             currentDate
         }
     },
