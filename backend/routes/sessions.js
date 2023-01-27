@@ -53,6 +53,55 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
 
 router.use('/:sessionId/questions', require('./questions'));
 
+// Section 3,4 - Continue
+router.get('/', authorization, async (req, res) => {
+    try {
+        const { enrollmentId } = req.params;
+
+        /* Ensure student is enrolled */
+
+        const enrollments = await pool.query(
+            'SELECT id FROM enrollment WHERE id = $1 AND student_id = $2',
+            [enrollmentId, req.user.id]
+        );
+
+        if (enrollments.rows.length === 0) {
+            res.status(404).json('Could not find enrollment for student.');
+        }
+
+        /* Find session in progress */
+
+        const sessions = await pool.query(
+            'SELECT id FROM session WHERE enrollment_id = $2 AND status = $3',
+            [enrollmentId, 1]
+        );
+
+        if (sessions.rows.length === 0) {
+            res.status(404).json('Could not find in progress session for enrollment.');
+        }
+
+        /* Access appropriate question */
+
+        let sessionQuestions = await pool.query(
+            'SELECT question_id, question_order, answer_order, student_answer FROM session_question WHERE session_id = $1 AND status = $2',
+            [sessions.rows[0].id, 1]
+        );
+
+        if (sessionQuestions.rows.length === 0) {
+            // Find last question completed
+            sessionQuestions = await pool.query(
+                'SELECT question_id, question_order, answer_order, student_answer FROM session_question WHERE session_id = $1 AND status = $2 ORDER BY question_order DESC LIMIT 1',
+                [sessions.rows[0].id, 2]
+            );
+        }
+
+        res.redirect(`${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}`);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json('Server Error');
+    }
+});
+
 // Section 5
 router.get('/new', authorization, async (req, res) => {
     try {

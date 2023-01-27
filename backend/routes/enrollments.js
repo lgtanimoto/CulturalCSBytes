@@ -156,20 +156,12 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
                 continue: false
             };
 
-            const current = {
-                session: null,
-                question: null
-            }
-
             // If in progress, need to determine what we can do for the current enrollment
             if (status.started && !status.completed) {
-                const { currentSession, currentQuestion, currentDate } = getSessionData(sessions, status);
-
-                current.session = currentSession;
-                current.question = currentQuestion;
+                const { currentSession, currentDate } = getSessionData(sessions, status);
                 
-                actions.continue = currentSession ? true : false;
-                actions.practice = currentSession ? false : true;
+                actions.continue = currentSession;
+                actions.practice = !currentSession;
 
                 // Can only start if not continuing and last official date was at least one week prior
                 const weeks = Math.floor((Date.now() - currentDate) / 1000 / 60 / 60 / 24 / 7);
@@ -179,14 +171,13 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
             return {
                 enrollmentName,
                 sessions: sessionsData,
-                actions,
-                current
+                actions
             };
         }
 
         const [
             { username, nickname },
-            { enrollmentName, sessions, actions, current }
+            { enrollmentName, sessions, actions }
         ] = await Promise.all([
             getStudentNames(req.user.id),
             getEnrollmentMetrics()
@@ -197,8 +188,7 @@ router.get('/:enrollmentId', authorization, async (req, res) => {
             nickname,
             enrollmentName,
             sessions,
-            actions,
-            current
+            actions
         };
 
         res.json(data);
