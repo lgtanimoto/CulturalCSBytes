@@ -3,11 +3,107 @@ const pool = require('../db');
 const authorization = require('../middleware/authorization');
 const { getEnrollmentData, getSessionData, getSessionName } = require('../utils/helpers');
 
+/* Helper Functions */
+
+async function initSession(sessionId, preferredCulture, difficulty, additionalCultures) {
+    let difficultyCode = 0;
+    switch (difficulty) {
+        case 'Easy':
+            difficultyCode = 0;
+            break;
+        case 'Medium':
+            difficultyCode = 1;
+            break;
+        default:
+            difficultyCode = 2;
+    }
+
+    additionalCultures = additionalCultures.filter(culture => culture !== preferredCulture);
+    additionalCultures.unshift(preferredCulture);
+    const cultures = additionalCultures.join();
+
+    async function updateSession() {
+        await pool.query(
+            'UPDATE session SET difficulty = $1, cultures = $2, status = $3, start_time = $4, correct = $5, wrong = $6 WHERE id = $7',
+            [difficultyCode, cultures, 1, new Date(Date.now()), 0, 0, sessionId]
+        );
+    }
+
+    async function insertSessionQuestions() {
+        await pool.query(
+            'CALL insert_session_questions($1)',
+            [sessionId]
+        );
+    }
+
+    await Promise.all([
+        updateSession(),
+        insertSessionQuestions()
+    ]);
+
+    const question = await pool.query(
+        'UPDATE session_question SET status = $1, start_time = $2 WHERE session_id = $3 AND question_order = $4 RETURNING *',
+        [1, new Date(Date.now()), sessionId, 1]
+    );
+
+    return question.rows[0];
+}
+
 /* Routes */
 
-// GET enrollments/:enrollmentId/sessions/new
+router.use('/:sessionId/questions', require('./questions'));
+
+// Section 3,4 - Continue
+router.get('/', authorization, async (req, res) => {
+    try {
+        const { enrollmentId } = req.params;
+
+        /* Ensure student is enrolled */
+
+        const enrollments = await pool.query(
+            'SELECT id FROM enrollment WHERE id = $1 AND student_id = $2',
+            [enrollmentId, req.user.id]
+        );
+
+        if (enrollments.rows.length === 0) {
+            res.status(404).json('Could not find enrollment for student.');
+        }
+
+        /* Find session in progress */
+
+        const sessions = await pool.query(
+            'SELECT id FROM session WHERE enrollment_id = $2 AND status = $3',
+            [enrollmentId, 1]
+        );
+
+        if (sessions.rows.length === 0) {
+            res.status(404).json('Could not find in progress session for enrollment.');
+        }
+
+        /* Access appropriate question */
+
+        let sessionQuestions = await pool.query(
+            'SELECT question_id, question_order, answer_order, student_answer FROM session_question WHERE session_id = $1 AND status = $2',
+            [sessions.rows[0].id, 1]
+        );
+
+        if (sessionQuestions.rows.length === 0) {
+            // Find last question completed
+            sessionQuestions = await pool.query(
+                'SELECT question_id, question_order, answer_order, student_answer FROM session_question WHERE session_id = $1 AND status = $2 ORDER BY question_order DESC LIMIT 1',
+                [sessions.rows[0].id, 2]
+            );
+        }
+
+        res.redirect(`${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}`);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json('Server Error');
+    }
+});
+
+// Section 5
 router.get('/new', authorization, async (req, res) => {
-    /* Session Form */
     try {
         const { enrollmentId } = req.params;
         const { practice } = req.query;
@@ -24,18 +120,23 @@ router.get('/new', authorization, async (req, res) => {
                 [enrollmentId, req.user.id]
             );
             if (enrollments.rows.length === 0) {
-                res.status(403).json('Student does not have this enrollment.');
+                res.status(404).json('Could not find enrollment for student.');
             }
 
             const { sessions, status } = await getEnrollmentData(enrollments.rows[0]);
 
-            if (status === 0) {
-                return 1;
-            } else if (status === 2) {
-                res.status(403).json('Student has already completed enrollment.')
+            if (status === 2) {
+                res.status(403).json('Student has already completed enrollment.');
             } else {
-                const { completedSessions } = getSessionData(sessions, status);
-                return completedSessions + 1;
+                const { completedSessions, currentSession } = getSessionData(sessions, status);
+                if (currentSession) {
+                    res.status(403).json('Cannot start new session until completed current session.');
+                }
+                const session = await pool.query(
+                    'SELECT id, attempt FROM session WHERE enrollment_id = $1 AND attempt = $2',
+                    [enrollmentId, completedSessions + 1]
+                );
+                return session.rows[0];
             }
         }
 
@@ -44,10 +145,12 @@ router.get('/new', authorization, async (req, res) => {
             getNextSession()
         ]);
 
-        const attempt = practice ? 0 : nextSession;
+        const isPractice = practice && nextSession.attempt !== 1;
+        const attempt = isPractice ? 0 : nextSession.attempt;
         const difficulties = attempt != 1 && attempt != 5 ? ['Easy', 'Medium', 'Difficult'] : ['Medium'];
         
         const data = {
+            sessionId: !isPractice && nextSession.id,
             cultures,
             sessionName: getSessionName(attempt),
             difficulties
@@ -60,31 +163,61 @@ router.get('/new', authorization, async (req, res) => {
     }
 });
 
-// POST enrollments/:enrollmentId/sessions
+// Section 6 - Practice Session
 router.post('/', authorization, async (req, res) => {
-    /* Practice Session */
+    try {
+        const { enrollmentId } = req.params;
 
-    // Get body data
+        const {
+            preferredCulture,
+            difficulty,
+            additionalCultures
+        } = req.body;
 
-    // Add new practice session (attempt = -1) WHERE enrollment id
+        const session = await pool.query(
+            'INSERT INTO session (enrollment_id, attempt, total_questions) VALUES ($1, $2, $3) RETURNING *',
+            [enrollmentId, 0, 10]
+        );
 
-    // Add to session question
-
-    // Return first session question
+        const question = await initSession(session.rows[0].id, preferredCulture, difficulty, additionalCultures);
+        res.json(question);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json('Server Error');
+    }
 });
 
-// PUT enrollments/:enrollmentId/sessions
-router.put('/', authorization, async (req, res) => {
-    /* Official Session */
+// Section 6 - Official Session
+router.patch('/:sessionId', authorization, async (req, res) => {
+    try {
+        const { 
+            enrollmentId,
+            sessionId
+        } = req.params;
 
-    // Same as POST, except we find the session in the DB
-});
+        const {
+            preferredCulture,
+            difficulty,
+            additionalCultures
+        } = req.body;
 
-// PATCH enrollments/:enrollmentId/sessions
-router.patch('/', authorization, async (req, res) => {
-    /* Update correct, wrong, end time */
-    
-    // Same as POST, except we find the session in the DB
+        const session = await pool.query(
+            'SELECT attempt FROM session WHERE id = $1',
+            [sessionId]
+        );
+        if (session.rows[0].attempt === 1) {
+            await pool.query(
+                'UPDATE enrollment SET status = $1 WHERE id = $2',
+                [1, enrollmentId]
+            );
+        }
+
+        const question = await initSession(sessionId, preferredCulture, difficulty, additionalCultures);
+        res.json(question);
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).json('Server Error');
+    }
 });
 
 module.exports = router;

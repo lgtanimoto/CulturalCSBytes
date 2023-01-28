@@ -1,0 +1,19 @@
+.Question {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  #welcome {
+      border-style: solid;
+      padding: 0px;
+  }
+  
+  button {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 10px;
+  }

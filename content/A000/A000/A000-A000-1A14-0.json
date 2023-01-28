@@ -1,6 +1,6 @@
 {
 	"__comment__": "",
-	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/"
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
 	"QuestionSetCode": "A000",
 	"CultureCode": "A000",
 	"MQCode": "1A14",
@@ -16,7 +16,7 @@
 		"Answer4": "Modify line 1:<span class=\"code\"> number maxCold = 1000.0</span>",
 		"CorrectAnswer": 4,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>Because <em>maxCold</em> is set so low in line 1, line 4 is never true and <em>maxCold</em> will always be -1000.0.   By modifying line 1 to <span class=\"code\">maxCold = 1000.0</span> – higher than any expected value, the first value read from the list will become the initial <em>maxCold</em> and the program will work as expected.</p>",
+		"Explanation": "<p>Because <em>maxCold</em> is set so low in line 1, line 4 is never true and <em>maxCold</em> will always be -1000.0.   By modifying line 1 to <span class=\"code\">maxCold = 1000.0</span> - higher than any expected value, the first value read from the list will become the initial <em>maxCold</em> and the program will work as expected.</p>",
 		"AnswerImage" : null
 	}
 }

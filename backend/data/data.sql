@@ -17,11 +17,19 @@ VALUES ('A000','Computer Science Principles Basics');
 INSERT INTO teacher (username, first_name, last_name, email, password)
 VALUES ('TEACHER#ONE', 'Teacher', 'One', 'lt@atcsed', 'teacher123');
 
+INSERT INTO classroom (teacher_id,question_set_code,name)
+VALUES (1,'A000','Original Teacher#One Classroom');
+
+-- Question Set Culture
+
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
 VALUES ('A000','A000','Default QuestionSetCulture',TRUE);
 
-INSERT INTO classroom (teacher_id,question_set_code,name)
-VALUES (1,'A000','Original Teacher#One Classroom');
+INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
+VALUES ('Z900','A000','Test QuestionSetCulture 1',FALSE);
+
+INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
+VALUES ('Z901','A000','Test QuestionSetCulture 2',FALSE);
 
 -- These add in the first set of metaquestions
 

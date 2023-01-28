@@ -4,8 +4,7 @@ const bcrypt = require('bcrypt');
 const jwtGenerator = require('../utils/jwtGenerator');
 const { DEFAULT_CLASSROOM_ID } = require('../constants');
 
-/* Registration */
-
+// Registration
 router.post('/register', async (req, res) => {
     try {
         const {
@@ -60,7 +59,7 @@ router.post('/register', async (req, res) => {
             const date = now + 1000 * 60 * 60 * 24 * 7 * 4 * (attempt - 1);
             await pool.query(
                 'INSERT INTO session (enrollment_id, attempt, total_questions, expected_start) VALUES ($1, $2, $3, $4)',
-                [enrollment.rows[0].id, attempt, 50, new Date(date)]
+                [enrollment.rows[0].id, attempt, 10, new Date(date)]
             );
         }
         
@@ -71,8 +70,7 @@ router.post('/register', async (req, res) => {
     }
 });
 
-/* Login */
-
+// Login
 router.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;

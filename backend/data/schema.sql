@@ -745,3 +745,35 @@ CREATE INDEX IF NOT EXISTS fki_rql_resource_code_fk
     TABLESPACE pg_default;
 
 
+-- STORED PROCEDURES
+
+-- Stored Procedure: insert_session_questions
+
+CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER)
+    LANGUAGE PLPGSQL
+    AS $$
+    DECLARE
+    answer INTEGER;
+    answer_order INTEGER;
+    answer_order_array INTEGER[] := ARRAY[1,2,3,4];
+    correct_answer INTEGER;
+    count INTEGER := 0;
+    question_id question.id%TYPE;
+    question_json question.json%TYPE;
+    BEGIN
+        FOR question_id, question_json IN 
+        SELECT id, json FROM question ORDER BY RANDOM() LIMIT 10
+        LOOP
+            count = count + 1;
+            correct_answer = question_json->'CorrectAnswer';
+            answer_order = 0;
+            answer_order_array = (SELECT ARRAY_AGG(u ORDER BY RANDOM()) FROM UNNEST(answer_order_array) u);
+            FOREACH answer IN ARRAY answer_order_array
+            LOOP
+                answer_order = 10 * answer_order + answer;
+            END LOOP;
+            INSERT INTO session_question (session_id, question_id, question_order, status, answer_order, correct_answer) 
+            VALUES (session_id, question_id, count, 0, answer_order, correct_answer);
+        END LOOP;
+    END
+    $$;
