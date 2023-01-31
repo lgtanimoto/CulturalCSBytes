@@ -1,0 +1,29 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "2D06",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Denali</span>'s class is studying their school's perception of different types of ice cream.  The results of this study were as follows:</p><table style=\"datatable\"><thead><th></th><th>Students polled</th><th>Students extremely satisfied</th><th>Percentage extremely satisfied</th></thead></tr><tr><th>Ice Cream A</th><td>50</td><td>45</td><td>90%</td></tr><tr><th>Ice Cream B</th><td>70</td><td>56</td><td>80%</td></tr><tr><th>Ice Cream C</th><td>60</td><td>50</td><td>84%</td></tr><\table><p>Students in <span class=\"qname\">Denali</span>'s class prepared the following 5 charts.  Which of the following charts best highlights that Ice Cream A had the highest percentage of students that were extremely satisfied?</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-2D06-0Q.png\"></p>",
+		"QuestionImage": "A000-A000-2D06-0Q.png",
+		"Answer1": "Chart A",
+		"Answer2": "Chart B",
+		"Answer3": "Chart C",
+		"Answer4": "Chart D",
+		"CorrectAnswer": 1,
+		"FixedOrderFromBottom": 4,
+		"Explanation": "<p>Chart B shows the number of extremely satisfied students – not the percentage satisfied.  Chart C, the pie chart, is inappropriate since it implies that the percentages shown have the same denominator.   Chart D, the line chart, is inappropriate because it implies that there is a linear relationship between Ice Cream A, B, and C.</p>",
+		"AnswerImage": null
+	}
+}
+
+
+		
+		
+	
+	
+	

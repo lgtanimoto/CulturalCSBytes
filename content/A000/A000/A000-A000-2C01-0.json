@@ -1,0 +1,29 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "2C01",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Justice</span> is working on a school lab computer.  Justice moves the computer mouse - <u>   (a)   </u> -  which sends electronic signals that are interpreted by the computer operating system - <u>   (b)   </u>.   The operating system uses these electronic signals to move the cursor on the monitor to the <span class=\"ui\">OK</span> button.</p><p>Which of the following provides the best answers for (a) and (b)?</p>",
+		"QuestionImage": null,
+		"Answer1": "(a) = software, (b) = hardware",
+		"Answer2": "(a) = software, (b) = software",
+		"Answer3": "(a) = hardware, (b) = hardware",
+		"Answer4": "(a) = hardware, (b) = software",
+		"CorrectAnswer": 4,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>A computer mouse is hardware as it has physical components.   A computer operating system (e.g., Microsoft Windows) is software as it provides instructions to a computer and does not have any specific physical components associated with it. </p>",
+		"AnswerImage": null
+	}
+}
+
+
+		
+		
+	
+	
+	
