@@ -1,0 +1,29 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "2I19",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Cresent</span> is creating an online menu for residents of a retirement community to order their meals from the community cafeteria.   For a typical meal, four main selections change daily.   In addition, the cafeteria offers 30-40 other items including main dishes, side orders, drinks, and desserts for each meal that change infrequently.  Many of the members of the retirement community have poor eyesight and other health issues associated with old age.</p><p>Which of the following would <span class=\"empneg\">NOT</span> improve the accessibility and usability of the online menu when a resident uses it on a tablet computer?</p>",
+		"QuestionImage": null,
+		"Answer1": "Listing all 40 menu items alphabetically on a single screen",
+		"Answer2": "A feature that will suggest items to order based on a residents' previous orders and stated preferences",
+		"Answer3": "A color scheme that is primarily large black text on a white background with a few color accents",
+		"Answer4": "An interface with large buttons that takes the resident step by step to order the main dish, then side orders, then drinks, and finally dessert.",
+		"CorrectAnswer": 1,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>Listing all 40 menu items alphabetically will force much text onto a small screen making it difficult for residents with poor vision to read and to find what the main dishes are for that meal.</p>",
+		"AnswerImage": null
+	}
+}
+
+
+		
+		
+	
+	
+	
