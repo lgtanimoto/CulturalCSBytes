@@ -16,19 +16,24 @@ router.post('/register', async (req, res) => {
             zip
         } = req.body;
 
-        // Check if student already exists with the username
+        /* Ensure student does not already exist with username */
+
         let student = await pool.query(
             `SELECT username FROM student WHERE username = $1`,
             [username]
         );
+
         if (student.rows.length > 0) {
             return res.status(401).send('User already exists.');
         }
 
-        // Bcrypt the user password
+        /* Bcrypt the user password */
+
         const saltRounds = 10;
         const salt = await bcrypt.genSalt(saltRounds);
         const bcryptPassword = await bcrypt.hash(password, salt);
+
+        /* Create the student */
         
         // If student is younger than 13, don't store email and zip
         if (['less-than-8', '8', '9', '10', '11', '12'].includes(ages)) {
@@ -45,18 +50,21 @@ router.post('/register', async (req, res) => {
             );
         }
 
-        // Enroll student into the default classroom
+        /* Enroll student into the default classroom */
+
         const enrollment = await pool.query(
             'INSERT INTO enrollment (classroom_id, student_id, status) VALUES ($1, $2, $3) RETURNING id',
             [DEFAULT_CLASSROOM_ID, student.rows[0].id, 0]
         );
 
-        // Add the sessions for the enrollment
+        /* Create the sessions for the enrollment */
+
         const now = Date.now();
 
         for (let attempt = 1; attempt <= 5; attempt++) {
-            // The expected dates are four weeks apart
+            // Spread expected dates four weeks apart
             const date = now + 1000 * 60 * 60 * 24 * 7 * 4 * (attempt - 1);
+
             await pool.query(
                 'INSERT INTO session (enrollment_id, attempt, total_questions, expected_start) VALUES ($1, $2, $3, $4)',
                 [enrollment.rows[0].id, attempt, 10, new Date(date)]
@@ -66,7 +74,7 @@ router.post('/register', async (req, res) => {
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {
         console.error(err.message);
-        res.status(500).send('Server Error');
+        return res.status(500).send('Server Error');
     }
 });
 
@@ -75,17 +83,21 @@ router.post('/login', async (req, res) => {
     try {
         const { username, password } = req.body;
         
-        // Check if student doesn't exist
+        /* Ensure student with username exists */
+
         const student = await pool.query(
             `SELECT id, username, password FROM student WHERE username = $1`,
             [username]
         );
+
         if (student.rows.length === 0) {
             return res.status(401).json('Username or password is incorrect');
         }
         
-        // Check if incoming password is the same as the database password
+        /* Compare incoming password to the database password */
+
         const isValidPassword = await bcrypt.compare(password, student.rows[0].password);
+
         if (!isValidPassword) {
             return res.status(401).json('Username or password is incorrect');
         }
@@ -93,7 +105,7 @@ router.post('/login', async (req, res) => {
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {
         console.error(err.message);
-        res.status(500).send('Server Error');
+        return res.status(500).send('Server Error');
     }
 });
 
