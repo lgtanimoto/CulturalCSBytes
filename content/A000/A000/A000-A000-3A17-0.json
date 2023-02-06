@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Surfer</span> is coding a procedure that will take a temperature in Celsius as an parameter and print out whether water will become ice ( <= 0° ), boil ( >= 100°) or remain water.   The code for <span class=\"qname\">Surfer</span>'s procedure is as follows:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-2D06-0Q.png\"></p><p>For which of the following calls to <span class=\"code\">waterState()</span> will <span class=\"qname\">Surfer</span>'s procedure output misleading results?</p>",
+		"Question": "<p><span class=\"qname\">Surfer</span> is coding a procedure that will take a temperature in Celsius as an parameter and print out whether water will become ice ( <= 0° ), boil ( >= 100°) or remain water.   The code for <span class=\"qname\">Surfer</span>'s procedure is as follows:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A17-0Q.png\"></p><p>For which of the following calls to <span class=\"code\">waterState()</span> will <span class=\"qname\">Surfer</span>'s procedure output misleading results?</p>",
 		"QuestionImage": "A000-A000-3A17-0Q.png",
 		"Answer1": "<div> class=\"code\">waterState(120)</div>",
 		"Answer2": "<div> class=\"code\">waterState(50)</div>",

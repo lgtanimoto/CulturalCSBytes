@@ -1,0 +1,29 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "3A10",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Trekkie</span> is programming a robot to navigate through a maze by using the &quot;right-hand rule&quot; – If you can walk forward, then move forward.   If you can't,  then turn right.    Repeat.   A flowchart for <span class=\"qname\">Trekkie</span> program looks as follows:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A10-0Q.png\"></p><p>Which of the following code snippets best represents the algorithm in the flowchart?</p>",
+		"QuestionImage": "A000-A000-3A10-0Q.png",
+		"Answer1": "<div class=\"code\">if canMoveForward()<br><div class=\"ci4\">moveForward()</div><br>else<br><div class=\"ci4\">turnRight()</div><br>end</div>",
+		"Answer2": "<div class=\"code\">repeat while endOfMaze()<br><div class=\"ci4\">if canMoveForward()</div><br><div class=\"ci8\">turnRight()</div><br><div class=\"ci4\">else</div><br><div class=\"ci8\">moveforward()</div><br><div class=\"ci4\">end</div><br>end</div>",
+		"Answer3": "<div class=\"code\">repeat until endOfMaze()<br><div class=\"ci4\">if canMoveForward()</div><br><div class=\"ci8\">moveForward()</div><br><div class=\"ci4\">else</div><br><div class=\"ci8\">turnRight()</div><br><div class=\"ci4\">end</div><br>end</div>",
+		"Answer4": "<div class=\"code\">repeat until endOfMaze()<br><div class=\"ci4\">moveForward()<br>turnRight()</div><br>end</div>",
+		"CorrectAnswer": 2,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>The flowchart shows a conditional within a loop.  Because it can receive control back from the bottom of the flowchart, the &quot;End maze?&quot;  diamond shape at the top represents a &quot;repeat while” loop.    Because all its branches eventually flow back to &quot;End Maze?&quot;, the &quot;Can Move Forward?&quot; diamond shape represents an if statement that is contained within the &quot;repeat until&quot; loop.</p>",
+		"AnswerImage": null
+	}
+}
+
+
+		
+		
+	
+	
+	
