@@ -51,7 +51,11 @@ const getEnrollmentMetrics = async function (enrollment) {
         status
     } = await getEnrollmentData(enrollment);
 
-    sessions.sort((a, b) => (a.end_date || a.start_date || a.expected_start) - (b.end_date || b.start_date || b.expected_start));
+    function compareFn(a, b) {
+        return (a.end_time || a.start_time || a.expected_start) - (b.end_time || b.start_time || b.expected_start);
+    }
+
+    sessions.sort(compareFn);
     
     const sessionsData = sessions.map(session => {
         const {
@@ -157,11 +161,9 @@ const getSessionData = function (sessions) {
                 currentDate = end_time > currentDate ? end_time : currentDate;
                 completedSessions++;
             }
-        }
 
-        /* Update high score */
-        
-        highScore = Math.max(highScore, Math.round(correct * 100.0) / total_questions);
+            highScore = Math.max(highScore, Math.round(correct * 100.0) / total_questions);
+        }
     });
 
     return {

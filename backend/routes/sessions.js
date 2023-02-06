@@ -68,13 +68,13 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
         /* Find session in progress */
 
         const sessions = await pool.query(
-            'SELECT id FROM session WHERE enrollment_id = $2 AND status = $3',
+            'SELECT id FROM session WHERE enrollment_id = $1 AND status = $2',
             [enrollmentId, 1]
         );
 
         // If no session in progress, redirect to starting new session
         if (sessions.rows.length === 0) {
-            res.redirect('/new');
+            return res.redirect('new');
         }
 
         /* Access question in progres */
@@ -84,15 +84,7 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
             [sessions.rows[0].id, 1]
         );
 
-        // If no question in progress, direct to the last completed question
-        if (sessionQuestions.rows.length === 0) {
-            sessionQuestions = await pool.query(
-                'SELECT question_id, question_order, answer_order, student_answer FROM session_question WHERE session_id = $1 AND status = $2 ORDER BY question_order DESC LIMIT 1',
-                [sessions.rows[0].id, 2]
-            );
-        }
-
-        res.redirect(`${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}`);
+        return res.redirect(`${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}`);
     } catch (err) {
         console.error(err.message);
         return res.status(500).json('Server Error');
@@ -109,8 +101,7 @@ router.get('/new', verifyCurrentEnrollment, verifyNextSession, async (req, res) 
             const weeks = Math.floor((Date.now() - req.date) / 1000 / 60 / 60 / 24 / 7);
 
             if (!practice && weeks < 1) {
-                req.query.practice = true;
-                res.redirect('/new');
+                return res.redirect('new?practice=true');
             }
         }
 
