@@ -16,7 +16,7 @@
 		"Answer4": "Both B and C",
 		"CorrectAnswer": 4,
 		"FixedOrderFromBottom": 4,
-		"Explanation": "<p><em>Malware</em> - short for malicious software - is any software intentionally designed to cause disruption to a computing system or compromise its security or privacy.  <em>Ransomware</em> is a type of malware that threatens to publish the victim’s data or permanently block access to it unless a ransom is paid.   A <em>botnet</em> is a group of Internet-connected devices infected by malware that are under the control of a single attacking party.</p>",
+		"Explanation": "<p><em>Malware</em> - short for malicious software - is any software intentionally designed to cause disruption to a computing system or compromise its security or privacy.  <em>Ransomware</em> is a type of malware that threatens to publish the victim's data or permanently block access to it unless a ransom is paid.   A <em>botnet</em> is a group of Internet-connected devices infected by malware that are under the control of a single attacking party.</p>",
 		"AnswerImage": null
 	}
 }

@@ -1,0 +1,22 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "2I18",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Lightning</span> is very proud to be selected as their school representative for a new social media website for student leaders in high schools worldwide. The student leaders will discuss issues affecting teens worldwide.  <span class=\"qname\">Lightning</span> comes across a post by Amani - also a new representative - from a school in the Middle East discussing surgical masks and hajibs.  In response, <span class=\"qname\">Lightning</span> sends a thumbs-up emoji &#57358; with no further comment to show their approval.  Amani replies with the comment \"Why are you so rude?\" followed by three different sad face emojis.</p><p>Which of the following best explains why Amani did not view <span class=\"qname\">Lightning</span>'s comment as encouraging?</p>",
+		"QuestionImage": null,
+		"Answer1": "In some portions of the Middle East, the thumbs-up gesture is considered an offensive insult.    However, in most other countries, it is a sign of approval.  The website was developed by a US company and did not consider this international issue.",
+		"Answer2": "All Americans - especially teenagers - are rude",
+		"Answer3": "Amani had planned to send three smiling face emojis but clicked on three different sad face emojis instead.",
+		"Answer4": "In the Middle East, a frowning face emoji really means that one is happy.   However, in most other countries, it is a sign of sadness. ",
+		"CorrectAnswer": 1,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>There are many differences in how emoji use internationally and even within the same country.   When developing a software product, one cannot assume that the colors, gestures, emojis, etc have the same meaning as they do in the U.S.  When communicating internationally, be careful in use of emojis and consider using language that is difficult to misinterpret.</p>",
+		"AnswerImage": null
+	}
+}
