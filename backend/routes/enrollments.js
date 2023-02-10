@@ -66,8 +66,10 @@ router.get('/', async (req, res) => {
 
         res.json(data);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -75,7 +77,10 @@ router.get('/', async (req, res) => {
 router.get('/:enrollmentId', verifyEnrollment, async (req, res) => {
     try {
         if (req.enrollment.status === 0) {
-            return res.status(403).json('Cannot access until started initial session.');
+            return res.status(403).json({
+                statusCode: 403,
+                error: 'Cannot access until started initial session.'
+            });
         }
 
         /* Get student names and enrollment metrics concurrently */
@@ -98,8 +103,10 @@ router.get('/:enrollmentId', verifyEnrollment, async (req, res) => {
 
         res.json(data);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 

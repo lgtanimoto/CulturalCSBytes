@@ -13,13 +13,18 @@ module.exports = async (req, res, next) => {
         );
 
         if (sessions.rows.length === 0) {
-            return res.status(403).json('Cannot access questions for session not in progress.');
+            return res.status(403).json({
+                statusCode: 403,
+                error: 'Cannot access questions for session not in progress.'
+            });
         }
 
         req.session = sessions.rows[0];
         next();
     } catch (err) {
-        console.error(err.message);
-        return res.status(403).json('Not Authorized');
+        return res.status(403).json({
+            statusCode: 403,
+            error: 'Not Authorized'
+        });
     }
 }

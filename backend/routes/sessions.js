@@ -86,8 +86,10 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
 
         return res.redirect(`${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}`);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -120,8 +122,10 @@ router.get('/new', verifyCurrentEnrollment, verifyNextSession, async (req, res) 
 
         res.json(data);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -136,6 +140,13 @@ router.post('/', verifyCurrentEnrollment, verifyNextSession, async (req, res) =>
             additionalCultures
         } = req.body;
 
+        if (req.session.attempt === 1) {
+            return res.status(403).json({
+                statusCode: 403,
+                error: 'Cannot start practice session until completed initial session.'
+            });
+        }
+
         const session = await pool.query(
             'INSERT INTO session (enrollment_id, attempt, total_questions) VALUES ($1, $2, $3) RETURNING *',
             [enrollmentId, 0, 10]
@@ -143,10 +154,12 @@ router.post('/', verifyCurrentEnrollment, verifyNextSession, async (req, res) =>
 
         await initSession(session.rows[0].id, preferredCulture, difficulty, additionalCultures);
         
-        res.json('Started practice question!');
+        res.json({ sessionId: session.rows[0].id });
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -164,14 +177,20 @@ router.patch('/:sessionId', verifyCurrentEnrollment, verifyNextSession, async (r
 
         // If starting the wrong session, return error
         if (sessionId !== req.session.id) {
-            return res.status(403).json('Cannot start this session.');
+            return res.status(403).json({
+                statusCode: 403,
+                error: 'Cannot start this session.'
+            });
         }
 
         // If current date is less than one week ago, return error
         if (req.date != null) {
             const weeks = Math.floor((Date.now() - req.date) / 1000 / 60 / 60 / 24 / 7);
             if (weeks < 1) {
-                return res.status(403).json('Cannot start this session until at least one week has past since the last completed session.');
+                return res.status(403).json({
+                    statusCode: 403,
+                    error: 'Must wait at least one week to start next official session.'
+                });
             }
         }
 
@@ -185,10 +204,12 @@ router.patch('/:sessionId', verifyCurrentEnrollment, verifyNextSession, async (r
 
         await initSession(sessionId, preferredCulture, difficulty, additionalCultures);
         
-        res.json('Started official session!');
+        res.json({ success: 'Started official session!' });
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -286,8 +307,10 @@ router.get('/:sessionId/recommendations', verifyCompleteSession, async (req, res
 
         res.json(data);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -309,8 +332,10 @@ router.get('/:sessionId/results', verifyCompleteSession, async (req, res) => {
 
         res.json(data);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 

@@ -24,7 +24,10 @@ router.post('/register', async (req, res) => {
         );
 
         if (student.rows.length > 0) {
-            return res.status(401).send('User already exists.');
+            return res.status(401).json({
+                statusCode: 401, 
+                error: 'User already exists.'
+            });
         }
 
         /* Bcrypt the user password */
@@ -73,8 +76,10 @@ router.post('/register', async (req, res) => {
         
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).send('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -91,7 +96,10 @@ router.post('/login', async (req, res) => {
         );
 
         if (student.rows.length === 0) {
-            return res.status(401).json('Username or password is incorrect');
+            return res.status(401).json({
+                statusCode: 401,
+                error: 'Username or password is incorrect'
+            });
         }
         
         /* Compare incoming password to the database password */
@@ -99,13 +107,18 @@ router.post('/login', async (req, res) => {
         const isValidPassword = await bcrypt.compare(password, student.rows[0].password);
 
         if (!isValidPassword) {
-            return res.status(401).json('Username or password is incorrect');
+            return res.status(401).json({
+                statusCode: 401,
+                error: 'Username or password is incorrect'
+            });
         }
 
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).send('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
