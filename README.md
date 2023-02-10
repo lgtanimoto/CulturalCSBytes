@@ -1,5 +1,16 @@
 # CulturalCSBytes
 
+## Basic Setup
+I suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) if you are using a Windows machine. Regardless (even if you are using a Mac), you will need the following tools installed (with attached guides for each machine): Node.js, Postgres, and [Postman](https://www.postman.com/).
+
+### Windows (WSL)
+- [Node.js](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
+- [Postgres](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
+
+### Mac
+- [Node.js](https://nodejs.org/en/download/)
+- [Postgres](https://www.sqlshack.com/setting-up-a-postgresql-database-on-mac/)
+
 ## Frontend
 Complete all the following steps in a terminal session with the **frontend** folder as the current directory.
 
