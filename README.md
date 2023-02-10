@@ -1,13 +1,15 @@
 # CulturalCSBytes
 
 ## Basic Setup
-I suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) if you are using a Windows machine. Regardless (even if you are using a Mac), you will need the following tools installed (with attached guides for each machine): Node.js, Postgres, and [Postman](https://www.postman.com/).
+I suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) if you are using a Windows machine. Regardless (even if you are using a Mac), you will need the following tools installed (with attached guides for each machine). Also install [Postman](https://www.postman.com/) here.
 
 ### Windows (WSL)
+- [Git](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
 - [Node.js](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
 - [Postgres](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
 
 ### Mac
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Node.js](https://nodejs.org/en/download/)
 - [Postgres](https://www.sqlshack.com/setting-up-a-postgresql-database-on-mac/)
 
