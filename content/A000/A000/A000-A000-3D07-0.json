@@ -3,7 +3,7 @@
 	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
 	"QuestionSetCode": "A000",
 	"CultureCode": "A000",
-	"MQCode": "AAAA",
+	"MQCode": "3D07",
 	"QuestionAltCode": 0,
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
@@ -16,7 +16,7 @@
 		"Answer4": "117",
 		"CorrectAnswer": 2,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>Hexadecimal is base 16 with digits 0 -  9 and A – F for 11 through 15.   One can convert from binary to hexadecimal by taking the binary digits four at a time.  '1111' is 'F' and '0100' is '4'.   Thus '4F' is the hexadecimal representation of the letter 'O'.</p>",
+		"Explanation": "<p>Hexadecimal is base 16 with digits 0 -  9 and A ï¿½ F for 11 through 15.   One can convert from binary to hexadecimal by taking the binary digits four at a time.  '1111' is 'F' and '0100' is '4'.   Thus '4F' is the hexadecimal representation of the letter 'O'.</p>",
 		"AnswerImage": null
 	}
 }
