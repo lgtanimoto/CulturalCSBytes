@@ -12,13 +12,18 @@ module.exports = async (req, res, next) => {
         );
 
         if (sessionQuestions.rows.length === 0) {
-            return res.status(403).json('Student is not currently working on this question.');
+            return res.status(403).json({
+                statusCode: 403,
+                error: 'Student is not currently working on this question.'
+            });
         }
 
         req.question = sessionQuestions.rows[0];
         next();
     } catch (err) {
-        console.error(err.message);
-        return res.status(403).json('Not Authorized');
+        return res.status(403).json({
+            statusCode: 403,
+            error: 'Not Authorized'
+        });
     }
 }

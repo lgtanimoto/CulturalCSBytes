@@ -25,8 +25,10 @@ router.get('/:order', verifyCurrentQuestion, async (req, res) => {
 
         res.json(data);
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 
@@ -46,7 +48,10 @@ router.patch('/:order', verifyCurrentQuestion, async (req, res) => {
         if (next) {
             // Ensure that student answer is not null
             if (!req.question.student_answer) {
-                return res.status(403).json('Student must answer current question first.');
+                return res.status(403).json({
+                    statusCode: 403,
+                    error: 'Student must answer current question first.'
+                });
             }
 
             // Complete the current question
@@ -70,7 +75,7 @@ router.patch('/:order', verifyCurrentQuestion, async (req, res) => {
                     );
                 }
 
-                res.json('Completed session!');
+                res.json({ success: 'Completed session!' });
             } 
             // Else, start the next question
             else {
@@ -79,14 +84,17 @@ router.patch('/:order', verifyCurrentQuestion, async (req, res) => {
                     [1, date, sessionId, order + 1]
                 );
 
-                res.json('Started next question!');
+                res.json({ success: 'Started next question!' });
             }
         } 
         // Else, answering the current question
         else {
             // Ensure student is not trying to resubmit
             if (req.question.student_answer) {
-                return res.status(403).json('Student cannot reanswer question.');
+                return res.status(403).json({
+                    statusCode: 403,
+                    error: 'Student cannot reanswer question.'
+                });
             }
 
             const { answer } = req.body;
@@ -112,11 +120,13 @@ router.patch('/:order', verifyCurrentQuestion, async (req, res) => {
                 );
             }
 
-            res.json('Answered question!');
+            res.json({ success: 'Answered question!' });
         }
     } catch (err) {
-        console.error(err.message);
-        return res.status(500).json('Server Error');
+        return res.status(500).json({
+            statusCode: 500,
+            error: 'Server Error'
+        });
     }
 });
 

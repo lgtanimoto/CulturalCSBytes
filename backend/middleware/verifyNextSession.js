@@ -10,7 +10,10 @@ module.exports = async (req, res, next) => {
 
         // If current session going on, must complete current session first
         if (currentSession) {
-            return res.status(403).json('Student must complete current session first.');
+            return res.status(403).json({
+                statusCode: 403,
+                error: 'Student must complete current session first.'
+            });
         }
 
         const session = await pool.query(
@@ -22,7 +25,9 @@ module.exports = async (req, res, next) => {
         req.date = currentDate;
         next();
     } catch (err) {
-        console.error(err.message);
-        return res.status(403).json('Not Authorized');
+        return res.status(403).json({
+            statusCode: 403,
+            error: 'Not Authorized'
+        });
     }
 }
