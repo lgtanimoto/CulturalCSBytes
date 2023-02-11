@@ -86,6 +86,7 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
 
         return res.redirect(`${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}`);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -122,6 +123,7 @@ router.get('/new', verifyCurrentEnrollment, verifyNextSession, async (req, res) 
 
         res.json(data);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -156,6 +158,7 @@ router.post('/', verifyCurrentEnrollment, verifyNextSession, async (req, res) =>
         
         res.json({ sessionId: session.rows[0].id });
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -206,6 +209,7 @@ router.patch('/:sessionId', verifyCurrentEnrollment, verifyNextSession, async (r
         
         res.json({ success: 'Started official session!' });
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -307,6 +311,7 @@ router.get('/:sessionId/recommendations', verifyCompleteSession, async (req, res
 
         res.json(data);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -332,6 +337,7 @@ router.get('/:sessionId/results', verifyCompleteSession, async (req, res) => {
 
         res.json(data);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'

@@ -76,6 +76,7 @@ router.post('/register', async (req, res) => {
         
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -115,6 +116,7 @@ router.post('/login', async (req, res) => {
 
         res.json({ token: jwtGenerator(student.rows[0].id) });
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'

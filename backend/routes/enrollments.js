@@ -66,6 +66,7 @@ router.get('/', async (req, res) => {
 
         res.json(data);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -103,6 +104,7 @@ router.get('/:enrollmentId', verifyEnrollment, async (req, res) => {
 
         res.json(data);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'

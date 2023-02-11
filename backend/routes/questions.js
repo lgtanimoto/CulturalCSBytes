@@ -25,6 +25,7 @@ router.get('/:order', verifyCurrentQuestion, async (req, res) => {
 
         res.json(data);
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
@@ -123,6 +124,7 @@ router.patch('/:order', verifyCurrentQuestion, async (req, res) => {
             res.json({ success: 'Answered question!' });
         }
     } catch (err) {
+        console.error(err.message);
         return res.status(500).json({
             statusCode: 500,
             error: 'Server Error'
