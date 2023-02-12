@@ -1,0 +1,29 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "4I28",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Galaxy</span> has an exciting idea for a new app that they think can make millions of dollars in sales over the next three years.   After an exhaustive search on the Internet, <span class=\"qname\">Galaxy</span> finds a competitor app that does about 75 percent of <span class=\"qname\">Galaxy</span>'s idea but is slow and has an ugly and difficult-to-use user interface.   This competitor app displays a copyright notice when it first launches.</p><p>Which one of the following is a reason why <span class=\"qname\"><span class=\"qname\">Galaxy</span></span> may wish that copyright laws were different in the United States?</p>",
+		"QuestionImage": null,
+		"Answer1": "By placing a copyright on their app once it is completed, <span class=\"qname\">Galaxy</span> can protect themselves from having their ideas stolen or copied.",
+		"Answer2": "Copyright laws promote the free flow of information and ideas in society.",
+		"Answer3": "The copyright on the competitor app will make it difficult for <span class=\"qname\">Galaxy</span> to use it as a starting point for their app.",
+		"Answer4": "By placing a copyright of their app once it is completed, <span class=\"qname\">Galaxy</span> will have to pay 30% of all its revenue to the U.S. government.",
+		"CorrectAnswer": 3,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p><p>Copyright is a type of intellectual property that protects original works of authorship including computer programs as soon as an author fixes the work in a tangible form of expression.   Although <span class=\"qname\">Galaxy</span> may develop their app independently of its competitor, they may not use or copy the code of the competitor app without permission.  Once <span class=\"qname\">Galaxy</span> completes their app, their app is protected by copyright as soon as it is published.   Further, <span class=\"qname\">Galaxy</span> can get a registered copyright for their app from the U.S. government for a nominal fee (usually less than $100)</p></p>",
+		"AnswerImage": null
+	}
+}
+
+
+		
+		
+	
+	
+	
