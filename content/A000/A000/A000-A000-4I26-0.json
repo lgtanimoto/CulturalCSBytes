@@ -1,0 +1,22 @@
+{
+	"__comment__": "",
+	"__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "4I26",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Arora</span> has developed an algorithm to sort a list of objects in alphabetical order by a field and another algorithm to search whether a matching item exists in that list.   Two applications that <span class=\"qname\">Arora</span> has developed using these algorithms are 1) converting an Internet domain name to an IP address and 2) using a product id to update store inventory when a product is purchased.</p><p>Which of the following is another application that <span class=\"qname\">Arora</span> could use their algorithms for?</p>",
+		"QuestionImage": null,
+		"Answer1": "Providing an AI to play tic-tac-toe",
+		"Answer2": "Predicting the probability that it will rain tomorrow",
+		"Answer3": "Calculating the average daily bill of customers at a restaurant",
+		"Answer4": "Spell-checking a document",
+		"CorrectAnswer": 0,
+		"FixedOrderFromBottom": 4,
+		"Explanation": "<p>Spell-checking a document requires first sorting the list of valid words.   If the binary search algorithm cannot find the word in the list, then it is flagged as incorrect.</p>",
+		"AnswerImage": null
+	}
+}

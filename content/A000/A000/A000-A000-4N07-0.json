@@ -1,0 +1,22 @@
+{
+	"__comment__": "",
+	"__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "4N07",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Enthusiasm</span> was shocked when they heard their principal announce over the intercom: </p><p><div class=\"ci4\">&quot;Earlier this week our school was hacked.  We had to pay a ransom to restore school data and must reimage all school computers to remove malware that the hackers installed... To prevent this from happening again, we are implementing the following changes that may be inconvenient but will improve school network security.   The first change is that all passwords must be at least 12 characters and sufficiently complex...&quot;</div></p><p>Which of the following is another change that the principal is likely to add to this announcement?</p>",
+		"QuestionImage": null,
+		"Answer1": "Shutting off all access to district computing resources outside of school hours.",
+		"Answer2": "Use of two-factor authentication when logging in from computers outside of the school network.",
+		"Answer3": "Blocking of traffic to all URLs except for 10 websites approved by the school district.",
+		"Answer4": "Locking away the servers storing student grades in a locked room in a secure facility with military guards.",
+		"CorrectAnswer": 2,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>Two-factor authentication such as typing in a code sent to a mobile phone owned by the user is a common way to provide a more secure computing environment.   While these other methods suggested would provide more security, they would greatly limit the usefulness of the computing environment beyond the security benefit they would provide.</p>",
+		"AnswerImage": null
+	}
+}

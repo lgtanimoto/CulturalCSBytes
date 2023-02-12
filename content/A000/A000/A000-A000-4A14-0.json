@@ -1,0 +1,22 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "4A14",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Courage</span> knows how to write code to find the sum of two numbers, three numbers, or even four numbers, but wonders how to write code that can find the sum of one hundred, one thousand, or even a million numbers. </p><p>Which one of the following best represents a procedure that will return the sum of a list of numbers that can be any length?</p>",
+		"QuestionImage": null,
+		"Answer1": "<div class=\"code\">action AddList(List<number> myList) returns number<br><div class=\"ci4\">number sum = 0.0<br>integer position = 0<br>repeat while position > myList:GetSize()</div><br><div class=\"ci8\">sum = sum + myList:GetSize()<br>position = position + 1</div><br><div class=\"ci4\">end<br>return sum</div><br>end</div>",
+		"Answer2": "<div class=\"code\">action AddList(List<number> myList) returns number<br><div class=\"ci4\">number sum = 0.0<br>integer position = 0<br>repeat while position > myList:GetSize()</div><br><div class=\"ci8\">sum = sum + myList:Get(position)</div><br><div class=\"ci4\">end<br>return sum</div><br>end</div>",
+		"Answer3": "<div class=\"code\">action AddList(List<number> myList) returns number<br><div class=\"ci4\">number sum = 0.0<br>integer position = 0<br>repeat while position > myList:GetSize()</div><br><div class=\"ci8\">sum = sum + myList:Get(position)<br>position = position + 1</div><br><div class=\"ci4\">end<br>return sum</div><br>end</div>",
+		"Answer4": "<div class=\"code\">action AddList(List<number> myList) returns number<br><div class=\"ci4\">number sum = 0.0<br>integer position = 0<br>repeat while position < myList:GetSize()</div><br><div class=\"ci8\">sum = sum + myList:Get(position)<br>position = position + 1</div><br><div class=\"ci4\">end<br>return sum</div><br>end</div>",
+		"CorrectAnswer": 4,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>The correct procedure initializes the variables <span class=\"code\">sum = 0</div> and <span class=\"code\">position = 0</div>.  In most major computer languages, the first element in a list starts at position 0 and the last element is at <span class=\"code\">GetSize() - 1</div>.  Within the loop, the number at each list item is added to the running sum, and the variable <span class=\"code\">position</span> is incremented.   After all numbers in the list have been added to the running sum, the running sum is returned.</p> ",
+		"AnswerImage": null
+	}
+}
