@@ -8,15 +8,28 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
+<<<<<<< HEAD
 		"Question": "<p>Sixteen-year-old <span class=\"qname\">Comet</span> has developed an application that will recommend music playlists for high school students based on their school, currently popular music, the time of day, their location, their current activity, and previous music selections.   Students using the app must provide an e-mail and mobile phone number to use the application.  <span class=\"qname\">Comet</span>'s good friend Temperance is amazed by how well <span class=\"qname\">Comet</span>'s application works but is concerned about the privacy provided by <span class=\"qname\">Comet</span>'s application.</p><p>Which of the following is likely one of Temperance's privacy concerns?</p>",
 		"QuestionImage": null,
 		"Answer1": "<span class=\"qname\">Comet</span> will need to do much more development work and perhaps invest in some security software to implement privacy safeguards.",
 		"Answer2": "If students' private information in <span class=\"qname\">Comet</span>'s application is leaked or misused, students will forgive <span class=\"qname\">Comet</span> because the application is so popular. ",
 		"Answer3": "Because the application is for high school students, <span class=\"qname\">Comet</span> does not need to worry about children under 13 using the application and the Children's Online Privacy Protection Act.",
 		"Answer4": "The lack of privacy safeguards in <span class=\"qname\">Comet</span>'s current application makes it harder to sell personalized ads. ",
+=======
+		"Question": "<p>Sixteen-year-old <span class=\"qname\">Comet’s</span> has developed an application that will recommend music playlists for high school students based on their school, currently popular music, the time of day, their location, their current activity, and previous music selections.   Students using the app must provide an e-mail and mobile phone number to use the application.  <span class=\"qname\">Comet</span>'s good friend Temperance is amazed by how well <span class=\"qname\">Comet</span>'s application works but is concerned about the privacy provided by <span class=\"qname\">Comet</span>'s application.</p><p>Which of the following is likely one of Temperance's privacy concerns?</p>",
+		"QuestionImage": null,
+		"Answer1": "<span class=\"qname\">Comet</span> will need to do much more development work and perhaps invest in some security software to implement privacy safeguards.",
+		"Answer2": "If students' private information in <span class=\"qname\">Comet</span>'s application is leaked or misused, students will forgive <span class=\"qname\">Comet</span> because the application is so popular.",
+		"Answer3": "Because the application is for high school students, <span class=\"qname\">Comet</span> does not need to worry about children under 13 using the application and the Children's Online Privacy Protection Act.",
+		"Answer4": "The lack of privacy safeguards in <span class=\"qname\">Comet</span>'s current application makes it harder to sell personalized ads.",
+>>>>>>> 343edab96bead85cfb97ac6002cb34c8e189e4c8
 		"CorrectAnswer": 1,
 		"FixedOrderFromBottom": 0,
 		"Explanation": "<p>Properly developing an application - and maintaining it - to address privacy and security issues requires considerable time and effort beyond just developing the basic functionality provided by the application.  Privacy in computer software has many social, economic, legal, ethical, and safety implications.</p>",
 		"AnswerImage": null
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 343edab96bead85cfb97ac6002cb34c8e189e4c8
