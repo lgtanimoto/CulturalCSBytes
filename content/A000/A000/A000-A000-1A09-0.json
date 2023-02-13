@@ -1,0 +1,29 @@
+{
+	"__comment__": "",
+	"__copyright__":"Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+	"QuestionSetCode": "A000",
+	"CultureCode": "A000",
+	"MQCode": "1A09",
+	"QuestionAltCode": 0,
+	"QuestionDifficulty": 1,
+	"QuestionCurrent": true,
+	"QuestionJSON": {
+		"Question": "<p>&quot;'Boolean', that's a funny name.   Is it a kind of bean?&quot; asked <span class=\"qname\">Wisdom</span> in their computer science class. &quot;No,&quot; replied Wisdom's teacher.  &quot;A 'Boolean' is a variable representing yes or no, true or false, on or off...&quot;</p><p>What is another representation of a Boolean that <span class=\"qname\">Wisdom</span>'s teacher could have added to the explanation?</p>",
+		"QuestionImage": null,
+		"Answer1": "A, B, C, or D",
+		"Answer2": "0 or 1",
+		"Answer3": "The text strings &quot;true&quot; or &quot;false&quot;",
+		"Answer4": "The temperature of an object",
+		"CorrectAnswer": 2,
+		"FixedOrderFromBottom": 0,
+		"Explanation": "<p>Boolean variables are often stored as binary 0 or 1 internally within a computer program.   Boolean variables can only have two possible values.  String values which can store many possible values cannot be Boolean variables.</p>",
+		"AnswerImage": null
+	}
+}
+
+
+		
+		
+	
+	
+	
