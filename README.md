@@ -1,63 +1,92 @@
 # CulturalCSBytes
 
-## Basic Setup
-I suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) if you are using a Windows machine. Regardless (even if you are using a Mac), you will need the following tools installed (with attached guides for each machine). Also install [Postman](https://www.postman.com/) here.
+## Onboarding
+This section will walkthrough how to set up this Github project on your machine so you can start coding and testing in no time!
 
-### Windows (WSL)
-- [Git](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
-- [Node.js](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
-- [Postgres](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
+### Tool installation
+If you are using **Windows**, I *strongly* suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). I also recommend installing [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) and setting that up as your default terminal application.
 
-### Mac
-- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Node.js](https://nodejs.org/en/download/)
-- [Postgres](https://www.sqlshack.com/setting-up-a-postgresql-database-on-mac/)
+Navigate to the following links for instructions on how to install the following tools.
+- Git
+    - [Windows](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-git)
+    - [Mac](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Node.js
+    - [Windows](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
+    - [Mac](https://nodejs.org/en/download/)
+- Postgres
+    - [Windows](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database)
+    - [Mac](https://www.sqlshack.com/setting-up-a-postgresql-database-on-mac/)
+        - The command provided in the guide for connecting to the postgres service is incorrect.
+        - You want to instead run `sudo -u postgres psql` to connect to the service.
 
-## Frontend
-Complete all the following steps in a terminal session with the **frontend** folder as the current directory.
+#### Postman
+Postman is an API platform that allows you to test your APIs. This may come in handy when testing the backend.
+- You can download Postman [here](https://www.postman.com/).
+- We have a custom workspace that has a collection for all the API routes you will need to test. [Click](https://app.getpostman.com/join-team?invite_code=61f955d9edfa2e68f73f3e5bffe99015&target_code=ce9f626b5a456cd7d9d7e0a9ba727d1e) to join!
 
-## Backend
-Complete all the following steps in a terminal session with the **backend** folder as the current directory.
+### Cloning the project
+Make sure you can connect to GitHub with SSH. Read [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for instructions on how to do so. Once you have that setup, navigate to a folder of your choosing and run:
+```
+git clone git@github.com:lgtanimoto/CulturalCSBytes.git
+```
+
+Once the project is successfully cloned, navigate to the folder using
+```
+cd CulturalCSBytes
+```
+
+### Terminal sesssions
+We will need three terminal sessions open, each for the following purposes as described below.
+- One to start and connect to the database service. The current directory will be the project directory.
+- One to start the backend service. The current directory will be the backend directory (in the project directory).
+- One to start the frontend service. The current directory will be the frontend directory (in the project directory).
+
+Follow these instructions very carefully, and in order. Make sure that you have the project folder open in your preferred text editor or IDE (I *strongly suggest **Visual Studio Code**).
 
 ### Database setup
-First we need to setup the database. These steps assume that you have PostgreSQL installed. If not, you can download it from the [official website](https://www.postgresql.org/download/). If you are using Windows Subsystem for Linux (WSL), which is probably recommended if you use Windows, you can follow the steps in [this tutorial](https://learn.microsoft.com/en-us/windows/wsl/tutorials/wsl-database), which also include instructions for starting and connecting to the postgres service and opening the psql shell.
-1. Start the postgres service (if necessary), connect to it, and open the psql shell. Make sure the current database is **NOT** the **ccsb** database (most likely you will see the shell prompt that looks like `postgres=#`, so **postgres** would be the current database in this case).
-2. Before creating the database, run the following command: `ALTER USER postgres PASSWORD 'postgres'`.
-    - This will set the password of the **postgres** user to **postgres**, which will be essential for the database connection when starting the server.
-2. Run the commands to create the **ccsb** database (begin with `DROP DATABASE ...` and `CREATE DATABASE ...`). You will need to uncomment the commands in **data/schema.sql**, copy them into the psql shell, and run them.
-3. Assuming you have successfully connected to the database, switch to the database by running this command in the **psql shell**: `\c ccsb`.
-4. Comment out the database creation commands and resave the file. Now run the rest of the file in the shell by running `\i data/schema.sql`.
-    - You can check that it ran successfully by ensuring that all the necessary tables have been created throught running `\dt`.
-5. Populate the tables with initial data by running `\i data/data.sql`.
+Open the `schema.sql` file in the `backend/data` directory. Do the following:
+1. Uncomment the lines that drop and create the database (on lines 5 and 7, beginning with `DROP DATABASE...` and `CREATE DATABASE ...`, respectively).
+2. Copy those lines. Paste them in the terminal session that is connected to the database (the one with `postgres=#` or something similar as a prompt).
+3. Connect to the new database by running `\c ccsb`.
+4. In the text editor or IDE, recomment the lines that drop and create the database. **SAVE!!!**
+5. As your current directory should be the project folder, I want you to run `\i backend/data/schema.sql`. This command will run all the SQL commands in that file, which are responsible for setting up the tables and relations.
+6. Now run `\i backend/data/data.sql`. This command will run the SQL commands to seed the database.
 
-### Miscellaneous steps
-We need to take care of several things to ensure the backend works smoothly. You also need to make sure that the postgres service has started. Although you do not necessarily be in the psql shell, it is recommended to test changes quickly. If you use the psql shell conjunctly, you need to open a **separate terminal session** with the **backend** folder as the current directory, again.
+If you are instead reseeding the database (which may frequently happen), you still need to follow all of these directions.
+
+### Backend setup
+Now we will use the terminal session that is connected to the backend service (the current directory is the backend directory).
+1. Before anything, in the text editor/IDE, go to the backend directory and create a `.env` file. This file will define the environment variables that our backend service will use. Details about using such file can be found [here](https://www.npmjs.com/package/dotenv).
+2. Now define the following environment variables following instructions from the documentation.
+    a. `USERNAME` - The username you used for connecting to the Postgres service (generally `postgres`).
+    b. `PASSWORD` - The password you used for connecting to the Postgres service.
+    c. `JWTSECRET` - It does not matter what you define this to be.
+    d. `PORT=3001` - The port that the backend service should run on. We will use 3001.
+3. Go back to the terminal session connected to the backend service and run `npm i`. This will install all the necessary packages.
+4. Finally, run `node content.js`. This will add all the questions to the database.
+    a. You will know it completed successfully if the only output is `pool has ended`.
+    b. As a precaution, you can check by running `SELECT COUNT(*) FROM question;` in the session connected to the database. Hopefully it is a nonzero number.
+5. You are finally ready to start the backend session. Run `npm run dev`.
+    a. If it is successful, you will see `Server is running on port 3001`.
+    b. If you ever make changes to the backend, you can restart the service by saving the `index.js` file.
+
+If you are instead reseeding the database, you can skip Steps 1-3 (creating the environment variables and installing packages).
+
+### Frontend setup
+Finally, we will use the terminal session connected to the frontend service.
 1. Run `npm i` to install the packages.
-2. Create a **.env** file and define an environment variable called `JWTSECRET`. Details for how to do this are given in the [official documentation](https://www.npmjs.com/package/dotenv). This will be important for authentication and authorization purposes.
-3. Run `node content.js`. This will load the questions that are in a JSON format in **content/A000/A000/*.json** into the database.
+2. And run `npm start` to start the frontend service.
+3. Navigate to `localhost:3000` to open the frontend application in a web server.
 
-### Starting the server
-You can do it in two ways:
-- Run `npm start`
-- Run `npm run dev` to avoid stopping and restarting the server every time you make changes.
-
-### Postman
-**Postman** is especially useful when building and testing your APIs to make sure that they are working properly. After all, the backend is just a large-scale REST API, and **Postman** is what allows us to test that extended API.
-- Before you can access any services, you need to make a **POST** request to the **/auth/login** route and retrieve the token that is returned.
-    - This assumes you have a **student** defined. If not, you need to make a **POST** request to the **/auth/register** route first.
-- Then when you want to make an API request that uses the `authorization` middleware, you need to add, in **Headers**, the `token` header to the token that was returned by the login request.
+If you are instead reseeding the database, you can skip Steps 1-3 (installing packages).
 
 ## Testing
+From here on out, you will still need three terminal sessions, but all you will need to do for each is:
+- Start the Postgres service (and optionally connect to it).
+- Start the backend service by running `npm run dev`.
+- Start the frontend service by running `npm start`.
 
-**NOTE**: You will need at least **TWO** separate terminal sessions open so that both the frontend and backend sessions can communicate to each other.
-
-### Backend
-Navigate to the **backend** folder via `cd backend` and run `npm run dev` to start the backend session.
-
-### Frontend
-Navigate to the **frontend** folder via `cd frontend` and run `npm start` to start the frontend session. Then go to `http://localhost:3000` to test interactively.
-
-## Resources
+## Programming Resources
 I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) especially useful for the backend development of the portion. It provides useful information on both building the REST API and the JWT authentication and authorization, as well as how to combine the two together. Many YouTube tutorials neglect the authentication and authorization piece, which is a must-have when working with any industry project. However, this channel provides it all.
 
 Here are the videos I specifically recommend checking out:
