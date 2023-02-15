@@ -8,7 +8,7 @@ const { verifyCurrentQuestion } = require('../middleware');
 router.get('/:order', verifyCurrentQuestion, async (req, res) => {
     try {
         const features = await pool.query(
-            'SELECT question.json, culture.icon FROM question \
+            'SELECT question.json, question.blob, culture.icon FROM question \
             JOIN question_set_culture ON question.qsc_id = question_set_culture.id \
             JOIN culture ON question_set_culture.culture_code = culture.code \
             WHERE question.id = $1',
@@ -19,6 +19,7 @@ router.get('/:order', verifyCurrentQuestion, async (req, res) => {
             cultureIcon: features.rows[0].icon,
             totalQuestions: req.session.total_questions,
             questionJson: features.rows[0].json,
+            imagesBlob: features.rows[0].blob,
             answerOrder: req.question.answer_order,
             studentAnswer: req.question.student_answer
         };
