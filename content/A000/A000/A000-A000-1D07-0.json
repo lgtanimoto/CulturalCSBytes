@@ -7,9 +7,9 @@
 	"QuestionAltCode": 0,
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
-	"QuestionJSON" : {
-		"Question" : "<p><span class=\"qname\">Drew</span> is tracking the number of water bottles sold at soccer games against the temperature at the start of the game.  After 9 games, <span class=\"qname\">Drew</span> has created the charts below.   Knowing that today's temperature at game time will be 85 degrees, how many bottles of water should <span class=\"qname\">Drew</span> expect to sell?</p>",
-		"QuestionImage" : "A000-A000-1D07-0Q.png",
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Drew</span> is tracking the number of water bottles sold at soccer games against the temperature at the start of the game.  After 9 games, <span class=\"qname\">Drew</span> has created the charts below.   Knowing that today's temperature at game time will be 85 degrees, how many bottles of water should <span class=\"qname\">Drew</span> expect to sell?</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-1D07-0Q.png\"></p>",
+		"QuestionImage": "A000-A000-1D07-0Q.png",
 		"Answer1": "70 bottles",
 		"Answer2": "45 bottles",
 		"Answer3": "80 bottles",
@@ -17,7 +17,7 @@
 		"CorrectAnswer": 3,
 		"FixedOrderFromBottom": 1,
 		"Explanation": "<p>The dotted blue trend line in the top graph crosses 80 bottles at 85 degrees F.   While the bar chart at the bottom contains valid data, it is very difficult to use for prediction purposes.</p>",
-		"AnswerImage" : null
+		"AnswerImage": null
 	}
 }
 
