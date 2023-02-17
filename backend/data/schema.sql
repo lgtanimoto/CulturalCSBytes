@@ -762,7 +762,7 @@ CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER)
     question_json question.json%TYPE;
     BEGIN
         FOR question_id, question_json IN 
-        SELECT id, json FROM question ORDER BY RANDOM() LIMIT 10
+        SELECT id, json FROM question ORDER BY RANDOM() LIMIT 20
         LOOP
             count = count + 1;
             correct_answer = question_json->'CorrectAnswer';

@@ -1,15 +1,17 @@
 const pool = require('./db');
 
-const dir = '../content/A000/A000/';
+const jsonDir = '../content/A000/A000/';
+const imgsDir = jsonDir + 'images/'
+
 const re = /^A000-A000-\d[A-Z]\d{2}-\d\.json$/;
 
 const fs = require('fs');
-const files = fs.readdirSync(dir);
+const files = fs.readdirSync(jsonDir);
 const jsons = files.filter(file => re.test(file));
 
 Promise.all(
     jsons.map(async json => {
-        const data = require(`${dir}${json}`);
+        const data = require(`${jsonDir}${json}`);
     
         const {
             QuestionSetCode,
@@ -41,10 +43,20 @@ Promise.all(
             getQSCId(),
             getMQId()
         ]);
+
+        let blob = null;
+
+        if (QuestionJSON.QuestionImage !== null && QuestionJSON.QuestionImage !== '') {
+            const file = imgsDir + QuestionJSON.QuestionImage;
+            if (fs.existsSync(file)) {
+                const bitmap = fs.readFileSync(file);
+                blob = Buffer.from(bitmap);
+            }
+        }
         
         await pool.query(
-            'INSERT INTO question (qsc_id, mq_id, alt_code, difficulty, json, iscurrent) VALUES ($1, $2, $3, $4, $5, $6)',
-            [qscId, mqId, QuestionAltCode, QuestionDifficulty, QuestionJSON, QuestionCurrent]
+            'INSERT INTO question (qsc_id, mq_id, alt_code, difficulty, json, blob, version, iscurrent) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
+            [qscId, mqId, QuestionAltCode, QuestionDifficulty, QuestionJSON, blob, 0, QuestionCurrent]
         );
     })
 )
