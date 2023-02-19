@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3I20",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p>&quot;When I grow up, I want to be a police officer and catch criminals who steal others' money,” said eight-year-old Beach.  &quot;So, I don’t need to learn computer science in school.&quot;</p><p>&quot;You are wrong,&quot; replied thirteen-year-old <span class=\"qname\">Lagos</span>.   &quot;If you want to be a police officer, you must still learn computer science because ...&quot</p><p>Which of the following would <span class=\"qname\">Lagos</span> <em>MOST LIKELY</em> give as a reason why future police officers should learn computer science?</p>",

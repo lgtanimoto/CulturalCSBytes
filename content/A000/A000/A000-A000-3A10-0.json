@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3A10",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Trekkie</span> is programming a robot to navigate through a maze by using the &quot;right-hand rule&quot; – If you can walk forward, then move forward.   If you can't,  then turn right.    Repeat.   A flowchart for <span class=\"qname\">Trekkie</span> program looks as follows:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A10-0Q.png\"></p><p>Which of the following code snippets best represents the algorithm in the flowchart?</p>",

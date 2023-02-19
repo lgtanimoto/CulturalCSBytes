@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "2A09",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Farmer</span> wrote the following program to double the number of apples they want to give to the school.   What is the <em>variable</em> in this program?</p><p><div class=\"code\">integer apples = 10<br>apples = apples * 2<br>output \"Number of apples: \" + apples</div></p>",

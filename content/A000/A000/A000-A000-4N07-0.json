@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4N07",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Enthusiasm</span> was shocked when they heard their principal announce over the intercom: </p><p><div class=\"ci4\">&quot;Earlier this week our school was hacked.  We had to pay a ransom to restore school data and must reimage all school computers to remove malware that the hackers installed... To prevent this from happening again, we are implementing the following changes that may be inconvenient but will improve school network security.   The first change is that all passwords must be at least 12 characters and sufficiently complex...&quot;</div></p><p>Which of the following is another change that the principal is likely to add to this announcement?</p>",

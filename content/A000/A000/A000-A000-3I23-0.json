@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3I23",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p>For a high school project, <span class=\"qname\">Chengdu</span> has developed an app for a game like the old Windows game Minesweeper and allows friends to challenge and compare scores with each other online.  <span class=\"qname\">Chengdu</span>'s teacher comments that the work on the app is &quot;fantastic.&quot;   <span class=\"qname\">Chengdu</span> wonders whether they should publish their code online on GitHub or keep it secret.</p><p>Which of the following is a reason why <span class=\"qname\">Chengdu</span> should <em>NOT</em> publish their code online without futher modification?</p>",

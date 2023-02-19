@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3A11",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Lava</span> is writing a program to count the number of each type of animal on various farms based on a picture of each animal.   A code snippet from the initial iteration of <p><span class=\"qname\">Lava</span>'s program looks as follows:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A11-0Q.png\"></p><p>The use of the variable names <em>a</em>, <em>b</em>, and <em>c</em> make this code snippet difficult to understand.   Which of the following replacements for the variable names <em>a</em>, <em>b</em>, and <em>c</em> would make this code the easiest to understand?",

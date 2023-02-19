@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4I25",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Sunny</span> is furious.   An AI on the Internet that rates the health of a pet based on a photo rated <span class=\"qname\">Sunny</span>'s cat Bengal as &quot;very overweight and unhealthy&quot; although <span class=\"qname\">Sunny</span> knows that Bengal is of average weight and is very healthy from their last visit to the veterinarian.   <span class=\"qname\">Sunny</span> finds an article on the Internet that mentions that while the pet photo health AI is accurate with dogs, it often miscalculates the weight of cats several pounds higher than actual. </p><p>Which of the following should <span class=\"qname\">Sunny</span> recommend to the developer of the pet photo health AI to fix their cat problem?</p>",

@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "2I19",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Cresent</span> is creating an online menu for residents of a retirement community to order their meals from the community cafeteria.   For a typical meal, four main selections change daily.   In addition, the cafeteria offers 30-40 other items including main dishes, side orders, drinks, and desserts for each meal that change infrequently.  Many of the members of the retirement community have poor eyesight and other health issues associated with old age.</p><p>Which of the following would <span class=\"empneg\">NOT</span> improve the accessibility and usability of the online menu when a resident uses it on a tablet computer?</p>",

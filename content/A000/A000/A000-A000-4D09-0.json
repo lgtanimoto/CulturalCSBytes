@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4D09",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<<p>While making a Valentine's Day website for a school project, <span class=\"qname\">Diamond</span> learns that a favorite emoji, the Red Heart, has a Unicode code point U+2764.  Because Unicode code points are expressed in hexadecimal, that means that Red Heart emoji is represented in smartphone texts by the following bits: <em>0010 0111 0110 0100</em>.   However, <span class=\"qname\">Diamond</span> is curious why they must use the HTML entity code &amp;#10084; rather than &amp;#2764;  to insert a Red Heart emoji onto their website.</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-4D09-0Q.png\"></p><p>Which of the following best explains why &amp;#10084; is used to insert the Red Heart emoji on websites?</p>",

@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "2N04",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Starlight</span> is streaming videos on their smartphone from an education video website.  The video is 63 minutes long in high definition.   Which of the following best explains how the video is sent from the education video website to <span class=\"qname\">Starlight<span>'s smartphone after a connection is made between the video website and the smartphone?</p>",

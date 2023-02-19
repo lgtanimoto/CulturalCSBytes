@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3D07",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p>Ocean has learned that the first letter in their name 'O' has the same binary encoding (01001111) as the number 79.   Because remembering the binary digits of 'O' is difficult, Ozark wants to remember the hexadecimal encoding.</p><p>What is the hexadecimal encoding for the letter 'O'</p>",

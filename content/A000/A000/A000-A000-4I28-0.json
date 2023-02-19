@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4I28",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Galaxy</span> has an exciting idea for a new app that they think can make millions of dollars in sales over the next three years.   After an exhaustive search on the Internet, <span class=\"qname\">Galaxy</span> finds a competitor app that does about 75 percent of <span class=\"qname\">Galaxy</span>'s idea but is slow and has an ugly and difficult-to-use user interface.   This competitor app displays a copyright notice when it first launches.</p><p>Which one of the following is a reason why <span class=\"qname\"><span class=\"qname\">Galaxy</span></span> may wish that copyright laws were different in the United States?</p>",

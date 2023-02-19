@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3A17",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Surfer</span> is coding a procedure that will take a temperature in Celsius as an parameter and print out whether water will become ice ( <= 0° ), boil ( >= 100°) or remain water.   The code for <span class=\"qname\">Surfer</span>'s procedure is as follows:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A17-0Q.png\"></p><p>For which of the following calls to <span class=\"code\">waterState()</span> will <span class=\"qname\">Surfer</span>'s procedure output misleading results?</p>",

@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3D09",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Palm</span> sells popsicles at track meets and wants to predict the number of popsicles sold based on the temperature in Fahrenheit at the start of the meet.  The chart below shows how many popsicles <span class=\"qname\">Palm</span> sold at each meet last year:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3N06-0Q.png\"></p><p>Which of the following code snippets provides the best prediction of the number of popsicles sold depending on the temperature?</p>",

@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "1A10",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
 		"Question" : "<p><span class=\"qname\">Rory</span> is programming a humanoid robot to get off the sofa, walk to the light switch, and turn off the lights in a room.  Which of the following most closely represents the code that <span class=\"qname\">Rory</span> needs to write:</p>",

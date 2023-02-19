@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3A13",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Goalie</span> loves the World Cup and their favorite player Lionel Messi.   <span class=\"qname\">Goalie</span> is trying to write a computer program to generate a song for the 2022 World Cup which lasts 28 days.   A partial early version of the program is below:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A13-0Q.png\"></p><p>What output will be produced by a call to the procedure <em>Day3()</em>?</p>",

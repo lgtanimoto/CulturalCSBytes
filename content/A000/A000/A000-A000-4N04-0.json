@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4N04",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Golden</span> is installing a wireless network for their family.  <span class=\"qname\">Golden</span>'s family already owns a network switch which connects several wireless devices and two wired servers in their home to the same network.   But span class=\"qname\">Golden</span>'s family needs an additional device to connect their home network to the Internet.   What type of device should Golden inform their family to purchase?</p>",

@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "1A14",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
 		"Question" : "<p><span class=\"qname\">Jude</span> is writing a program to find the coldest temperature in the previous year.  <span class=\"qname\">Jude</span> has a list of the low temperature for each day that looks as follows:</p><br><div class=\"code,ci8\">23.5<br>21.7<br>43.0<br>…<br>…<br>35.9<br></div><br><p>The original program runs but gives the wrong answer:</p><br><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-1A14-0Q.png\"><br><p>What change should <span class=\"qname\">Jude</span> make to fix the program and output the coldest temperature?</p>",

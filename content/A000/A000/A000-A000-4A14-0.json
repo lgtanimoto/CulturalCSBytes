@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4A14",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Courage</span> knows how to write code to find the sum of two numbers, three numbers, or even four numbers, but wonders how to write code that can find the sum of one hundred, one thousand, or even a million numbers. </p><p>Which one of the following best represents a procedure that will return the sum of a list of numbers that can be any length?</p>",

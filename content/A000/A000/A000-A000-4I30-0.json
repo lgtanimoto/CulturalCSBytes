@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4I30",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p>Sixteen-year-old <span class=\"qname\">Comet</span> has developed an application that will recommend music playlists for high school students based on their school, currently popular music, the time of day, their location, their current activity, and previous music selections.   Students using the app must provide an e-mail and mobile phone number to use the application.  <span class=\"qname\">Comet</span>'s good friend Temperance is amazed by how well <span class=\"qname\">Comet</span>'s application works but is concerned about the privacy provided by <span class=\"qname\">Comet</span>'s application.</p><p>Which of the following is likely one of Temperance's privacy concerns?</p>",

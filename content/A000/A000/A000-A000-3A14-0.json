@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "3A14",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Quartz</span> is writing a program to produce art by printing out characters.    Some simple examples of the art that <span class=\"qname\">Quartz</span> would like to create are below:</p><table><thead><th>Example 1</th><th>Example 2</th><th>Example 3</th><thead><tbody><tr><td><div class=\"code ci4\">A<br>bb<br>CCC<br>dddd<div></td><td><div class=\"code ci4\">---****---<br>--**oo**--<br>-**oooo**-<br>**oooooo**</div></td><td><div class=\"code ci4\">11<br>3333<br>555555<br>77777777</div></td></tr></tbody></table><p><span class=\"qname\">Quartz</span> realizes that to create this type of simple artwork, they must write a procedure to create strings with the same character repeated multiple times.  Which of the following code snippets best represents the procedure that <span class=\"qname\">Quartz</span> should write:</p>",

@@ -5,7 +5,7 @@
 	"CultureCode": "A000",
 	"MQCode": "4N05",
 	"QuestionAltCode": 0,
-	"QuestionDifficulty": 1,
+	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
 		"Question": "<p><span class=\"qname\">Cipher</span> is writing a report on malware and its effect on modern society and comes across the following articles.   Which of these are likely to be useful to Cipher in writing their report.</p>",
