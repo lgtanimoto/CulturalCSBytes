@@ -1,0 +1,47 @@
+body {
+
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.qname {
+    color: red;
+    font-weight: bold; 
+}
+
+
+.qimg {
+     background-color: gray;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ci4 {
+    text-indent: 2em;
+}
+
+.ci8 {
+    text-indent: 4em;
+}
+
+.ci12 {
+    text-indent: 6em;
+}
+
+.mainimg {
+    text-align: center;
+}
