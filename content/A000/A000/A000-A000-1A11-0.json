@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Kai</span> has the following metal image for an icon for their club to use at several school events.  <span class=\"qname\">Kai</span> has a drawing program with a programming language that make it easy to draw regular polygons in multiple colors.    How should <span class=\"qname\">Kai</span> <em>decompose</em> or break down the generation of this image into a small number of steps?</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-1A11-0Q.png\"></p>",
+		"Question": "<p><span class=\"qname\">Kai</span> has the following metal image for an icon for their club to use at several school events.  <span class=\"qname\">Kai</span> has a drawing program with a programming language that make it easy to draw regular polygons in multiple colors.    How should <span class=\"qname\">Kai</span> <em>decompose</em> or break down the generation of this image into a small number of steps?</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-1A11-0Q.png\"></p>",
 		"QuestionImage": "A000-A000-1A11-0Q.png",
 		"Answer1": "Loop through each pixel in the image and set the color as appropriate",
 		"Answer2": "Draw the borders of each figure in the image and then paint each resulting shape with the appropriate color using the paint can function",

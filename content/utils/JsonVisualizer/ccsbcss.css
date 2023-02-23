@@ -24,12 +24,20 @@ table, th, td {
 
 .qimg {
      background-color: gray;
+     text-indent: 6em;
 }
 
 .code {
     font-family: 'Courier New', Courier, monospace;
+    background-color: lightyellow;
 }
 
+em {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style:normal;
+    color: blue;
+}
 .ci4 {
     text-indent: 2em;
 }
@@ -42,6 +50,11 @@ table, th, td {
     text-indent: 6em;
 }
 
-.mainimg {
-    text-align: center;
+.em_neg {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
 }
+
+
+
