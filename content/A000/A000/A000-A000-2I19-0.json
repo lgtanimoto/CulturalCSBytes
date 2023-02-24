@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Cresent</span> is creating an online menu for residents of a retirement community to order their meals from the community cafeteria.   For a typical meal, four main selections change daily.   In addition, the cafeteria offers 30-40 other items including main dishes, side orders, drinks, and desserts for each meal that change infrequently.  Many of the members of the retirement community have poor eyesight and other health issues associated with old age.</p><p>Which of the following would <span class=\"empneg\">NOT</span> improve the accessibility and usability of the online menu when a resident uses it on a tablet computer?</p>",
+		"Question": "<p><span class=\"qname\">Cresent</span> is creating an online menu for residents of a retirement community to order their meals from the community cafeteria.   For a typical meal, four main selections change daily.   In addition, the cafeteria offers 30-40 other items including main dishes, side orders, drinks, and desserts for each meal that change infrequently.  Many of the members of the retirement community have poor eyesight and other health issues associated with old age.</p><p>Which of the following would <span class=\"em_neg\">NOT</span> improve the accessibility and usability of the online menu when a resident uses it on a tablet computer?</p>",
 		"QuestionImage": null,
 		"Answer1": "Listing all 40 menu items alphabetically on a single screen",
 		"Answer2": "A feature that will suggest items to order based on a residents' previous orders and stated preferences",

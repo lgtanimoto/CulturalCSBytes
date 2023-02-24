@@ -16,7 +16,7 @@
 		"Answer4": "dual authorization",
 		"CorrectAnswer": 3,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>Two-factor authentication.   Authentication is the process of proving that one is how one identifies themself.   Since two methods of authentication are used here, the term is two-factor authentication. </p>",
+		"Explanation": "<p><em>Two-factor authentication</em>.   Authentication is the process of proving that one is how one identifies themself.   Since two methods of authentication are used here, the term is two-factor authentication. </p>",
 		"AnswerImage": null
 	}
 }

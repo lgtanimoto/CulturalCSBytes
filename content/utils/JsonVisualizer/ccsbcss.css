@@ -21,6 +21,11 @@ table, th, td {
     font-weight: bold; 
 }
 
+.qcanswer {
+    color: red;
+    font-weight: bold;
+    background-color: gray;
+}
 
 .qimg {
      background-color: gray;
@@ -54,6 +59,13 @@ em {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.ui {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+    background-color: yellow;
 }
 
 

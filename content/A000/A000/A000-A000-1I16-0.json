@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Phoenix</span> is writing a short essay on how school has changed between 2019 and 2022, and interviews the business club president, Atlanta, who is three years older.  Due to the COVID-19 pandemic, <span class=\"qname\">Phoenix</span> and Atlanta spent much of 2020 and some of 2021 in online or hybrid classrooms.    Which of the following phenomena could <span class=\"qname\">Phoenix</span> <span class=\"empneg\">NOT</span> use to describe as a difference between 2019 and 2022?</p>",
+		"Question": "<p><span class=\"qname\">Phoenix</span> is writing a short essay on how school has changed between 2019 and 2022, and interviews the business club president, Atlanta, who is three years older.  Due to the COVID-19 pandemic, <span class=\"qname\">Phoenix</span> and Atlanta spent much of 2020 and some of 2021 in online or hybrid classrooms.    Which of the following phenomena could <span class=\"qname\">Phoenix</span> <span class=\"em_neg\">NOT</span> use to describe as a difference between 2019 and 2022?</p>",
 		"QuestionImage": null,
 		"Answer1": "In 2019, essays had to be printed out and turned in.   In 2022, essays could be turned in online",
 		"Answer2": "In 2019, teachers often had to print out reading assignments to hand out to students.  In 2022, teachers either provided scanned copies or links to resources on the Internet.",

@@ -8,15 +8,15 @@
 	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p>To better understand how variables and programming work, <span class=\"qname\">Summit</span> creates the following code:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-2A10-0Q.png\"></p><p>What does this code output on line 4?</p>",
+		"Question": "<p>To better understand how variables and programming work, <span class=\"qname\">Summit</span> creates the following code:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-2A10-0Q.png\"></p><p>What does this code output on line 4?</p>",
 		"QuestionImage": "A000-A000-2A10-0Q.png",
-		"Answer1": "3",
-		"Answer2": "5",
-		"Answer3": "6",
-		"Answer4": "8",
+		"Answer1": "&nbsp;&nbsp;3&nbsp;&nbsp;",
+		"Answer2": "&nbsp;&nbsp;5&nbsp;&nbsp;",
+		"Answer3": "&nbsp;&nbsp;6&nbsp;&nbsp;",
+		"Answer4": "&nbsp;&nbsp;8&nbsp;&nbsp;",
 		"CorrectAnswer": 4,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>Use code tracing to understand the value of each expression at each step.</p><table><tr><td>Line 1</td><td>a = 3</td></tr><tr><td>Line 2</td><td>a=3, b=3</td></tr><tr><td>Line 3</td><td>a=5, b=3</td></tr><tr><td>Line 4</td><td>a+b = 8</td></tr></table>",
+		"Explanation": "<p>Use code tracing to understand the value of each expression at each step.</p><p class=\"ci4\"><table><tr><td>Line 1</td><td><div class=\"code\">a=3</div></td></tr><tr><td>Line 2</td><td><div class=\"code\">a=3, b=3</div></td></tr><tr><td>Line 3</td><td><div class=\"code\">a=5, b=3</div></td></tr><tr><td>Line 4</td><td><div class=\"code\">a+b = 8</div></td></tr></table></p>",
 		"AnswerImage": null
 	}
 }

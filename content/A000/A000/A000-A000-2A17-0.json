@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Moonbeam</span> is helping a classmate with a computer science coding assignment.  <span class=\"qname\">Moonbeam</span>'s classmate shows the following code:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-2A17-0Q.png\"></p><p>What code comment should <span class=\"qname\">Moonbeam</span> advise their classmate to add to explain what functionality <em>procA</em> provides?</p>",
+		"Question": "<p><span class=\"qname\">Moonbeam</span> is helping a classmate with a computer science coding assignment.  <span class=\"qname\">Moonbeam</span>'s classmate shows the following code:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-2A17-0Q.png\"></p><p>What code comment should <span class=\"qname\">Moonbeam</span> advise their classmate to add to explain what functionality <em>procA</em> provides?</p>",
 		"QuestionImage": "A000-A000-2A17-0Q.png",
 		"Answer1": "<div class=\"code\">// procA takes 4 numbers as parameters and prints out the largest number</div>",
 		"Answer2": "<div class=\"code\">// procA takes 4 numbers as parameters and returns the smallest number</div>",

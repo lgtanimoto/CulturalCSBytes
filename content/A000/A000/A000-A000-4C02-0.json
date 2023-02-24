@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<<p>Following their teacher’s instructions, <span class=\"qname\">Brilliant</span> opens the word processing document that they started yesterday.  The operating system on <span class=\"qname\">Brilliant</span>'s computer receives the request to open the document and delivers it to the program as a single stream of bytes even though it may exist in several fragments in different locations.</p><p>What <em>abstraction</em> provides the most value in the following scenario?</p>",
+		"Question": "<p>Following their teacher’s instructions, <span class=\"qname\">Brilliant</span> opens the word processing document that they started yesterday.  The operating system on <span class=\"qname\">Brilliant</span>'s computer receives the request to open the document and delivers it to the program as a single stream of bytes even though it may exist in several fragments in different locations on the computer hard drive.</p><p>What <em>abstraction</em> provides the most value in the above scenario?</p>",
 		"QuestionImage": null,
 		"Answer1": "document",
 		"Answer2": "teacher",

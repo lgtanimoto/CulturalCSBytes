@@ -7,17 +7,17 @@
 	"QuestionAltCode": 0,
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
-	"QuestionJSON" : {
-		"Question" : "<p><span class=\"qname\">Jordan</span> is watching a video on the importance of good passwords to protect your personal information.   Two important aspects of a good password are length and complexity.  Which of the following is the best password for <span class=\"qname\">Jordan</span> for use on their accounts on school computers?</p>",
-		"QuestionImage" : null,
-		"Answer1": "!dadsPizzaisthegr8est",
-		"Answer2": "password",
-		"Answer3": "808-555-1212 <i>(note: student's cell phone number</i>",
-		"Answer4": "@^0*)zeq(&%#!$",
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Jordan</span> is watching a video on the importance of good passwords to protect your personal information.   Two important aspects of a good password are length and complexity.  Which of the following is the best password for <span class=\"qname\">Jordan</span> to use for their accounts on school computers?</p>",
+		"QuestionImage": null,
+		"Answer1": "<span class=\"code\">!dadsPizzaisthegr8est</span>",
+		"Answer2": "<span class=\"code\">password</span>",
+		"Answer3": "<span class=\"code\">808-555-1212</span> <i>(note: student's cell phone number</i>",
+		"Answer4": "<span class=\"code\">@^0*)zeq(&%#!$</span>",
 		"CorrectAnswer": 4,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p><em>!dadsPizzaisthegr8est</em> is the longest, reasonably complex, and  relatively easy for Jordan to remember.  <em>@^0*)zeq(&%#!$</em> is too difficult to remember without writing down or a password manager.   The others are too easy or contain other personal information.</p>",
-		"AnswerImage" : null
+		"Explanation": "<p><em>!dadsPizzaisthegr8est</em> is the longest, reasonably complex, and  relatively easy for Jordan to remember.  <em>@^0*)zeq(&%#!$</em> is too difficult to remember without writing down or using a password manager.   The others are too easy or contain other personal information.</p>",
+		"AnswerImage": null
 	}
 }
 
