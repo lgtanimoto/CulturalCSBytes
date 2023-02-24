@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import './create.css';
 
-const CreateAccount = () => {
+const CreateAccount = ({setAuth}) => {
 
   const navigate = useNavigate();
 

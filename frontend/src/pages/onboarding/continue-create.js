@@ -1,19 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './continue-create.css';
 
-const ContinueCreateAccount = () => {
+const ContinueCreateAccount = ({setAuth}) => {
 
   const navigate = useNavigate();
   const location = useLocation();
+
+  const [inputs, setInputs] = useState({
+    username: location.state.name,
+    password: location.state.pw,
+    nickname: "",
+    email: "",
+    age: 0,
+    zipcode: 0
+  });
+
+  const { username, password, nickname, email, age, zipcode } = inputs;
+
+  const onChange = e => {
+    setInputs({ ...inputs, [e.target.name]: e.target.value });
+  };
 
   const goHome = () => {
     navigate("/home");
   }
 
-  const continueClick = () => {
+  const continueClick = async e => {
+    e.preventDefault();
+    
+    try {
+      const body = {username,
+        password,
+        nickname,
+        email,
+        age,
+        zipcode
+      };
+
+      const response = await fetch("http://localhost:3001/authentication/register", {
+        method: "POST",
+        headers: {"Content-type": "application/json"},
+        body: JSON.stringify(body)
+      });
+
+      const parseRes = await response.json();
+
+      localStorage.setItem("token", parseRes.token);
+
+      setAuth(true);
+
+      console.log(parseRes);
+    } catch (err) {
+      console.error(err.message);
+    }
+
     // TODO: store info in back end from location.state.name and location.state.pw and this screen input
-    navigate("/course-enrollments", {state: {username: location.state.name, nickname: document.getElementById("nickname").value}});
+    //navigate("/course-enrollments", {state: {username: location.state.name, nickname: document.getElementById("nickname").value}});
   }
 
   return(
@@ -22,16 +65,16 @@ const ContinueCreateAccount = () => {
       <div className="username">
         <div className="item">
           <p>Nickname:</p>
-          <input id="nickname" type="text"></input>
+          <input id="nickname" type="text" name="nickname" value={nickname} onChange={e => onChange(e)}></input>
         </div>
         <div className="item">
           <p>Email:</p>
-          <input id="email" type="text"></input>
+          <input id="email" type="text" name="email" value={email} onChange={e => onChange(e)}></input>
         </div>
         <div className="item">
           <p>Age:</p>
           <div className="dropdown">
-            <select name="ages" id="ages">
+            <select name="age" id="ages" value={age} onChange={e => onChange(e)}>
                 <option value="less-than-8">Younger than 8</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
@@ -53,7 +96,7 @@ const ContinueCreateAccount = () => {
         </div>
         <div className="item">
           <p>Zip Code:</p>
-          <input id="confirm-password" type="text"></input>
+          <input id="zipcode" type="text" name="zipcode" value={zipcode} onChange={e => onChange(e)}></input>
         </div>
         <div className="item">
           <p>Initial Question Set:</p>

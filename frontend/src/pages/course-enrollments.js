@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './course-enrollments.css';
 import Course from './course.js';
 
-const CourseEnrollments = () => {
+const CourseEnrollments = ({setAuth}) => {
 
   const navigate = useNavigate();
   const location = useLocation();
+
+  /*const [name, setName] = useState("");
+
+  async function getName() {
+    try {
+      const response = await fetch("http://localhost:3001/dashboard/")
+    } catch (err) {
+      console.error(err.message);
+    }
+  }
+
+  useEffect(() => {
+    getName()
+  })*/
 
   const continueClick = (name) => {
     navigate("/confirmation", {state: {username: location.state.username, course: name }} );
@@ -38,8 +52,8 @@ const CourseEnrollments = () => {
     <div className='Create'>
       <h1>Course Enrollments</h1>
       <div className="item">
-        <p>Username: {location.state.username}</p>
-        <p>Nickname: XXXXX</p>
+        {//<p>Username: {location.state.username}</p>
+        }<p>Nickname: XXXXX</p>
       </div>
       <div id="options">
             {courseData.map(
@@ -57,7 +71,8 @@ const CourseEnrollments = () => {
                }
              }
            )}
-        </div>
+      </div>
+      <button onClick={() => setAuth(false)}>Logout</button>
     </div>
   );
 }
