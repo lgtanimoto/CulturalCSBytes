@@ -7,9 +7,9 @@
 	"QuestionAltCode": 0,
 	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
-	"QuestionJSON" : {
-		"Question" : "<p><span class=\"qname\">Jude</span> is writing a program to find the coldest temperature in the previous year.  <span class=\"qname\">Jude</span> has a list of the low temperature for each day that looks as follows:</p><br><div class=\"code,ci8\">23.5<br>21.7<br>43.0<br>…<br>…<br>35.9<br></div><br><p>The original program runs but gives the wrong answer:</p><br><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-1A14-0Q.png\"><br><p>What change should <span class=\"qname\">Jude</span> make to fix the program and output the coldest temperature?</p>",
-		"QuestionImage" : "A000-A000-1A14-0Q.png",
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Jude</span> is writing a program to find the coldest temperature in the previous year.  <span class=\"qname\">Jude</span> has a list of the low temperature for each day that looks as follows:</p><br><div class=\"code\"><div class=\"ci8\">23.5</div><div class=\"ci8\">21.7</div><div class=\"ci8\">43.0</div><div class=\"ci8\">…</div><div class=\"ci8\">…</div><div class=\"ci8\">35.9</div></div><p>The original program runs but gives the wrong answer:</p><br><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-1A14-0Q.png\"></p><br><p>What change should <span class=\"qname\">Jude</span> make to fix the program and output the coldest temperature?</p>",
+		"QuestionImage": "A000-A000-1A14-0Q.png",
 		"Answer1": "Modify line 4:<span class=\"code\"> if dayCold &gt; maxCold</span>",
 		"Answer2": "Modify line 4:<span class=\"code\"> if dayCold = maxCold</span>",
 		"Answer3": "Modify line 5:<span class=\"code\"> dayCold = maxCold</span>",
@@ -17,7 +17,7 @@
 		"CorrectAnswer": 4,
 		"FixedOrderFromBottom": 0,
 		"Explanation": "<p>Because <em>maxCold</em> is set so low in line 1, line 4 is never true and <em>maxCold</em> will always be -1000.0.   By modifying line 1 to <span class=\"code\">maxCold = 1000.0</span> - higher than any expected value, the first value read from the list will become the initial <em>maxCold</em> and the program will work as expected.</p>",
-		"AnswerImage" : null
+		"AnswerImage": null
 	}
 }
 

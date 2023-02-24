@@ -8,15 +8,15 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p>&quot;'Boolean', that's a funny name.   Is it a kind of bean?&quot; asked <span class=\"qname\">Wisdom</span> in their computer science class. &quot;No,&quot; replied Wisdom's teacher.  &quot;A 'Boolean' is a variable representing yes or no, true or false, on or off...&quot;</p><p>What is another representation of a Boolean that <span class=\"qname\">Wisdom</span>'s teacher could have added to the explanation?</p>",
+		"Question": "<p>&quot;'Boolean', that's a funny name.   Is it a kind of bean?&quot; asked <span class=\"qname\">Wisdom</span> in their computer science class.</p><p>&quot;No,&quot; replied <span class=\"qname\">Wisdom</span>'s teacher.  &quot;A 'Boolean' is a variable representing yes or no, true or false, on or off...&quot;</p><p>What is another representation of a <em>Boolean</em> that <span class=\"qname\">Wisdom</span>'s teacher could have added to the explanation?</p>",
 		"QuestionImage": null,
-		"Answer1": "A, B, C, or D",
+		"Answer1": "'A', 'B', 'C', or 'D'",
 		"Answer2": "0 or 1",
 		"Answer3": "The text strings &quot;true&quot; or &quot;false&quot;",
 		"Answer4": "The temperature of an object",
 		"CorrectAnswer": 2,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>Boolean variables are often stored as binary 0 or 1 internally within a computer program.   Boolean variables can only have two possible values.  String values which can store many possible values cannot be Boolean variables.</p>",
+		"Explanation": "<p><em>Boolean</em> variables are often stored as binary 0 or 1 internally within a computer program.   Boolean variables can only have two possible values.  String values which can store many possible values cannot be Boolean variables.</p>",
 		"AnswerImage": null
 	}
 }

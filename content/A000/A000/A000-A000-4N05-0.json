@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Cipher</span> is writing a report on malware and its effect on modern society and comes across the following articles.   Which of these are likely to be useful to Cipher in writing their report.</p>",
+		"Question": "<p><span class=\"qname\">Cipher</span> is writing a report on malware and its effect on modern society and comes across the following articles.   Which of these are likely to be useful to <span class=\"qname\">Cipher</span> in writing their report?</p>",
 		"QuestionImage": null,
 		"Answer1": "Major storms damage deep water fiber optic cables",
 		"Answer2": "Botnet brings down major bank web site through denial-of-service attack",

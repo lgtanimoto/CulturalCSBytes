@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p>London, Sydney, and Cairo are working on a shared presentation for an assignment due the next day.   Each student is working on the presentation online from home, and they are using a video conferencing system to talk with each other.  London notices that one of the slides that Sydney worked on has several statements that London believes are factual errors.      Which of the following would <span class=\"empneg\">NOT</span> be considered respectful and responsible behavior in this situation?</p>",
+		"Question": "<p>London, Sydney, and Cairo are working on a shared presentation for an assignment due the next day.   Each student is working on the presentation online from home, and they are using a video conferencing system to talk with each other.  London notices that one of the slides that Sydney worked on has several statements that London believes are factual errors.</p><p>Which of the following would <span class=\"em_neg\">NOT</span> be considered respectful and responsible behavior in this situation?</p>",
 		"QuestionImage": null,
 		"Answer1": "London fixes the \"errors\" quickly when Sydney is taking a bathroom break so that Sydney’s feelings are not hurt ",
 		"Answer2": "London gets Sydney and Cairo’s attention on the video call to point out the slide with \"errors\" and asks whether they would like to discuss the slide now or later.",

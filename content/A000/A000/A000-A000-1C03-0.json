@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON" : {
-		"Question" : "<p>When <span class=\"qname\">Rowan</span> runs one or two applications on a school laptop, these applications run fast even if the applications need to retrieve big files from the Internet.   However, if <span class=\"qname\">Rowan</span> has several applications and several browser windows and tabs open at the same time, everything seems to slow down.  Where is the likely source of the bottleneck causing this slowdown<p>",
+		"Question" : "<p>When <span class=\"qname\">Rowan</span> runs one or two applications on a school laptop, these applications run fast even if the applications need to retrieve big files from the Internet.   However, if <span class=\"qname\">Rowan</span> has several applications and several browser windows and tabs open at the same time, everything seems to slow down.  Where is the likely source of the bottleneck causing this slowdown?<p>",
 		"QuestionImage" : null,
 		"Answer1": "A computer virus",
 		"Answer2": "A slow remote Internet server",

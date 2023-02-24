@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">>Sandy</span> receives an e-mail from Google Security indicating that their Google account has been disabled.   The e-mail instructs <span class=\"qname\">Sandy</span> to click on a button on the e-mail and input their username and password to recover their account and change their password.   What should <span class=\"qname\">Sandy</span> do?</p>",
+		"Question": "<p><span class=\"qname\">Sandy</span> receives an e-mail from Google Security indicating that their Google account has been disabled.   The e-mail instructs <span class=\"qname\">Sandy</span> to click on a button on the e-mail and input their username and password to recover their account and change their password.   What should <span class=\"qname\">Sandy</span> do?</p>",
 		"QuestionImage": null,
 		"Answer1": "<span class=\"qname\">Sandy</span>'s Google account is blocked.  <span class=\"qname\">Sandy</span> should follow the instructions in the e-mail by clicking the button on the e-mail and entering their e-mail and password on the page to recover their account.",
 		"Answer2": "This is likely a phishing attempt to get <span class=\"qname\">Sandy</span>'s password.    <span class=\"qname\">Sandy</span> should check the e-mail address used to send the mail, and if suspicious, mark the e-mail as phishing or as junk. ",
@@ -16,7 +16,7 @@
 		"Answer4": "<span class=\"qname\">Sandy</span> should forward the e-mail to their parents to ask for advice.",
 		"CorrectAnswer": 2,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>This is likely a phishing attempt. Reputable services will not send e-mail informing customers that their service is blocked.   Never click on a link on such a mail or send your password in plaintext over the internet.   If one is having problems with a service, visit the service directly – without using the link – and try logging in.</p>",
+		"Explanation": "<p>This is likely a phishing attempt. Reputable services will <span class=\"em_neg\">NOT</span> send e-mail informing customers that their service is blocked.   Never click on a link on such a mail or send your password in plaintext over the internet.   If one is having problems with a service, visit the service directly – without using the link – and try logging in.</p>",
 		"AnswerImage": null
 	}
 }

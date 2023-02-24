@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 3,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\">Goalie</span> loves the World Cup and their favorite player Lionel Messi.   <span class=\"qname\">Goalie</span> is trying to write a computer program to generate a song for the 2022 World Cup which lasts 28 days.   A partial early version of the program is below:</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A13-0Q.png\"></p><p>What output will be produced by a call to the procedure <em>Day3()</em>?</p>",
+		"Question": "<p><span class=\"qname\">Goalie</span> loves the World Cup and their favorite player Lionel Messi.   <span class=\"qname\">Goalie</span> is trying to write a computer program to generate a song for the 2022 World Cup which lasts 28 days.   A partial early version of the program is below:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A000-3A13-0Q.png\"></p><p>What output will be produced by a call to the procedure <em>Day3()</em>?</p>",
 		"QuestionImage": "A000-A000-3A13-0Q.png",
 		"Answer1": "<div class=\"code\">Winning goal by Lionel Messi<br>Winning goal by Lionel Messi<br>Two corner kicks<br>Three throw-ins</div>",
 		"Answer2": "<div class=\"code\">Three throw-ins<br>Two corner kicks<br>Winning goal by Lionel Messi<br>Winning goal by Lionel Messi</div>",
@@ -16,7 +16,7 @@
 		"Answer4": "<div class=\"code\">Winning goal by Lionel Messi<br>Two corner kicks<br>Three throw-ins</div>",
 		"CorrectAnswer": 1,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>Understand control flow to break down the output by each line in the <em>Day3</>em procedure:</p><table><thead><tr><th>Line #</th><th>Statement</th><th>Output</th></tr></thead><tbody><tr class=\"code\"><td>2</td><td>Day1()</td><td>//Winning goal by Lionel Messi</td></tr><tr class=\"code\"><td>3</td><td>Day2()</td><td>//Winning goal by Lionel Messi<br>//Two corner kicks</td></tr><tr class=\"code\"><td>3</td><td>output &quot;Three throw-ins&quot;</td><td>//Three throw-ins</td></tr></tbody></table>",
+		"Explanation": "<p>Understand control flow to break down the output by each line in the <em>Day3</em> procedure:</p><table><thead><tr><th>Line #</th><th>Statement</th><th>Output</th></tr></thead><tbody><tr class=\"code\"><td>Line 2</td><td>Day1()</td><td>//Winning goal by Lionel Messi</td></tr><tr class=\"code\"><td>Line 3</td><td>Day2()</td><td>//Winning goal by Lionel Messi<br>//Two corner kicks</td></tr><tr class=\"code\"><td>Line 4</td><td>output &quot;Three throw-ins&quot;</td><td>//Three throw-ins</td></tr></tbody></table>",
 		"AnswerImage": null
 	}
 }

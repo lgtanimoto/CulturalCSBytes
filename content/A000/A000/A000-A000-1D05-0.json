@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p><span class=\"qname\"Java</span> wonders about data.   &quot;I know can find data when I open an Excel workbook or Google Sheets, but where else can I find computing data?&quot;</p><p>Sumatra replies, &quot;Really, all information stored or used by a computer is data.   This includes web pages or streaming video.&quot;</p><p>Which of the following could Sumatra <em>NOT</em> include as an example of computer data?</p>",
+		"Question": "<p><span class=\"qname\">Java</span> wonders about data.   &quot;I know can find data when I open an Excel workbook or Google Sheets, but where else can I find computing data?&quot;</p><p>Sumatra replies, &quot;Really, all information stored or used by a computer is data.   This includes web pages or streaming video.&quot;</p><p>Which of the following could Sumatra <span class=\"em_neg\">NOT</span> include as an example of computer data?</p>",
 		"QuestionImage": null,
 		"Answer1": "Google Chrome or Apple Safari browser code",
 		"Answer2": "CPU (Central processing unit)",

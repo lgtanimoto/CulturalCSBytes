@@ -7,17 +7,17 @@
 	"QuestionAltCode": 0,
 	"QuestionDifficulty": 2,
 	"QuestionCurrent": true,
-	"QuestionJSON" : {
-		"Question" : "<p><span class=\"qname\">Rory</span> is programming a humanoid robot to get off the sofa, walk to the light switch, and turn off the lights in a room.  Which of the following most closely represents the code that <span class=\"qname\">Rory</span> needs to write:</p>",
-		"QuestionImage" : null,
-		"Answer1": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while not= AtLocation(lightSwitch)<br><div class=\"ci4\">RightWalk(1)<br>LeftWalk(1)</div><br>end<br>TurnOffLight()</div>",    
-		"Answer2": "<div class=\"code\">TurnOffLight()<br>repeat while not= AtLocation(lightSwitch)<br><div class=\"ci4\">RightWalk(1)<br>LeftWalk(1)</div><br>end<br>TurnToward(lightSwitch)<br>StandUp()</div>",
-		"Answer3": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat 1000 times<br><div class=\"ci4\">RightWalk(1)</div><br>end<br>LeftWalk(1)<br>TurnOffLight()</div>",    
-		"Answer4": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while AtLocation(lightSwitch)<br><div class=\"ci4\">RightWalk(1)<br>LeftWalk(1)<br>TurnOffLight()</div><br>end</div>",
+	"QuestionJSON": {
+		"Question": "<p><span class=\"qname\">Rory</span> is programming a humanoid robot to get off the sofa, walk to the light switch, and turn off the lights in a room.  Which of the following most closely represents the code that <span class=\"qname\">Rory</span> needs to write:</p>",
+		"QuestionImage": null,
+		"Answer1": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while not= AtLocation(lightSwitch)<div class=\"ci4\">RightWalk(1)</div><div class=\"ci4\">LeftWalk(1)</div>end<br>TurnOffLight()</div>",
+		"Answer2": "<div class=\"code\">TurnOffLight()<br>repeat while not= AtLocation(lightSwitch)<div class=\"ci4\">RightWalk(1)</div><div class=\"ci4\">LeftWalk(1)</div>end<br>TurnToward(lightSwitch)<br>StandUp()</div>",
+		"Answer3": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat 1000 times<div class=\"ci4\">RightWalk(1)</div>end<br>LeftWalk(1)<br>TurnOffLight()</div>",
+		"Answer4": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while AtLocation(lightSwitch)<div class=\"ci4\">RightWalk(1)</div><div class=\"ci4\">LeftWalk(1)</div><div class=\"ci4\">TurnOffLight()</div>end</div>",
 		"CorrectAnswer": 1,
 		"FixedOrderFromBottom": 0,
-		"Explanation": "<p>First, robot stands up so it can walk.  Second, robot turns toward the light switch so it walks in the correct direction.  Third, it walks right-left until it reaches the light switch.  Finally, robot turns off the light. </p>",
-		"AnswerImage" : null
+		"Explanation": "<p>First, robot stands up so it can walk.  Second, robot turns toward the light switch so it walks in the correct direction.  Third, the robot walks right-left until it reaches the light switch.  Finally, the robot turns off the light. </p>",
+		"AnswerImage": null
 	}
 }
 

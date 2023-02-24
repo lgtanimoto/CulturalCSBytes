@@ -8,7 +8,7 @@
 	"QuestionDifficulty": 1,
 	"QuestionCurrent": true,
 	"QuestionJSON": {
-		"Question": "<p>At school, <span class=\"qname\">Chile</span> uses a programming language with code statements to draw lines, circles, triangles, and rectangles filled with 16 different colors on a 400-by-400-pixel grid.   Chile can write programs that combine these code statements with variables, loops, conditionals, and procedures. </p><p>Based on this description, which one of the following could NOT be created with this programming language?</p>",
+		"Question": "<p>At school, <span class=\"qname\">Chile</span> uses a programming language with code statements to draw lines, circles, triangles, and rectangles filled with 16 different colors on a 400-by-400-pixel grid. <span class=\"qname\">Chile</span> can write programs that combine these code statements with variables, loops, conditionals, and procedures. </p><p>Based on this description, which one of the following could <span class=\"em_neg\">NOT</span> be created with this programming language?</p>",
 		"QuestionImage": null,
 		"Answer1": "A 8 by 8 checkerboard",
 		"Answer2": "A hexagon created from 6 triangles with different colors",
