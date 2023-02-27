@@ -8,17 +8,17 @@ const { getEnrollmentData, getEnrollmentMetrics, getSessionName, getStudentNames
 async function initSession(sessionId, preferredCulture, difficulty, additionalCultures) {
     /* Define difficulty code based on field */
 
-    let difficultyCode = 0;
+    let difficultyCode = 1;
 
     switch (difficulty) {
         case 'Easy':
-            difficultyCode = 0;
-            break;
-        case 'Medium':
             difficultyCode = 1;
             break;
-        default:
+        case 'Medium':
             difficultyCode = 2;
+            break;
+        default:
+            difficultyCode = 3;
     }
 
     /* Create a string for the list of all the cultures, starting with the preferred culture */
@@ -36,8 +36,8 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
 
     async function insertSessionQuestions() {
         await pool.query(
-            'CALL insert_session_questions($1)',
-            [sessionId]
+            'CALL insert_session_questions($1, $2)',
+            [sessionId, difficultyCode]
         );
     }
 

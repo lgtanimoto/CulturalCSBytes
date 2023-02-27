@@ -745,11 +745,27 @@ CREATE INDEX IF NOT EXISTS fki_rql_resource_code_fk
     TABLESPACE pg_default;
 
 
--- STORED PROCEDURES
+-- Functions and Stored Procedures
+
+-- Function: select_questions
+
+CREATE OR REPLACE FUNCTION select_questions(code INTEGER, percent INTEGER)
+    RETURNS TABLE (question_id INTEGER, question_json JSON)
+    LANGUAGE PLPGSQL
+    AS $$
+    BEGIN
+        RETURN QUERY
+            SELECT id AS question_id, json AS question_json 
+            FROM question 
+            WHERE difficulty = code 
+            ORDER BY RANDOM() 
+            LIMIT (20 * percent / 100);
+    END
+    $$;
 
 -- Stored Procedure: insert_session_questions
 
-CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER)
+CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, difficulty INTEGER)
     LANGUAGE PLPGSQL
     AS $$
     DECLARE
@@ -758,11 +774,25 @@ CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER)
     answer_order_array INTEGER[] := ARRAY[1,2,3,4];
     correct_answer INTEGER;
     count INTEGER := 0;
-    question_id question.id%TYPE;
-    question_json question.json%TYPE;
+    question_id INTEGER;
+    question_json JSON;
     BEGIN
+        CREATE TEMP TABLE temp_question(id INTEGER, json JSON);
+        IF difficulty = 1 THEN
+            INSERT INTO temp_question SELECT * FROM select_questions(1, 40);
+            INSERT INTO temp_question SELECT * FROM select_questions(2, 30);
+            INSERT INTO temp_question SELECT * FROM select_questions(3, 30);
+        ELSIF difficulty = 2 THEN
+            INSERT INTO temp_question SELECT * FROM select_questions(1, 30);
+            INSERT INTO temp_question SELECT * FROM select_questions(2, 40);
+            INSERT INTO temp_question SELECT * FROM select_questions(3, 30);
+        ELSE
+            INSERT INTO temp_question SELECT * FROM select_questions(1, 30);
+            INSERT INTO temp_question SELECT * FROM select_questions(2, 30);
+            INSERT INTO temp_question SELECT * FROM select_questions(3, 40);
+        END IF;
         FOR question_id, question_json IN 
-        SELECT id, json FROM question ORDER BY RANDOM() LIMIT 20
+        SELECT id, json FROM temp_question ORDER BY RANDOM()
         LOOP
             count = count + 1;
             correct_answer = question_json->'CorrectAnswer';
