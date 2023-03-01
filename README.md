@@ -4,7 +4,7 @@
 This section will walkthrough how to set up this Github project on your machine so you can start coding and testing in no time!
 
 ### Tool installation
-If you are using **Windows**, I *strongly* suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). I also recommend installing [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) and setting that up as your default terminal application.
+If you are using **Windows**, I suggest using [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install). I also recommend installing [Windows Terminal](https://learn.microsoft.com/en-us/windows/terminal/install) and setting that up as your default terminal application.
 
 Navigate to the following links for instructions on how to install the following tools.
 - Git
@@ -41,7 +41,7 @@ We will need three terminal sessions open, each for the following purposes as de
 - One to start the backend service. The current directory will be the backend directory (in the project directory).
 - One to start the frontend service. The current directory will be the frontend directory (in the project directory).
 
-Follow these instructions very carefully, and in order. Make sure that you have the project folder open in your preferred text editor or IDE (I *strongly suggest **Visual Studio Code**).
+Follow these instructions very carefully, and in order. Make sure that you have the project folder open in your preferred text editor or IDE (I suggest **Visual Studio Code**).
 
 ### Database setup
 Open the `schema.sql` file in the `backend/data` directory. Do the following:
