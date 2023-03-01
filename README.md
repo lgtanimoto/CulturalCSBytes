@@ -58,17 +58,17 @@ If you are instead reseeding the database (which may frequently happen), you sti
 Now we will use the terminal session that is connected to the backend service (the current directory is the backend directory).
 1. Before anything, in the text editor/IDE, go to the backend directory and create a `.env` file. This file will define the environment variables that our backend service will use. Details about using such file can be found [here](https://www.npmjs.com/package/dotenv).
 2. Now define the following environment variables following instructions from the documentation.
-    a. `USERNAME` - The username you used for connecting to the Postgres service (generally `postgres`).
-    b. `PASSWORD` - The password you used for connecting to the Postgres service.
-    c. `JWTSECRET` - It does not matter what you define this to be.
-    d. `PORT=3001` - The port that the backend service should run on. We will use 3001.
+    1. `USERNAME` - The username you used for connecting to the Postgres service (generally `postgres`).
+    2. `PASSWORD` - The password you used for connecting to the Postgres service.
+    3. `JWTSECRET` - It does not matter what you define this to be.
+    4. `PORT=3001` - The port that the backend service should run on. We will use 3001.
 3. Go back to the terminal session connected to the backend service and run `npm i`. This will install all the necessary packages.
 4. Finally, run `node content.js`. This will add all the questions to the database.
-    a. You will know it completed successfully if the only output is `pool has ended`.
-    b. As a precaution, you can check by running `SELECT COUNT(*) FROM question;` in the session connected to the database. Hopefully it is a nonzero number.
+    1. You will know it completed successfully if the only output is `pool has ended`.
+    2. As a precaution, you can check by running `SELECT COUNT(*) FROM question;` in the session connected to the database. Hopefully it is a nonzero number.
 5. You are finally ready to start the backend session. Run `npm run dev`.
-    a. If it is successful, you will see `Server is running on port 3001`.
-    b. If you ever make changes to the backend, you can restart the service by saving the `index.js` file.
+    1. If it is successful, you will see `Server is running on port 3001`.
+    2. If you ever make changes to the backend, you can restart the service by saving the `index.js` file.
 
 If you are instead reseeding the database, you can skip Steps 1-3 (creating the environment variables and installing packages).
 
