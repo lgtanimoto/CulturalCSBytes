@@ -74,7 +74,7 @@ const ContinueCreateAccount = ({setAuth}) => {
         <div className="item">
           <p>Age:</p>
           <div className="dropdown">
-            <select name="age" id="ages" value={age} onChange={e => onChange(e)}>
+            <select name="age" id="age" value={age} onChange={e => onChange(e)}>
                 <option value="less-than-8">Younger than 8</option>
                 <option value="8">8</option>
                 <option value="9">9</option>

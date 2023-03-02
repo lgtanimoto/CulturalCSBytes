@@ -12,8 +12,8 @@ router.post('/register', async (req, res) => {
             password,
             nickname,
             email,
-            ages,
-            zip
+            age,
+            zipcode
         } = req.body;
 
         /* Ensure student does not already exist with username */
@@ -37,19 +37,32 @@ router.post('/register', async (req, res) => {
         const bcryptPassword = await bcrypt.hash(password, salt);
 
         /* Create the student */
+
+        let numAge = 0;
+
+        switch (age) {
+            case 'less-than-8':
+                numAge = 7;
+                break;
+            case 'older-than-21':
+                numAge = 22;
+                break;
+            default:
+                numAge = parseInt(age);
+        }
         
         // If student is younger than 13, don't store email and zip
-        if (['less-than-8', '8', '9', '10', '11', '12'].includes(ages)) {
+        if (['less-than-8', '8', '9', '10', '11', '12'].includes(age)) {
             student = await pool.query(
                 'INSERT INTO student (username, password, nickname, age) VALUES ($1, $2, $3, $4) RETURNING id',
-                [username, bcryptPassword, nickname, ages]
+                [username, bcryptPassword, nickname, numAge]
             );
         }
         // Else, can store email and zip 
         else {
             student = await pool.query(
                 'INSERT INTO student (username, password, nickname, age, email, zip) VALUES ($1, $2, $3, $4, $5, $6) RETURNING id',
-                [username, bcryptPassword, nickname, ages, email, zip]
+                [username, bcryptPassword, nickname, numAge, email, zipcode]
             );
         }
 
