@@ -2,6 +2,45 @@
 
 This guide will detail what, when, and how to make specific API requests from the frontend to the backend. Please have the Milestone One Wireframe for reference. It also provides details on interpreting middleware errors (can happen in multiple routes).
 
+## Table of Contents
+1. [Wireframe Walkthrough](#wireframe-walkthrough)
+    1. [Welcome Page](#1-welcome-page)
+    2. [Student Account Creation](#2-student-account-creation)
+        1. [Registration](#2a-registration)
+        2. [Login](#2b-login)
+    3. [Course Enrollments](#3-course-enrollments)
+        1. [Get All Enrollments](#3a-get-all-enrollments)
+        2. [Get Enrollment Stats](#3b-get-enrollment-stats)
+        3. [Continue Enrollment](#3c-continue-enrollment)
+    4. [Enrollment Metrics](#4-enrollment-metrics)
+        1. [Get Enrollment Metrics](#4a-get-enrollment-metrics)
+        2. [Start Session](#4b-start-session)
+        3. [Practice Session](#4c-practice-session)
+        4. [Continue Session](#4d-continue-session)
+    5. [Session Start](#5-session-start)
+        1. [Official Session](#5a-official-session)
+        2. [Practice Session](#5b-practice-session)
+    6. [Session Confirmation Screen](#6-session-confirmation-screen)
+        1. [Official Session](#6a-official-session)
+        2. [Practice Session](#6b-practice-session)
+    7. [Question](#7-question)
+        1. [Get Question](#7a-get-question)
+        2. [Answer Question](#7b-answer-question)
+    8. [Question Results](#8-question-results)
+        1. [Get Question Results](#8a-get-question-results)
+        2. [Next Question](#8b-next-question)
+    9. [Recommendations](#9-recommendations)
+    10. [Session Results](#10-session-results)
+2. [Middleware](#middleware)
+    1. [authorization](#authorization)
+    2. [verifyEnrollment](#verifyenrollment)
+    3. [verifyCurrentEnrollment](#verifycurrentenrollment)
+    4. [verifyCurrentSession](#verifycurrentsession)
+    5. [verifyCurrentQuestion](#verifycurrentquestion)
+    6. [verifyNextSession](#verifynextsession)
+    7. [verifyCompleteSession](#verifycompletesession)
+3. [Miscellaneous](#miscellaneous)
+
 ## Wireframe Walkthrough
 
 ### 1. Welcome Page
@@ -13,7 +52,7 @@ No API request from here. Everything here redirects to a new page. This can all 
 
 ### 2. Student Account Creation
 
-#### Registration
+#### 2a. Registration
 
 The form is submitted when we click **OK**. This is where we make an API request. We want to make the following request:
 
@@ -69,7 +108,7 @@ Be wary of receiving a JSON object that looks like this, and make sure to handle
 
 This is what happens if the username is already taken, which can only be checked on the DB side of things.
 
-#### Login
+#### 2b. Login
 
 While there is no login form in the wireframe, we need to handle this route as well:
 
@@ -115,7 +154,7 @@ This is what happens if the username or password do not match, which can only be
 
 ### 3. Course Enrollments
 
-#### Get All Enrollments
+#### 3a. Get All Enrollments
 
 If we want to list all the enrollments, we make the following request:
 
@@ -167,11 +206,11 @@ Here is a breakdown of each of the fields:
     - `started` - A boolean for if we started the enrollment.
     - `completed` - A boolean for if we completed the enrollment.
 
-#### Get Enrollment Stats
+#### 3b. Get Enrollment Stats
 
-If we click on **Stats** for a certain enrollment, we need to redirect to the enrollment metrics page, hence Section 4.
+If we click on **Stats** for a certain enrollment, we need to redirect to the enrollment metrics page, hence [Section 4](#4-enrollment-metrics).
 
-#### Continue Enrollment
+#### 3c. Continue Enrollment
 
 If we click on **Continue** for a certain enrollment, we need to make this API GET request:
 
@@ -197,12 +236,12 @@ You will get a response of the following form:
 ```
 
 This specified the route to redirect to. This field can take the following values:
-- `new` - Redirect to the form where we start a new session. See Section 5.
-- `:sessionId/questions/:order` - Redirect to the following question for the specified session. Section 7.
+- `new` - Redirect to the form where we start a new session. See [Section 5](#5-session-start).
+- `:sessionId/questions/:order` - Redirect to the following question for the specified session. [Section 7](#7-question).
 
 ### 4. Enrollment Metrics
 
-#### Get Enrollment Metrics
+#### 4a. Get Enrollment Metrics
 
 To get the enrollment metrics, we make the following API request:
 
@@ -210,7 +249,7 @@ To get the enrollment metrics, we make the following API request:
 GET http://localhost:3001/enrollments/:enrollmentId
 ```
 
-Where `:enrollmentId` is the `id` attribute that was returned for the enrollment specified. This attribute was returned when we tried to get all the enrollments from Section 3.
+Where `:enrollmentId` is the `id` attribute that was returned for the enrollment specified. This attribute was returned when we tried to get all the enrollments from [Section 3](#3a-get-all-enrollments).
 
 Make the API request as below:
 
@@ -273,21 +312,21 @@ Now you could get this response, which means that you cannot access enrollment m
 }
 ```
 
-#### Start Session
+#### 4b. Start Session
 
-See Section 5, Official Session.
+See [Section 5, Official Session](#5a-official-session).
 
-#### Practice Session
+#### 4c. Practice Session
 
-See Section 5, Practice Session.
+See [Section 5, Practice Session](#5b-practice-session).
 
-#### Continue Session
+#### 4d. Continue Session
 
-See Section 3, Continue Enrollment. The implementation is the exact same thing here, but this option in the **Metrics** page should be disabled unless there is actually a session in progress. Hence this should provide the current question for the current session through the `redirect` field.
+See [Section 3, Continue Enrollment](#3c-continue-enrollment). The implementation is the exact same thing here, but this option in the **Metrics** page should be disabled unless there is actually a session in progress. Hence this should provide the current question for the current session through the `redirect` field.
 
 ### 5. Session Start
 
-#### Official Session
+#### 5a. Official Session
 
 Even though we are filling out a form, we still need to make an API GET request. This is to retrieve the next official session we need to start.
 
@@ -345,7 +384,7 @@ You may get the following response instead:
 
 This means that it's been less than a week since the student last completed an official session. The student cannot do another official session; instead, the student must wait a week and must do a practice session instead.
 
-#### Practice Session
+#### 5b. Practice Session
 
 The API request is very similar to starting an official session, except now we add a query parameter:
 
@@ -370,7 +409,7 @@ And the response data is pretty much the same. The only difference is that you w
 
 No GET requests here. The point is to start official or practice sessions.
 
-#### Official Session
+#### 6a. Official Session
 
 Now we will make a PATCH request. This is because the sessions have already been created in the database, so all we need to do is modify them to indicate that we have started the session.
 
@@ -407,7 +446,7 @@ Now for the response, ideally you get a response like this:
 { success: 'Started official session!' }
 ```
 
-Now you can navigate to question one for the session! Here's how to do it in Section 7.
+Now you can navigate to question one for the session! Here's how to do it in [Section 7](#7-question).
 
 ##### Errors
 
@@ -429,7 +468,7 @@ Another error would be if the student tried to start an official session too ear
 }
 ```
 
-#### Practice Session
+#### 6b. Practice Session
 
 This time we make a POST request. This is because the session does not exist in the DB at the moment, so we actually need to instantiate a session first.
 
@@ -468,7 +507,7 @@ An error that may occur is if the student tried to start a practice session befo
 
 ### 7. Question
 
-#### Get Question
+#### 7a. Get Question
 
 Let's say we want to get question one for the session. Specifying `order=1`, we need to make a GET request like the following:
 
@@ -508,7 +547,7 @@ And a breakdown of the fields:
 - `answerOrder` - This is a 4-digit number that looks like e.g. 2143. This specifies the order to display the answers in.
 - `studentAnswer` - If the student hasn't answered the question, this will be `null`. Otherwise it will specify the student answer.
 
-#### Answer Question
+#### 7b. Answer Question
 
 Now we want to answer a question. We make a `PATCH` request like the following:
 
@@ -549,7 +588,7 @@ An error will occur if the student tries to reanswer a question:
 
 ### 8. Question Results
 
-#### Get Question Results
+#### 8a. Get Question Results
 
 Follow the conventions for making the same request below:
 
@@ -559,7 +598,7 @@ GET http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/question
 
 The response will be exactly the same, except `studentAnswer` will have a numerical value. You can compare this to `questionJson.CorrectAnswer` to display if the student got the question correct or wrong.
 
-#### Next Question
+#### 8b. Next Question
 
 We make the same `PATCH` request like the following:
 
@@ -688,7 +727,7 @@ Hopefully the fields are self explanatory at this point.
 
 ## Middleware
 
-### Authorization
+### authorization
 
 This middleware function checks if the user is authorized to access the enrollment, session, question, etc. If not, you will get the following response:
 
@@ -699,7 +738,7 @@ This middleware function checks if the user is authorized to access the enrollme
 }
 ```
 
-### Verify Enrollment
+### verifyEnrollment
 
 This middleware function checks if the user has the enrollment given by the enrollment id passed in the URL. If not, you get the following response:
 
@@ -710,7 +749,7 @@ This middleware function checks if the user has the enrollment given by the enro
 }
 ```
 
-### Verify Current Enrollment
+### verifyCurrentEnrollment
 
 This middleware function checks if this enrollment is currently in progress by the user. If not, return:
 
@@ -721,7 +760,7 @@ This middleware function checks if this enrollment is currently in progress by t
 }
 ```
 
-### Verify Current Session
+### verifyCurrentSession
 
 This middleware function checks if the user is currently working on this session, which determines if the user can access the questions. If not, return:
 
@@ -732,7 +771,7 @@ This middleware function checks if the user is currently working on this session
 }
 ```
 
-### Verify Current Question
+### verifyCurrentQuestion
 
 This middleware function checks if the user is currently working on this question:
 
@@ -743,7 +782,7 @@ This middleware function checks if the user is currently working on this questio
 }
 ```
 
-### Verify Next Session
+### verifyNextSession
 
 This middleware function checks if there is no session in progress:
 
@@ -754,7 +793,7 @@ This middleware function checks if there is no session in progress:
 }
 ```
 
-### Verify Complete Session
+### verifyCompleteSession
 
 This middleware function checks if a session is complete, necessary to access results and recommendations:
 
@@ -765,9 +804,9 @@ This middleware function checks if a session is complete, necessary to access re
 }
 ```
 
-## Conclusion
+## Miscellaneous
 
-Hopefully this exhausted all the API requests necessary and the possible responses that you can receive for each. If not, please let me know. Also please let me know if you ever get something like this:
+Please let me know if you ever get something like this:
 
 ```
 {
@@ -775,5 +814,7 @@ Hopefully this exhausted all the API requests necessary and the possible respons
   error: 'Server Error'
 }
 ```
+
+Hopefully this provides information for all the API requests you will need to make and the different possible responses. Please let me know if I am missing something important.
 
 This is an internal error and means that the backend must be fixed.
