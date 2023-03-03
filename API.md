@@ -1,17 +1,21 @@
 # API Reference
 
-This guide will detail what, when, and how to make specific API requests from the frontend to the backend. Please have the Milestone One Wireframe for reference.
+This guide will detail what, when, and how to make specific API requests from the frontend to the backend. Please have the Milestone One Wireframe for reference. It also provides details on interpreting middleware errors (can happen in multiple routes).
 
-## 1. Welcome Page
+## Wireframe Walkthrough
+
+### 1. Welcome Page
 
 No API request from here. Everything here redirects to a new page. This can all be done on the frontend side of things:
 - **Login** - Redirects to the login form
 - **Create Account** - Redirects to the registration form
 - **About** - Redirects to the about page (if we have one)
 
-## 2. Student Account Creation
+### 2. Student Account Creation
 
-The form is submitted when we click "OK". This is where we make an API request. We want to make the following request:
+#### Registration
+
+The form is submitted when we click **OK**. This is where we make an API request. We want to make the following request:
 
 ```
 POST http://localhost:3001/authentication/register
@@ -52,7 +56,20 @@ The JSON object returned by this route will simply return a token which should b
 { token: ... }
 ```
 
-### 2a. Login
+##### Errors
+
+Be wary of receiving a JSON object that looks like this, and make sure to handle this:
+
+```
+{
+  statusCode: 401,
+  error: 'User already exists.'
+}
+```
+
+This is what happens if the username is already taken, which can only be checked on the DB side of things.
+
+#### Login
 
 While there is no login form in the wireframe, we need to handle this route as well:
 
@@ -83,9 +100,22 @@ Where the JSON object returned looks exactly the same as for registration: inclu
 { token: ... }
 ```
 
-## 3. Course Enrollments
+##### Errors
 
-### Get All Enrollments
+Be wary of receiving a JSON object that looks like this, and make sure to handle this:
+
+```
+{
+  statusCode: 401,
+  error: 'Username or password is incorrect'
+}
+```
+
+This is what happens if the username or password do not match, which can only be checked on the DB side of things.
+
+### 3. Course Enrollments
+
+#### Get All Enrollments
 
 If we want to list all the enrollments, we make the following request:
 
@@ -133,21 +163,23 @@ Here is a breakdown of each of the fields:
   - `completedSessions` - A number from 0 to 5.
   - `highScore` - The *percentage* of the high score
   - `date` - If `null`, then we haven't started the enrollment. Otherwise, the most recent date an official session was started or completed.
-  - `status`
+  - `status` - Two boolean variables indicate status of enrollment: not started, in progress, or completed.
     - `started` - A boolean for if we started the enrollment.
     - `completed` - A boolean for if we completed the enrollment.
 
-### Get Enrollment Stats
+#### Get Enrollment Stats
 
 If we click on **Stats** for a certain enrollment, we need to redirect to the enrollment metrics page, hence Section 4.
 
-### Continue Enrollment
+#### Continue Enrollment
 
 If we click on **Continue** for a certain enrollment, we need to make this API GET request:
 
 ```
 GET http://localhost:3001/enrollments/:enrollmentId/sessions/continue
 ```
+
+With the following code snippet:
 
 ```
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/continue`, {
@@ -168,9 +200,9 @@ This specified the route to redirect to. This field can take the following value
 - `new` - Redirect to the form where we start a new session. See Section 5.
 - `:sessionId/questions/:order` - Redirect to the following question for the specified session. Section 7.
 
-## 4. Enrollment Metrics
+### 4. Enrollment Metrics
 
-### Get Enrollment Metrics
+#### Get Enrollment Metrics
 
 To get the enrollment metrics, we make the following API request:
 
@@ -230,7 +262,7 @@ And a breakdown of what these fields mean (not including `username` and `nicknam
   - `practice` - Can we start a new *practice* session?
   - `continue` - Can we continue a session that is currently in progress?
 
-#### Errors
+##### Errors
 
 Now you could get this response, which means that you cannot access enrollment metrics until you start the initial session. We are blocking this access in case the user figures out how to navigate to this page using URL patterns even though the button is disabled.
 
@@ -241,9 +273,21 @@ Now you could get this response, which means that you cannot access enrollment m
 }
 ```
 
-## 5. Session Start
+#### Start Session
 
-### Official Session
+See Section 5, Official Session.
+
+#### Practice Session
+
+See Section 5, Practice Session.
+
+#### Continue Session
+
+See Section 3, Continue Enrollment. The implementation is the exact same thing here, but this option in the **Metrics** page should be disabled unless there is actually a session in progress. Hence this should provide the current question for the current session through the `redirect` field.
+
+### 5. Session Start
+
+#### Official Session
 
 Even though we are filling out a form, we still need to make an API GET request. This is to retrieve the next official session we need to start.
 
@@ -291,11 +335,42 @@ And a breakdown of the fields:
   - `icon` - The culture icon (probably not needed here).
 - `difficulties` - A list of difficulties as dropdown on the form.
 
-## 6. Session Confirmation Screen
+##### Redirect
+
+You may get the following response instead:
+
+```
+{ redirect: 'new?practice=true' }
+```
+
+This means that it's been less than a week since the student last completed an official session. The student cannot do another official session; instead, the student must wait a week and must do a practice session instead.
+
+#### Practice Session
+
+The API request is very similar to starting an official session, except now we add a query parameter:
+
+```
+GET http://localhost:3001/enrollments/:enrollmentId/sessions/new?practice=true
+```
+
+The code snippet is also very similar:
+
+```
+const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/new?practice=true`, {
+  method: 'GET',
+  headers: { token: localStorage.token }
+}
+
+const parseData = await res.json();
+```
+
+And the response data is pretty much the same. The only difference is that you will see `sessionId: false` to indicate no session for the practice session exists in the DB so far.
+
+### 6. Session Confirmation Screen
 
 No GET requests here. The point is to start official or practice sessions.
 
-### Official Session
+#### Official Session
 
 Now we will make a PATCH request. This is because the sessions have already been created in the database, so all we need to do is modify them to indicate that we have started the session.
 
@@ -334,9 +409,66 @@ Now for the response, ideally you get a response like this:
 
 Now you can navigate to question one for the session! Here's how to do it in Section 7.
 
-## 7. Question
+##### Errors
 
-### Get Question
+One error you may encounter is along the lines of this, which indicate that the student is starting an invalid session. Maybe it's not the session currently in progress. The backend keeps track of the session that needs to be started.
+
+```
+{
+  statusCode: 403,
+  error: 'Cannot start this session.'
+}
+```
+
+Another error would be if the student tried to start an official session too early, which will look like this:
+
+```
+{
+  statusCode: 403,
+  error: 'Must wait at least one week to start next official session.'
+}
+```
+
+#### Practice Session
+
+This time we make a POST request. This is because the session does not exist in the DB at the moment, so we actually need to instantiate a session first.
+
+```
+POST http://localhost:3001/enrollments/:enrollmentId/sessions
+```
+
+The input body is the exact same as before. But the API request is formed a little differently:
+
+```
+const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions`, {
+  method: 'POST',
+  headers: { 'Content-type': 'application/json' },
+  body: JSON.stringify(body)
+});
+
+const parseRes = await response.json();
+```
+
+And the response will be different. You don't know what the session id of the practice session is yet, so we need to return it. You will use the id returned to access the questions for this session via URL params.
+
+```
+{ sessionId: ... }
+```
+
+##### Errors
+
+An error that may occur is if the student tried to start a practice session before they completed the intial session.
+
+```
+{
+  statusCode: 403,
+  error: 'Cannot start practice session until completed initial session.'
+}
+```
+
+### 7. Question
+
+#### Get Question
 
 Let's say we want to get question one for the session. Specifying `order=1`, we need to make a GET request like the following:
 
@@ -376,7 +508,7 @@ And a breakdown of the fields:
 - `answerOrder` - This is a 4-digit number that looks like e.g. 2143. This specifies the order to display the answers in.
 - `studentAnswer` - If the student hasn't answered the question, this will be `null`. Otherwise it will specify the student answer.
 
-### Answer Question
+#### Answer Question
 
 Now we want to answer a question. We make a `PATCH` request like the following:
 
@@ -404,9 +536,20 @@ It's really that simple. After that we should get the following response:
 { success: 'Answered question!' }
 ```
 
-## 8. Question Results
+##### Errors
 
-### Get Question Results
+An error will occur if the student tries to reanswer a question:
+
+```
+{
+  statusCode: 403,
+  error: 'Student cannot reanswer question.'
+}
+```
+
+### 8. Question Results
+
+#### Get Question Results
 
 Follow the conventions for making the same request below:
 
@@ -416,7 +559,7 @@ GET http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/question
 
 The response will be exactly the same, except `studentAnswer` will have a numerical value. You can compare this to `questionJson.CorrectAnswer` to display if the student got the question correct or wrong.
 
-### Next Question
+#### Next Question
 
 We make the same `PATCH` request like the following:
 
@@ -430,7 +573,7 @@ The only difference is what we put in the body, which will now look like this to
 const body = {next: true};
 ```
 
-#### Success
+##### Success
 
 It turns out there are one of two possibilities. If you answered all the questions in the session, you will see the following:
 
@@ -444,7 +587,18 @@ Otherwise, you will see this, where in this case you add one to the current ques
 { success: 'Started next question!' }
 ```
 
-## 9. Recommendations
+##### Errors
+
+An error will occur if the student tries to move on to a different question before completing the current question:
+
+```
+{
+  statusCode: 403,
+  error: 'Student must answer current question first.'
+}
+```
+
+### 9. Recommendations
 
 This is a GET request like below:
 
@@ -485,7 +639,7 @@ I will go over the fields we have not touched upon yet:
   - `questionSet` - Resources available for the chosen question set
   - `questionMissed` - Resources that correspond to the questions missed
 
-## 10. Session Results
+### 10. Session Results
 
 This is a GET request like below:
 
@@ -531,3 +685,95 @@ With a response that appears in the following format:
 ```
 
 Hopefully the fields are self explanatory at this point.
+
+## Middleware
+
+### Authorization
+
+This middleware function checks if the user is authorized to access the enrollment, session, question, etc. If not, you will get the following response:
+
+```
+{
+  statusCode: 403,
+  error: 'Not Authorized'
+}
+```
+
+### Verify Enrollment
+
+This middleware function checks if the user has the enrollment given by the enrollment id passed in the URL. If not, you get the following response:
+
+```
+{
+  statusCode: 404,
+  error: 'Cannot find enrollment for student.'
+}
+```
+
+### Verify Current Enrollment
+
+This middleware function checks if this enrollment is currently in progress by the user. If not, return:
+
+```
+{
+  statusCode: 403,
+  error: 'Student cannot continue session after completing enrollment.'
+}
+```
+
+### Verify Current Session
+
+This middleware function checks if the user is currently working on this session, which determines if the user can access the questions. If not, return:
+
+```
+{
+  statusCode: 403,
+  error: 'Cannot access questions for session not in progress.'
+}
+```
+
+### Verify Current Question
+
+This middleware function checks if the user is currently working on this question:
+
+```
+{
+  statusCode: 403,
+  error: 'Student is not currently working on this question.'
+}
+```
+
+### Verify Next Session
+
+This middleware function checks if there is no session in progress:
+
+```
+{
+  statusCode: 403,
+  error: 'Student must complete current session first.'
+}
+```
+
+### Verify Complete Session
+
+This middleware function checks if a session is complete, necessary to access results and recommendations:
+
+```
+{
+  statusCode: 404,
+  error: 'Cannot find completed session.'
+}
+```
+
+## Conclusion
+
+Hopefully this exhausted all the API requests necessary and the possible responses that you can receive for each. If not, please let me know. Also please let me know if you ever get something like this:
+
+```
+{
+  statusCode: 500,
+  error: 'Server Error'
+}
+```
+
+This is an internal error and means that the backend must be fixed.
