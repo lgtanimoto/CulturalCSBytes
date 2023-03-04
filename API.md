@@ -815,6 +815,6 @@ Please let me know if you ever get something like this:
 }
 ```
 
-Hopefully this provides information for all the API requests you will need to make and the different possible responses. Please let me know if I am missing something important.
-
 This is an internal error and means that the backend must be fixed.
+
+Hopefully this provides information for all the API requests you will need to make and the different possible responses. Please let me know if I am missing something important.
