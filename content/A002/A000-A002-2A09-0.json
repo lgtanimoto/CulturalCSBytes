@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "2A09",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Farmer</span> wrote the following program to double the number of apples they want to give to the school.   What is the <em>variable</em> in this program?</p><p class=\"ci8\"><div class=\"code\">integer apples = 10<br>apples = apples * 2<br>output \"Number of apples: \" + apples</div></p>",
+        "QuestionImage": null,
+        "Answer1": "<div class=\"code\">output</div>",
+        "Answer2": "<div class=\"code\">apples</div>",
+        "Answer3": "<div class=\"code\">integer</div>",
+        "Answer4": "<div class=\"code\">* 2</div>",
+        "CorrectAnswer": 2,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>A standard definition of a <em>variable</em> is a \"value that can change, depending on conditions or information passed to the program\".  In the example code, <span class=\"code\">apples</span> meets this definition </p>",
+        "AnswerImage": null
+    }
+}

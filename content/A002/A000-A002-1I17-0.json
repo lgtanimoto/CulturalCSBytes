@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "1I17",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 1,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>London, Sydney, and Cairo are working on a shared presentation for an assignment due the next day.   Each student is working on the presentation online from home, and they are using a video conferencing system to talk with each other.  London notices that one of the slides that Sydney worked on has several statements that London believes are factual errors.</p><p>Which of the following would <span class=\"em_neg\">NOT</span> be considered respectful and responsible behavior in this situation?</p>",
+        "QuestionImage": null,
+        "Answer1": "London fixes the \"errors\" quickly when Sydney is taking a bathroom break so that Sydney\u2019s feelings are not hurt ",
+        "Answer2": "London gets Sydney and Cairo\u2019s attention on the video call to point out the slide with \"errors\" and asks whether they would like to discuss the slide now or later.",
+        "Answer3": "London works on some other slides with the intent of discussing the slide with \"errors\" later with Sydney and Cairo.",
+        "Answer4": "London starts researching the \"errors\" in question to verify suspicions.",
+        "CorrectAnswer": 1,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>If there are differences in opinions on shared work, these differences should be openly and respectfully discussed and resolved among all team members. </p>",
+        "AnswerImage": null
+    }
+}

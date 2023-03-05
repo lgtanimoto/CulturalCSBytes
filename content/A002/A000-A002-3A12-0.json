@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3A12",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Yoyo</span> is writing a procedure that creates checkerboard designs of various sizes with x\u2019s and o\u2019s.  An early version of the procedure is promising, but not quite correct. Some of the designs this early version creates are as follows:</p><table><thead><tr><th>Example A (i=10)</th><th>Example B (i=8)</th><th>Example C (i=6)</th></tr></thead><tbody><tr><td><div class=\"code\">xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo<br>xoxoxoxoxo</div></td><td><div class=\"code\">xoxoxoxo<br>xoxoxoxo<br>xoxoxoxo<br>xoxoxoxo<br>xoxoxoxo<br>xoxoxoxo<br>xoxoxoxo<br>xoxoxoxo</div></td><td><div class=\"code\">xoxoxo<br>xoxoxo<br>xoxoxo<br>xoxoxo<br>xoxoxo<br>xoxoxo</div></td></tr></tbody></table><p>Which of the following most closely resembles the early version of <span class=\"qname\">Yoyo</span>'s checkerboard code that produced the above results?</p>",
+        "QuestionImage": null,
+        "Answer1": "<div class=\"code\">action board(integer i)<div class=\"ci4\">if i = 10</div><div class=\"ci8\">output &quot;xoxoxoxoxo&quot;</div><div class=\"ci4\">elseif i = 8</div><div class=\"ci8\">output &quot;xoxoxoxo&quot;</div><div class=\"ci4\">else</div><div class=\"ci8\">output &quot;xoxoxo&quot;</div><div class=\"ci4\">end</div>end</div>",
+        "Answer2": "<div class=\"code\">action board(integer i)<div class=\"ci4\">text pattern = &quot;&quot;</div><div class=\"ci4\">repeat i times</div><div class=\"ci8\">repeat i times</div><div class=\"ci12\">pattern = pattern + &quot;xo&quot;</div><div class=\"ci8\">end</div><div class=\"ci4\">end</div><div class=\"ci4\">output pattern</div>end</div>",
+        "Answer3": "<div class=\"code\">action board(integer i)<div class=\"ci4\">repeat i times</div><div class=\"ci8\">text pattern = &quot;&quot;</div><div class=\"ci8\">repeat i / 2 times</div><div class=\"ci12\">pattern = pattern + &quot;xo&quot;</div><div class=\"ci8\">end</div><div class=\"ci8\">output pattern</div><div class=\"ci4\">end</div>end</div>",
+        "Answer4": "<div class=\"code\">action board(integer i)<div class=\"ci4\">repeat 8 times</div><div class=\"ci8\">output &quot;xoxoxoxo&quot;</div><div class=\"ci4\">end</div>end</div>",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Creating these designs requires one loop nested within another.   The outer loop outputs each line in the design. The inner loop creates each line with half as many &quot;xo&quot; repeated as there are number of lines.   If i is an even number, then the number of characters on each line equals the number of lines.</p>",
+        "AnswerImage": null
+    }
+}

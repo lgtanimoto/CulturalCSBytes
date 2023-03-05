@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3N06",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Nashville</span> is sending a message to Memphis using Caesar cipher encryption to keep it a secret from 8-year-old Raleigh. The original message is:</p><p><div class=\"code ci8\">WE WILL EAT PIZZA TONIGHT</div></p><p>The encrypted message is:</p><p><div class=\"code ci8\">DL DPSS LHA WPGGH AVUPNOA</div></p><p>What is the shift value that <span class=\"qname\">Nashville</span> used for the Caesar cipher to encrypt this message?</p>",
+        "QuestionImage": null,
+        "Answer1": "3",
+        "Answer2": "5",
+        "Answer3": "7",
+        "Answer4": "10",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>The Caesar cipher is one of the simplest encryption techniques in which each letter in a message is replaced by a letter that is some fixed number of positions (shift value) down in the alphabet.   With a shift value of <em>7</em>, each letter of the alphabet is replaced as follows:<p><p><div class=\"code ci8\">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div></p><p><div class=\"code ci8\">H I J K L M N O P Q R S T U V W X Y Z A B C D E F G</div></p><p>Because the Caesar cipher is easy to decrypt even without the shift value, it is not used in much in real-life.</p>",
+        "AnswerImage": null
+    }
+}

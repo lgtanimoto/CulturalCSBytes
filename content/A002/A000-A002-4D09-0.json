@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "4D09",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>While making a Valentine's Day website for a school project, <span class=\"qname\">Diamond</span> learns that a favorite emoji, the Red Heart, has a Unicode code point U+2764.  Because Unicode code points are expressed in hexadecimal, that means that Red Heart emoji is represented in smartphone texts by the following bits: <em>0010 0111 0110 0100</em>.   However, <span class=\"qname\">Diamond</span> is curious why they must use the HTML entity code <em>&amp;#10084;</em> rather than <em>&amp;#2764;</em>  to insert a Red Heart emoji onto their website.</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A002-4D09-0Q.png\"></p><p>Which of the following best explains why <em>&amp;#10084;</em> is used to insert the Red Heart emoji on websites?</p>",
+        "QuestionImage": "A000-A002-4D09-0Q.png",
+        "Answer1": "Unicode code points and HTML escape codes were established independently.  The mapping between the two is stored in an online database. ",
+        "Answer2": "Each browser maker has its mapping between Unicode and HTML escape codes and stores a unique mapping in its logic.",
+        "Answer3": "The HTML entity code of an emoji uses the decimal equivalent of the Unicode code point.",
+        "Answer4": "A digital visual representation of each emoji is stored on each computing device.",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>The HTML entity code of an emoji uses the decimal equivalent of the Unicode code point.  This enables browsers to quickly map the HTML escape code to the digital visual representation of the emoji stored on the computing device according to the Unicode code point.  Hexadecimal 2764 = 2 * 4096 + 7 * 256 + 6 * 16 + 4 = 10084.</p>",
+        "AnswerImage": null
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3I20",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>&quot;When I grow up, I want to be a police officer and catch criminals who steal others' money,\u201d said eight-year-old Beach.  &quot;So, I don\u2019t need to learn computer science in school.&quot;</p><p>&quot;You are wrong,&quot; replied thirteen-year-old <span class=\"qname\">Lagos</span>.   &quot;If you want to be a police officer, you must still learn computer science because ...&quot</p><p>Which of the following would <span class=\"qname\">Lagos</span> <em>MOST LIKELY</em> give as a reason why future police officers should learn computer science?</p>",
+        "QuestionImage": null,
+        "Answer1": "Computer programming is a significant portion of the exam to be a police officer.",
+        "Answer2": "Police officers who graduate with computer science degrees make 3 times as much starting salary as those who don\u2019t.",
+        "Answer3": "Stealing money using computing technology is easier and less risky for criminals worldwide than other methods.  Cybercrime is rapidly increasing.",
+        "Answer4": "Police departments all have the most advanced computing technology available as shown on television.",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Because cybercrime is rapidly increasing, so is the need for law enforcement to know both cybersecurity and computer forensics.  Because so much data about our lives is tracked digitally, law enforcement also needs computer science skills to search through this data and efficiently and effectively investigate criminal activity.</p>",
+        "AnswerImage": null
+    }
+}

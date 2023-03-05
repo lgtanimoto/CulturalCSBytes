@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "2N05",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Sandy</span> receives an e-mail from Google Security indicating that their Google account has been disabled.   The e-mail instructs <span class=\"qname\">Sandy</span> to click on a button on the e-mail and input their username and password to recover their account and change their password.   What should <span class=\"qname\">Sandy</span> do?</p>",
+        "QuestionImage": null,
+        "Answer1": "<span class=\"qname\">Sandy</span>'s Google account is blocked.  <span class=\"qname\">Sandy</span> should follow the instructions in the e-mail by clicking the button on the e-mail and entering their e-mail and password on the page to recover their account.",
+        "Answer2": "This is likely a phishing attempt to get <span class=\"qname\">Sandy</span>'s password.    <span class=\"qname\">Sandy</span> should check the e-mail address used to send the mail, and if suspicious, mark the e-mail as phishing or as junk. ",
+        "Answer3": "<span class=\"qname\">Sandy</span>'s Google account is blocked.  <span class=\"qname\">Sandy</span> should reply to the e-mail and include their username and password to request Google Security to restore access to the account.",
+        "Answer4": "<span class=\"qname\">Sandy</span> should forward the e-mail to their parents to ask for advice.",
+        "CorrectAnswer": 2,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>This is likely a phishing attempt. Reputable services will <span class=\"em_neg\">NOT</span> send e-mail informing customers that their service is blocked.   Never click on a link on such a mail or send your password in plaintext over the internet.   If one is having problems with a service, visit the service directly \u2013 without using the link \u2013 and try logging in.</p>",
+        "AnswerImage": null
+    }
+}

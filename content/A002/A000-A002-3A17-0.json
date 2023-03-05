@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3A17",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Surfer</span> is coding a procedure that will take a temperature in Celsius as an parameter and print out whether water will become ice ( <= 0\u00b0 ), boil ( >= 100\u00b0) or remain water.   The code for <span class=\"qname\">Surfer</span>'s procedure is as follows:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A002-3A17-0Q.png\"></p><p>For which of the following calls to <span class=\"code\">waterState()</span> will <span class=\"qname\">Surfer</span>'s procedure output misleading results?</p>",
+        "QuestionImage": "A000-A002-3A17-0Q.png",
+        "Answer1": "<div class=\"code\">waterState(120)</div>",
+        "Answer2": "<div class=\"code\">waterState(50)</div>",
+        "Answer3": "<div class=\"code\">waterState(0)</div>",
+        "Answer4": "<div class=\"code\">waterState(-5)</div>",
+        "CorrectAnswer": 1,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>At a temperature of 120 degrees Celsius, <span class=\"code\">waterState()</span> will output both the phrase <emp>\"Water will boil\"</emp> AND the phrase <emp>\"Water will not freeze or boil\"</emp>.   <span class=\"code\">waterState()</span> should use a single if \u2013 elseif \u2013 else conditional for the best results. </p>",
+        "AnswerImage": null
+    }
+}

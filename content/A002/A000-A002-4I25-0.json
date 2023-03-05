@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "4I25",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Sunny</span> is furious.   An AI on the Internet that rates the health of a pet based on a photo rated <span class=\"qname\">Sunny</span>'s cat Bengal as &quot;very overweight and unhealthy&quot; although <span class=\"qname\">Sunny</span> knows that Bengal is of average weight and is very healthy from their last visit to the veterinarian.   <span class=\"qname\">Sunny</span> finds an article on the Internet that mentions that while the pet photo health AI is accurate with dogs, it often miscalculates the weight of cats several pounds higher than actual. </p><p>Which of the following should <span class=\"qname\">Sunny</span> recommend to the developer of the pet photo health AI to fix their cat problem?</p>",
+        "QuestionImage": null,
+        "Answer1": "The developer should check their calculation of volume: Volume = height * width * depth.",
+        "Answer2": "The developer should make their UI more accessible.",
+        "Answer3": "The developer should test and refine their AI with many more cats.",
+        "Answer4": "The developer should refund all users with cats $10.   Users did not need to pay for the initial diagnosis.",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Errors in AI is often caused by biased data or lack of data.  Testing and refining their AI with more photos of cats with the actual cat weight will improve the accuracy of the AI with cats. </p>",
+        "AnswerImage": null
+    }
+}

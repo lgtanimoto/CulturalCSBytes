@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "4C02",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Following their teacher\u2019s instructions, <span class=\"qname\">Brilliant</span> opens the word processing document that they started yesterday.  The operating system on <span class=\"qname\">Brilliant</span>'s computer receives the request to open the document and delivers it to the program as a single stream of bytes even though it may exist in several fragments in different locations on the computer hard drive.</p><p>What <em>abstraction</em> provides the most value in the above scenario?</p>",
+        "QuestionImage": null,
+        "Answer1": "document",
+        "Answer2": "teacher",
+        "Answer3": "fragments",
+        "Answer4": "bytes",
+        "CorrectAnswer": 1,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Document.  An <em>abstraction</em> in computer science is generalizing the details of an object or system to focus attention on details of greater importance.   The operating system provides the abstraction of a document to the word processing program so that the word processing program does not need to figure out how to retrieve a sequential stream of bytes from several fragmented locations on a network.</p>",
+        "AnswerImage": null
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3D07",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Ocean has learned that the first letter in their name 'O' has the same binary encoding (01001111) as the number 79.   Because remembering the binary digits of 'O' is difficult, Ocean wants to remember the hexadecimal encoding.</p><p>What is the hexadecimal encoding for the letter 'O'?</p>",
+        "QuestionImage": null,
+        "Answer1": "&nbsp;&nbsp;79&nbsp;&nbsp;",
+        "Answer2": "&nbsp;&nbsp;4F&nbsp;&nbsp;",
+        "Answer3": "&nbsp;&nbsp;97&nbsp;&nbsp;",
+        "Answer4": "&nbsp;&nbsp;117&nbsp;&nbsp;",
+        "CorrectAnswer": 2,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Hexadecimal is base 16 with digits 0 -  9 and A - F for 11 through 15.   One can convert from binary to hexadecimal by taking the binary digits four at a time.  '1111' is 'F' and '0100' is '4'.   Thus '4F' is the hexadecimal representation of the letter 'O'.</p>",
+        "AnswerImage": null
+    }
+}

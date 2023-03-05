@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "1I18",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 1,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Red is angry.  Yesterday after class, someone e-mailed the following message to Sky using Red\u2019s school account:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A002-1I18-0Q.png\"></p><p>Red does not have a crush on Sky and does not remember sending the message.  Which of the following is the most likely explanation for the message?</p>",
+        "QuestionImage": "A000-A002-1I18-0Q.png",
+        "Answer1": "Red has a crush on Sky and sent the e-mail to Sky while sleepwalking the previous night.",
+        "Answer2": "Red changed the password for their school account yesterday.",
+        "Answer3": "Red often forgets to log off from the computer at the end of class.   Someone noticed yesterday and sent the mail using Red's account.",
+        "Answer4": "Red clicked on an e-mail with the subject line \"Nigerian prince wants money\" but realized it was a joke sent by their best friend Moss. ",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Keep your login information private, and remember to log off of devices appropriately.</p>",
+        "AnswerImage": null
+    }
+}
