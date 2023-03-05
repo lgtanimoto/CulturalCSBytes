@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "1A11",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 1,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Kai</span> has the following metal image for an icon for their club to use at several school events.  <span class=\"qname\">Kai</span> has a drawing program with a programming language that make it easy to draw regular polygons in multiple colors.    How should <span class=\"qname\">Kai</span> <em>decompose</em> or break down the generation of this image into a small number of steps?</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A001-1A11-0Q.png\"></p>",
+        "QuestionImage": "A000-A001-1A11-0Q.png",
+        "Answer1": "Loop through each pixel in the image and set the color as appropriate",
+        "Answer2": "Draw the borders of each figure in the image and then paint each resulting shape with the appropriate color using the paint can function",
+        "Answer3": "Develop software functions that can draw polygons filled with any color",
+        "Answer4": "Draw a blue circle using the programming language in the drawing program.  Then draw a red hexagon and a green triangle using same programming language",
+        "CorrectAnswer": 4,
+        "FixedOrderFromBottom": 1,
+        "Explanation": "<p><em>Decomposition</em> is breaking down the steps needed to solve a problem into a precise sequence of instructions.  Programming languages that support drawing have functions that can draw circles and other polygons and fill them with a color.   While the other solutions do break down the problem somewhat, each instruction in the sequence is unclear. </p>",
+        "AnswerImage": null
+    }
+}

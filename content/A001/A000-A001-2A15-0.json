@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "2A15",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Pacific</span> is programming a robot to plant flowers in a single row in a flower bed.  Each flower should be separated by 20 centimeters.  Each flower bed is a minimum of 40 cm and has length that is a multiple of 20 cm.  <span class=\"qname\">Pacific</span>'s initial code is as follows:</p><p><div class=\"code\">findLeftEdgeOfFlowerBed()<br>repeat while not= atRightEdgeOfFlowerBed()<div class=\"ci4\">plantFlower()</div><div class=\"ci4\">moveRight(20)</div>end</div></p><p>However, the initial code attempts to <em>plant a flower in the wall of the left edge</em>.   Which of the following code snippets correctly implements this algorithm?</p>",
+        "QuestionImage": "",
+        "Answer1": "<div class=\"code\">findLeftEdgeOfFlowerBed()<br>repeat while not= atRightEdgeOfFlowerBed()<div class=\"ci4\">moveRight(20)</div><div class=\"ci4\">plantFlower()</div>end</div>",
+        "Answer2": "<div class=\"code\">findLeftEdgeOfFlowerBed()<br>moveRight(20)<br>repeat while not= atRightEdgeOfFlowerBed()<div class=\"ci4\">plantFlower()</div><div class=\"ci4\">moveRight(20)</div>end</div>",
+        "Answer3": "<div class=\"code\">findLeftEdgeOfFlowerBed()<br>repeat until atRightEdgeOfFlowerBed()<div class=\"ci4\">plantFlower()</div><div class=\"ci4\">moveRight(20)</div>end</div>",
+        "Answer4": "<div class=\"code\">findLeftEdgeOfFlowerBed()<br>repeat until atRightEdgeOfFlowerBed()<div class=\"ci4\">moveRight(20)</div><div class=\"ci4\">plantFlower()</div>end</div>",
+        "CorrectAnswer": 2,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>To fix the existing algorithm, the robot needs to be positioned 20 cm inside the flower bed before planting the first flower.</p>",
+        "AnswerImage": null
+    }
+}

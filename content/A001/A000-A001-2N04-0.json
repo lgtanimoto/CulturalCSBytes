@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "2N04",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Starlight</span> is streaming videos on their smartphone from an education video website.  The video is 63 minutes long in high definition.   Which of the following best explains how the video is sent from the education video website to <span class=\"qname\">Starlight</span>'s smartphone after a connection is made between the video website and the smartphone?</p>",
+        "QuestionImage": null,
+        "Answer1": "A dedicated pathway is created between a server on the website and the smartphone.  The video file is first downloaded in its entirety to the smartphone before the video begins.",
+        "Answer2": "A dedicated pathway is created between a server on the website and the smartphone.  The video file is broken up into thousands of packets, sent over the dedicated pathway, and displayed as packets arrive. ",
+        "Answer3": "The video file is broken up into thousands of packets, sent over the Internet via multiple pathways, and displayed on the smartphone as packets arrive.",
+        "Answer4": "The video file is broken up into thousands of packets, sent over the Internet via multiple pathways, and reassembled in its entirety on the smartphone.   After the video file is entirely reassembled, the video starts on the smartphone ",
+        "CorrectAnswer": 3,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p><em>TCP/IP</em> stands for Transmission Control Protocol/Internet Protocol.   Once the video server knows the IP address to steam the video to, it uses TCP to break the file up into multiple packets, attaches the IP address to each packet, and then sends out over the Intent.   The Internet takes each packet and routes it to the smartphone; however, each packet could take a different route depending on the network conditions.   The packets are reassembled in order by TCP as they arrive and are buffered on the smartphone.   If a packet fails to arrive, it is re-requested.</p>",
+        "AnswerImage": null
+    }
+}

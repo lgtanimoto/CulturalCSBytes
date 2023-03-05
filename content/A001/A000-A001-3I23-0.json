@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3I23",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 2,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>For a high school project, <span class=\"qname\">Chengdu</span> has developed an app for a game like the old Windows game Minesweeper and allows friends to challenge and compare scores with each other online.  <span class=\"qname\">Chengdu</span>'s teacher comments that the work on the app is &quot;fantastic.&quot;   <span class=\"qname\">Chengdu</span> wonders whether they should publish their code online on GitHub or keep it secret.</p><p>Which of the following is a reason why <span class=\"qname\">Chengdu</span> should <em>NOT</em> publish their code online without futher modification?</p>",
+        "QuestionImage": null,
+        "Answer1": "The code may contain certain passwords or other configuration information that <span class=\"qname\">Chengdu</span> needs to keep secret.",
+        "Answer2": "It will be harder for <span class=\"qname\">Chengdu</span> to share the code with others to collaborate in the future.",
+        "Answer3": "Someone may copy the code and resell it for a billion dollars.",
+        "Answer4": "Potential employers will see the code and know that <span class=\"qname\">Chengdu</span>  is a bad programmer.",
+        "CorrectAnswer": 0,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>Especially because the app shares data online, the code likely contains passwords and other configuration information that needs to be kept secret.   Release of this secret information may result in  <span class=\"qname\">Chengdu</span> unexpectedly having to pay for online computing resources or having their game lose online access.  Fortunately, online repositories such as Github do provide ways to keep confidential configuration information private.  Other parts of the code provide functionality that is similar to what many others have done so publishing the code online is beneficial. </p>",
+        "AnswerImage": null
+    }
+}

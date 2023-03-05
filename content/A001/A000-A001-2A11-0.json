@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "2A11",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 1,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">River</span> is making a peanut butter and jelly sandwich for lunch.   Which of the following is an <em>algorithm</em> that <em>decomposes</em> the steps to make a peanut butter and jelly sandwich into a precise sequence of instructions?</p>",
+        "QuestionImage": "",
+        "Answer1": "<div class=\"code\">Peanut butter, grape jelly, and two pieces of bread</div>",
+        "Answer2": "<div class=\"code\">for breakfast, make fried eggs<br>for lunch, make peanut butter and jelly sandwich<br>for dinner, bake a pizza<br>for dessert, buy some ice cream<div>",
+        "Answer3": "<div class=\"code\">Get the bread, peanut butter, and grape jelly out of the refrigerator<br>Eat the sandwich</div> ",
+        "Answer4": "<div class=\"code\">Get the bread, peanut butter, and grape jelly out of the refrigerator<br>Open all containers<br>Take two pieces of bread out and lay them on a counter<br>Spread peanut butter on the top of one piece of bread and grape jelly on the other.<br>Put the two pieces of bread together with the peanut butter and jelly on the inside</div>",
+        "CorrectAnswer": 4,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p><em>Decomposition</em> is breaking a process down into well-defined steps.   <span class=\"qcanswer\">Answer D</span> is the answer that best breaks down how to make a peanut butter and jelly sandwich</p>",
+        "AnswerImage": null
+    }
+}

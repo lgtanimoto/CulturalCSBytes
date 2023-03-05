@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "4N04",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Golden</span> is installing a wireless network for their family.  <span class=\"qname\">Golden</span>'s family already owns a network switch which connects several wireless devices and two wired servers in their home to the same network.   But <span class=\"qname\">Golden</span>'s family needs an additional device to connect their home network to the Internet.   What type of device should <span class=\"qname\">Golden</span> inform their family to purchase?</p>",
+        "QuestionImage": null,
+        "Answer1": "Network address",
+        "Answer2": "Network server",
+        "Answer3": "Network hub",
+        "Answer4": "Network router",
+        "CorrectAnswer": 4,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>A <em>network router</em> is a device that connects one network such as a home local area network to another such as the Internet.  Homes often have devices that combine both network routers and switches, but the two can be purchased separately.</p>",
+        "AnswerImage": null
+    }
+}

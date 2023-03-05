@@ -1,0 +1,22 @@
+{
+    "__comment__": "",
+    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+    "QuestionSetCode": "A000",
+    "CultureCode": "A000",
+    "MQCode": "3A14",
+    "QuestionAltCode": 0,
+    "QuestionDifficulty": 3,
+    "QuestionCurrent": true,
+    "QuestionJSON": {
+        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Quartz</span> is writing a program to produce art by printing out characters.    Some simple examples of the art that <span class=\"qname\">Quartz</span> would like to create are below:</p><table><thead><th>Example 1</th><th>Example 2</th><th>Example 3</th><thead><tbody><tr><td><div class=\"code\">A<br>bb<br>CCC<br>dddd<div></td><td><div class=\"code\">---****---<br>--**oo**--<br>-**oooo**-<br>**oooooo**</div></td><td><div class=\"code\">11<br>3333<br>555555<br>77777777</div></td></tr></tbody></table><p><span class=\"qname\">Quartz</span> realizes that to create this type of simple artwork, they must write a procedure to create strings with the same character repeated multiple times.  Which of the following code snippets best represents the procedure that <span class=\"qname\">Quartz</span> should write:</p>",
+        "QuestionImage": null,
+        "Answer1": "<div class=\"code\">action RepeatChar(text ch, integer num) returns text<div class=\"ci4\">text str = \"\"</div><div class=\"ci4\">repeat num times</div><div class=\"ci8\">str = str + ch</div><div class=\"ci4\">end</div><div class=\"ci4\">return str</div>end</div>",
+        "Answer2": "<div class=\"code\">action RepeatChar()<div class=\"ci4\">text str = \"\"</div><div class=\"ci4\">repeat num times</div><div class=\"ci8\">str = str + ch</div><div class=\"ci4\">end</div><div class=\"ci4\">return str</div>end</div>",
+        "Answer3": "<div class=\"code\">action RepeatChar(text ch, integer num) returns text<div class=\"ci4\">return ch</div>end</div>",
+        "Answer4": "<div class=\"code\">action RepeatChar(text ch, integer num) returns text<div class=\"ci4\">repeat num times</div><div class=\"ci8\">str = str + ch</div><div class=\"ci4\">end</div>end</div>",
+        "CorrectAnswer": 1,
+        "FixedOrderFromBottom": 0,
+        "Explanation": "<p>A procedure to create strings with the same character multiple times must: 1) have parameters for the character to be repeated and the number of repetitions, and 2) return a text string with the same character repeated multiple times usually by using a loop. <span class=\"qcanswer\">Answer A</span> is the only answer that fulfill these two requirements</p>",
+        "AnswerImage": null
+    }
+}

@@ -65,7 +65,13 @@ em {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: darkcyan;
+    background-color: magenta;
+}
+
+.start_culture {
     background-color: yellow;
+    font-weight: bold;
+    margin-bottom: 1em
 }
 
 
