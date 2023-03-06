@@ -749,23 +749,22 @@ CREATE INDEX IF NOT EXISTS fki_rql_resource_code_fk
 
 -- Function: select_questions
 
-CREATE OR REPLACE FUNCTION select_questions(code INTEGER, percent INTEGER)
+CREATE OR REPLACE FUNCTION select_questions(culture_id TEXT, difficulty_code INTEGER, num_questions INTEGER)
     RETURNS TABLE (question_id INTEGER, question_json JSON)
     LANGUAGE PLPGSQL
     AS $$
     BEGIN
         RETURN QUERY
-            SELECT id AS question_id, json AS question_json 
-            FROM question 
-            WHERE difficulty = code 
-            ORDER BY RANDOM() 
-            LIMIT (20 * percent / 100);
+            SELECT question.id AS question_id, question.json AS question_json 
+            FROM question JOIN question_set_culture ON question.qsc_id = question_set_culture.id
+            WHERE question.difficulty = difficulty_code AND question_set_culture.culture_code = culture_id
+            ORDER BY RANDOM() LIMIT num_questions;
     END
     $$;
 
 -- Stored Procedure: insert_session_questions
 
-CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, difficulty INTEGER)
+CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, cultures TEXT[], distr INTEGER[])
     LANGUAGE PLPGSQL
     AS $$
     DECLARE
@@ -773,28 +772,26 @@ CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, difficu
     answer_order INTEGER;
     answer_order_array INTEGER[] := ARRAY[1,2,3,4];
     correct_answer INTEGER;
-    count INTEGER := 0;
+    culture_id TEXT;
+    culture_count INTEGER := 0;
+    culture_name TEXT;
+    question_count INTEGER := 0;
     question_id INTEGER;
     question_json JSON;
     BEGIN
         CREATE TEMP TABLE temp_question(id INTEGER, json JSON);
-        IF difficulty = 1 THEN
-            INSERT INTO temp_question SELECT * FROM select_questions(1, 40);
-            INSERT INTO temp_question SELECT * FROM select_questions(2, 30);
-            INSERT INTO temp_question SELECT * FROM select_questions(3, 30);
-        ELSIF difficulty = 2 THEN
-            INSERT INTO temp_question SELECT * FROM select_questions(1, 30);
-            INSERT INTO temp_question SELECT * FROM select_questions(2, 40);
-            INSERT INTO temp_question SELECT * FROM select_questions(3, 30);
-        ELSE
-            INSERT INTO temp_question SELECT * FROM select_questions(1, 30);
-            INSERT INTO temp_question SELECT * FROM select_questions(2, 30);
-            INSERT INTO temp_question SELECT * FROM select_questions(3, 40);
-        END IF;
+        FOREACH culture_name IN ARRAY cultures
+        LOOP
+            SELECT culture.code INTO culture_id FROM culture WHERE culture.name = culture_name;
+            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 1, distr[culture_count * 3 + 1]);
+            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 2, distr[culture_count * 3 + 2]);
+            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 3, distr[culture_count * 3 + 3]);
+            culture_count = culture_count + 1;
+        END LOOP;
         FOR question_id, question_json IN 
         SELECT id, json FROM temp_question ORDER BY RANDOM()
         LOOP
-            count = count + 1;
+            question_count = question_count + 1;
             correct_answer = question_json->'CorrectAnswer';
             answer_order = 0;
             answer_order_array = (SELECT ARRAY_AGG(u ORDER BY RANDOM()) FROM UNNEST(answer_order_array) u);
@@ -803,7 +800,7 @@ CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, difficu
                 answer_order = 10 * answer_order + answer;
             END LOOP;
             INSERT INTO session_question (session_id, question_id, question_order, status, answer_order, correct_answer) 
-            VALUES (session_id, question_id, count, 0, answer_order, correct_answer);
+            VALUES (session_id, question_id, question_count, 0, answer_order, correct_answer);
         END LOOP;
     END
     $$;
