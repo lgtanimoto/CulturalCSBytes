@@ -342,7 +342,7 @@ CREATE TABLE IF NOT EXISTS public.question_set_culture
 (
     id smallint NOT NULL DEFAULT nextval('question_set_culture_id_seq'::regclass),
     question_set_code character(4) COLLATE pg_catalog."default" NOT NULL,
-    description character varying(32) COLLATE pg_catalog."default",
+    description character varying(64) COLLATE pg_catalog."default",
     isdefault boolean NOT NULL DEFAULT false,
     culture_code character(4) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT question_set_culture_pkey PRIMARY KEY (id),

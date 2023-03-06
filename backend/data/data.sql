@@ -4,10 +4,10 @@ INSERT INTO culture (code,name,lang)
 VALUES ('A000','Default Culture','en-us');
 
 INSERT INTO culture (code,name,lang)
-VALUES ('Z900','Test Culture 1','en-us');
+VALUES ('A001','Black','en-us');
 
 INSERT INTO culture (code,name,lang)
-VALUES ('Z901','Test Culture 2','en-us');
+VALUES ('A002','Hispanic-Latinx','en-us');
 
 -- Defaults
 
@@ -26,10 +26,10 @@ INSERT INTO question_set_culture (culture_code,question_set_code,description,isd
 VALUES ('A000','A000','Default QuestionSetCulture',TRUE);
 
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
-VALUES ('Z900','A000','Test QuestionSetCulture 1',FALSE);
+VALUES ('A001','A000','Black QuestionSetCulture',FALSE);
 
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
-VALUES ('Z901','A000','Test QuestionSetCulture 2',FALSE);
+VALUES ('A002','A000','Hispanic-Latinx QuestionSetCulture',FALSE);
 
 -- These add in the first set of metaquestions
 
