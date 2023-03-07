@@ -428,7 +428,7 @@ const body = {
 
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}`, {
   method: 'PATCH',
-  headers: { 'Content-type': 'application/json' },
+  headers: { token: localStorage.token },
   body: JSON.stringify(body)
 });
 
@@ -481,7 +481,7 @@ The input body is the exact same as before. But the API request is formed a litt
 ```
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions`, {
   method: 'POST',
-  headers: { 'Content-type': 'application/json' },
+  headers: { token: localStorage.token },
   body: JSON.stringify(body)
 });
 
@@ -562,7 +562,7 @@ const body = {answer};
 
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
   method: 'PATCH',
-  headers: { 'Content-type': 'application/json' },
+  headers: { token: localStorage.token },
   body: JSON.stringify(body)
 });
 
@@ -609,7 +609,7 @@ PATCH http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/questi
 The only difference is what we put in the body, which will now look like this to specify that we are moving on from this question:
 
 ```
-const body = {next: true};
+const body = { next: true };
 ```
 
 ##### Success
