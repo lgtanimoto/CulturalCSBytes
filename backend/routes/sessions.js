@@ -35,9 +35,44 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
     }
 
     async function insertSessionQuestions() {
+        /* Get the question distribution for each culture */
+
+        const cultureDistr = [];
+        let rem = 20;
+        for (let i = 0; i < cultures.length; i++) {
+            let alloc = i === 0 ? 
+                Math.round(20.0 * 2 / (cultures.length + 1)) :
+                Math.round(rem / (cultures.length - i));
+            cultureDistr.push(alloc);
+            rem -= alloc;
+        }
+
+        /* Get the difficulty distribution for each culture */
+
+        const totalDistr = [];
+
+        for (let i = 0; i < cultureDistr.length; i++) {
+            const diffDistr = [0, 0, 0];
+            diffDistr[difficultyCode - 1] = Math.round(cultureDistr[i] * 4 / 10.0);
+            
+            let totalRem = cultureDistr[i] - diffDistr[difficultyCode - 1];
+            let diffRem = 2;
+            for (let j = 1; j <= 3; j++) {
+                if (j !== difficultyCode) {
+                    diffDistr[j - 1] = Math.round(totalRem / diffRem);
+                    totalRem -= diffDistr[j - 1];
+                    diffRem--;
+                }
+            }
+
+            totalDistr.push(...diffDistr);
+        }
+
+        /* Pass the session to add the questions to and the distribution of culture/difficulty */
+
         await pool.query(
-            'CALL insert_session_questions($1, $2)',
-            [sessionId, difficultyCode]
+            'CALL insert_session_questions($1, $2, $3)',
+            [sessionId, cultures, totalDistr]
         );
     }
 
