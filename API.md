@@ -182,6 +182,7 @@ const parseData = await res.json();
   enrollments: [
     {
       id: ...,
+      name: ...,
       completedSessions: ...,
       highScore: ...,
       date: ...,
@@ -199,6 +200,7 @@ Here is a breakdown of each of the fields:
 - `nickname` - Nickname to display.
 - `enrollments` - The list of enrollments for a student (only one for the initial milestone).
   - `id` - The numerical id of the enrollment. Use it when making future API requests with the enrollment id.
+  - `name` - The enrollment name.
   - `completedSessions` - A number from 0 to 5.
   - `highScore` - The *percentage* of the high score
   - `date` - If `null`, then we haven't started the enrollment. Otherwise, the most recent date an official session was started or completed.
