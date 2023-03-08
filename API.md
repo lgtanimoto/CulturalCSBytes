@@ -182,6 +182,7 @@ const parseData = await res.json();
   enrollments: [
     {
       id: ...,
+      name: ...,
       completedSessions: ...,
       highScore: ...,
       date: ...,
@@ -199,6 +200,7 @@ Here is a breakdown of each of the fields:
 - `nickname` - Nickname to display.
 - `enrollments` - The list of enrollments for a student (only one for the initial milestone).
   - `id` - The numerical id of the enrollment. Use it when making future API requests with the enrollment id.
+  - `name` - The enrollment name.
   - `completedSessions` - A number from 0 to 5.
   - `highScore` - The *percentage* of the high score
   - `date` - If `null`, then we haven't started the enrollment. Otherwise, the most recent date an official session was started or completed.
@@ -428,7 +430,7 @@ const body = {
 
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}`, {
   method: 'PATCH',
-  headers: { 'Content-type': 'application/json' },
+  headers: { token: localStorage.token },
   body: JSON.stringify(body)
 });
 
@@ -481,7 +483,7 @@ The input body is the exact same as before. But the API request is formed a litt
 ```
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions`, {
   method: 'POST',
-  headers: { 'Content-type': 'application/json' },
+  headers: { token: localStorage.token },
   body: JSON.stringify(body)
 });
 
@@ -562,7 +564,7 @@ const body = {answer};
 
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
   method: 'PATCH',
-  headers: { 'Content-type': 'application/json' },
+  headers: { token: localStorage.token },
   body: JSON.stringify(body)
 });
 
@@ -609,7 +611,7 @@ PATCH http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/questi
 The only difference is what we put in the body, which will now look like this to specify that we are moving on from this question:
 
 ```
-const body = {next: true};
+const body = { next: true };
 ```
 
 ##### Success
