@@ -24,7 +24,7 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
     /* Create a string for the list of all the cultures, starting with the preferred culture */
     
     const cultures = [preferredCulture];
-    additionalCultures = additionalCultures.filter(culture => culture !== preferredCulture);
+    additionalCultures = additionalCultures ? additionalCultures.filter(culture => culture !== preferredCulture) : [];
     cultures.push(...additionalCultures);
 
     async function updateSession() {
