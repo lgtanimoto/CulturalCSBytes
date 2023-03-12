@@ -45,6 +45,7 @@ Follow these instructions very carefully, and in order. Make sure that you have 
 
 ### Database setup
 Open the `schema.sql` file in the `backend/data` directory. Do the following:
+1. Make sure you are **NOT** in the `ccsb` database if you are reseeding. As a precaution, run `\c postgres`.
 1. Uncomment the lines that drop and create the database (on lines 5 and 7, beginning with `DROP DATABASE...` and `CREATE DATABASE ...`, respectively).
 2. Copy those lines. Paste them in the terminal session that is connected to the database (the one with `postgres=#` or something similar as a prompt).
 3. Connect to the new database by running `\c ccsb`.
