@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './questions.css';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
 
 function Questions() {
 
@@ -14,21 +15,36 @@ function Questions() {
   const [answer2, setAnswer2] = React.useState("Answer 2"); //get from json
   const [answer3, setAnswer3] = React.useState("Answer 3"); //get from json
   const [answer4, setAnswer4] = React.useState("Answer 4"); //get from json
-  const [answer5, setAnswer5] = React.useState("Answer 5"); //get from json
   const [correctAnswer, setCorrectAnswer] = React.useState(1); //get from json
   const [totalCorrect, setTotalCorrect] = React.useState(0); //get from backend
 
   async function getQuestion() {
     try {
-      console.log("id = " + location.state.id + " sessionId = " + location.state.sessionId);
-      const res = await fetch(`http://localhost:3001/enrollments/${location.state.id}/sessions/${location.state.sessionId}/questions/${1}`, {
-        method: 'GET',
-        headers: { token: localStorage.token }
-      });
+      var parseData = "";
+      if (location.state.sessionId == null) {
+        const res = await fetch(`http://localhost:3001/enrollments/${location.state.id}/sessions/${location.state.redirect}`, {
+          method: 'GET',
+          headers: { token: localStorage.token }
+        });
+        parseData = await res.json();
+      } else {
+        console.log("id = " + location.state.id + " sessionId = " + location.state.sessionId);
+        const res = await fetch(`http://localhost:3001/enrollments/${location.state.id}/sessions/${location.state.sessionId}/questions/${1}`, {
+          method: 'GET',
+          headers: { token: localStorage.token }
+        });
+        parseData = await res.json();
+      }
       
-      const parseData = await res.json();
+      
 
       console.log(parseData);
+
+      setCurQuestion(parseData.questionJson.Question);
+      setAnswer1(parseData.questionJson.Answer1);
+      setAnswer2(parseData.questionJson.Answer2);
+      setAnswer3(parseData.questionJson.Answer3);
+      setAnswer4(parseData.questionJson.Answer4);
 
     } catch (err) {
       console.error(err.message);
@@ -77,22 +93,19 @@ function Questions() {
       <div id="welcome">
         <h1>Question {curNum} of {numOfQuestions}</h1>
       </div>
-      <p>{curQuestion}</p>
+      <div>{ ReactHtmlParser(curQuestion) }</div>
       <img src=""/>
       <div className="Answer">
-        <button id="1" onClick={() => answerClick("1")}>{answer1}</button>
+        <button id="1" onClick={() => answerClick("1")}>{ ReactHtmlParser(answer1) }</button>
       </div>
       <div className="Answer">
-        <button id="2" onClick={() => answerClick("2")}>{answer2}</button>
+        <button id="2" onClick={() => answerClick("2")}>{ ReactHtmlParser(answer2) }</button>
       </div>
       <div className="Answer">
-        <button id="3" onClick={() => answerClick("3")}>{answer3}</button>
+        <button id="3" onClick={() => answerClick("3")}>{ ReactHtmlParser(answer3) }</button>
       </div>
       <div className="Answer">
-        <button id="4" onClick={() => answerClick("4")}>{answer4}</button>
-      </div>
-      <div className="Answer">
-        <button id="5" onClick={() => answerClick("5")}>{answer5}</button>
+        <button id="4" onClick={() => answerClick("4")}>{ ReactHtmlParser(answer4) }</button>
       </div>
       <button id="next" onClick={nextQuestion}>Next</button>
     </div>

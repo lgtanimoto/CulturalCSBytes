@@ -43,8 +43,8 @@ function Confirmation() {
       console.log(parseRes);
 
       navigate("/questions", {state: {id: id, sessionId: sessionId, preferredCulure: preferredCulture, difficulty: difficulty, additionalCultures: additionalCultures}});
-    } catch {
-
+    } catch (err) {
+      console.log(err.message);
     }
   }
 

@@ -59,7 +59,10 @@ const CourseEnrollments = ({setAuth}) => {
     try {
       const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/continue`, {
         method: 'GET',
-        headers: { token: localStorage.token }
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token
+        },
       });
       
       const parseData = await res.json();
@@ -68,7 +71,7 @@ const CourseEnrollments = ({setAuth}) => {
         navigate("/enroll", {state: {id: id}});
       } else {
         console.log(parseData);
-        //navigate("/confirmation", {state: {id: id, sessionId: parseData.sessionId, difficulties: parseData.difficulties, cultures: parseData.cultures}});
+        navigate("/questions", {state: {id: id, redirect: parseData.redirect}});
       }
 
       //navigate("/confirmation", {state: {username: username, course: id }} );
