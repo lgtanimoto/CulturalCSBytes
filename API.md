@@ -430,7 +430,10 @@ const body = {
 
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}`, {
   method: 'PATCH',
-  headers: { token: localStorage.token },
+  headers: {
+    'Content-type': 'application/json',
+    token: localStorage.token
+  },
   body: JSON.stringify(body)
 });
 
@@ -483,7 +486,10 @@ The input body is the exact same as before. But the API request is formed a litt
 ```
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions`, {
   method: 'POST',
-  headers: { token: localStorage.token },
+  headers: {
+    'Content-type': 'application/json',
+    token: localStorage.token
+  },
   body: JSON.stringify(body)
 });
 
@@ -564,7 +570,10 @@ const body = {answer};
 
 const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
   method: 'PATCH',
-  headers: { token: localStorage.token },
+  headers: {
+    'Content-type': 'application/json',
+    token: localStorage.token
+  },
   body: JSON.stringify(body)
 });
 
