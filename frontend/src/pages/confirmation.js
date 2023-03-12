@@ -9,8 +9,8 @@ function Confirmation() {
 
   const id = location.state.id;
   const sessionId = location.state.sessionId;
-  const difficulties = location.state.difficulty;
-  const cultures = location.state.culture;
+  const difficulty = location.state.difficulty;
+  const preferredCulture = location.state.culture;
   const additionalCultures = location.state.additionalCultures;
 
   const cancel = () => {
@@ -22,8 +22,8 @@ function Confirmation() {
 
     try {
       const body = {
-        cultures,
-        difficulties,
+        preferredCulture,
+        difficulty,
         additionalCultures
       };
 
@@ -31,7 +31,10 @@ function Confirmation() {
       
       const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}`, {
         method: 'PATCH',
-        headers: { token: localStorage.token },
+        headers: {
+          "Content-type": "application/json",
+          token: localStorage.token
+        },
         body: JSON.stringify(body)
       });
       
@@ -39,7 +42,7 @@ function Confirmation() {
 
       console.log(parseRes);
 
-      navigate("/questions", {state: {id: id, sessionId: sessionId, difficulties: difficulties, cultures: additionalCultures}});
+      navigate("/questions", {state: {id: id, sessionId: sessionId, preferredCulure: preferredCulture, difficulty: difficulty, additionalCultures: additionalCultures}});
     } catch {
 
     }
