@@ -9,6 +9,7 @@ import CreateAccount from './pages/onboarding/create.js';
 import ContinueCreateAccount from './pages/onboarding/continue-create.js';
 import CourseEnrollments from './pages/course-enrollments.js';
 import Confirmation from './pages/confirmation.js';
+import Enroll from './pages/enroll.js';
 import Questions from './pages/questions.js';
 import QuestionEnd from './pages/question-end.js';
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/continue-create-account' element={!isAuthenticated ? (<ContinueCreateAccount setAuth={setAuth} />) : (<Navigate to="/login" />) } />
             <Route path='/course-enrollments' element={isAuthenticated ? (<CourseEnrollments setAuth={setAuth} />) : (<Navigate to="/login" />) } />
             <Route path='/confirmation' element={<Confirmation/>} />
+            <Route path='/enroll' element={<Enroll/>} />
             <Route path='/questions' element={<Questions/>} />
             <Route path='/question-end' element={<QuestionEnd/>} />
         </Routes>

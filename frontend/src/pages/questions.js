@@ -1,8 +1,10 @@
-import React from 'react';
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from 'react';
+import { useNavigate, useLocation } from "react-router-dom";
 import './questions.css';
 
 function Questions() {
+
+  const location = useLocation();
 
   const [answered, setAnswered] = React.useState(false);
   const numOfQuestions = 5; //get from backend
@@ -15,6 +17,27 @@ function Questions() {
   const [answer5, setAnswer5] = React.useState("Answer 5"); //get from json
   const [correctAnswer, setCorrectAnswer] = React.useState(1); //get from json
   const [totalCorrect, setTotalCorrect] = React.useState(0); //get from backend
+
+  async function getQuestion() {
+    try {
+      console.log("id = " + location.state.id + " sessionId = " + location.state.sessionId);
+      const res = await fetch(`http://localhost:3001/enrollments/${location.state.id}/sessions/${location.state.sessionId}/questions/${1}`, {
+        method: 'GET',
+        headers: { token: localStorage.token }
+      });
+      
+      const parseData = await res.json();
+
+      console.log(parseData);
+
+    } catch (err) {
+      console.error(err.message);
+    }
+  }
+
+  useEffect(() => {
+    getQuestion()
+  })
 
   const navigate = useNavigate();
 

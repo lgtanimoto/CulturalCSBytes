@@ -5,6 +5,7 @@ class Course extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            id: this.props.id,
             name: this.props.name,
             completed: this.props.completed,
             high: this.props.high,
@@ -16,13 +17,13 @@ class Course extends Component {
         return (
             <div className="course">
                 <p>{this.props.name}</p>
-                <p>{this.props.completed}</p>
-                <p>{this.props.high}</p>
-                <p>{this.props.status}</p>
+                <p>completed: {this.props.completed}</p>
+                <p>high score: {this.props.high}</p>
+                <p>status: {this.props.status}</p>
                 <button type="button">
                     Stats
                 </button>
-                <button type="button" onClick={() => this.props.continueClick(this.props.name)}>
+                <button type="button" onClick={() => this.props.continueClick(this.props.id)}>
                     Continue
                 </button>
             </div>

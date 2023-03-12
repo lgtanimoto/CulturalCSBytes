@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './confirmation.css';
 
@@ -7,12 +7,42 @@ function Confirmation() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const id = location.state.id;
+  const sessionId = location.state.sessionId;
+  const difficulties = location.state.difficulty;
+  const cultures = location.state.culture;
+  const additionalCultures = location.state.additionalCultures;
+
   const cancel = () => {
-    navigate("/course-enrollments", {state: {username: location.state.username}})
+    navigate("/course-enrollments");
   }
 
-  const ok = () => {
-    navigate("/questions", {state: {username: location.state.username, course: location.state.course}});
+  const ok = async e => {
+    e.preventDefault();
+
+    try {
+      const body = {
+        cultures,
+        difficulties,
+        additionalCultures
+      };
+
+      console.log(body);
+      
+      const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}`, {
+        method: 'PATCH',
+        headers: { token: localStorage.token },
+        body: JSON.stringify(body)
+      });
+      
+      const parseRes = await response.json();
+
+      console.log(parseRes);
+
+      navigate("/questions", {state: {id: id, sessionId: sessionId, difficulties: difficulties, cultures: additionalCultures}});
+    } catch {
+
+    }
   }
 
   return (

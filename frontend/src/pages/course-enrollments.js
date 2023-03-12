@@ -8,11 +8,44 @@ const CourseEnrollments = ({setAuth}) => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  /*const [name, setName] = useState("");
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+
+  const [courseData, setCourseData] = React.useState([]);
 
   async function getName() {
     try {
-      const response = await fetch("http://localhost:3001/dashboard/")
+      const res = await fetch('http://localhost:3001/enrollments', {
+        method: 'GET',
+        headers: { token: localStorage.token }
+      });
+      
+      const parseData = await res.json();
+
+      setName(parseData.nickname);
+      setUsername(parseData.username);
+
+      var temp = [];
+      for(var i=0; i<parseData.enrollments.length; i++){
+        var statusText;
+        if(parseData.enrollments[i].status.started == false) {
+          statusText = "Not started";
+        } else if(parseData.enrollments[i].status.completed == false) {
+          statusText = "In progress";
+        } else {
+          statusText = "Finished";
+        }
+        temp.push({
+          id: parseData.enrollments[i].id,
+          name: parseData.enrollments[i].name,
+          completed: parseData.enrollments[i].completedSessions,
+          high: parseData.enrollments[i].highScore,
+          status: statusText,
+        })
+      };
+
+      setCourseData(temp);
+
     } catch (err) {
       console.error(err.message);
     }
@@ -20,40 +53,37 @@ const CourseEnrollments = ({setAuth}) => {
 
   useEffect(() => {
     getName()
-  })*/
+  })
 
-  const continueClick = (name) => {
-    navigate("/confirmation", {state: {username: location.state.username, course: name }} );
+  async function continueClick(id) {
+    try {
+      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/continue`, {
+        method: 'GET',
+        headers: { token: localStorage.token }
+      });
+      
+      const parseData = await res.json();
+
+      if(parseData.redirect == "new") {
+        navigate("/enroll", {state: {id: id}});
+      } else {
+        console.log(parseData);
+        //navigate("/confirmation", {state: {id: id, sessionId: parseData.sessionId, difficulties: parseData.difficulties, cultures: parseData.cultures}});
+      }
+
+      //navigate("/confirmation", {state: {username: username, course: id }} );
+    } catch (err) {
+      console.log(err.message);
+    }
   }
-
-  //currently dummy data
-  //TO DO: fill in with data from backend
-  const [courseData, setCourseData] = React.useState([{
-      name: "A",
-      completed: "5/10",
-      high: "100%",
-      status: "in progress",
-    },
-    {
-      name: "B",
-      completed: "3/10",
-      high: "87%",
-      status: "in progress",
-    },
-    {
-      name: "C",
-      completed: "10/10",
-      high: "75%",
-      status: "completed",
-    }]);
 
   //TO DO: get nickname from backend on login
   return(
     <div className='Create'>
       <h1>Course Enrollments</h1>
       <div className="item">
-        {//<p>Username: {location.state.username}</p>
-        }<p>Nickname: XXXXX</p>
+        {<p>Username: {username}</p>
+        }<p>Nickname: {name}</p>
       </div>
       <div id="options">
             {courseData.map(
@@ -61,6 +91,7 @@ const CourseEnrollments = ({setAuth}) => {
                if (courseData != null) {
                  return (<Course
                  key={idx}
+                 id={course.id}
                  name={course.name}
                  completed={course.completed}
                  high={course.high}
