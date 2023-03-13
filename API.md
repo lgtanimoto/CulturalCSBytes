@@ -231,15 +231,26 @@ const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessi
 const parseData = await res.json();
 ```
 
-You will get a response of the following form:
+If you get this, this means to redirect to the form where we start a new session. See [Section 5](#5-session-start).
 
 ```
-{ redirect: ... }
+{
+    redirect: true,
+    route: 'new'
+}
 ```
 
-This specified the route to redirect to. This field can take the following values:
-- `new` - Redirect to the form where we start a new session. See [Section 5](#5-session-start).
-- `:sessionId/questions/:order` - Redirect to the following question for the specified session. [Section 7](#7-question).
+Or if you get this, which you can check if `route` is a JSON object, this means to redirect to `:sessionId/questions/:order`, or to the following question for the specified session. See [Section 7](#7-question).
+
+```
+{
+    redirect: true,
+    route: {
+        sessionId: ...
+        questionOrder: ...
+    }
+}
+```
 
 ### 4. Enrollment Metrics
 
@@ -378,10 +389,16 @@ And a breakdown of the fields:
 
 ##### Redirect
 
-You may get the following response instead:
+You may get the following response instead, which you can check if the JSON has the `params` field:
 
 ```
-{ redirect: 'new?practice=true' }
+{
+    redirect: true,
+    route: 'new'
+    params: {
+        practice: true
+    }
+}
 ```
 
 This means that it's been less than a week since the student last completed an official session. The student cannot do another official session; instead, the student must wait a week and must do a practice session instead.
