@@ -109,7 +109,10 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
 
         // If no session in progress, redirect to starting new session
         if (sessions.rows.length === 0) {
-            return res.json({ redirect: 'new' })
+            return res.json({
+                redirect: true,
+                route: 'new'
+            })
         }
 
         /* Access question in progres */
@@ -119,7 +122,13 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
             [sessions.rows[0].id, 1]
         );
 
-        res.json({ redirect: `${sessions.rows[0].id}/questions/${sessionQuestions.rows[0].question_order}` });
+        res.json({
+            redirect: true,
+            route: {
+                sessionId: sessions.rows[0].id,
+                questionOrder: sessionQuestions.rows[0].question_order
+            }
+        });
     } catch (err) {
         console.error(err.message);
         return res.status(500).json({
@@ -139,7 +148,11 @@ router.get('/new', verifyCurrentEnrollment, verifyNextSession, async (req, res) 
             const weeks = Math.floor((Date.now() - req.date) / 1000 / 60 / 60 / 24 / 7);
 
             if (!practice && weeks < 1) {
-                return res.json({ redirect: 'new?practice=true' });
+                return res.json({
+                    redirect: true,
+                    route: 'new',
+                    params: { practice: true }
+                });
             }
         }
 
