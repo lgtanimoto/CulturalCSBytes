@@ -14,7 +14,7 @@
         "Answer2": "It will be harder for <span class=\"qname\">Chengdu</span> to share the code with others to collaborate in the future.",
         "Answer3": "Someone may copy the code and resell it for a billion dollars.",
         "Answer4": "Potential employers will see the code and know that <span class=\"qname\">Chengdu</span>  is a bad programmer.",
-        "CorrectAnswer": 0,
+        "CorrectAnswer": 1,
         "FixedOrderFromBottom": 0,
         "Explanation": "<p>Especially because the app shares data online, the code likely contains passwords and other configuration information that needs to be kept secret.   Release of this secret information may result in  <span class=\"qname\">Chengdu</span> unexpectedly having to pay for online computing resources or having their game lose online access.  Fortunately, online repositories such as Github do provide ways to keep confidential configuration information private.  Other parts of the code provide functionality that is similar to what many others have done so publishing the code online is beneficial. </p>",
         "AnswerImage": null
