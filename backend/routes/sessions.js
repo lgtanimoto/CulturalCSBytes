@@ -274,14 +274,14 @@ router.get('/:sessionId/recommendations', verifyCompleteSession, async (req, res
             const result = []
             const map = {}
 
-            for (const inner in resources) {
-                for (const resource in inner) {
-                    if (!resource.code in map) {
+            resources.forEach(inner => {
+                inner.forEach(resource => {
+                    if (!(resource.code in map)) {
                         result.push(resource);
                         map[resource.code] = resource;
                     }
-                }
-            }
+                });
+            });
 
             return result;
         }
@@ -289,7 +289,7 @@ router.get('/:sessionId/recommendations', verifyCompleteSession, async (req, res
         async function getCultureResources() {
             const cultures = req.session.cultures.split(',');
             
-            const cultureResources = Promise.all(cultures.map(async culture => {
+            const cultureResources = await Promise.all(cultures.map(async culture => {
                 const resources = await pool.query(
                     'SELECT resources.code, resources.title, resources.url FROM resources \
                     JOIN resource_culture_links ON resources.code = resource_culture_links.resource_code \
@@ -307,7 +307,7 @@ router.get('/:sessionId/recommendations', verifyCompleteSession, async (req, res
         async function getQuestionSetResources() {
             const cultures = req.session.cultures.split(',');
 
-            const questionSetResources = Promise.all(cultures.map(async culture => {
+            const questionSetResources = await Promise.all(cultures.map(async culture => {
                 const resources = await pool.query(
                     'SELECT resources.code, resources.title, resources.url FROM resources \
                     JOIN resource_qsc_links ON resources.code = resource_qsc_links.resource_code \
