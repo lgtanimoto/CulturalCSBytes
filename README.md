@@ -52,6 +52,7 @@ Open the `schema.sql` file in the `backend/data` directory. Do the following:
 4. In the text editor or IDE, recomment the lines that drop and create the database. **SAVE!!!**
 5. As your current directory should be the project folder, I want you to run `\i backend/data/schema.sql`. This command will run all the SQL commands in that file, which are responsible for setting up the tables and relations.
 6. Now run `\i backend/data/data.sql`. This command will run the SQL commands to seed the database.
+7. Finally run `\i backend/data/resources.sql`. This will add the resources into the database.
 
 If you are instead reseeding the database (which may frequently happen), you still need to follow all of these directions.
 
@@ -64,10 +65,13 @@ Now we will use the terminal session that is connected to the backend service (t
     3. `JWTSECRET` - It does not matter what you define this to be.
     4. `PORT=3001` - The port that the backend service should run on. We will use 3001.
 3. Go back to the terminal session connected to the backend service and run `npm i`. This will install all the necessary packages.
-4. Finally, run `node content.js`. This will add all the questions to the database.
+4. Now run `node content.js`. This will add all the questions to the database.
     1. You will know it completed successfully if the only output is `pool has ended`.
     2. As a precaution, you can check by running `SELECT COUNT(*) FROM question;` in the session connected to the database. Hopefully it is a nonzero number.
-5. You are finally ready to start the backend session. Run `npm run dev`.
+5. Run `node resources.js`. This will add the resources to the database.
+    1. Again, it is successful if the output is `pool has ended`.
+    2. Can also run `SELECT COUNT(*) FROM resource_qsc_links;` and should be nonzero.
+6. You are finally ready to start the backend session. Run `npm run dev`.
     1. If it is successful, you will see `Server is running on port 3001`.
     2. If you ever make changes to the backend, you can restart the service by saving the `index.js` file.
 
