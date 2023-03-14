@@ -698,7 +698,14 @@ With a response that appears in the following format:
   sessionName: ...,
   resources: {
     culture: [],
-    questionSet: [],
+    questionSet: [
+        {
+            code: ...,
+            title: ...,
+            url: ...
+        },
+        ...
+    ],
     questionMissed: []
   }
 }
@@ -707,7 +714,10 @@ With a response that appears in the following format:
 I will go over the fields we have not touched upon yet:
 - `resources` - JSON object that lists resources available for the following:
   - `culture` - Resources available for cultures
-  - `questionSet` - Resources available for the chosen question set
+  - `questionSet` - Resources available for the chosen question set, the only one that will be populated
+    - `code` - The resource code.
+    - `title` - The resource title, ideally displayed as a hyperlink.
+    - `url` - The resource url, where the hyperlink should go to.
   - `questionMissed` - Resources that correspond to the questions missed
 
 ### 10. Session Results
