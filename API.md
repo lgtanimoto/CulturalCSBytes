@@ -555,6 +555,9 @@ And the response data is of the form:
 
 ```
 {
+  questionSetCode: ...,
+  cultureCode: ...,
+  mqCode: ...,
   cultureIcon: ...,
   totalQuestions: ...,
   questionJson: ...,
@@ -565,6 +568,7 @@ And the response data is of the form:
 ```
 
 And a breakdown of the fields:
+- `questionSetCode`, `cultureCode`, `mqCode` - These three fields identify the question JSON (for debugging purposes).
 - `cultureIcon` - Would be a blob to store the culture icon, but right now no functionality.
 - `totalQuestions` - Total questions for the "out of...".
 - `questionJson` - Please refer to the **content** folder of this directory for information on what this looks like.
