@@ -39,7 +39,8 @@ This guide will detail what, when, and how to make specific API requests from th
     5. [verifyCurrentQuestion](#verifycurrentquestion)
     6. [verifyNextSession](#verifynextsession)
     7. [verifyCompleteSession](#verifycompletesession)
-3. [Miscellaneous](#miscellaneous)
+3. [Debugging](#debugging)
+4. [Miscellaneous](#miscellaneous)
 
 ## Wireframe Walkthrough
 
@@ -555,6 +556,12 @@ And the response data is of the form:
 
 ```
 {
+  codes: {
+    questionSetCode: ...,
+    cultureCode: ...,
+    mqCode: ...,
+    altCode: ...
+  }
   questionSetCode: ...,
   cultureCode: ...,
   mqCode: ...,
@@ -568,7 +575,7 @@ And the response data is of the form:
 ```
 
 And a breakdown of the fields:
-- `questionSetCode`, `cultureCode`, `mqCode` - These three fields identify the question JSON (for debugging purposes).
+- `codes` - The four codes contained identify the question JSON file (for debugging purposes, see the [Debugging](#debugging) section).
 - `cultureIcon` - Would be a blob to store the culture icon, but right now no functionality.
 - `totalQuestions` - Total questions for the "out of...".
 - `questionJson` - Please refer to the **content** folder of this directory for information on what this looks like.
@@ -845,6 +852,26 @@ This middleware function checks if a session is complete, necessary to access re
   error: 'Cannot find completed session.'
 }
 ```
+
+## Debugging
+
+If we need to debug a question, please make a request to the following route:
+
+```
+GET http://localhost:3001/questions/:questionSetCode/:cultureCode/:mqCode/:altCode
+```
+
+This is a simple API GET request:
+
+```
+const res = await fetch(`http://localhost:3001/questions/${questionSetCode}/${cultureCode}/${mqCode}/${altCode}`, {
+  method: 'GET'
+});
+
+const parseData = await res.json();
+```
+
+The response will be the whole JSON contained in the corresponding file itself.
 
 ## Miscellaneous
 
