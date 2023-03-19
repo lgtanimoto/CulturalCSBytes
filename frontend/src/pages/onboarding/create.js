@@ -7,7 +7,7 @@ const CreateAccount = ({setAuth}) => {
   const navigate = useNavigate();
 
   const goHome = () => {
-    navigate("/home")
+    navigate("/home");
   }
 
   //checks to make sure username is not blank, and is unique

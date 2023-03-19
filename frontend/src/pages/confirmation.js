@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './confirmation.css';
 
@@ -42,7 +42,7 @@ function Confirmation() {
 
       console.log(parseRes);
 
-      navigate("/questions", {state: {id: id, sessionId: sessionId, preferredCulure: preferredCulture, difficulty: difficulty, additionalCultures: additionalCultures}});
+      navigate("/questions", {state: {id: id, sessionId: sessionId, order: 1}});
     } catch (err) {
       console.log(err.message);
     }

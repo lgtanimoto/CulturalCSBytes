@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './course-enrollments.css';
 import Course from './course.js';
 
 const CourseEnrollments = ({setAuth}) => {
 
   const navigate = useNavigate();
-  const location = useLocation();
 
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
@@ -28,9 +27,9 @@ const CourseEnrollments = ({setAuth}) => {
       var temp = [];
       for(var i=0; i<parseData.enrollments.length; i++){
         var statusText;
-        if(parseData.enrollments[i].status.started == false) {
+        if(parseData.enrollments[i].status.started === false) {
           statusText = "Not started";
-        } else if(parseData.enrollments[i].status.completed == false) {
+        } else if(parseData.enrollments[i].status.completed === false) {
           statusText = "In progress";
         } else {
           statusText = "Finished";
@@ -67,14 +66,13 @@ const CourseEnrollments = ({setAuth}) => {
       
       const parseData = await res.json();
 
-      if(parseData.redirect == "new") {
+      if(parseData.route === "new") {
         navigate("/enroll", {state: {id: id}});
       } else {
         console.log(parseData);
-        navigate("/questions", {state: {id: id, redirect: parseData.redirect}});
+        navigate("/questions", {state: {id: id, sessionId: parseData.route.sessionId, order: parseData.route.questionOrder}});
       }
 
-      //navigate("/confirmation", {state: {username: username, course: id }} );
     } catch (err) {
       console.log(err.message);
     }

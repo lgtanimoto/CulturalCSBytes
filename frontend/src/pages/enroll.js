@@ -6,19 +6,18 @@ function Enroll() {
 
   const navigate = useNavigate();
   const location = useLocation();
+  const [loaded, setLoaded] = useState(false);
 
   const id = location.state.id;
   const name = location.state.name;
   const [sessionId, setSessionId] = useState();
   const [difficulty, setDifficulty] = useState();
   const [culture, setCulture] = useState();
-  const [additionalCultures, setAdditionalCultures] = useState();
-
-  const [difficultyOptions, setDifficultyOptions] = useState([]);
-  const [cultureOptions, setCultureOptions] = useState([]);
+  const [additionalCultures, setAdditionalCultures] = useState([]);
 
   async function getInfo() {
     try {
+      setLoaded(true);
       const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/new`, {
         method: 'GET',
         headers: { token: localStorage.token }
@@ -28,38 +27,59 @@ function Enroll() {
 
       console.log(parseData);
       setSessionId(parseData.sessionId);
-      /*
-      setDifficultyOptions(parseData.difficulties);
-      setCultureOptions(parseData.cultures);
       
       var select = document.getElementById("difficulties"); 
-      for(var i = 0; i < difficultyOptions.length; i++) {
+      for(var i = 0; i < parseData.difficulties.length; i++) {
         var element = document.createElement("option");
-        element.text = difficultyOptions[i];
-        element.value = difficultyOptions[i];
+        element.text = parseData.difficulties[i];
+        element.value = parseData.difficulties[i];
         select.add(element);
-        console.log("hi");
       }
       
       select = document.getElementById("cultures"); 
-      for(var i = 0; i < cultureOptions.length; i++) {
-        var element = document.createElement("option");
-        element.text = cultureOptions[i].name;
-        element.value = cultureOptions[i.name];
+      for(i = 0; i < parseData.cultures.length; i++) {
+        element = document.createElement("option");
+        element.text = parseData.cultures[i].name;
+        element.value = parseData.cultures[i.name];
         select.add(element);
       }
-      */
+
+      select = document.getElementById("additionalCultures"); 
+      for(i = 0; i < parseData.cultures.length; i++) {
+        element = document.createElement("option");
+        element.text = parseData.cultures[i].name;
+        element.value = parseData.cultures[i.name];
+        select.add(element);
+      }
     } catch (err) {
         console.log(err.message);
     }
   }
 
   useEffect(() => {
-    getInfo()
+    if (loaded === false) {
+      getInfo()
+    }
   })
 
-  const onChange = e => {
-    
+  const changeCulture = e => {
+    setCulture(e);
+  };
+
+  const changeDifficulty = e => {
+    setDifficulty(e);
+  };
+
+  const changeAdditionalCultures = e => {
+    var temp = [];
+    for(var i=0; i < document.getElementById("additionalCultures").options.length; i++) {
+      console.log(document.getElementById("additionalCultures").options[i].selected);
+      if(document.getElementById("additionalCultures").options[i].selected === true) {
+        temp.push(document.getElementById("additionalCultures").options[i].text);
+      }
+    }
+    console.log(temp);
+    setAdditionalCultures(temp);
   };
 
   const cancel = () => {
@@ -67,7 +87,7 @@ function Enroll() {
   }
 
   const ok = async e => {
-    navigate("/confirmation", {state: {id: id, sessionId: sessionId, difficulty: "Medium", culture: "Default Culture", additionalCultures: []}});
+    navigate("/confirmation", {state: {id: id, sessionId: sessionId, difficulty: difficulty, culture: culture, additionalCultures: additionalCultures}});
   }
 
   return (
@@ -78,7 +98,7 @@ function Enroll() {
       <div className="item">
         <p>Question Set:</p>
         <div className="dropdown">
-          <select name="name" id="name" value={name} onChange={e => onChange(e)}>
+          <select name="name" id="name" value={name}>
             <option value={name}>{name}</option>
           </select>
         </div>
@@ -86,24 +106,23 @@ function Enroll() {
       <div className="item">
         <p>Preferred Culture:</p>
         <div className="dropdown">
-          <select name="cultures" id="cultures" value={culture} onChange={e => onChange(e)}>
-          <option value="Default Culture">Default Culture</option>
-          <option value="Test Culture 1">Test Culture 1</option>
-          <option value="Test Culture 2">Test Culture 2</option>
+          <select name="cultures" id="cultures" onChange={e => changeCulture(e)}>
           </select>
         </div>
       </div>
       <div className="item">
         <p>Difficulty:</p>
         <div className="dropdown">
-          <select name="difficulties" id="difficulties" value={difficulty} onChange={e => onChange(e)}>
-          <option value="Medium">Medium</option>
+          <select name="difficulties" id="difficulties" onChange={e => changeDifficulty(e)}>
           </select>
         </div>
       </div>
       <div className="item">
         <p>Additional Cultures:</p>
-        <input id="password" type="text" name="password" value={id} onChange={e => onChange(e)}></input>
+        <div className="dropdown">
+          <select name="additionalCultures" id="additionalCultures" onChange={e => changeAdditionalCultures(e)} multiple="multiple">
+          </select>
+        </div>
       </div>
       <button id="login" onClick={cancel} >Cancel</button>
       <button id="createAccount" onClick={ok} >Ok</button>

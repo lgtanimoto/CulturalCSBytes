@@ -21,6 +21,7 @@ const Login = ({setAuth}) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
 
+  //makes backend call to login, navigates to enrollments if successful, displays message if not
   const continueClick = async e => {
     e.preventDefault();
     try {
@@ -38,13 +39,11 @@ const Login = ({setAuth}) => {
         setAuth(true);
       } else {
         setAuth(false);
+        document.getElementById("feedback").innerText = "Username or password is incorrect";
       }
     } catch (err) {
       console.error(err.message);
     }
-
-    // TODO: check backend to see if login is correct
-    //navigate("/course-enrollments", {state: {username: document.getElementById("username").value } } );
   }
 
   return(

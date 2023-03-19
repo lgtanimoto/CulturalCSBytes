@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from './components/index.js';
 import { BrowserRouter as Router, Routes, Route, Navigate }
     from 'react-router-dom';
 import Home from './pages/home.js';
@@ -31,10 +30,10 @@ function App() {
             <Route path='/create-account' element={!isAuthenticated ? (<CreateAccount setAuth={setAuth} />) : (<Navigate to="/login" />) } />
             <Route path='/continue-create-account' element={!isAuthenticated ? (<ContinueCreateAccount setAuth={setAuth} />) : (<Navigate to="/login" />) } />
             <Route path='/course-enrollments' element={isAuthenticated ? (<CourseEnrollments setAuth={setAuth} />) : (<Navigate to="/login" />) } />
-            <Route path='/confirmation' element={<Confirmation/>} />
-            <Route path='/enroll' element={<Enroll/>} />
-            <Route path='/questions' element={<Questions/>} />
-            <Route path='/question-end' element={<QuestionEnd/>} />
+            <Route path='/confirmation' element={isAuthenticated ? (<Confirmation setAuth={setAuth}/>) : (<Navigate to="/login" />) } />
+            <Route path='/enroll' element={isAuthenticated ? (<Enroll setAuth={setAuth}/>) : (<Navigate to="/login" />) } />
+            <Route path='/questions' element={isAuthenticated ? (<Questions setAuth={setAuth}/>) : (<Navigate to="/login" />) } />
+            <Route path='/question-end' element={isAuthenticated ? (<QuestionEnd setAuth={setAuth}/>) : (<Navigate to="/login" />) } />
         </Routes>
         </Router>
     );
