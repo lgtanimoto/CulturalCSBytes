@@ -50,8 +50,14 @@ app.get('/questions/:questionId/image', async (req, res) => {
         return res.send(`<img src=${src} alt='Question image'>`);
     }
 
-    res.send('Question does not have image.');
+    res.send('<h1>Error: Question does not have image.</h1>');
 });
+
+/* Success */
+
+app.get('/', async (req, res) => {
+    res.send('<h1>Hello World!</h1>');
+})
 
 /* Listening */
 
