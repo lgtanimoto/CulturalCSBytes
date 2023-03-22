@@ -3,11 +3,11 @@ const Pool = require('pg').Pool;
 require('dotenv').config();
 
 const pool = new Pool({
-    user: process.env.DBUSER || 'postgres',
-    password: process.env.DBPW || 'postgres',
-    host: process.env.DBHOST || 'localhost',
-    port: process.env.DBPORT || 5432,
-    database: process.env.DBNAME || 'ccsb'
+    user: process.env.RDS_USERNAME,
+    password: process.env.RDS_PASSWORD,
+    host: process.env.RDS_HOSTNAME,
+    port: process.env.RDS_PORT,
+    database: process.env.RDS_DB_NAME
 });
 
 module.exports = pool;
