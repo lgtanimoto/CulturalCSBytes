@@ -60,13 +60,13 @@ If you are instead reseeding the database (which may frequently happen), you sti
 Now we will use the terminal session that is connected to the backend service (the current directory is the backend directory).
 1. Before anything, in the text editor/IDE, go to the backend directory and create a `.env` file. This file will define the environment variables that our backend service will use. Details about using such file can be found [here](https://www.npmjs.com/package/dotenv).
 2. Now define the following environment variables following instructions from the documentation.
-    1. `DBUSER` - The username you used for connecting to the Postgres service (generally `postgres`).
-    2. `DBPW` - The password you used for connecting to the Postgres service.
-    3. `DBHOST` - The name of the host to connect to the Postgres service (most likely `localhost` for development environments).
-    4. `DBPORT` - The port of the Postgres service (essentially always `5432`).
-    5. `DBNAME` - The name of the Postgres database (will be `ccsb`).
+    1. `RDS_HOSTNAME` - The name of the host to connect to the Postgres service (most likely `localhost` for development environments).
+    2. `RDS_PORT` - The port of the Postgres service (essentially always `5432`).
+    3. `RDS_DB_NAME` - The name of the Postgres database (will be `ccsb`).
+    4. `RDS_USERNAME` - The username you used for connecting to the Postgres service (generally `postgres`).
+    5. `RDS_PASSWORD` - The password you used for connecting to the Postgres service for the `RDS_USERNAME`.
     6. `JWTSECRET` - It does not matter what you define this to be.
-    7. `SERVER=3001` - The port that the backend service should run on. We will use 3001. Note: Not the same as the Postgres port
+    7. `PORT=3001` - The port that the backend service should run on. We will use 3001. Note: Not the same as the Postgres port number.
 3. Go back to the terminal session connected to the backend service and run `npm i`. This will install all the necessary packages.
 4. Now run `node content.js`. This will add all the questions to the database.
     1. You will know it completed successfully if the only output is `pool has ended`.
