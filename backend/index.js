@@ -18,6 +18,8 @@ app.use('/enrollments', authorization, require('./routes/enrollments'));
 
 /* Debugging */
 
+// Question JSON Files
+
 app.get('/questions/:questionSetCode/:cultureCode/:mqCode/:altCode', async (req, res) => {
     const {
         questionSetCode,
@@ -30,6 +32,29 @@ app.get('/questions/:questionSetCode/:cultureCode/:mqCode/:altCode', async (req,
     res.json(data);
 });
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server is running on port ${process.env.PORT}`);
+// Image Blobs
+
+const pool = require('./db');
+
+app.get('/questions/:questionId/image', async (req, res) => {
+    const { questionId } = req.params;
+
+    const questions = await pool.query(
+        'SELECT blob FROM question WHERE id = $1',
+        [questionId]
+    );
+
+    if (questions.rows[0].blob !== null) {
+        const buffer = questions.rows[0].blob;
+        const src = `data:image/jpeg;base64,${buffer.toString('base64')}`;
+        return res.send(`<img src=${src} alt='Question image'>`);
+    }
+
+    res.send('Question does not have image.');
+});
+
+/* Listening */
+
+app.listen(process.env.SERVER, () => {
+    console.log(`Server is running on port ${process.env.SERVER}`);
 });
