@@ -35,7 +35,7 @@ const getEnrollmentData = async function (enrollment) {
 
     return {
         id,
-        name: `${questionSets[0].name} ${registration_date.toLocaleDateString()}`,
+        enrollmentName: `${questionSets[0].name} ${registration_date.toLocaleDateString()}`,
         sessions,
         status: {
             started: status !== 0,
