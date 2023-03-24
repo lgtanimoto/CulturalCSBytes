@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import './home.css';
+import './questions.css';
 
 function Home() {
 
@@ -19,7 +19,7 @@ function Home() {
   }
 
   return (
-    <div className="Home">
+    <div className="Center">
       <div id="welcome">
         <h1>Welcome to CulturalCSBytes!</h1>
         <h2>By All Together Computer Science Education (ATCSED)</h2>

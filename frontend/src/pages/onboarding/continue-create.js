@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
-import './continue-create.css';
+import '../questions.css';
 
 const ContinueCreateAccount = ({setAuth}) => {
 
@@ -60,7 +60,7 @@ const ContinueCreateAccount = ({setAuth}) => {
   }
 
   return(
-    <div className='Create'>
+    <div className='Center'>
       <h1>Create Account</h1>
       <div className="username">
         <div className="item">

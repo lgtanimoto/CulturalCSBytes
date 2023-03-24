@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from "react-router-dom";
-import './create.css';
+import '../questions.css';
 
 const CreateAccount = ({setAuth}) => {
 
@@ -30,7 +30,7 @@ const CreateAccount = ({setAuth}) => {
   }
 
   return(
-    <div className='Create'>
+    <div className='Center'>
       <h1>Create Account</h1>
       <div className="username">
         <div className="item">

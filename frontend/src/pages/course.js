@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './course.css';
+import './questions.css';
 
 class Course extends Component {
     constructor(props) {
@@ -17,9 +17,9 @@ class Course extends Component {
         return (
             <div className="course">
                 <p>{this.props.name}</p>
-                <p>completed: {this.props.completed}</p>
-                <p>high score: {this.props.high}</p>
-                <p>status: {this.props.status}</p>
+                <p>Completed: {this.props.completed}</p>
+                <p>High Score: {this.props.high}</p>
+                <p>Status: {this.props.status}</p>
                 <button type="button">
                     Stats
                 </button>

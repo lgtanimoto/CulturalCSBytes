@@ -1,99 +1,143 @@
-.Question {
+.Center {
     text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
-  
-  #welcome {
-      border-style: solid;
-      padding: 0px;
-  }
-  
-  button {
-      padding-left: 10px;
-      padding-right: 10px;
-      margin: 10px;
-  }
+}
 
-  body {
+#welcome {
+    border-style: solid;
+    border-width: 3px;
+    padding: 40px;
+}
 
-  }
-  h1 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: green;
-      text-align: center;
-  }
-  
-  h2 {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: green;
-  }
-  
-  table, th, td {
-      border: 1px solid;
-  }
-  
-  .qname {
-      color: red;
-      font-weight: bold; 
-  }
-  
-  .qcanswer {
-      color: red;
-      font-weight: bold;
-      background-color: gray;
-  }
-  
-  .qimg {
-       background-color: gray;
-       text-indent: 6em;
-  }
-  
-  .code {
-      font-family: 'Courier New', Courier, monospace;
-      background-color: lightyellow;
-  }
-  
-  em {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: bold;
-      font-style:normal;
-      color: blue;
-  }
-  .ci4 {
-      text-indent: 2em;
-  }
-  
-  .ci8 {
-      text-indent: 4em;
-  }
-  
-  .ci12 {
-      text-indent: 6em;
-  }
-  
-  .em_neg {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: bold;
-      text-decoration: underline;
-  }
-  
-  .ui {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-weight: bold;
-      color: darkcyan;
-      background-color: magenta;
-  }
-  
-  .start_culture {
-      background-color: yellow;
-      font-weight: bold;
-      margin-bottom: 1em
-  }
+button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+}
 
-  #explanation {
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Login and Create Account text input */
+input{
+    margin: 20px;
+    height: 30px;
+}
+
+p {
+    margin-top: 28px;
+}
+
+/* Create Account Password Feedback */
+#feedback {
+    color: red;
+}
+
+/* Create Account Dropdown */
+.dropdown{
+    margin-right: 20px;
+    margin-top: 27px;
+    margin-left: 20px;
+    margin-bottom: 28px;
+}
+
+/* Course item on course enrollment page */
+.course {
+    display: flex;
+    border-style: solid;
+}
+
+.course p {
+    margin-left: 20px;
+}
+
+body {
+
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: green;
+}
+
+table, th, td {
+    border: 1px solid;
+}
+
+.qname {
+    color: red;
+    font-weight: bold; 
+}
+
+.qcanswer {
+    color: red;
+    font-weight: bold;
+    background-color: gray;
+}
+
+.qimg {
+    background-color: gray;
+    text-indent: 6em;
+}
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightyellow;
+}
+
+em {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-style:normal;
+    color: blue;
+}
+.ci4 {
+    text-indent: 2em;
+}
+
+.ci8 {
+    text-indent: 4em;
+}
+
+.ci12 {
+    text-indent: 6em;
+}
+
+.em_neg {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.ui {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: darkcyan;
+    background-color: magenta;
+}
+
+.start_culture {
+    background-color: yellow;
+    font-weight: bold;
+    margin-bottom: 1em
+}
+
+#explanation {
     display: none;
-  }
+}

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './enroll.css';
 
-function Enroll() {
+const Enroll = ({setAuth}) => {
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -73,12 +73,10 @@ function Enroll() {
   const changeAdditionalCultures = e => {
     var temp = [];
     for(var i=0; i < document.getElementById("additionalCultures").options.length; i++) {
-      console.log(document.getElementById("additionalCultures").options[i].selected);
       if(document.getElementById("additionalCultures").options[i].selected === true) {
         temp.push(document.getElementById("additionalCultures").options[i].text);
       }
     }
-    console.log(temp);
     setAdditionalCultures(temp);
   };
 
@@ -91,10 +89,8 @@ function Enroll() {
   }
 
   return (
-    <div className="Enroll">
-      <div id="welcome">
-        <h1>Initial Session</h1>
-      </div>
+    <div className="Center">
+      <h1>Initial Session</h1>
       <div className="item">
         <p>Question Set:</p>
         <div className="dropdown">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
-import './course-enrollments.css';
+import './questions.css';
 import Course from './course.js';
 
 const CourseEnrollments = ({setAuth}) => {
@@ -42,7 +42,6 @@ const CourseEnrollments = ({setAuth}) => {
           status: statusText,
         })
       };
-
       setCourseData(temp);
 
     } catch (err) {
@@ -80,7 +79,7 @@ const CourseEnrollments = ({setAuth}) => {
 
   //TO DO: get nickname from backend on login
   return(
-    <div className='Create'>
+    <div className='Center'>
       <h1>Course Enrollments</h1>
       <div className="item">
         {<p>Username: {username}</p>

@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import './questions.css';
 import ReactHtmlParser from 'react-html-parser';
 
-function Questions() {
+const Questions = ({setAuth}) => {
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -171,6 +171,7 @@ function Questions() {
       </div>
       <div id="explanation">{ ReactHtmlParser(explanation) }</div>
       <button id="next" onClick={nextQuestion}>Next</button>
+      <button onClick={() => setAuth(false)}>Logout</button>
     </div>
   );
 }

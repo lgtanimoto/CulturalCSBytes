@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
-import './login.css';
+import './questions.css';
 
 const Login = ({setAuth}) => {
 
@@ -47,7 +47,7 @@ const Login = ({setAuth}) => {
   }
 
   return(
-    <div className='Create'>
+    <div className='Center'>
       <h1>Login</h1>
       <div className="username">
         <div className="item">

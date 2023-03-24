@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './question-end.css';
 
-function QuestionEnd() {
+const QuestionEnd = ({setAuth}) => {
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -16,6 +16,7 @@ function QuestionEnd() {
         <h1>Recommendations</h1>
       </div>
       <p>You got {totalCorrect} out of {totalQuestions}</p>
+      <button onClick={() => setAuth(false)}>Logout</button>
     </div>
   );
 }
