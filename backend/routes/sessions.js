@@ -199,7 +199,7 @@ router.post('/', verifyCurrentEnrollment, verifyNextSession, async (req, res) =>
 
         const session = await pool.query(
             'INSERT INTO session (enrollment_id, attempt, total_questions) VALUES ($1, $2, $3) RETURNING *',
-            [enrollmentId, 0, 10]
+            [enrollmentId, 0, 20]
         );
 
         await initSession(session.rows[0].id, preferredCulture, difficulty, additionalCultures);
