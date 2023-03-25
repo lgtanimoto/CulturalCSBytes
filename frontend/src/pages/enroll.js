@@ -89,7 +89,7 @@ const Enroll = ({setAuth}) => {
     console.log(difficulty);
     console.log(culture);
     console.log(additionalCultures);
-    navigate("/confirmation", {state: {id: id, sessionId: sessionId, difficulty: difficulty, culture: culture, additionalCultures: additionalCultures}});
+    navigate("/confirmation", {state: {id: id, sessionId: sessionId, difficulty: difficulty, culture: culture, additionalCultures: additionalCultures, name: name}});
   }
 
   return (

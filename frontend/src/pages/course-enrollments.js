@@ -53,7 +53,7 @@ const CourseEnrollments = ({setAuth}) => {
     getName()
   })
 
-  async function continueClick(id) {
+  async function continueClick(id, name) {
     try {
       const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/continue`, {
         method: 'GET',
@@ -66,15 +66,19 @@ const CourseEnrollments = ({setAuth}) => {
       const parseData = await res.json();
 
       if(parseData.route === "new") {
-        navigate("/enroll", {state: {id: id}});
+        navigate("/enroll", {state: {id: id, name: name}});
       } else {
         console.log(parseData);
-        navigate("/questions", {state: {id: id, sessionId: parseData.route.sessionId, order: parseData.route.questionOrder}});
+        navigate("/questions", {state: {id: id, sessionId: parseData.route.sessionId, order: parseData.route.questionOrder, name: name}});
       }
 
     } catch (err) {
       console.log(err.message);
     }
+  }
+
+  function statsClick(id, name) {
+    navigate("/metrics", {state: {id: id, name: name}});
   }
 
   //TO DO: get nickname from backend on login
@@ -96,6 +100,7 @@ const CourseEnrollments = ({setAuth}) => {
                  completed={course.completed}
                  high={course.high}
                  status={course.status} 
+                 statsClick={statsClick}
                  continueClick={continueClick} />);
                } else {
                  return (<div />);

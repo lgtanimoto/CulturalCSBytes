@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import './about.css';
+import './questions.css';
 
 const About = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
   }
 
   return (
-    <div className="About">
+    <div className="Center">
       <p>
         CulturalCSBytes is started by All Together Computer Science Education (ATCSED)
       </p>

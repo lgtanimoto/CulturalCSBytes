@@ -11,6 +11,7 @@ const Questions = ({setAuth}) => {
 
   const id = location.state.id;
   const sessionId = location.state.sessionId;
+  const enrollmentName = location.state.name;
   const [order, setOrder] = React.useState(location.state.order);
   const [numOfQuestions, setNumOfQuestions] = React.useState(20);
 
@@ -130,6 +131,10 @@ const Questions = ({setAuth}) => {
     }
   }
 
+  const goBack = () => {
+    navigate("/course-enrollments");
+  }
+
   const nextQuestion = () => {
     if (answered === true) {
       console.log("order = " + order + "  numOfQuestions = " + numOfQuestions);
@@ -143,14 +148,14 @@ const Questions = ({setAuth}) => {
           setOrder(order + 1);
           setAnswered(false);
         } else {
-          navigate("/question-end");
+          navigate("/recommendations", {state: {id: id, sessionId: sessionId, enrollmentName: enrollmentName}});
         }
       });
     }
   }
 
   return (
-    <div >
+    <div id="Questions">
       <div id="welcome">
         <h1>Question {order} of {numOfQuestions}</h1>
       </div>
@@ -168,8 +173,8 @@ const Questions = ({setAuth}) => {
         <button id="4" onClick={() => answerClick("4")}>{parse(answer4)}</button>
       </div>
       <div id="explanation">{parse(explanation)}</div>
-      <button id="next" onClick={nextQuestion}>Next</button>
-      <button onClick={() => setAuth(false)}>Logout</button>
+      <button onClick={goBack}>Back to Courses</button>
+      <button onClick={nextQuestion}>Next</button>
     </div>
   );
 }

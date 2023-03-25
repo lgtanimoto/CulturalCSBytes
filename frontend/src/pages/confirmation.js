@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
-import './confirmation.css';
+import './questions.css';
 
 const Confirmation = ({setAuth}) => {
 
@@ -12,6 +12,7 @@ const Confirmation = ({setAuth}) => {
   const difficulty = location.state.difficulty;
   const preferredCulture = location.state.culture;
   const additionalCultures = location.state.additionalCultures;
+  const name = location.state.name;
 
   const cancel = () => {
     navigate("/course-enrollments");
@@ -42,17 +43,17 @@ const Confirmation = ({setAuth}) => {
 
       console.log(parseRes);
 
-      navigate("/questions", {state: {id: id, sessionId: sessionId, order: 1}});
+      navigate("/questions", {state: {id: id, sessionId: sessionId, order: 1, name: name}});
     } catch (err) {
       console.log(err.message);
     }
   }
 
   return (
-    <div className="Confirmation">
+    <div className="Center">
       <div id="welcome">
         <h1>{location.state.course} Confirmation Screen</h1>
-        <h2>Info from classroom Enrollment/Initial Session/Session Start screen including number of questions, expected time to complete</h2>
+        <h2>{name}</h2>
       </div>
       <button id="login" onClick={cancel} >Cancel</button>
       <button id="createAccount" onClick={ok} >Ok</button>

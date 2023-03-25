@@ -20,10 +20,10 @@ class Course extends Component {
                 <p>Completed: {this.props.completed}</p>
                 <p>High Score: {this.props.high}</p>
                 <p>Status: {this.props.status}</p>
-                <button type="button">
+                <button type="button" onClick={() => this.props.statsClick(this.props.id, this.props.name)}>
                     Stats
                 </button>
-                <button type="button" onClick={() => this.props.continueClick(this.props.id)}>
+                <button type="button" onClick={() => this.props.continueClick(this.props.id, this.props.name)}>
                     Continue
                 </button>
             </div>
@@ -31,4 +31,4 @@ class Course extends Component {
     }
 }
 
-export default Course
+export default Course;
