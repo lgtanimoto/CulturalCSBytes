@@ -5,10 +5,10 @@ import './question-end.css';
 const QuestionEnd = ({setAuth}) => {
 
   const navigate = useNavigate();
-  const location = useLocation();
+  // const location = useLocation();
 
-  const totalCorrect = location.state.correct;
-  const totalQuestions = location.state.numOfQuestions;
+  // const totalCorrect = location.state.correct;
+  // const totalQuestions = location.state.numOfQuestions;
 
   return (
     <div className="Question">

@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
 import './questions.css';
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
+import { Buffer } from 'buffer';
 
 const Questions = ({setAuth}) => {
 
@@ -11,7 +12,7 @@ const Questions = ({setAuth}) => {
   const id = location.state.id;
   const sessionId = location.state.sessionId;
   const [order, setOrder] = React.useState(location.state.order);
-  const [numOfQuestions, setNumOfQuestions] = React.useState(4);
+  const [numOfQuestions, setNumOfQuestions] = React.useState(20);
 
   const [curQuestion, setCurQuestion] = React.useState("");
   const [answer1, setAnswer1] = React.useState("Answer 1"); 
@@ -22,7 +23,6 @@ const Questions = ({setAuth}) => {
   const [explanation, setExplanation] = React.useState("");
   
   const [answered, setAnswered] = React.useState(false);
-  const [totalCorrect, setTotalCorrect] = React.useState(0);
 
   async function getQuestion() {
     try {
@@ -54,13 +54,20 @@ const Questions = ({setAuth}) => {
       setCorrectAnswer(parseData.questionJson.CorrectAnswer);
       setExplanation(parseData.questionJson.Explanation);
       setNumOfQuestions(parseData.totalQuestions);
+      setAnswered(parseData.studentAnswer !== null);
 
       if(parseData.imagesBlob !== null) {
-        var urlCreator = window.URL || window.webkitURL;
-        var imageUrl = urlCreator.createObjectURL(new Blob(parseData.imagesBlob.data, {type: parseData.imagesBlob.type}));
-        console.log(imageUrl);
-        if(document.getElementById("qimg0") !== null) {
-          document.getElementById("qimg0").src = imageUrl;
+        const buffer = Buffer.from(parseData.imagesBlob.data);
+        document.getElementById("qimg0").src = `data:image/jpeg;base64,${buffer.toString('base64')}`;
+      }
+
+      if (parseData.studentAnswer !== null) {
+        if(parseData.studentAnswer === correctAnswer) {
+            document.getElementById(parseData.studentAnswer).style.backgroundColor = "green";
+        } else {
+            document.getElementById(parseData.studentAnswer).style.backgroundColor = "red";
+            document.getElementById(correctAnswer).style.backgroundColor = "green";
+            document.getElementById("explanation").style.display = "block";
         }
       }
 
@@ -85,6 +92,7 @@ const Questions = ({setAuth}) => {
 
       console.log(parseRes);
 
+      setAnswered(true);
     } catch (err) {
       console.log(err.message);
     }
@@ -118,15 +126,6 @@ const Questions = ({setAuth}) => {
 
   function answerClick(answer) {
     if(answered === false) {
-        if(answer === correctAnswer) {
-            document.getElementById(answer).style.backgroundColor = "green";
-            setTotalCorrect(totalCorrect + 1);
-        } else {
-            document.getElementById(answer).style.backgroundColor = "red";
-            document.getElementById(correctAnswer).style.backgroundColor = "green";
-        }
-        setAnswered(true);
-        document.getElementById("explanation").style.display = "block";
         submitAnswer(answer);
     }
   }
@@ -134,19 +133,19 @@ const Questions = ({setAuth}) => {
   const nextQuestion = () => {
     if (answered === true) {
       console.log("order = " + order + "  numOfQuestions = " + numOfQuestions);
-      if (1 === 1) {
-        continueSession().then(result => {
-          setOrder(order + 1);
-          setAnswered(false);
+      continueSession().then(result => {
+        if (order < numOfQuestions) {
           document.getElementById(1).style.backgroundColor = "white";
           document.getElementById(2).style.backgroundColor = "white";
           document.getElementById(3).style.backgroundColor = "white";
           document.getElementById(4).style.backgroundColor = "white";
           document.getElementById("explanation").style.display = "none";
-        });
-      } else {
-        navigate("/question-end", {state: {correct: totalCorrect, numOfQuestions: numOfQuestions}});
-      }
+          setOrder(order + 1);
+          setAnswered(false);
+        } else {
+          navigate("/question-end");
+        }
+      });
     }
   }
 
@@ -155,21 +154,20 @@ const Questions = ({setAuth}) => {
       <div id="welcome">
         <h1>Question {order} of {numOfQuestions}</h1>
       </div>
-      <div>{ ReactHtmlParser(curQuestion) }</div>
-      <img src="" alt=""/>
+      <div>{parse(curQuestion)}</div>
       <div className="Answer">
-        <button id="1" onClick={() => answerClick("1")}>{ ReactHtmlParser(answer1) }</button>
+        <button id="1" onClick={() => answerClick("1")}>{parse(answer1)}</button>
       </div>
       <div className="Answer">
-        <button id="2" onClick={() => answerClick("2")}>{ ReactHtmlParser(answer2) }</button>
+        <button id="2" onClick={() => answerClick("2")}>{parse(answer2)}</button>
       </div>
       <div className="Answer">
-        <button id="3" onClick={() => answerClick("3")}>{ ReactHtmlParser(answer3) }</button>
+        <button id="3" onClick={() => answerClick("3")}>{parse(answer3)}</button>
       </div>
       <div className="Answer">
-        <button id="4" onClick={() => answerClick("4")}>{ ReactHtmlParser(answer4) }</button>
+        <button id="4" onClick={() => answerClick("4")}>{parse(answer4)}</button>
       </div>
-      <div id="explanation">{ ReactHtmlParser(explanation) }</div>
+      <div id="explanation">{parse(explanation)}</div>
       <button id="next" onClick={nextQuestion}>Next</button>
       <button onClick={() => setAuth(false)}>Logout</button>
     </div>

@@ -16,7 +16,7 @@ router.get('/:order', verifyCurrentQuestion, async (req, res) => {
             WHERE question.id = $1',
             [req.question.question_id]
         );
-
+        
         const data = {
             codes: {
                 questionSetCode: features.rows[0].question_set_code,
@@ -107,7 +107,7 @@ router.patch('/:order', verifyCurrentQuestion, async (req, res) => {
                 });
             }
 
-            const { answer } = req.body;
+            const answer = parseInt(req.body.answer);
 
             // Answer the question
             const sessionQuestions = await pool.query(

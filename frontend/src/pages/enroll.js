@@ -11,8 +11,8 @@ const Enroll = ({setAuth}) => {
   const id = location.state.id;
   const name = location.state.name;
   const [sessionId, setSessionId] = useState();
-  const [difficulty, setDifficulty] = useState();
-  const [culture, setCulture] = useState();
+  const [difficulty, setDifficulty] = useState('Medium');
+  const [culture, setCulture] = useState('Default Culture');
   const [additionalCultures, setAdditionalCultures] = useState([]);
 
   async function getInfo() {
@@ -40,7 +40,7 @@ const Enroll = ({setAuth}) => {
       for(i = 0; i < parseData.cultures.length; i++) {
         element = document.createElement("option");
         element.text = parseData.cultures[i].name;
-        element.value = parseData.cultures[i.name];
+        element.value = parseData.cultures[i].name;
         select.add(element);
       }
 
@@ -48,7 +48,7 @@ const Enroll = ({setAuth}) => {
       for(i = 0; i < parseData.cultures.length; i++) {
         element = document.createElement("option");
         element.text = parseData.cultures[i].name;
-        element.value = parseData.cultures[i.name];
+        element.value = parseData.cultures[i].name;
         select.add(element);
       }
     } catch (err) {
@@ -63,18 +63,19 @@ const Enroll = ({setAuth}) => {
   })
 
   const changeCulture = e => {
-    setCulture(e);
+    setCulture(e.target.value);
   };
 
   const changeDifficulty = e => {
-    setDifficulty(e);
+    setDifficulty(e.target.value);
   };
 
   const changeAdditionalCultures = e => {
     var temp = [];
-    for(var i=0; i < document.getElementById("additionalCultures").options.length; i++) {
-      if(document.getElementById("additionalCultures").options[i].selected === true) {
-        temp.push(document.getElementById("additionalCultures").options[i].text);
+    for(var i=0; i < e.target.options.length; i++) {
+      console.log(e.target.options[i]);
+      if(e.target.options[i].selected === true) {
+        temp.push(e.target.options[i].text);
       }
     }
     setAdditionalCultures(temp);
@@ -85,6 +86,9 @@ const Enroll = ({setAuth}) => {
   }
 
   const ok = async e => {
+    console.log(difficulty);
+    console.log(culture);
+    console.log(additionalCultures);
     navigate("/confirmation", {state: {id: id, sessionId: sessionId, difficulty: difficulty, culture: culture, additionalCultures: additionalCultures}});
   }
 
@@ -102,21 +106,21 @@ const Enroll = ({setAuth}) => {
       <div className="item">
         <p>Preferred Culture:</p>
         <div className="dropdown">
-          <select name="cultures" id="cultures" onChange={e => changeCulture(e)}>
+          <select name="cultures" id="cultures" value={culture} onChange={e => changeCulture(e)}>
           </select>
         </div>
       </div>
       <div className="item">
         <p>Difficulty:</p>
         <div className="dropdown">
-          <select name="difficulties" id="difficulties" onChange={e => changeDifficulty(e)}>
+          <select name="difficulties" id="difficulties" value={difficulty} onChange={e => changeDifficulty(e)}>
           </select>
         </div>
       </div>
       <div className="item">
         <p>Additional Cultures:</p>
         <div className="dropdown">
-          <select name="additionalCultures" id="additionalCultures" onChange={e => changeAdditionalCultures(e)} multiple="multiple">
+          <select name="additionalCultures" id="additionalCultures" value={additionalCultures} onChange={(e) => changeAdditionalCultures(e)} multiple={true}>
           </select>
         </div>
       </div>
