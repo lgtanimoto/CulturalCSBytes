@@ -55,7 +55,7 @@ const Metrics = ({setAuth}) => {
         <p>Enrollment Name: {name}</p>
       </div>
       <div>
-        {sessions.map(
+        {sessions?.map(
             (session, idx) => {
             if (sessions != null) {
                 return (<Metric

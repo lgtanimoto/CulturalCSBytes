@@ -70,6 +70,7 @@ const Questions = ({setAuth}) => {
             document.getElementById(correctAnswer).style.backgroundColor = "green";
             document.getElementById("explanation").style.display = "block";
         }
+        setAnswered(true);
       }
 
       console.log("question: " + order + "/" + numOfQuestions);
