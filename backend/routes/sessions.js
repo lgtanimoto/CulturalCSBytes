@@ -2,6 +2,7 @@ const router = require('express').Router({mergeParams: true});
 const pool = require('../db');
 const { verifyCompleteSession, verifyCurrentEnrollment, verifyCurrentSession, verifyNextSession } = require('../middleware');
 const { getEnrollmentData, getEnrollmentMetrics, getSessionData, getSessionName, getStudentNames } = require('../utils/helpers');
+const { MIN_WEEKS } = require('../constants');
 
 /* Helper Functions */
 
@@ -109,7 +110,7 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
         if (!currentSession) {
             const weeks = Math.floor((Date.now() - currentDate) / 1000 / 60 / 60 / 24 / 7);
 
-            if (weeks < 1) {
+            if (weeks < MIN_WEEKS) {
                 return res.json({
                     redirect: true,
                     route: 'new',
@@ -161,7 +162,7 @@ router.get('/new', verifyCurrentEnrollment, verifyNextSession, async (req, res) 
         if (req.date != null) {
             const weeks = Math.floor((Date.now() - req.date) / 1000 / 60 / 60 / 24 / 7);
 
-            if (!practice && weeks < 1) {
+            if (!practice && weeks < MIN_WEEKS) {
                 return res.json({
                     redirect: true,
                     route: 'new',
@@ -251,7 +252,7 @@ router.patch('/:sessionId', verifyCurrentEnrollment, verifyNextSession, async (r
         // If current date is less than one week ago, return error
         if (req.date != null) {
             const weeks = Math.floor((Date.now() - req.date) / 1000 / 60 / 60 / 24 / 7);
-            if (weeks < 1) {
+            if (weeks < MIN_WEEKS) {
                 return res.status(403).json({
                     statusCode: 403,
                     error: 'Must wait at least one week to start next official session.'

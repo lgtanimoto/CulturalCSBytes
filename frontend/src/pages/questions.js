@@ -30,7 +30,7 @@ const Questions = ({setAuth}) => {
       console.log("id = " + id);
       console.log("sessionId = " + sessionId);
       
-      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}/questions/${order}`, {
+      const res = await fetch(`/api/enrollments/${id}/sessions/${sessionId}/questions/${order}`, {
         method: 'GET',
         headers: { token: localStorage.token }
       });
@@ -86,7 +86,7 @@ const Questions = ({setAuth}) => {
     try {
       const body = {answer};
 
-      const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}/questions/${order}`, {
+      const response = await fetch(`/api/enrollments/${id}/sessions/${sessionId}/questions/${order}`, {
         method: 'PATCH',
         headers: {
           'Content-type': 'application/json',
@@ -109,7 +109,7 @@ const Questions = ({setAuth}) => {
     try {
       const body = { next: true };
 
-      const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}/questions/${order}`, {
+      const response = await fetch(`/api/enrollments/${id}/sessions/${sessionId}/questions/${order}`, {
         method: 'PATCH',
         headers: {
           'Content-type': 'application/json',

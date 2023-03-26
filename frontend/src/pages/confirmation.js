@@ -30,7 +30,7 @@ const Confirmation = ({setAuth}) => {
 
       console.log(body);
       if(sessionId != false) {
-        const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}`, {
+        const response = await fetch(`/api/enrollments/${id}/sessions/${sessionId}`, {
           method: 'PATCH',
           headers: {
             "Content-type": "application/json",
@@ -44,7 +44,7 @@ const Confirmation = ({setAuth}) => {
 
         navigate("/questions", {state: {id: id, sessionId: sessionId, order: 1, name: name}});
       } else {
-        const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions`, {
+        const response = await fetch(`/api/enrollments/${id}/sessions`, {
           method: 'POST',
           headers: {
             'Content-type': 'application/json',

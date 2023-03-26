@@ -40,5 +40,6 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.6.1"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }

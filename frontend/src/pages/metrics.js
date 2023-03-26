@@ -18,7 +18,7 @@ const Metrics = ({setAuth}) => {
 
   async function getMetrics() {
     try {
-      const res = await fetch(`http://localhost:3001/enrollments/${id}`, {
+      const res = await fetch(`/api/enrollments/${id}`, {
         method: 'GET',
         headers: { token: localStorage.token }
       });

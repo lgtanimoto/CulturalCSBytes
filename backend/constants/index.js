@@ -8,5 +8,8 @@ module.exports = {
 
     // Sessions
     INITIAL_SESSION: 1,
-    PRACTICE_SESSION: -1
+    PRACTICE_SESSION: -1,
+
+    // Weeks
+    MIN_WEEKS: 1
 };

@@ -21,7 +21,7 @@ const Recommendations = ({setAuth}) => {
 
   async function getRecommendations() {
     try {
-      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}/recommendations`, {
+      const res = await fetch(`/api/enrollments/${id}/sessions/${sessionId}/recommendations`, {
         method: 'GET',
         headers: { token: localStorage.token }
       });

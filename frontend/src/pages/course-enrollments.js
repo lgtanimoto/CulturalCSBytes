@@ -14,7 +14,7 @@ const CourseEnrollments = ({setAuth}) => {
 
   async function getName() {
     try {
-      const res = await fetch('http://localhost:3001/enrollments', {
+      const res = await fetch('/api/enrollments', {
         method: 'GET',
         headers: { token: localStorage.token }
       });
@@ -55,7 +55,7 @@ const CourseEnrollments = ({setAuth}) => {
 
   async function continueClick(id, name) {
     try {
-      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/continue`, {
+      const res = await fetch(`/api/enrollments/${id}/sessions/continue`, {
         method: 'GET',
         headers: {
           "Content-type": "application/json",

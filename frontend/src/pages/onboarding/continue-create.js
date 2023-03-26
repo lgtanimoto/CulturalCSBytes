@@ -38,7 +38,7 @@ const ContinueCreateAccount = ({setAuth}) => {
         zipcode
       };
 
-      const response = await fetch("http://localhost:3001/authentication/register", {
+      const response = await fetch("/api/authentication/register", {
         method: "POST",
         headers: {"Content-type": "application/json"},
         body: JSON.stringify(body)

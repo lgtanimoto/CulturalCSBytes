@@ -26,7 +26,7 @@ const Login = ({setAuth}) => {
     e.preventDefault();
     try {
       const body = { username, password };
-      const response = await fetch("http://localhost:3001/authentication/login", {
+      const response = await fetch("/api/authentication/login", {
         method: "POST",
         headers: {"Content-type": "application/json"},
         body: JSON.stringify(body)

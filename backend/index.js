@@ -13,50 +13,50 @@ app.use(cors());
 
 /* Routes */
 
-app.use('/authentication', require('./routes/authentication'));
-app.use('/enrollments', authorization, require('./routes/enrollments'));
+app.use('/api/authentication', require('./routes/authentication'));
+app.use('/api/enrollments', authorization, require('./routes/enrollments'));
 
 /* Debugging */
 
 // Question JSON Files
 
-app.get('/questions/:questionSetCode/:cultureCode/:mqCode/:altCode', async (req, res) => {
-    const {
-        questionSetCode,
-        cultureCode,
-        mqCode,
-        altCode
-    } = req.params;
+// app.get('/questions/:questionSetCode/:cultureCode/:mqCode/:altCode', async (req, res) => {
+//     const {
+//         questionSetCode,
+//         cultureCode,
+//         mqCode,
+//         altCode
+//     } = req.params;
 
-    const data = require(`../content/${questionSetCode}/${cultureCode}/${questionSetCode}-${cultureCode}-${mqCode}-${altCode}.json`);
-    res.json(data);
-});
+//     const data = require(`../content/${questionSetCode}/${cultureCode}/${questionSetCode}-${cultureCode}-${mqCode}-${altCode}.json`);
+//     res.json(data);
+// });
 
 // Image Blobs
 
-const pool = require('./db');
+// const pool = require('./db');
 
-app.get('/questions/:questionId/image', async (req, res) => {
-    const { questionId } = req.params;
+// app.get('/questions/:questionId/image', async (req, res) => {
+//     const { questionId } = req.params;
 
-    const questions = await pool.query(
-        'SELECT blob FROM question WHERE id = $1',
-        [questionId]
-    );
+//     const questions = await pool.query(
+//         'SELECT blob FROM question WHERE id = $1',
+//         [questionId]
+//     );
 
-    if (questions.rows[0].blob !== null) {
-        const buffer = questions.rows[0].blob;
-        const src = `data:image/jpeg;base64,${buffer.toString('base64')}`;
-        return res.send(`<img src=${src} alt='Question image'>`);
-    }
+//     if (questions.rows[0].blob !== null) {
+//         const buffer = questions.rows[0].blob;
+//         const src = `data:image/jpeg;base64,${buffer.toString('base64')}`;
+//         return res.send(`<img src=${src} alt='Question image'>`);
+//     }
 
-    res.send('<h1>Error: Question does not have image.</h1>');
-});
+//     res.send('<h1>Error: Question does not have image.</h1>');
+// });
 
-/* Success */
+/* AWS Health */
 
 app.get('/', async (req, res) => {
-    res.send('<h1>Hello World!</h1>');
+    res.json({ success: 'Hello World!' });
 })
 
 /* Listening */

@@ -20,7 +20,7 @@ const Enroll = ({setAuth}) => {
   async function getInfo() {
     try {
       setLoaded(true);
-      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/new${practice ? '?practice=true' : ''}`, {
+      const res = await fetch(`/api/enrollments/${id}/sessions/new${practice ? '?practice=true' : ''}`, {
         method: 'GET',
         headers: { token: localStorage.token }
       });
