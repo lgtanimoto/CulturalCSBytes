@@ -29,21 +29,35 @@ const Confirmation = ({setAuth}) => {
       };
 
       console.log(body);
-      
-      const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}`, {
-        method: 'PATCH',
-        headers: {
-          "Content-type": "application/json",
-          token: localStorage.token
-        },
-        body: JSON.stringify(body)
-      });
-      
-      const parseRes = await response.json();
+      if(sessionId != false) {
+        const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions/${sessionId}`, {
+          method: 'PATCH',
+          headers: {
+            "Content-type": "application/json",
+            token: localStorage.token
+          },
+          body: JSON.stringify(body)
+        });
 
-      console.log(parseRes);
+        const parseRes = await response.json();
+        console.log(parseRes);
 
-      navigate("/questions", {state: {id: id, sessionId: sessionId, order: 1, name: name}});
+        navigate("/questions", {state: {id: id, sessionId: sessionId, order: 1, name: name}});
+      } else {
+        const response = await fetch(`http://localhost:3001/enrollments/${id}/sessions`, {
+          method: 'POST',
+          headers: {
+            'Content-type': 'application/json',
+            token: localStorage.token
+          },
+          body: JSON.stringify(body)
+        });
+
+        const parseRes = await response.json();
+        console.log(parseRes);
+
+        navigate("/questions", {state: {id: id, sessionId: parseRes.sessionId, order: 1, name: name}});
+      }
     } catch (err) {
       console.log(err.message);
     }
