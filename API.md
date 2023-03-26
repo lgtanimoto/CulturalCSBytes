@@ -169,7 +169,7 @@ No body for GET requests. But we must provide the JWT token that we retrieved fr
 const res = await fetch('http://localhost:3001/enrollments', {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
@@ -227,12 +227,12 @@ With the following code snippet:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/continue`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
 
-If you get this, this means to redirect to the form where we start a new session. See [Section 5](#5-session-start).
+If you get this, this means to redirect to the form where we start a new session. See [Section 5, Official Session](#5a-official-session).
 
 ```
 {
@@ -241,7 +241,9 @@ If you get this, this means to redirect to the form where we start a new session
 }
 ```
 
-Or if you get this, which you can check if `route` is a JSON object, this means to redirect to `:sessionId/questions/:order`, or to the following question for the specified session. See [Section 7](#7-question).
+Meanwhile, if you get this, this means the student can only do a practice session since it has been less than one week since doing an official session. See [Section 5, Practice Session](#5b-practice-session).
+
+Finally, if you get this, which you can check if `route` is a JSON object, this means to redirect to `:sessionId/questions/:order`, or to the following question for the specified session. See [Section 7](#7-question).
 
 ```
 {
@@ -271,7 +273,7 @@ Make the API request as below:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
@@ -354,7 +356,7 @@ This is a simple API GET request:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/new`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
@@ -418,7 +420,7 @@ The code snippet is also very similar:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/new?practice=true`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
@@ -547,7 +549,7 @@ This GET request is very similar to other GET requests:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
@@ -690,7 +692,7 @@ And done via the following:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/recommendations`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
@@ -741,7 +743,7 @@ And done via the following:
 const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/results`, {
   method: 'GET',
   headers: { token: localStorage.token }
-}
+});
 
 const parseData = await res.json();
 ```
