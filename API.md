@@ -58,7 +58,7 @@ No API request from here. Everything here redirects to a new page. This can all 
 The form is submitted when we click **OK**. This is where we make an API request. We want to make the following request:
 
 ```
-POST http://localhost:3001/authentication/register
+POST /api/authentication/register
 ```
 
 First we need to specify the form inputs we want to pass into the body of the API request:
@@ -77,7 +77,7 @@ const body = {
 Then we await the response of the API request:
 
 ```
-const response = await fetch('http://localhost:3001/authentication/register', {
+const response = await fetch('/api/authentication/register', {
   method: 'POST',
   headers: { 'Content-type': 'application/json' },
   body: JSON.stringify(body)
@@ -114,7 +114,7 @@ This is what happens if the username is already taken, which can only be checked
 While there is no login form in the wireframe, we need to handle this route as well:
 
 ```
-POST http://localhost:3001/authentication/login
+POST /api/authentication/login
 ```
 
 I won't go in too much depth for this one since the steps are very similar to registration, so let's do this in one block here:
@@ -125,7 +125,7 @@ const body = {
   password
 };
 
-const response = await fetch('http://localhost:3001/authentication/login', {
+const response = await fetch('/api/authentication/login', {
   method: 'POST',
   headers: { 'Content-type': 'application/json' },
   body: JSON.stringify(body)
@@ -160,13 +160,13 @@ This is what happens if the username or password do not match, which can only be
 If we want to list all the enrollments, we make the following request:
 
 ```
-GET http://localhost:3001/enrollments
+GET /api/enrollments
 ```
 
 No body for GET requests. But we must provide the JWT token that we retrieved from registration/login:
 
 ```
-const res = await fetch('http://localhost:3001/enrollments', {
+const res = await fetch('/api/enrollments', {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -218,13 +218,13 @@ If we click on **Stats** for a certain enrollment, we need to redirect to the en
 If we click on **Continue** for a certain enrollment, we need to make this API GET request:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/continue
+GET /api/enrollments/:enrollmentId/sessions/continue
 ```
 
 With the following code snippet:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/continue`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}/sessions/continue`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -262,7 +262,7 @@ Finally, if you get this, which you can check if `route` is a JSON object, this 
 To get the enrollment metrics, we make the following API request:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId
+GET /api/enrollments/:enrollmentId
 ```
 
 Where `:enrollmentId` is the `id` attribute that was returned for the enrollment specified. This attribute was returned when we tried to get all the enrollments from [Section 3](#3a-get-all-enrollments).
@@ -270,7 +270,7 @@ Where `:enrollmentId` is the `id` attribute that was returned for the enrollment
 Make the API request as below:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -347,13 +347,13 @@ See [Section 3, Continue Enrollment](#3c-continue-enrollment). The implementatio
 Even though we are filling out a form, we still need to make an API GET request. This is to retrieve the next official session we need to start.
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/new
+GET /api/enrollments/:enrollmentId/sessions/new
 ```
 
 This is a simple API GET request:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/new`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}/sessions/new`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -411,13 +411,13 @@ This means that it's been less than a week since the student last completed an o
 The API request is very similar to starting an official session, except now we add a query parameter:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/new?practice=true
+GET /api/enrollments/:enrollmentId/sessions/new?practice=true
 ```
 
 The code snippet is also very similar:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/new?practice=true`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}/sessions/new?practice=true`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -436,7 +436,7 @@ No GET requests here. The point is to start official or practice sessions.
 Now we will make a PATCH request. This is because the sessions have already been created in the database, so all we need to do is modify them to indicate that we have started the session.
 
 ```
-PATCH http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId
+PATCH /api/enrollments/:enrollmentId/sessions/:sessionId
 ```
 
 And we can do it via the following snippet:
@@ -448,7 +448,7 @@ const body = {
   additionalCultures
 };
 
-const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}`, {
+const response = await fetch(`/api/enrollments/${enrollmentId}/sessions/${sessionId}`, {
   method: 'PATCH',
   headers: {
     'Content-type': 'application/json',
@@ -498,13 +498,13 @@ Another error would be if the student tried to start an official session too ear
 This time we make a POST request. This is because the session does not exist in the DB at the moment, so we actually need to instantiate a session first.
 
 ```
-POST http://localhost:3001/enrollments/:enrollmentId/sessions
+POST /api/enrollments/:enrollmentId/sessions
 ```
 
 The input body is the exact same as before. But the API request is formed a little differently:
 
 ```
-const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions`, {
+const response = await fetch(`/api/enrollments/${enrollmentId}/sessions`, {
   method: 'POST',
   headers: {
     'Content-type': 'application/json',
@@ -540,13 +540,13 @@ An error that may occur is if the student tried to start a practice session befo
 Let's say we want to get question one for the session. Specifying `order=1`, we need to make a GET request like the following:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
+GET /api/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
 ```
 
 This GET request is very similar to other GET requests:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -590,7 +590,7 @@ And a breakdown of the fields:
 Now we want to answer a question. We make a `PATCH` request like the following:
 
 ```
-PATCH http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
+PATCH /api/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
 ```
 
 And we can do it via the following snippet (`answer` is an integer representing the number of the answer chosen):
@@ -598,7 +598,7 @@ And we can do it via the following snippet (`answer` is an integer representing 
 ```
 const body = {answer};
 
-const response = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
+const response = await fetch(`/api/enrollments/${enrollmentId}/sessions/${sessionId}/questions/${order}`, {
   method: 'PATCH',
   headers: {
     'Content-type': 'application/json',
@@ -634,7 +634,7 @@ An error will occur if the student tries to reanswer a question:
 Follow the conventions for making the same request below:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
+GET /api/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
 ```
 
 The response will be exactly the same, except `studentAnswer` will have a numerical value. You can compare this to `questionJson.CorrectAnswer` to display if the student got the question correct or wrong.
@@ -644,7 +644,7 @@ The response will be exactly the same, except `studentAnswer` will have a numeri
 We make the same `PATCH` request like the following:
 
 ```
-PATCH http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
+PATCH /api/enrollments/:enrollmentId/sessions/:sessionId/questions/:order
 ```
 
 The only difference is what we put in the body, which will now look like this to specify that we are moving on from this question:
@@ -683,13 +683,13 @@ An error will occur if the student tries to move on to a different question befo
 This is a GET request like below:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/recommendations
+GET /api/enrollments/:enrollmentId/sessions/:sessionId/recommendations
 ```
 
 And done via the following:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/recommendations`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}/sessions/${sessionId}/recommendations`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
@@ -734,13 +734,13 @@ I will go over the fields we have not touched upon yet:
 This is a GET request like below:
 
 ```
-GET http://localhost:3001/enrollments/:enrollmentId/sessions/:sessionId/results
+GET /api/enrollments/:enrollmentId/sessions/:sessionId/results
 ```
 
 And done via the following:
 
 ```
-const res = await fetch(`http://localhost:3001/enrollments/${enrollmentId}/sessions/${sessionId}/results`, {
+const res = await fetch(`/api/enrollments/${enrollmentId}/sessions/${sessionId}/results`, {
   method: 'GET',
   headers: { token: localStorage.token }
 });
