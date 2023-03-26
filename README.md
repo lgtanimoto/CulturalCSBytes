@@ -85,9 +85,11 @@ If you are instead reseeding the database, you can skip Steps 1-3 (creating the 
 
 ### Frontend setup
 Finally, we will use the terminal session connected to the frontend service.
-1. Run `npm i` to install the packages.
-2. And run `npm start` to start the frontend service.
-3. Navigate to `localhost:3000` to open the frontend application in a web server.
+1. Create a `.env` file with the following environment variable
+    1. `REACT_APP_PROXY_HOST` - Set to `http://localhost:3001` for now.
+2. Run `npm i` to install the packages.
+3. And run `npm start` to start the frontend service.
+4. Navigate to `localhost:3000` to open the frontend application in a web server.
 
 If you are instead reseeding the database, you can skip Steps 1-3 (installing packages).
 
