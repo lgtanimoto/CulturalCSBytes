@@ -65,6 +65,10 @@ p {
     margin: 20px;
 }
 
+#about {
+    text-align: left;
+}
+
 body {
 
 }
@@ -103,6 +107,7 @@ table, th, td {
 .code {
     font-family: 'Courier New', Courier, monospace;
     background-color: lightyellow;
+    text-align: left;
 }
 
 em {

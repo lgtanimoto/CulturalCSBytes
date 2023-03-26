@@ -52,11 +52,11 @@ const Confirmation = ({setAuth}) => {
   return (
     <div className="Center">
       <div id="welcome">
-        <h1>{location.state.course} Confirmation Screen</h1>
-        <h2>{name}</h2>
+        <h1>{name}</h1>
+        <h2>20 questions : ~60 minutes</h2>
       </div>
-      <button id="login" onClick={cancel} >Cancel</button>
-      <button id="createAccount" onClick={ok} >Ok</button>
+      <button id="login" onClick={cancel}>Cancel</button>
+      <button id="createAccount" onClick={ok}>Begin Session</button>
     </div>
   );
 }

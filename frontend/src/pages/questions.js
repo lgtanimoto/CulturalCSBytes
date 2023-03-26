@@ -65,6 +65,7 @@ const Questions = ({setAuth}) => {
       if (parseData.studentAnswer !== null) {
         if(parseData.studentAnswer === correctAnswer) {
             document.getElementById(parseData.studentAnswer).style.backgroundColor = "green";
+            document.getElementById("explanation").style.display = "block";
         } else {
             document.getElementById(parseData.studentAnswer).style.backgroundColor = "red";
             document.getElementById(correctAnswer).style.backgroundColor = "green";
@@ -160,6 +161,7 @@ const Questions = ({setAuth}) => {
       <div id="welcome">
         <h1>Question {order} of {numOfQuestions}</h1>
       </div>
+      <button onClick={goBack}>Back to Courses</button>
       <div>{parse(curQuestion)}</div>
       <div className="Answer">
         <button id="1" onClick={() => answerClick("1")}>{parse(answer1)}</button>
@@ -174,7 +176,6 @@ const Questions = ({setAuth}) => {
         <button id="4" onClick={() => answerClick("4")}>{parse(answer4)}</button>
       </div>
       <div id="explanation">{parse(explanation)}</div>
-      <button onClick={goBack}>Back to Courses</button>
       <button onClick={nextQuestion}>Next</button>
     </div>
   );

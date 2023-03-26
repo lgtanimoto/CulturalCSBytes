@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from "react-router-dom";
-import './enroll.css';
+import './questions.css';
 
 const Enroll = ({setAuth}) => {
 
@@ -57,6 +57,7 @@ const Enroll = ({setAuth}) => {
   }
 
   useEffect(() => {
+    console.log("hi");
     if (loaded === false) {
       getInfo()
     }
@@ -98,7 +99,7 @@ const Enroll = ({setAuth}) => {
       <div className="item">
         <p>Question Set:</p>
         <div className="dropdown">
-          <select name="name" id="name" value={name}>
+          <select name="name" id="name">
             <option value={name}>{name}</option>
           </select>
         </div>
