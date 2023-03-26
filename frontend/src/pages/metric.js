@@ -19,7 +19,7 @@ class Metric extends Component {
         return (
             <div className="course">
                 <p>{this.props.name}</p>
-                {this.props.correct ? (
+                {this.props.cultures ? (
                     <p>Date: {this.props.date.split("T")[0]}</p>
                 ) : (
                     <p>Expected Start Date: {this.props.date.split("T")[0]}</p>
@@ -29,7 +29,7 @@ class Metric extends Component {
                 ) : (
                     <p>Cultures: N/A</p>
                 )}
-                {this.props.correct ? (
+                {this.props.cultures ? (
                     <p>Score: {this.props.correct}/{this.props.totalQuestions}</p>
                 ) : (
                     <p>Score: N/A</p>
