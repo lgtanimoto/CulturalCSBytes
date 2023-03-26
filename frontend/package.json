@@ -41,5 +41,9 @@
   },
   "devDependencies": {
     "react-router-dom": "^6.6.1"
+  },
+  "engines": {
+    "node": "16.19.1",
+    "npm": "8.19.3"
   }
 }
