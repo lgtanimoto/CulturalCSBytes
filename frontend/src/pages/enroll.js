@@ -10,7 +10,9 @@ const Enroll = ({setAuth}) => {
 
   const id = location.state.id;
   const name = location.state.name;
-  const [sessionId, setSessionId] = useState();
+  const practice = location.state.practice;
+  const [sessionId, setSessionId] = useState(0);
+  const [sessionName, setSessionName] = useState('');
   const [difficulty, setDifficulty] = useState('Medium');
   const [culture, setCulture] = useState('Default Culture');
   const [additionalCultures, setAdditionalCultures] = useState([]);
@@ -18,7 +20,7 @@ const Enroll = ({setAuth}) => {
   async function getInfo() {
     try {
       setLoaded(true);
-      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/new`, {
+      const res = await fetch(`http://localhost:3001/enrollments/${id}/sessions/new${practice ? '?practice=true' : ''}`, {
         method: 'GET',
         headers: { token: localStorage.token }
       });
@@ -27,6 +29,7 @@ const Enroll = ({setAuth}) => {
 
       console.log(parseData);
       setSessionId(parseData.sessionId);
+      setSessionName(parseData.sessionName);
       
       var select = document.getElementById("difficulties"); 
       for(var i = 0; i < parseData.difficulties.length; i++) {
@@ -95,7 +98,7 @@ const Enroll = ({setAuth}) => {
 
   return (
     <div className="Center">
-      <h1>Initial Session</h1>
+      <h1>{sessionName}</h1>
       <div className="item">
         <p>Question Set:</p>
         <div className="dropdown">

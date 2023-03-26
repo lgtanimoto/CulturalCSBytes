@@ -20,7 +20,7 @@ const Questions = ({setAuth}) => {
   const [answer2, setAnswer2] = React.useState("Answer 2"); 
   const [answer3, setAnswer3] = React.useState("Answer 3"); 
   const [answer4, setAnswer4] = React.useState("Answer 4"); 
-  const [correctAnswer, setCorrectAnswer] = React.useState(1); 
+  const [correctAnswer, setCorrectAnswer] = React.useState(0); 
   const [explanation, setExplanation] = React.useState("");
   
   const [answered, setAnswered] = React.useState(false);
@@ -70,6 +70,10 @@ const Questions = ({setAuth}) => {
             document.getElementById(parseData.studentAnswer).style.backgroundColor = "red";
             document.getElementById(correctAnswer).style.backgroundColor = "green";
             document.getElementById("explanation").style.display = "block";
+        }
+        const nonAnswers = [1, 2, 3, 4].filter(x => x !== parseData.studentAnswer && x !== correctAnswer);
+        for (let i = 0; i < nonAnswers.length; i++) {
+          document.getElementById(nonAnswers[i]).style.backgroundColor = "white";
         }
         setAnswered(true);
       }

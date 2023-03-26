@@ -1,7 +1,7 @@
 const router = require('express').Router({mergeParams: true});
 const pool = require('../db');
 const { verifyCompleteSession, verifyCurrentEnrollment, verifyCurrentSession, verifyNextSession } = require('../middleware');
-const { getEnrollmentData, getEnrollmentMetrics, getSessionName, getStudentNames } = require('../utils/helpers');
+const { getEnrollmentData, getEnrollmentMetrics, getSessionData, getSessionName, getStudentNames } = require('../utils/helpers');
 
 /* Helper Functions */
 
@@ -102,30 +102,44 @@ router.get('/continue', verifyCurrentEnrollment, async (req, res) => {
 
         /* Find session in progress */
 
-        const sessions = await pool.query(
-            'SELECT id FROM session WHERE enrollment_id = $1 AND status = $2',
-            [enrollmentId, 1]
-        );
+        const { sessions } = await getEnrollmentData(req.enrollment);
+        const { currentSession, currentDate } = getSessionData(sessions);
 
         // If no session in progress, redirect to starting new session
-        if (sessions.rows.length === 0) {
-            return res.json({
-                redirect: true,
-                route: 'new'
-            })
+        if (!currentSession) {
+            const weeks = Math.floor((Date.now() - currentDate) / 1000 / 60 / 60 / 24 / 7);
+
+            if (weeks < 1) {
+                return res.json({
+                    redirect: true,
+                    route: 'new',
+                    params: { practice: true }
+                });
+            } else {
+                return res.json({
+                    redirect: true,
+                    route: 'new'
+                });
+            }
+            
         }
 
         /* Access question in progres */
 
+        const session = await pool.query(
+            'SELECT id FROM session WHERE enrollment_id = $1 AND status = $2',
+            [enrollmentId, 1]
+        )
+
         let sessionQuestions = await pool.query(
             'SELECT question_id, question_order, answer_order, student_answer FROM session_question WHERE session_id = $1 AND status = $2',
-            [sessions.rows[0].id, 1]
+            [session.rows[0].id, 1]
         );
 
         res.json({
             redirect: true,
             route: {
-                sessionId: sessions.rows[0].id,
+                sessionId: session.rows[0].id,
                 questionOrder: sessionQuestions.rows[0].question_order
             }
         });

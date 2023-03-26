@@ -66,7 +66,7 @@ const CourseEnrollments = ({setAuth}) => {
       const parseData = await res.json();
 
       if(parseData.route === "new") {
-        navigate("/enroll", {state: {id: id, name: name}});
+        navigate("/enroll", {state: {id: id, name: name, practice: parseData.params ? true : false}});
       } else {
         console.log(parseData);
         navigate("/questions", {state: {id: id, sessionId: parseData.route.sessionId, order: parseData.route.questionOrder, name: name}});
