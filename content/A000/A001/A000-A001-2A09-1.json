@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2A09",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Arrow</span> is studying the Industrial Revolution, specifically examining the impacts of steam power on manufacturing advancements. They&#39;ve decided to run a simulation that calculates how changing the amount of coal used affects the steam produced and hence the power generated. Although <span class=\"qname\">Arrow</span> made a mistake when naming their variables, making the code snippet difficult to comprehend:Which of the following options makes the best sense when renaming <span class=\"qname\">Arrow</span>&#39;s variables X, Y, and Z?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number X = 20</td></tr><tr><td>2</td><td>number Y = X * 8.43</td></tr><tr><td>3</td><td>number Z = Y * 2.50</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "X: coalUsed, Y: steamProduced, Z: powerGenerated",
+    "Answer2": "X: totalProduction, Y: hourRate, Z: steamRate",
+    "Answer3": "X: dailyCoal, Y: monthlySteam, Z: yearlyPower",
+    "Answer4": "X: coalPrice, Y: steamMarket, Z: powerCost",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The variable X stores the amount of coal used in kilograms, Y stores the amount of steam produced in cubic meters, and Z calculates the power generated in Watts. Therefore, logically, it makes sense to rename X as &#39;coalUsed&#39;, Y as &#39;steamProduced&#39;, and Z as &#39;powerGenerated&#39;.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number X = 20</td></tr><tr><td>2</td><td>number Y = X * 8.43</td></tr><tr><td>3</td><td>number Z = Y * 2.50</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

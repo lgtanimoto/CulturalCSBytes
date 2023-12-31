@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A12",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Munich</span> is studying Physics and wants to incorporate a coding project in their presentation about energy changes. <span class=\"qname\">Munich</span> found an existing code that calculates kinetic energy. To demonstrate changes in energy, <span class=\"qname\">Munich</span> decided to modify the existing program to add a feature that calculates potential energy. Given the formula for potential energy (m * g * h, where m = mass, g = gravity and h = height), which of the following code snippets achieves that new functionality?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>action CalculateEnergy(integer m, number v, number g, number h) returns number</td></tr><tr><td><div class=\"ci4\">number KE = 0.5 * m * v * v</div></td></tr><tr><td><div class=\"ci4\">number PE = m * g * h</div></td></tr><tr><td><div class=\"ci4\">return KE + PE</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>action CalculateEnergy(integer m, number v) returns number</td></tr><tr><td><div class=\"ci4\">number KE = 0.5 * m * v * v</div></td></tr><tr><td><div class=\"ci4\">return KE</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>action CalculateEnergy(integer m, number v, number g) returns number</td></tr><tr><td><div class=\"ci4\">number KE = 0.5 * m * v * v</div></td></tr><tr><td><div class=\"ci4\">return KE</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>action CalculateEnergy(integer m, number v, number g, number h) returns number</td></tr><tr><td><div class=\"ci4\">number KE = 0.5 * m * v * v</div></td></tr><tr><td><div class=\"ci4\">return KE</div></td></tr><tr><td>end</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Munich</span> correctly modified the existing code. They added potential energy calculation and combined both kinetic and potential energy in the return statement. This ensures the program now calculates and returns the sum of both the kinetic and potential energy, demonstrating an energy changes.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action CalculateEnergy(integer m, number v) returns number</td></tr><tr><td>2</td><td><div class=\"ci4\">number KE = 0.5 * m * v * v</div></td></tr><tr><td>3</td><td><div class=\"ci4\">return KE</div></td></tr><tr><td>4</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

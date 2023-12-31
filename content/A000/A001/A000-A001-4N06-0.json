@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4N06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Morgan</span> is in charge of developing a security protocol for their school&#39;s computer science department. They need to balance efficiency, feasibility, and the ethical impacts of these measures. In particular, <span class=\"qname\">Morgan</span> is concerned about preserving both the privacy of students&#39; data and access to academic resources. Which of the following measures should <span class=\"qname\">Morgan</span> most likely recommend?</p>",
+    "QuestionImage": null,
+    "Answer1": "Block access to all social media websites on the school network to prevent potential data breaches.",
+    "Answer2": "Ensure that all computers in the department have the latest antivirus software installed and regularly updated.",
+    "Answer3": "Encrypt all data on the school&#39;s servers, making them accessible only to <span class=\"qname\">Morgan</span>.",
+    "Answer4": "Require all students to submit their personal devices for a security check before they can connect to the school network.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Answer 2 provides a good balance between protecting the department&#39;s computers without excessively infringing on students&#39; privacy or access to resources. Anti-virus software protects against a variety of common threats and is a generally accepted security measure. Blocking access to sites or requiring device checks might be seen as an unnecessary invasion of privacy. Encrypting data is good, but making it only accessible to <span class=\"qname\">Morgan</span> is not feasible or ethically proper.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

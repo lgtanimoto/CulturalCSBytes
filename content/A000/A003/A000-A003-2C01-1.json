@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2C01",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Delhi</span> is a track and field athlete and also part of the cross country team. They use a sports watch to track their workouts. The watch tracks their heart rate, sleep, steps, and also uses GPS to record their route during workouts. Can you identify some of the internal and external parts of this computing device and how they function together to form a system?</p>",
+    "QuestionImage": null,
+    "Answer1": "Battery, Display, GPS, Case",
+    "Answer2": "Processor, Memory, Display, Case",
+    "Answer3": "Display, Processor, Memory, Heart rate sensor",
+    "Answer4": "Battery, Display, Heart rate sensor, Case",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Option 3 is the most accurate as it includes the Display (necessary for output), Processor (for computations), Memory (to store data such as step count, sleep data etc.), and Heart rate sensor (for input - tracking the heart rate). </p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

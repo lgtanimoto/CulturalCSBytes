@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Phoenix</span> is exploring the concept of how writing systems evolved over time for their History project. They think of using a computer program to illustrate how simple symbols started representing complex ideas in ancient civilizations, thus showing how hardware and software work together. Which is the best way for <span class=\"qname\">Phoenix</span> to do this?</p>",
+    "QuestionImage": null,
+    "Answer1": "By creating a series of pixels that form characters and symbols that the program can generate when certain keys are pressed.",
+    "Answer2": "By programming a simple, text-based adventure game, where the story changes based on the user&#39;s inputs.",
+    "Answer3": "By developing a simple calculator program that performs basic mathematical operations.",
+    "Answer4": "By creating an email system that sends and receives messages in binary format.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>By creating a program where specific keys generate certain characters and symbols, <span class=\"qname\">Phoenix</span> is illustrating how the hardware (keyboard) and software (the program interpreting the key presses) work together to create the &#39;writing systems&#39; that computers use. This is a great analogy to historical evolution of writing systems.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>class KeySymbol</td></tr><tr><td>2</td><td>   action KeySymbol</td></tr><tr><td>3</td><td><div class=\"ci4\">text symbol</div></td></tr><tr><td>4</td><td><div class=\"ci4\">number key</div></td></tr><tr><td>5</td><td>   end</td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td>   action setKey(number key)</td></tr><tr><td>8</td><td><div class=\"ci4\">this:key = key</div></td></tr><tr><td>9</td><td>   end</td></tr><tr><td>10</td><td></td></tr><tr><td>11</td><td>   action setSymbol(text symbol)</td></tr><tr><td>12</td><td><div class=\"ci4\">this:symbol = symbol</div></td></tr><tr><td>13</td><td>   end</td></tr><tr><td>14</td><td></td></tr><tr><td>15</td><td>   action getSymbol() returns text</td></tr><tr><td>16</td><td><div class=\"ci4\">return symbol</div></td></tr><tr><td>17</td><td>   end</td></tr><tr><td>18</td><td></td></tr><tr><td>19</td><td>   action getKey() returns number</td></tr><tr><td>20</td><td><div class=\"ci4\">return key</div></td></tr><tr><td>21</td><td>   end</td></tr><tr><td>22</td><td>end</td></tr><tr><td>23</td><td></td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

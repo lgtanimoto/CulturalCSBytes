@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "1D07",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Drew</span> is tracking the number of water bottles sold at soccer games against the temperature at the start of the game.  After 9 games, <span class=\"qname\">Drew</span> has created the charts below.   Knowing that today's temperature at game time will be 85 degrees, how many bottles of water should <span class=\"qname\">Drew</span> expect to sell?</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A002-1D07-0Q.png\"></p>",
-        "QuestionImage": "A000-A002-1D07-0Q.png",
-        "Answer1": "70 bottles",
-        "Answer2": "45 bottles",
-        "Answer3": "80 bottles",
-        "Answer4": "90 bottles",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 1,
-        "Explanation": "<p>The dotted blue trend line in the top graph crosses 80 bottles at 85 degrees F.   While the bar chart at the bottom contains valid data, it is very difficult to use for prediction purposes.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1D07",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Current</span> is studying the prevalence of intellectual property rights infringements over the last 10 years. They charted the number of infringements per year and noticed a pattern of increase every other year. Looking at the data visualization, they&#39;ve hypothesized that 2022 will show an increased number of violations compared to 2021. Help <span class=\"qname\">Current</span> test this prediction by writing a sequence of code that will simulate these increments.</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer interferencePred = 200</td></tr><tr><td>2</td><td>for i from 2012 to 2022 inclusive </td></tr><tr><td>3</td><td><div class=\"ci4\">if i mod 2 = 0</div></td></tr><tr><td>4</td><td><div class=\"ci8\">interferencePred = interferencePred + 50</div></td></tr><tr><td>5</td><td><div class=\"ci4\">end</div></td></tr><tr><td>6</td><td>end</td></tr><tr><td>7</td><td>print interferencePred</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>interferencePred := 200</td></tr><tr><td>for i from 2012 to 2022</td></tr><tr><td><div class=\"ci4\">if i mod 2 = 0</div></td></tr><tr><td><div class=\"ci8\">interferencePred = interferencePred + 50</div></td></tr><tr><td><div class=\"ci4\">end</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>interferencePred := 200</td></tr><tr><td>for i from 2012 to 2022</td></tr><tr><td><div class=\"ci4\">if i mod 2 = 1</div></td></tr><tr><td><div class=\"ci8\">interferencePred = interferencePred + 50</div></td></tr><tr><td><div class=\"ci4\">end</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>interferencePred := 200</td></tr><tr><td>for i from 2012 to 2022</td></tr><tr><td><div class=\"ci4\">if i mod 2 = 0</div></td></tr><tr><td><div class=\"ci8\">interferencePred = interferencePred - 50</div></td></tr><tr><td><div class=\"ci4\">end</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>interferencePred := 200</td></tr><tr><td>for i from 2011 to 2022</td></tr><tr><td><div class=\"ci4\">if i mod 2 = 0</div></td></tr><tr><td><div class=\"ci8\">interferencePred = interferencePred + 50</div></td></tr><tr><td><div class=\"ci4\">end</div></td></tr><tr><td>end</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Current</span>&#39;s prediction is based on an increase in infringement every other year. This is simulated by adding 50 to &#39;interferencePred&#39; every even year from 2012 to 2022, which is achieved in the first answer&#39;s code snippet.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer interferencePred = 200</td></tr><tr><td>2</td><td>for i from 2012 to 2022 inclusive </td></tr><tr><td>3</td><td><div class=\"ci4\">if i mod 2 = 0</div></td></tr><tr><td>4</td><td><div class=\"ci8\">interferencePred = interferencePred + 50</div></td></tr><tr><td>5</td><td><div class=\"ci4\">end</div></td></tr><tr><td>6</td><td>end</td></tr><tr><td>7</td><td>print interferencePred</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

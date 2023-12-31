@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3N05",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Lava</span> is working on a project in their biology class, tracking and recording the growth of different organisms over time. To safely store the data, <span class=\"qname\">Lava</span>&#39;s teacher has advised them to use a combination of physical and digital security measures. What might this advice entail?</p>",
+    "QuestionImage": null,
+    "Answer1": "Storing the data on a USB and hiding the USB in a sock drawer",
+    "Answer2": "Saving the data on <span class=\"qname\">Lava</span>&#39;s personal computer and password-protecting the file",
+    "Answer3": "Uploading the data to a cloud server with encrypted access and keeping the encryption key in a secure location",
+    "Answer4": "Sharing the data on a public forum for peer review and criticism",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Both physical and digital security measures are necessary to protect electronic information. Uploading the data to a cloud server with encrypted access is a digital security measure, and keeping the encryption key in a secure location is a physical security measure. This combination ensures the data is not easily accessible by unauthorized users, thus protecting the integrity and confidentiality of the information.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4D11",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>As part of an assignment for their history class, <span class=\"qname\">Sydney</span> wants to create an interactive data visualization to illustrate the impact of key scientific discoveries during the Scientific Revolution. <span class=\"qname\">Sydney</span> collected data and organized it into a table, showing the year, scientist, discovery, and its societal impact. Which tool would be the most appropriate to help <span class=\"qname\">Sydney</span> create his interactive data visualization?</p>",
+    "QuestionImage": null,
+    "Answer1": "A simple text editor like Notepad or TextEdit",
+    "Answer2": "A graphic design software like Adobe Illustrator",
+    "Answer3": "A virtual collaboration tool like Google Meet",
+    "Answer4": "A data visualization software like Tableau",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A data visualization software like Tableau is designed to help present data in a visually powerful and engaging manner. With such tools, <span class=\"qname\">Sydney</span> can create interactive charts and graphs where the watchers can interact with the data, exploring different facets of the Scientific Revolution.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

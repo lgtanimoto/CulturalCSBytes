@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A14",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kenya</span> has developed a program that calculates both potential and kinetic energy when given mass, height, velocity and gravitational constant. Recently, they found an open-source code that also calculates change in energy. Instead of writing his own code for calculating change in energy, <span class=\"qname\">Kenya</span> decides to use chunks of the open-source code in their program. What should <span class=\"qname\">Kenya</span> do to ensure they respect intellectual property rights?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Kenya</span> can just copy the code and use it in their program without indicating where it came from.",
+    "Answer2": "<span class=\"qname\">Kenya</span> should try to rewrite the code in a different way, so it does not look like they copied it.",
+    "Answer3": "<span class=\"qname\">Kenya</span> needs to mention in their program that parts of their code are derived from the open-source code and provide a link to the original code.",
+    "Answer4": "Since it is open-source, <span class=\"qname\">Kenya</span> doesn&#39;t need to do anything as they are free to use the code in any way they want.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Intellectual property rights should always be respected. Even if the code is open-source, it is professional decorum (and often required under the terms of use) to give proper attribution to the original creator or source.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

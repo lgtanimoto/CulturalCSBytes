@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Harley</span> is working on a Physics simulation software for their high school science project. The program needs to calculate the gravitational, electric, and magnetic forces between two objects when the user inputs their masses, charges, and distances.. <span class=\"qname\">Harley</span> wants to code a solution that considers different user preferences and can be improved over time. Which one of the following plans most closely aligns with <span class=\"qname\">Harley</span>&#39;s goal? </p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Harley</span> will write the code, get it working for one scenario and then submit the project.",
+    "Answer2": "<span class=\"qname\">Harley</span> will ask a few friends to try out their program after every major update. <span class=\"qname\">Harley</span> will use their feedback to make improvements.",
+    "Answer3": "<span class=\"qname\">Harley</span> will first design a user-friendly interface, then add functionality for each of the three forces one at a time, testing each one thoroughly before moving on to the next. <span class=\"qname\">Harley</span> will ask classmates to test the program.",
+    "Answer4": "<span class=\"qname\">Harley</span> will code the solutions for all three forces first. Then they will add an option for users to choose their preferred units of measurement.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The iterative programming process involves creating small parts of a larger program and testing these parts individually before integrating them into the larger program. In this case, <span class=\"qname\">Harley</span> is using an iterative process to complete each force calculation and test it individually before moving to the next, allowing for steady progression and thorough testing. Also, by seeking the perspectives of multiple colleagues, they are considering user preference in their design.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

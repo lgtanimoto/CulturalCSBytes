@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A17",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Voyager</span> is part of the ethics committee at a startup company. They are tasked with developing a program that automatically evaluates business decisions for potential ethical issues. The main function will take in a description of a decision, analyze it, and return a list of potential ethical concerns. How should this function be broken down into smaller components?</p>",
+    "QuestionImage": null,
+    "Answer1": "Create a single function that takes in a decision, analyzes the text, identifies potential ethical issues, sorts these issues by severity and outputs the sorted list.",
+    "Answer2": "Create multiple functions: the first takes in a decision description, the second analyzes the text, the third identifies potential ethical issues, and the fourth sorts these issues by severity and outputs the sorted list.",
+    "Answer3": "Create two functions: one function to take in a decision description and analyze, and the second function to identify potential ethical issues and sort them by severity.",
+    "Answer4": "The function should not be broken down into smaller components, but written all at once to ensure it works correctly.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>When creating a program, it&#39;s helpful to decompose problems into smaller components. This helps to make code easier to understand, debug, and maintain in the long run. The most logical way of splitting this problem would be as followed: One function to accept the decision description, another to analyze the text, a third to identify potential ethical issues, and a fourth to sort and output the ethical issues by severity.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

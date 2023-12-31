@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4I27",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Finley</span> is working on a group project about the Transportation Revolution. Their role is to research and present on the impact of canals on commerce. As they live in a different timezone and have a differing schedule from their group members, this could cause challenges in coordinating who does what by when. What tools or methods could <span class=\"qname\">Finley</span> use to augment collaboration and connectivity despite these location and time differences?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Finley</span> could use a cloud-based platform (like Google Docs) to document their research and access other members&#39; work anytime and anywhere.",
+    "Answer2": "<span class=\"qname\">Finley</span> could suggest synchronous video meetings with the other group members to discuss the overall progress of the project and each member\u2019s contribution.",
+    "Answer3": "Use an online project management tool to schedule tasks, assign responsibilities, and track the progress of the project.",
+    "Answer4": "All of the above",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 1,
+    "Explanation": "<p>All options are examples of tools and methods that <span class=\"qname\">Finley</span> can use to overcome geographical and temporal barriers in collaborative work. Using cloud-based platforms allows real-time and asynchronous collaboration. Video meetings help build connections and understanding. Project management tools assist with coordinating tasks and responsibilities in group projects.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

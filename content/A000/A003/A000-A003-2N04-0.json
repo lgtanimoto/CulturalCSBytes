@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2N04",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Trinity</span> is busy building an app to suggest healthy recipes based on the nutritional values of food items. The app gets data from an external API which provides information about the food items listed in a recipe. Which of the following best explains how this data is sent to <span class=\"qname\">Trinity</span>&#39;s app when a request for a recipe&#39;s nutritional content is made by the application?</p>",
+    "QuestionImage": null,
+    "Answer1": "The entire nutritional data set is downloaded entirely to the app before any recipes are listed.",
+    "Answer2": "A direct connection is established with the nutrition database and data corresponding to the requested recipe is sent in a single large file.",
+    "Answer3": "The information about the individual food items is divided into smaller packets, transmitted over multiple network paths, then reassembled in the app as they are received.",
+    "Answer4": "The app is pre-loaded with all nutritional data thus resulting in no need for data transmission.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Data is often broken down into smaller packets for transmission over the internet. These packets may take different routes depending on network conditions and are then reassembled in the correct order as they arrive in the app.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

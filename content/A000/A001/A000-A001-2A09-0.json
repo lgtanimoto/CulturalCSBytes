@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "2A09",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Farmer</span> wrote the following program to double the number of apples they want to give to the school.   What is the <em>variable</em> in this program?</p><p class=\"ci8\"><div class=\"code\">integer apples = 10<br>apples = apples * 2<br>output \"Number of apples: \" + apples</div></p>",
-        "QuestionImage": null,
-        "Answer1": "<div class=\"code\">output</div>",
-        "Answer2": "<div class=\"code\">apples</div>",
-        "Answer3": "<div class=\"code\">integer</div>",
-        "Answer4": "<div class=\"code\">* 2</div>",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>A standard definition of a <em>variable</em> is a \"value that can change, depending on conditions or information passed to the program\".  In the example code, <span class=\"code\">apples</span> meets this definition </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2A09",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Dakota</span> is investigating the impact of the Transportation Revolution: the development of canals, railways, and the telegraph on economic growth in the 19th century. <span class=\"qname\">Dakota</span> gathered data on the length of railway and canal networks and the number of telegraph stations in every five year period for a century. How would <span class=\"qname\">Dakota</span> write a program to calculate total growth for each transportation technology over the century?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>Initialize integer Railways=0, Canals=0, Telegraphs=0 </td></tr><tr><td>For each five-year period, add the data value to the respective variable </td></tr><tr><td>Print Railways, Canals, Telegraphs</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>Initialize variables Railways, Canals, Telegraphs </td></tr><tr><td>Read data for each five-year period. </td></tr><tr><td>If data is higher than previous data, overwrite the variable with new data </td></tr><tr><td>Print Railways, Canals, Telegraphs</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>Initialize strings Railways, Canals, Telegraphs </td></tr><tr><td>Read data for each five-year period </td></tr><tr><td>Concatenate data with the respective string </td></tr><tr><td>Print Railways, Canals, Telegraphs</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>Initialize a list with 100 elements for each: Railways, Canals, Telegraphs </td></tr><tr><td>Read data for each five-year period, inputting them to the respective list at the present index </td></tr><tr><td>Print the last elements of the Railways, Canals, Telegraphs lists</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>For this problem, we need to calculate the total growth of the railway, canal and telegraph networks over a century. We accomplish this by initializing a variable for each network at 0, and then in each five-year interval, adding the length of new construction to the respective variable. At the end of the century, we print the variables, which now represent the total growth of each network over the whole century. In this manner, we use variables to store and continuously modify data.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4I25",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Emery</span>, an aspiring architect and skilled coder, has developed a program that generates floor plans for buildings based on user-provided criteria. Some users have noticed that the generated floor plans don&#39;t always accommodate for those with diverse physical needs and abilities. <span class=\"qname\">Emery</span>&#39;s friend Leila uses a wheelchair and has shared with him that while ramp access was systematically included, not all interior doorways were wide enough for her wheelchair to pass through. How can <span class=\"qname\">Emery</span> refine his program?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Emery</span> doesn\u2019t need to change anything because the program is designed to accommodate the majority of users.",
+    "Answer2": "<span class=\"qname\">Emery</span> can disregard this feedback because Leila is his friend and he doesn\u2019t want a bias in his programming due to personal relationships.",
+    "Answer3": "<span class=\"qname\">Emery</span> can include an option for users to specify their needs. However, he can decide whether he wants to implement these modifications or not.",
+    "Answer4": "<span class=\"qname\">Emery</span> can expand the user criteria to include diverse physical needs such as wheelchair accessibility and ensure that this is implemented in all aspects of the floor plan, including interior doorways.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Inclusive design should be a priority in any creation, computational or otherwise. <span class=\"qname\">Emery</span> can use the data and user feedback provided to optimize his program for equitable usability and accessibility, reducing bias and equity deficits in the process.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

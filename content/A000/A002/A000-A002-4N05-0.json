@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "4N05",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Cipher</span> is writing a report on malware and its effect on modern society and comes across the following articles.   Which of these are likely to be useful to <span class=\"qname\">Cipher</span> in writing their report?</p>",
-        "QuestionImage": null,
-        "Answer1": "Major storms damage deep water fiber optic cables",
-        "Answer2": "Botnet brings down major bank web site through denial-of-service attack",
-        "Answer3": "Healthcare providers lost over $500 million in ransomware during 2021",
-        "Answer4": "Both B and C",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 4,
-        "Explanation": "<p><em>Malware</em> - short for malicious software - is any software intentionally designed to cause disruption to a computing system or compromise its security or privacy.  <em>Ransomware</em> is a type of malware that threatens to publish the victim's data or permanently block access to it unless a ransom is paid.   A <em>botnet</em> is a group of Internet-connected devices infected by malware that are under the control of a single attacking party.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4N05",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Frankie</span> is a business owner, and they&#39;ve come to realize that the sensitive data in their company&#39;s network may be threatened by institutional cyber threats. Which of these measures would <span class=\"qname\">Frankie</span>, as a business owner, most likely need to implement to safeguard sensitive company data?</p>",
+    "QuestionImage": null,
+    "Answer1": "Hiring a professional gardener",
+    "Answer2": "Subscribing to a magazine on current affairs",
+    "Answer3": "Hiring a team of cybersecurity professionals",
+    "Answer4": "Purchasing new office furniture",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Data within a company&#39;s network can be protected from malware and other digital attacks by employing cybersecurity measures. This involve setting up firewalls, network monitoring, data encryption, and regularly updating security patterns. This task is best performed by professionals in the field of cybersecurity.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

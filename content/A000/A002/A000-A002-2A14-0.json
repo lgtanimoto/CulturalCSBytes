@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A14",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Jaime</span> is working on an inventory management system for a local store. They want to add a feature to their program that was inspired by an open-source project they saw online. What steps should <span class=\"qname\">Jaime</span> take next to observe intellectual property rights and give appropriate attribution?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Jaime</span> should cite the original source in the documentation, comments or program metadata.",
+    "Answer2": "<span class=\"qname\">Jaime</span> should replace the code with their own completely different solution to avoid copyright issues.",
+    "Answer3": "<span class=\"qname\">Jaime</span> should keep the code as is, no attribution is necessary since the code was written by them.",
+    "Answer4": "<span class=\"qname\">Jaime</span> should simply add the logo of the open-source project to his program\u2019s user interface.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Simply rewriting code does not negate the need for attribution. <span class=\"qname\">Jaime</span> should include clear citations in the documentation, comments, or program metadata, and should adhere to any licensing requirements of the open-source project.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action calculateRestock(integer currentInventory, integer desiredInventory)</td></tr><tr><td>2</td><td><div class=\"ci4\">if currentInventory &lt; desiredInventory</div></td></tr><tr><td>3</td><td><div class=\"ci8\">integer restock = desiredInventory - currentInventory</div></td></tr><tr><td>4</td><td><div class=\"ci8\">output \"Restock quantity for the item is: \" + restock</div></td></tr><tr><td>5</td><td><div class=\"ci4\">else</div></td></tr><tr><td>6</td><td><div class=\"ci8\">output \"No restock needed.\"</div></td></tr><tr><td>7</td><td><div class=\"ci4\">end</div></td></tr><tr><td>8</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

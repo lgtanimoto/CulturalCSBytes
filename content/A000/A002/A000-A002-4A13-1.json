@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A13",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Rebel</span> is designing a program for a company to streamline their recruitment and hiring process. The program will keep track of the number of applicants, the number of interviews conducted, and the number of hires made. Once these numbers reach certain thresholds, the program will print out a message. The code snippet currently looks as below:</p><p>How would <span class=\"qname\">Rebel</span> correctly modify this program to print \"Excellent Work, Team!\" when (numInterviews &gt;= 20) OR (numApplicants &gt;= 100) AND (numHires &gt;= 10)?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action handleProcess(integer numApplicants, integer numInterviews, integer numHires)</td></tr><tr><td>2</td><td><div class=\"ci4\">if (numApplicants &gt;= 50) and (numInterviews &gt;= 10) and (numHires &gt;= 5)</div></td></tr><tr><td>3</td><td><div class=\"ci8\">output \"Meeting Targets \"</div></td></tr><tr><td>4</td><td><div class=\"ci4\">else</div></td></tr><tr><td>5</td><td><div class=\"ci8\">output \"More Efforts Needed\"</div></td></tr><tr><td>6</td><td><div class=\"ci4\">end</div></td></tr><tr><td>7</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\">Change the if-else to: <code>if (numInterviews &gt;= 20) or (numApplicants &gt;= 100) and (numHires &gt;= 10)</code></span>",
+    "Answer2": "<span class=\"code\">Change the if-else to: <code>if (numInterviews &gt;= 20) and (numApplicants &gt;= 100) or (numHires &gt;= 10)</code></span>",
+    "Answer3": "<span class=\"code\">Change the if-else to: <code>if (numInterviews &gt;= 20) or ((numApplicants &gt;= 100) and (numHires &gt;= 10))</code></span>",
+    "Answer4": "<span class=\"code\">Change the if-else to: <code>if ((numInterviews &gt;= 20) or numApplicants &gt;= 100) and (numHires &gt;= 10)</code></span>",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In <span class=\"qname\">Rebel</span>&#39;s intended condition, two conditions must be met: (1) the number of interviews must be 20 or more, OR the company needs both (2) more than 100 applicants and at least 10 hires. To correctly capture this logic, the operands around the logical OR operator and the logical AND operator should be grouped using parentheses.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action handleProcess(integer numApplicants, integer numInterviews, integer numHires)</td></tr><tr><td>2</td><td><div class=\"ci4\">if (numApplicants &gt;= 50) and (numInterviews &gt;= 10) and (numHires &gt;= 5)</div></td></tr><tr><td>3</td><td><div class=\"ci8\">output \"Meeting Targets \"</div></td></tr><tr><td>4</td><td><div class=\"ci4\">else</div></td></tr><tr><td>5</td><td><div class=\"ci8\">output \"More Efforts Needed\"</div></td></tr><tr><td>6</td><td><div class=\"ci4\">end</div></td></tr><tr><td>7</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "2N04",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Starlight</span> is streaming videos on their smartphone from an education video website.  The video is 63 minutes long in high definition.   Which of the following best explains how the video is sent from the education video website to <span class=\"qname\">Starlight</span>'s smartphone after a connection is made between the video website and the smartphone?</p>",
-        "QuestionImage": null,
-        "Answer1": "A dedicated pathway is created between a server on the website and the smartphone.  The video file is first downloaded in its entirety to the smartphone before the video begins.",
-        "Answer2": "A dedicated pathway is created between a server on the website and the smartphone.  The video file is broken up into thousands of packets, sent over the dedicated pathway, and displayed as packets arrive. ",
-        "Answer3": "The video file is broken up into thousands of packets, sent over the Internet via multiple pathways, and displayed on the smartphone as packets arrive.",
-        "Answer4": "The video file is broken up into thousands of packets, sent over the Internet via multiple pathways, and reassembled in its entirety on the smartphone.   After the video file is entirely reassembled, the video starts on the smartphone ",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>TCP/IP</em> stands for Transmission Control Protocol/Internet Protocol.   Once the video server knows the IP address to steam the video to, it uses TCP to break the file up into multiple packets, attaches the IP address to each packet, and then sends out over the Intent.   The Internet takes each packet and routes it to the smartphone; however, each packet could take a different route depending on the network conditions.   The packets are reassembled in order by TCP as they arrive and are buffered on the smartphone.   If a packet fails to arrive, it is re-requested.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2N04",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Frankie</span> has been researching how packets of data are transmitted over the internet. To help their classmates understand, <span class=\"qname\">Frankie</span> likens the process to a pizza delivery system, where a pizza (the data) is divided into slices (packets) and each slice is transported separately before being assembled again at the destination (the end device). Is this analogy accurate, and why?</p>",
+    "QuestionImage": null,
+    "Answer1": "Yes, because each slice is the same size and contains the same ingredients, just like each data packet is the same size and contains the same information.",
+    "Answer2": "No, because a pizza can only be baked all at once, whereas data packets can be transmitted simultaneously over different routes.",
+    "Answer3": "Yes, because both systems ensure that every slice arrives at its destination, even if it takes a different route than the others.",
+    "Answer4": "No, because pizza slices can get lost or damaged during delivery, whereas data packets are always transmitted perfectly without any loss or damage.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Just like a pizza is split into slices, information is broken into smaller packets for transmission. And just as each pizza slice might take a different route but still arrives at its final destination, each data packet might take a different route through the network but is reassembled at the receiving device to form the complete message.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>class Packet</td></tr><tr><td>2</td><td><div class=\"ci4\">string data</div></td></tr><tr><td>3</td><td><div class=\"ci4\">integer destination</div></td></tr><tr><td>4</td><td><div class=\"ci4\">integer origin</div></td></tr><tr><td>5</td><td><div class=\"ci4\">boolean delivered = false</div></td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td><div class=\"ci4\">action Deliver()</div></td></tr><tr><td>8</td><td><div class=\"ci8\">// Code to send packet to destination...</div></td></tr><tr><td>9</td><td><div class=\"ci8\">delivered = true</div></td></tr><tr><td>10</td><td><div class=\"ci4\">end</div></td></tr><tr><td>11</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

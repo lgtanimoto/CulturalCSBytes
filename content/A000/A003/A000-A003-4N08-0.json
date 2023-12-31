@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4N08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Jaime</span> is the coach of a high school basketball team and they have just started using an online tool to manage their team&#39;s strategy and performance data. The tool recommends enabling two-factor authentication (2FA) to protect their account. However, <span class=\"qname\">Jaime</span> is concerned about the inconvenience this may cause during critical moments of games. What is the best course of action for <span class=\"qname\">Jaime</span>?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Jaime</span> should disregard the 2FA recommendation and focus on keeping the username and password secure.",
+    "Answer2": "<span class=\"qname\">Jaime</span> should enable 2FA for the account but share the 2FA codes with the team for convenience.",
+    "Answer3": "<span class=\"qname\">Jaime</span> should enable 2FA as it adds an additional layer of security, but also have a backup access plan for critical moments.",
+    "Answer4": "<span class=\"qname\">Jaime</span> should not use the platform at all to avoid security risks.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Two factor authentication adds a second level of authentication to an account log-in. While it may be less convenient as it requires an additional step to sign in, it&#39;s a much stronger defense against threats. However, <span class=\"qname\">Jaime</span> should also have a backup plan in case access to the second factor (like a mobile phone) is lost, especially during critical moments. Sharing passwords or 2FA codes weakens security and should be avoided.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

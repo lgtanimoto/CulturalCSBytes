@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2C03",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Phoenix</span>&#39;s history teacher assigns a project on the Scientific Revolution. <span class=\"qname\">Phoenix</span> decides to put together a presentation using a multimedia presentation software. However, they find that the software crashes whenever they try to import large historical paintings. What could be a potential solution for <span class=\"qname\">Phoenix</span>?</p>",
+    "QuestionImage": null,
+    "Answer1": "Change the resolution of the images to a lower setting",
+    "Answer2": "Write a complaint letter to the software company",
+    "Answer3": "Buy a higher-end computer",
+    "Answer4": "Show the picture from a projector",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Lowering the resolution of the images reduces the file size. This could prevent the software from crashing as it will no longer have to process large files which could be causing it to run out of memory or other system resources.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

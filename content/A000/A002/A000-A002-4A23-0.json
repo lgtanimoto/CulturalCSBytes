@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A23",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Discovery</span> has been working tirelessly on developing a new kind of algorithm for image recognition. Their work has been significant and they want to document their accomplishments, preserving their intellectual property rights. What are the potential ways <span class=\"qname\">Discovery</span> could document and protect their work?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Discovery</span> should only submit their work to academic journals and avoid sharing their research online.",
+    "Answer2": "<span class=\"qname\">Discovery</span> should take photographs of their work and keep them in a secure location.",
+    "Answer3": "<span class=\"qname\">Discovery</span> could use a combination of a software source-code repository, detailed algorithm design documents, and possibly applying for a patent.",
+    "Answer4": "<span class=\"qname\">Discovery</span> could tell their friends about their work as word-of-mouth is the most effective form of protection.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Discovery</span> should document their design decisions and algorithm flow using text and graphics. Using a software source-code repository like GitHub allows for version control as well as public or private sharing of their code. Detailed design documents give insight into the reasoning and iterative process behind algorithm development. If the work is very significant and meets certain criteria, <span class=\"qname\">Discovery</span> could consider applying for a patent for further protection under intellectual property law.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

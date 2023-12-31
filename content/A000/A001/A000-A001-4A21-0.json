@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4A21",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Morgan</span> developed an artifact that aids in the development of Mathematics and Engineering, a programming language that focuses on technical and mathematical computing. However, it seems not many students are able to use it efficiently. What can <span class=\"qname\">Morgan</span> do to make their programming language more usable for their peers? </p>",
+    "QuestionImage": null,
+    "Answer1": "Provide a user guidebook explaining the syntax and semantics of the language with examples.",
+    "Answer2": "Add features like syntax highlighting, code hinting and auto-completion in the IDE where the programming language would be used.",
+    "Answer3": "Organize workshops to explain how to code effectively in this new language.",
+    "Answer4": "All of the above.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Making computational artifacts more usable and accessible often involves not only refining the artifact itself, but also providing useful educational materials, trainings, and user-friendly interface features.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

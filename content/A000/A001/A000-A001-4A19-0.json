@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4A19",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Milan</span> builds an app aimed at teaching users about the historical relationship between technology and society. However, after receiving user feedback, they realize a significant number of users find the interface to be too complex and hard to navigate. Which of the following steps should <span class=\"qname\">Milan</span> take next to address this feedback?</p>",
+    "QuestionImage": null,
+    "Answer1": "Ignore the feedback as there&#39;s always room for users to learn and adapt to the complex interface.",
+    "Answer2": "Decide to remove advanced features to simplify the interface without seeking further feedback.",
+    "Answer3": "Promptly redesign the interface without taking user suggestions into account.",
+    "Answer4": "Gather more specific feedback, then design and implement iterative changes to the interface, prioritizing user accessibility and experience.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>When developing apps for a broad user base, user feedback is crucial for continuous improvement. Therefore, gathering more specific feedback, making iterative changes, and prioritizing user accessibility and experience should be the next step after receiving negative feedback about a complex user interface. This systematic approach enables <span class=\"qname\">Milan</span> to identify and resolve the specific issues users are facing.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

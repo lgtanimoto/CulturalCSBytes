@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3A17",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> is designing a program to simulate the building process of a skyscraper structure. <span class=\"qname\">Equator</span> wants to ensure their program works as expected and catches any potential problems before implementing on the real site. Which one of the following test cases would NOT be a useful test of <span class=\"qname\">Equator</span>&#39;s program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Setting the materials&#39; strengths to the maximum possible values on the whole structure and verifying that it stands and performs as expected",
+    "Answer2": "Simulating a case where the building is built with the wrong type of material to see how the program reacts and whether it issues a warning",
+    "Answer3": "Running a simulation with average mass and strength values for all the materials",
+    "Answer4": "Testing if the program prints out a recipe for cooking spaghetti",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Even though it is essential to design a variety of test cases, the spaghetti recipe doesn&#39;t relate to the building architecture, and it would not provide useful or meaningful information on the program&#39;s performance or potential bugs.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3A11",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Voyager</span> is a swimmer participating in a competition where they have to swim as many times as they can. They were able to swim a total of 30 laps in the pool. For each lap, <span class=\"qname\">Voyager</span> took 2 minutes. Calculate how much time <span class=\"qname\">Voyager</span> took to swim the 30 laps.</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>action GetTotalTime(LapCount) returns number</td></tr><tr><td><div class=\"ci4\">number TimePerLap = 2.0</div></td></tr><tr><td><div class=\"ci4\">number TotalTime = LapCount * TimePerLap</div></td></tr><tr><td><div class=\"ci4\">return TotalTime</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>action GetTotalTime(LapCount) returns number</td></tr><tr><td><div class=\"ci4\">number TimePerLap = 2.0</div></td></tr><tr><td><div class=\"ci4\">number TotalTime = LapCount * TimePerLap</div></td></tr><tr><td><div class=\"ci4\">return TimePerLap</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>action GetTotalTime(LapCount) returns number</td></tr><tr><td><div class=\"ci4\">number TimePerLap = 2.0</div></td></tr><tr><td><div class=\"ci4\">number TotalTime = LapCount + TimePerLap</div></td></tr><tr><td><div class=\"ci4\">return TotalTime</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>action GetTotalTime(LapCount) returns number</td></tr><tr><td><div class=\"ci4\">number TimePerLap = 2.0</div></td></tr><tr><td><div class=\"ci4\">number TotalTime = LapCount / TimePerLap</div></td></tr><tr><td><div class=\"ci4\">return TotalTime</div></td></tr><tr><td>end</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The correct function initializes the variables TotalTime= 0 and TimePerLap= 2. Multiplying the number of laps by the time it takes to complete one lap gives us the TotalTime it took for <span class=\"qname\">Voyager</span> to swim all the laps.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

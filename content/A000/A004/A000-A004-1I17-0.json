@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "1I17",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Discovery</span> is part of an online robotics team. Every member has a specific role in the development of the robot: <span class=\"qname\">Discovery</span> is in charge of designing the robot, Dru is responsible for assembling the parts, and Jesse is handling the programming. However, <span class=\"qname\">Discovery</span> has been having difficulties because Dru often dismisses their suggestions without giving any constructive feedback. Which of the following is the best course of action for <span class=\"qname\">Discovery</span>?</p>",
+    "QuestionImage": null,
+    "Answer1": "Directly confront Dru in front of all the online team members about their dismissive behavior.",
+    "Answer2": "Stop contributing and let the rest of the team handle the project.",
+    "Answer3": "Deny Dru&#39;s inputs and stick to their own ideas.",
+    "Answer4": "Arrange a private conversation with Dru to understand why their suggestions are being dismissed and establish a more productive method of communication.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Working respectfully and responsibly with others online involves addressing issues directly and privately to avoid causing conflict within the team. <span class=\"qname\">Discovery</span> should constructively communicate with Dru to understand their perspective and find a compromise.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

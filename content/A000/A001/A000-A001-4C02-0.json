@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "4C02",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Following their teacher\u2019s instructions, <span class=\"qname\">Brilliant</span> opens the word processing document that they started yesterday.  The operating system on <span class=\"qname\">Brilliant</span>'s computer receives the request to open the document and delivers it to the program as a single stream of bytes even though it may exist in several fragments in different locations on the computer hard drive.</p><p>What <em>abstraction</em> provides the most value in the above scenario?</p>",
-        "QuestionImage": null,
-        "Answer1": "document",
-        "Answer2": "teacher",
-        "Answer3": "fragments",
-        "Answer4": "bytes",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Document.  An <em>abstraction</em> in computer science is generalizing the details of an object or system to focus attention on details of greater importance.   The operating system provides the abstraction of a document to the word processing program so that the word processing program does not need to figure out how to retrieve a sequential stream of bytes from several fragmented locations on a network.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span>, a keen science student, is very interested in the links between society and technology. They have been researching how technology shapes society, and vice versa. As part of a school project, they are writing a program that models the layers of a computer system (application software, system software, and hardware). The program aims to demonstrate the integrations and interactions that exist between these layers. Referencing the code snippet, which statement incorrectly describes how these layers interact?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>class Layer</td></tr><tr><td>2</td><td><div class=\"ci4\">var name</div></td></tr><tr><td>3</td><td><div class=\"ci4\">var parentLayer</div></td></tr><tr><td>4</td><td></td></tr><tr><td>5</td><td><div class=\"ci4\">action Layer(String layerName, Layer parent)</div></td></tr><tr><td>6</td><td><div class=\"ci8\">name = layerName</div></td></tr><tr><td>7</td><td><div class=\"ci8\">parentLayer = parent</div></td></tr><tr><td>8</td><td><div class=\"ci4\">end</div></td></tr><tr><td>9</td><td></td></tr><tr><td>10</td><td><div class=\"ci4\">action ExecuteTask(String task)</div></td></tr><tr><td>11</td><td><div class=\"ci8\">if(parentLayer != null)</div></td></tr><tr><td>12</td><td><div class=\"ci12\">output \"Executing &#39;\" + task + \"&#39; on \" + name + \" through \" + parentLayer.name</div></td></tr><tr><td>13</td><td><div class=\"ci12\">parentLayer.ExecuteTask(task)</div></td></tr><tr><td>14</td><td><div class=\"ci8\">else</div></td></tr><tr><td>15</td><td><div class=\"ci12\">output \"Task &#39;\" + task + \"&#39; completed at hardware level\"</div></td></tr><tr><td>16</td><td><div class=\"ci8\">end</div></td></tr><tr><td>17</td><td><div class=\"ci4\">end</div></td></tr><tr><td>18</td><td>end</td></tr><tr><td>19</td><td></td></tr><tr><td>20</td><td>Layer appSoftware = new Layer(\"Application Software\", null)</td></tr><tr><td>21</td><td>Layer sysSoftware = new Layer(\"System Software\", appSoftware)</td></tr><tr><td>22</td><td>Layer hardware = new Layer(\"Hardware\", sysSoftware)</td></tr><tr><td>23</td><td></td></tr><tr><td>24</td><td>hardware.ExecuteTask(\"Open File\")</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Application software relies on the system software to manage interactions with the hardware.",
+    "Answer2": "System software directly interacts with the hardware to carry out tasks.",
+    "Answer3": "Hardware can perform tasks without any input from the system or application software.",
+    "Answer4": "Application software uses system software&#39;s functionalities provided as interfaces to interact with the hardware.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Hardware cannot perform tasks by itself without being directed by system software, which acts as an intermediary between the hardware and the application software. Incorrect assumptions can lead to programming errors when developing software.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>class Layer</td></tr><tr><td>2</td><td><div class=\"ci4\">var name</div></td></tr><tr><td>3</td><td><div class=\"ci4\">var parentLayer</div></td></tr><tr><td>4</td><td></td></tr><tr><td>5</td><td><div class=\"ci4\">action Layer(String layerName, Layer parent)</div></td></tr><tr><td>6</td><td><div class=\"ci8\">name = layerName</div></td></tr><tr><td>7</td><td><div class=\"ci8\">parentLayer = parent</div></td></tr><tr><td>8</td><td><div class=\"ci4\">end</div></td></tr><tr><td>9</td><td></td></tr><tr><td>10</td><td><div class=\"ci4\">action ExecuteTask(String task)</div></td></tr><tr><td>11</td><td><div class=\"ci8\">if(parentLayer != null)</div></td></tr><tr><td>12</td><td><div class=\"ci12\">output \"Executing &#39;\" + task + \"&#39; on \" + name + \" through \" + parentLayer.name</div></td></tr><tr><td>13</td><td><div class=\"ci12\">parentLayer.ExecuteTask(task)</div></td></tr><tr><td>14</td><td><div class=\"ci8\">else</div></td></tr><tr><td>15</td><td><div class=\"ci12\">output \"Task &#39;\" + task + \"&#39; completed at hardware level\"</div></td></tr><tr><td>16</td><td><div class=\"ci8\">end</div></td></tr><tr><td>17</td><td><div class=\"ci4\">end</div></td></tr><tr><td>18</td><td>end</td></tr><tr><td>19</td><td></td></tr><tr><td>20</td><td>Layer appSoftware = new Layer(\"Application Software\", null)</td></tr><tr><td>21</td><td>Layer sysSoftware = new Layer(\"System Software\", appSoftware)</td></tr><tr><td>22</td><td>Layer hardware = new Layer(\"Hardware\", sysSoftware)</td></tr><tr><td>23</td><td></td></tr><tr><td>24</td><td>hardware.ExecuteTask(\"Open File\")</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3D07",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Jessie</span> loves American football and statistics. They are working on a project to collect and analyze football statistics for their Computer Science course. <span class=\"qname\">Jessie</span> has data like scores, team names, player information, and duration of games. They want to devise a novel way to represent this data using multiple encoding schemes. Which of the following is unlikely to benefit <span class=\"qname\">Jessie</span> in effectively presenting the data?</p>",
+    "QuestionImage": null,
+    "Answer1": "Using scatter plot to show correlation between duration of games and scores.",
+    "Answer2": "Using bar chart to show the number of games won by each team.",
+    "Answer3": "Using pie chart to show percentage distribution of player positions in a team.",
+    "Answer4": "Using a heat map to showcase the computer science concepts used in the project.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While all the options are encoding schemes, a heat map to showcase the computer science concepts used in the project is unlikely to provide meaningful insights relating to the football statistics data.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

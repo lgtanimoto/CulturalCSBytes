@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "3A13",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Darby</span> is an intern at a multinational organization. Their task is to create a program that finds out the best time zone for an online meeting where attendees are located in different parts of the world. As the first step, what is the subproblem that <span class=\"qname\">Darby</span> should solve?</p>",
+    "QuestionImage": null,
+    "Answer1": "Making a count of how many countries each employee is from",
+    "Answer2": "Finding out the most spoken languages in the company",
+    "Answer3": "Finding out the current time in each city where attendees are located",
+    "Answer4": "Writing a program to automatically send meeting invites",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While all of these could be part of a larger program, in this context, the most helpful subproblem to solve first would be finding the current time in each city where attendees are located. This step is necessary before <span class=\"qname\">Darby</span> can determine the best meeting time.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

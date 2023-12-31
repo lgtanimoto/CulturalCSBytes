@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "4A14",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Courage</span> knows how to write code to find the sum of two numbers, three numbers, or even four numbers, but wonders how to write code that can find the sum of one hundred, one thousand, or even a million numbers. </p><p>Which one of the following best represents a procedure that will return the sum of a list of numbers that can be any length?</p>",
-        "QuestionImage": null,
-        "Answer1": "<div class=\"code\">action AddList(List<number> myList) returns number<div class=\"ci4\">number sum = 0.0</div><div class=\"ci4\">integer position = 0</div><div class=\"ci4\">repeat while position &gt; myList:GetSize()</div><div class=\"ci8\">sum = sum + myList:GetSize()</div><div class=\"ci8\">position = position + 1</div><div class=\"ci4\">end</div><div class=\"ci4\">return sum</div>end</div>",
-        "Answer2": "<div class=\"code\">action AddList(List<number> myList) returns number<div class=\"ci4\">number sum = 0.0</div><div class=\"ci4\">integer position = 0</div><div class=\"ci4\">repeat while position &gt; myList:GetSize()</div><div class=\"ci8\">sum = sum + myList:Get(position)</div><div class=\"ci4\">end</div><div class=\"ci4\">return sum</div>end</div>",
-        "Answer3": "<div class=\"code\">action AddList(List<number> myList) returns number<div class=\"ci4\">number sum = 0.0</div><div class=\"ci4\">integer position = 0</div><div class=\"ci4\">repeat while position &gt; myList:GetSize()</div><div class=\"ci8\">sum = sum + myList:Get(position)</div><div class=\"ci8\">position = position + 1</div><div class=\"ci4\">end</div><div class=\"ci4\">return sum</div>end</div>",
-        "Answer4": "<div class=\"code\">action AddList(List<number> myList) returns number<div class=\"ci4\">number sum = 0.0</div><div class=\"ci4\">integer position = 0</div><div class=\"ci4\">repeat while position &lt; myList:GetSize()</div><div class=\"ci8\">sum = sum + myList:Get(position)</div><div class=\"ci8\">position = position + 1</div><div class=\"ci4\">end</div><div class=\"ci4\">return sum</div>end</div>",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>The correct procedure initializes the variables <span class=\"code\">sum = 0</span> and <span class=\"code\">position = 0</span>.  In most major computer languages, the first element in a list starts at position 0 and the last element is at <span class=\"code\">GetSize() - 1</span>.  Within the loop, the number at each list item is added to the running sum, and the variable <span class=\"code\">position</span> is incremented.   After all numbers in the list have been added to the running sum, the running sum is returned.</p> ",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4A14",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Taylor</span> is working on a project on the impact of the Renaissance and the Printing Press. They want to create a timeline of the 10 most significant events happening during this period. Each event will have a year and a brief description. How should <span class=\"qname\">Taylor</span> store this information in their program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Create a simple variable for each event&#39;s year and description",
+    "Answer2": "Create a list with just the years of the events",
+    "Answer3": "Create a list of 10 tuples, with each tuple containing the year of an event and a brief description",
+    "Answer4": "Create a list with just the descriptions of the events",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Since each event has a year and a description, and we have multiple events, it makes sense to create a list of tuples. In each tuple, one element could store the year, and the other element could store the description. This approach simulates a &#39;bag&#39; of events, where each event is represented by a couple (year, description).</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

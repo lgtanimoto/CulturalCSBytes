@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4D09",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ziv</span> is creating a program to represent the biodiversity in different ecosystems. They realize that different ecosystems have different amounts of species, and they want to represent each species with a unique binary number. If an ecosystem has 32 species, what is the minimum bit representation <span class=\"qname\">Ziv</span> can use to uniquely identify each species?</p>",
+    "QuestionImage": null,
+    "Answer1": "5 bit representation",
+    "Answer2": "6 bit representation",
+    "Answer3": "7 bit representation",
+    "Answer4": "32 bit representation",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A 5 bit representation, ranging from 00000 to 11111 in binary, can represent 32 unique possibilities, from 0 to 31 inclusive. This can uniquely represent each one of the 32 species.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer maxSpecies = 32</td></tr><tr><td>2</td><td>integer minBitsNeeded = 0</td></tr><tr><td>3</td><td>while 2^minBitsNeeded &lt; maxSpecies</td></tr><tr><td>4</td><td><div class=\"ci4\">minBitsNeeded = minBitsNeeded + 1</div></td></tr><tr><td>5</td><td>end</td></tr><tr><td>6</td><td>output minBitsNeeded</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

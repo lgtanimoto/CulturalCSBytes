@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "3I22",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Delhi</span> is a budding entrepreneur working on a new mobile app. As part of their marketing strategy, <span class=\"qname\">Delhi</span> wants to ensure that they cover all aspects of the &#39;marketing mix&#39; - product, price, place, and promotion. <span class=\"qname\">Delhi</span> has already conducted some market research to identify potential users and refine the app&#39;s features. They have also decided on a price point, and plan to promote the app using social media and word of mouth. What approach could <span class=\"qname\">Delhi</span> use to decide where to distribute their app?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Delhi</span> could choose to distribute their app on a single platform that is most popular amongst their friends.",
+    "Answer2": "<span class=\"qname\">Delhi</span> could distribute their app everywhere without considering the preferences of their potential users.",
+    "Answer3": "<span class=\"qname\">Delhi</span> could perform a survey or start a crowdsourcing campaign with their potential users to understand their preferred app stores.",
+    "Answer4": "<span class=\"qname\">Delhi</span> should distribute their app only on the newest and most technologically advanced app stores.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Crowdsourcing or a survey would let <span class=\"qname\">Delhi</span> tap into insights from many contributors - in this case, potential users - and understand their preferred platforms for obtaining apps. This knowledge would then help them distribute the app through the right &#39;place&#39;, completing the marketing mix.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

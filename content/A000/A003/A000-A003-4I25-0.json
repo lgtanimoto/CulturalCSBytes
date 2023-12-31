@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4I25",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Phoenix</span> is planning on developing an artificial intelligence (AI) system that will provide coaching advice for track and field athletes. <span class=\"qname\">Phoenix</span> wishes to train the AI on data from elite athletes. <span class=\"qname\">Phoenix</span> also wants the system to be usable by athletes of all levels, genders, and from different geographic locations. What should <span class=\"qname\">Phoenix</span> be considering to reduce bias and equity deficits in the coaching advice provided by the AI system?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Phoenix</span> should only consider the training data of the top performing athletes from around the world, thereby ensuring best advice.",
+    "Answer2": "<span class=\"qname\">Phoenix</span> should not consider the gender of athletes in training data as there is no difference between male and female athletes in terms of performance.",
+    "Answer3": "<span class=\"qname\">Phoenix</span> should ensure a diverse data sample in terms of athletic level, gender and geography to get a balanced view of training techniques and requirements.",
+    "Answer4": "<span class=\"qname\">Phoenix</span>&#39;s system should only provide advice to sprinters, as they are the most valued athletes in track and field.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>To reduce bias and increase equity in the AI system, <span class=\"qname\">Phoenix</span> should train the AI on a diverse data sample. This means considering athletes from a broad range of skill levels, taking into account gender specific training requirements, and considering practices from all geographic locations.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

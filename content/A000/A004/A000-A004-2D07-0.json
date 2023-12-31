@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2D07",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Morgan</span> is working on a physics experiment, where they are observing how different forces affect the acceleration of an object. They have collected data where they increased the force on an object and measured the corresponding acceleration. Based on <span class=\"qname\">Morgan</span>&#39;s data, how should they expect the acceleration to change if they increase the force applied to an object?</p>",
+    "QuestionImage": null,
+    "Answer1": "Acceleration will increase",
+    "Answer2": "Acceleration will decrease",
+    "Answer3": "Acceleration will stay the same",
+    "Answer4": "Acceleration will first increase then decrease",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>According to Newton&#39;s second law of motion, the acceleration of an object is directly proportional to the net force applied and is in the direction that the net force is applied. Thus, if the force is increased, the acceleration should also increase.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

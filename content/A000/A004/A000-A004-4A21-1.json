@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A21",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Delhi</span> is developing a simulation to visually represent the Gravitational, Electric, and Magnetic forces acting on a particle. The program must display the forces distinctly and also take into account the magnitude and direction of force while visually rendering it. <span class=\"qname\">Delhi</span>&#39;s current implementation displays all forces in red arrows regardless of their magnitude or type. What can <span class=\"qname\">Delhi</span> do to refine this computational artifact to make it more understandable to users?</p>",
+    "QuestionImage": null,
+    "Answer1": "Use different colors to represent Gravitational, Electric, and Magnetic forces",
+    "Answer2": "Vary the length of arrows to show the magnitude of the forces",
+    "Answer3": "Display the direction of the arrow as the direction of force",
+    "Answer4": "All of the above",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>To make the simulation more understandable and accessible, <span class=\"qname\">Delhi</span> should consider improving the visual representation of forces. Different colors can be used to distinguish between different types of forces, the length of arrows can be used to demonstrate the magnitude of forces, and the direction can be shown by pointing arrows in the correct direction.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

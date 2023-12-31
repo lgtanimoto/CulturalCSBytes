@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2I18",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Arden</span> is developing a food nutrition application that offers personalized meal suggestions based on a variety of factors such as the user&#39;s age, gender, activity levels, and geographical location. <span class=\"qname\">Arden</span> needs to ensure that the foods included in the app take into account dietary practices and common food items consumed in various parts of the world. What is the primary challenge <span class=\"qname\">Arden</span> faces in developing the application?</p>",
+    "QuestionImage": null,
+    "Answer1": "Conflicts due to dietary restrictions and cultural differences",
+    "Answer2": "The cost of data collection on international foods",
+    "Answer3": "The wide variety of food processing techniques",
+    "Answer4": "Exponential increase in the number of users due to popularity",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Arden</span>&#39;s primary challenge is cultural differences and dietary restrictions that affect food choices, which significantly influence the objective of developing an inclusive and comprehensive dietary application. The app should accommodate food preferences and cultural norms of various regions while making personalized meal suggestions, or else it risks alienating some users by suggesting inappropriate or inaccessible food items.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

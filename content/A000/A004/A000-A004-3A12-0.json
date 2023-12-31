@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3A12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chengdu</span> is interested in how different temperature conditions affect the air quality in different locations in their town. <span class=\"qname\">Chengdu</span> wants to code a program to simulate the air quality across 100 different locations in their town based on a year&#39;s worth of temperature data. Each cell will contain a list for the recorded temperature throughout the day and the measured air quality scores. The program should analyze each day, and if the temperature ever fell below 32 degrees Fahrenheit or rose above 95 degrees Fahrenheit, the program should add a &#39;BAD&#39; indicator to the air quality score for that day. Which of the following code snippets most accurately represents this problem?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>for each location in locations: </td></tr><tr><td><div class=\"ci4\">for each day in location:</div></td></tr><tr><td><div class=\"ci8\">if min(day.temperature) &lt; 32 or max(day.temperature) &gt; 95:</div></td></tr><tr><td><div class=\"ci12\">day.airQuality.append(&#39;BAD&#39;)</div></td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>for each day in location: </td></tr><tr><td><div class=\"ci4\">if min(day.temperature) &lt; 32 or max(day.temperature) &gt; 95:</div></td></tr><tr><td><div class=\"ci8\">day.airQuality.append(&#39;BAD&#39;)</div></td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>for each location in locations: </td></tr><tr><td><div class=\"ci4\">for each day in location:</div></td></tr><tr><td><div class=\"ci8\">if min(day.temperature) &lt; 32 and max(day.temperature) &gt; 95:</div></td></tr><tr><td><div class=\"ci12\">day.airQuality.append(&#39;BAD&#39;)</div></td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>for each location in locations: </td></tr><tr><td><div class=\"ci4\">for each day in location:</div></td></tr><tr><td><div class=\"ci8\">if min(day.temperature) &gt; 32 or max(day.temperature) &lt; 95:</div></td></tr><tr><td><div class=\"ci12\">day.airQuality.append(&#39;BAD&#39;)</div></td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Chengdu</span>&#39;s program will need to include two loops. The outer loop should iterate over each location, while the inner loop should iterate over each day at a given location. Inside the inner loop, the program should check if the minimum temperature for a day is below 32 or the maximum temperature for a day is above 95. If either condition is met, &#39;BAD&#39; should be appended to that day&#39;s airQuality list.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

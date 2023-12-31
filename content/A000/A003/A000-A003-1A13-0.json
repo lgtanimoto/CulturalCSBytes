@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Dakota</span> choreographs a cheerleading routine for their school&#39;s upcoming sports event. They have drawn inspiration from several widely available online resources and other popular routines. How can <span class=\"qname\">Dakota</span> appropriately give attribution or credit for the sections of the routine inspired by these other resources within their program?</p>",
+    "QuestionImage": null,
+    "Answer1": "By simply not mentioning anything",
+    "Answer2": "By directly copying the routines without making any changes",
+    "Answer3": "By mentioning the source and/or original choreographer in the comments of the program",
+    "Answer4": "By changing the routine slightly and then claiming it as their own",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Proper attribution involves acknowledging the original source of the idea or material used. <span class=\"qname\">Dakota</span> should ensure to add comments within their program to clearly state the source or original choreographer of the parts of the routine inspired by these other resources.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>/* Routine inspired by the 2018 Nationals Championship routine by Some_School, specifically the section starting at 2:34 in video available at https://www.somewebsite.com  */</td></tr><tr><td>2</td><td>/* The final pyramid sequence is a slight modification of the sequence presented in the tutorial by Some_Cheer_Tutorial_Channel available at https://www.someothervideo.com  */</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

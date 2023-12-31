@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Jessie</span> is researching on genetic inheritance and variations for a school project. They want to create a family tree to show transmission of a particular trait through several generations. However, they are struggling to keep track of the data and find a way to represent it easily. What feature or improvement in a computing device would be most helpful to <span class=\"qname\">Jessie</span> in this situation?</p>",
+    "QuestionImage": null,
+    "Answer1": "A word processing software with editing and formatting tools",
+    "Answer2": "A higher resolution display for better visualization of intricate patterns",
+    "Answer3": "A powerful graphic design tool to create artistic visuals for the family tree",
+    "Answer4": "A software application specifically designed for building and visualizing family trees, which can handle large sets of data and generate reports",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>An application specifically designed for building and visualizing family trees would be most helpful to <span class=\"qname\">Jessie</span>. It would not only allow them to track the inheritance of traits through generations, but it could also handle large sets of data and generate reports. This specific software aligns with the task in question more directly compared to a word processor, graphic design tool or a higher resolution display.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

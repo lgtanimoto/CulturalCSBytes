@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3D08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Arden</span> is a part of the school&#39;s basketball team and they have taken it upon themselves to analyze the team&#39;s performance in the past season. They decide to collect data on the points scored, rebounds, assists, etc., by each player in every match. <span class=\"qname\">Arden</span> wants to use this data to identify the strong and weak points of the team and individual players. To make this data more useful and reliable, what should be one of <span class=\"qname\">Arden</span>&#39;s main steps?</p>",
+    "QuestionImage": null,
+    "Answer1": "Ignore the data for matches that the team have lost to make the team look better.",
+    "Answer2": "Modify the assists data to increase the numbers for players who are generally more liked by the team.",
+    "Answer3": "Collect similar data from other teams for comparison, but not taking into consideration the difference in the opponents they have played against.",
+    "Answer4": "Normalize the data by calculating per-game statistics for each individual, considering the basketball&#39;s concept of &#39;per 36 minutes&#39; statistics.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The best approach is to normalize the data in a way that&#39;s common in basketball analysis, by using &#39;per game&#39; or &#39;per 36 minutes&#39; statistics. This allows for more fair comparison between players who get differing amounts of playing time. The other options involve bias or fail to take important factors into account.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A23",
+  "QuestionAltCode": 2,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Voyager</span> is creating a program to document the effect of climate change on average weather patterns. They&#39;ve developed an algorithm based on data collected over past years to predict future weather trends. An inspector who&#39;s interested in the logic behind the algorithm is expected to visit. The code for <span class=\"qname\">Voyager</span>&#39;s procedure is as follows:In the absence of <span class=\"qname\">Voyager</span>, how can the inspector gain a decent understanding of the algorithm? </p>",
+    "QuestionImage": null,
+    "Answer1": "By reading the program code",
+    "Answer2": "By reading the user guide of the program",
+    "Answer3": "By looking at <span class=\"qname\">Voyager</span>&#39;s documentation where they explains their design decisions, logic, and methodology in great detail",
+    "Answer4": "By running the program and testing it with variety of inputs",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Detailed documentation is the key when it comes to understanding the inner workings of a complex program. In <span class=\"qname\">Voyager</span>&#39;s documentation, design decisions, algorithms, and methods used for the development of the program are explained which would give the inspector a good understanding of it.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action weatherPrediction(number temp)</td></tr><tr><td>2</td><td><div class=\"ci4\">number summerAvg = 30.0</div></td></tr><tr><td>3</td><td><div class=\"ci4\">number winterAvg = 10.0</div></td></tr><tr><td>4</td><td><div class=\"ci4\">if temp &lt; winterAvg</div></td></tr><tr><td>5</td><td><div class=\"ci8\">output \"Expect colder weather\"</div></td></tr><tr><td>6</td><td><div class=\"ci4\">elseif temp &gt; summerAvg</div></td></tr><tr><td>7</td><td><div class=\"ci8\">output \"Expect warmer weather\"</div></td></tr><tr><td>8</td><td><div class=\"ci4\">else</div></td></tr><tr><td>9</td><td><div class=\"ci8\">output \"Weather is moderating\"</div></td></tr><tr><td>10</td><td><div class=\"ci4\">end</div></td></tr><tr><td>11</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

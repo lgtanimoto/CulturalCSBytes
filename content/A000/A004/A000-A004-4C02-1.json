@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4C02",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Rowan</span> is programming a robot to move to a light source when it&#39;s switched on. The robot navigates the movement by reading raw electrical signals from a light sensor, translating these signals into what it perceives as &#39;light&#39; or &#39;dark&#39;, and then moves towards &#39;light&#39;. Which level of abstraction is responsible for this kind of translation?</p>",
+    "QuestionImage": null,
+    "Answer1": "Hardware layer (physical components of the robot)",
+    "Answer2": "Application software layer (the specific navigation program <span class=\"qname\">Rowan</span> is using)",
+    "Answer3": "System software layer (operating systems or firmware running on the robot)",
+    "Answer4": "Data abstraction layer (translating raw data into meaningful information)",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The System Software Layer is responsible for this kind of translation. It sits between the hardware layer (where the raw electrical signals are generated) and the application software layer (where these signals are used to make decisions). The system software interprets the raw signals, translating them into a form that the application software can use.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

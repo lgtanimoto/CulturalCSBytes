@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4D09",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Spencer</span> loves playing basketball and often keeps track of their scores on an application they built. They store their scores using binary representation for each game. <span class=\"qname\">Spencer</span> input &#39;1011&#39; for their last game. What is the value of <span class=\"qname\">Spencer</span>&#39;s score in that game based on the binary representation?</p>",
+    "QuestionImage": null,
+    "Answer1": "7",
+    "Answer2": "8",
+    "Answer3": "10",
+    "Answer4": "11",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The binary number &#39;1011&#39; stands for 11 in decimal representation. This means <span class=\"qname\">Spencer</span> scored 11 points in the last game.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer alexScore = convertFromBinary(\"1011\")</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>action convertFromBinary(text binary)</td></tr><tr><td>4</td><td><div class=\"ci4\">integer score = 0</div></td></tr><tr><td>5</td><td><div class=\"ci4\">for each letter in binary from last to first</div></td></tr><tr><td>6</td><td><div class=\"ci8\">score = score * 2 + (letter - &#39;0&#39;)</div></td></tr><tr><td>7</td><td><div class=\"ci4\">end</div></td></tr><tr><td>8</td><td><div class=\"ci4\">return score</div></td></tr><tr><td>9</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

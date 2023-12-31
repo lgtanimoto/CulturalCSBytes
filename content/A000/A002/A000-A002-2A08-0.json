@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Morgan</span> is creating a scheduling application for local businesses. They have developed multiple algorithms for assigning employee shifts based on factors such as availability, expertise, and workload distribution. Which of the following factors should <span class=\"qname\">Morgan</span> consider to determine which algorithm is the most appropriate?</p>",
+    "QuestionImage": null,
+    "Answer1": "Which algorithm can run the fastest on <span class=\"qname\">Morgan</span>&#39;s computer",
+    "Answer2": "Which algorithm was the most fun for <span class=\"qname\">Morgan</span> to write",
+    "Answer3": "Which algorithm results in the most equitable distribution of shifts while considering employee availability and expertise",
+    "Answer4": "Which algorithm generates the random schedule",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While speed of an algorithm might be important, the true value in <span class=\"qname\">Morgan</span>&#39;s application will be in how effectively it balances shifts amongst employees, taking into account the key factors of availability and expertise. This ensures that all employees are scheduled fairly, leading to higher satisfaction and less turnover.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

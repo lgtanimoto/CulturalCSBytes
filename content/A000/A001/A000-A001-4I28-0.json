@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "4I28",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Galaxy</span> has an exciting idea for a new app that they think can make millions of dollars in sales over the next three years.   After an exhaustive search on the Internet, <span class=\"qname\">Galaxy</span> finds a competitor app that does about 75 percent of <span class=\"qname\">Galaxy</span>'s idea but is slow and has an ugly and difficult-to-use user interface.   This competitor app displays a copyright notice when it first launches.</p><p>Which one of the following is a reason why <span class=\"qname\"><span class=\"qname\">Galaxy</span></span> may wish that copyright laws were different in the United States?</p>",
-        "QuestionImage": null,
-        "Answer1": "By placing a copyright on their app once it is completed, <span class=\"qname\">Galaxy</span> can protect themselves from having their ideas stolen or copied.",
-        "Answer2": "Copyright laws promote the free flow of information and ideas in society.",
-        "Answer3": "The copyright on the competitor app will make it difficult for <span class=\"qname\">Galaxy</span> to use it as a starting point for their app.",
-        "Answer4": "By placing a copyright of their app once it is completed, <span class=\"qname\">Galaxy</span> will have to pay 30% of all its revenue to the U.S. government.",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>Copyright</em> is a type of intellectual property that protects original works of authorship including computer programs as soon as an author fixes the work in a tangible form of expression.   Although <span class=\"qname\">Galaxy</span> may develop their app independently of its competitor, they may not use or copy the code of the competitor app without permission.  Once <span class=\"qname\">Galaxy</span> completes their app, their app is protected by copyright as soon as it is published.   Further, <span class=\"qname\">Galaxy</span> can get a registered copyright for their app from the U.S. government for a nominal fee (usually less than $100)</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4I28",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Trinity</span> is studying the Transportation Revolution during the 19th century in their history class. They are creating an application that simulates the communication and transportation systems of the time period, focusing on canals, railways, and the telegraph. The design and functional aspects of their application are original, however, the historical data and images used are sourced from different public databases and archives. <span class=\"qname\">Trinity</span>&#39;s friend warns them about violating intellectual property laws. Which of the following is the most likely reason that the intellectual property laws would be considered harmful with respect to <span class=\"qname\">Trinity</span>&#39;s context?</p>",
+    "QuestionImage": null,
+    "Answer1": "The laws would prevent <span class=\"qname\">Trinity</span> from utilizing existing technologies to innovate and develop their application.",
+    "Answer2": "If <span class=\"qname\">Trinity</span> shares their application with others, the original creators of the historical data and images could demand payment.",
+    "Answer3": "The intellectual property laws may restrict <span class=\"qname\">Trinity</span> from reusing concepts and ideas from other similar applications.",
+    "Answer4": "If intellectual property laws were rigorously enforced, <span class=\"qname\">Trinity</span> might decide not to develop applications in the future.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While intellectual property laws serve to protect original creative works, if enforced strictly, they could potentially stifle creativity and innovation by discouraging developers like <span class=\"qname\">Trinity</span> from creating new applications due to the fear of violation.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

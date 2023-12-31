@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1A11",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Kai</span> has the following metal image for an icon for their club to use at several school events.  <span class=\"qname\">Kai</span> has a drawing program with a programming language that make it easy to draw regular polygons in multiple colors.    How should <span class=\"qname\">Kai</span> <em>decompose</em> or break down the generation of this image into a small number of steps?</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A001-1A11-0Q.png\"></p>",
-        "QuestionImage": "A000-A001-1A11-0Q.png",
-        "Answer1": "Loop through each pixel in the image and set the color as appropriate",
-        "Answer2": "Draw the borders of each figure in the image and then paint each resulting shape with the appropriate color using the paint can function",
-        "Answer3": "Develop software functions that can draw polygons filled with any color",
-        "Answer4": "Draw a blue circle using the programming language in the drawing program.  Then draw a red hexagon and a green triangle using same programming language",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 1,
-        "Explanation": "<p><em>Decomposition</em> is breaking down the steps needed to solve a problem into a precise sequence of instructions.  Programming languages that support drawing have functions that can draw circles and other polygons and fill them with a color.   While the other solutions do break down the problem somewhat, each instruction in the sequence is unclear. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A11",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>Tech historian <span class=\"qname\">Milan</span> is writing a computer simulation to demonstrate the genius of early engineering feats. One aspect they want to showcase is the ancient Egyptians&#39; method for constructing pyramids. How can <span class=\"qname\">Milan</span> break down this process into precise steps for their simulation?</p>",
+    "QuestionImage": null,
+    "Answer1": "Build the pyramid in one go without any prior planning.",
+    "Answer2": "Create a rough sketch and start building without any measurements.",
+    "Answer3": "Randomly place blocks and hope the pyramid forms itself.",
+    "Answer4": "First, determine the dimensions and slope of the pyramid. Then, calculate the number of blocks required. Next, lay out the base of the pyramid and sequentially arrange the blocks layer by layer, reducing the size of each layer until the pyramid is complete.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Breaking down a complex task into smaller, precise steps is key in both engineering and coding. <span class=\"qname\">Milan</span>&#39;s approach in answer 4 is correct because it breaks down the task into clear, sequential steps, allows for calculations to ensure accuracy, and follows a logical progression from start to finish, very similar to how algorithms work in computer programming.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

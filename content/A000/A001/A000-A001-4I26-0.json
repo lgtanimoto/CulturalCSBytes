@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "4I26",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Arora</span> has developed an algorithm to sort a list of objects in alphabetical order by a field and another algorithm to search whether a matching item exists in that list.   Two applications that <span class=\"qname\">Arora</span> has developed using these algorithms are 1) converting an Internet domain name to an IP address and 2) using a product id to update store inventory when a product is purchased.</p><p>Which of the following is another application that <span class=\"qname\">Arora</span> could use their algorithms for?</p>",
-        "QuestionImage": null,
-        "Answer1": "Providing an AI to play tic-tac-toe",
-        "Answer2": "Predicting the probability that it will rain tomorrow",
-        "Answer3": "Calculating the average daily bill of customers at a restaurant",
-        "Answer4": "Spell-checking a document",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Spell-checking a document requires first sorting the list of valid words.   If the binary search algorithm cannot find the word in the list, then it is flagged as incorrect.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4I26",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kenya</span> is working on a project about the Scientific Revolution. They decide to use a binary search algorithm to quickly look through a list of scientists and their discoveries. Which of the scenarios below would NOT be an appropriate use for the binary search algorithm?</p>",
+    "QuestionImage": null,
+    "Answer1": "Looking through an alphabetically sorted list of inventor names to find information about &#39;Isaac Newton&#39;.",
+    "Answer2": "Finding specific physics theories from a list ordered by year of discovery.",
+    "Answer3": "Looking for &#39;The theory of gravitation&#39; from a list of Newton&#39;s discoveries presented in random order.",
+    "Answer4": "Searching an ordered list of groundbreaking scientific discoveries to find the year &#39;Heliocentric model of the universe&#39; was discovered.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A binary search algorithm is a quick way to find an item from a sorted list by halving the search space at each step. However, binary search won&#39;t work properly if the list isn&#39;t sorted. In the case of searching for &#39;The theory of gravitation&#39; in a list of Newton&#39;s discoveries in random order, the list needs to be sorted first.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action BinarySearch(array scientists, text key)</td></tr><tr><td>2</td><td><div class=\"ci4\">integer left = 1</div></td></tr><tr><td>3</td><td><div class=\"ci4\">integer right = length of scientists</div></td></tr><tr><td>4</td><td><div class=\"ci4\">while left &lt;= right</div></td></tr><tr><td>5</td><td><div class=\"ci8\">integer mid = (left + right) / 2</div></td></tr><tr><td>6</td><td><div class=\"ci8\">if key &lt; scientists[mid]</div></td></tr><tr><td>7</td><td><div class=\"ci12\">right = mid - 1</div></td></tr><tr><td>8</td><td><div class=\"ci8\">elseif key &gt; scientists[mid]</div></td></tr><tr><td>9</td><td><div class=\"ci12\">left = mid + 1</div></td></tr><tr><td>10</td><td><div class=\"ci8\">else</div></td></tr><tr><td>11</td><td><div class=\"ci12\">return mid</div></td></tr><tr><td>12</td><td><div class=\"ci8\">end</div></td></tr><tr><td>13</td><td><div class=\"ci4\">end</div></td></tr><tr><td>14</td><td><div class=\"ci4\">return -1</div></td></tr><tr><td>15</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

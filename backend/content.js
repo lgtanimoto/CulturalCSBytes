@@ -67,7 +67,10 @@ async function insertQuestions(culture) {
 Promise.all([
     insertQuestions('A000'),
     insertQuestions('A001'),
-    insertQuestions('A002')
+    insertQuestions('A002'),
+    insertQuestions('A003'),
+    insertQuestions('A004')
+
 ])
 .then(() => {
     pool.end(() => {

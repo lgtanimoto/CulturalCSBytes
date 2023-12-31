@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3A11",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ellis</span> is calculating the changes in potential energy(PE) and kinetic energy (KE) of an object. They wrote the following program to calculate the potential energy (PE) and kinetic energy (KE) of the object, and the changes in PE and KE. What are the variables in this program?</p><codetable>double mass = 2;\ndouble velocity = 3;\ndouble height = 4;\ndouble PE = mass * gravity * height;\ndouble KE = 0.5 * mass * velocity * velocity;\ndouble deltaPE = newPE - PE;\ndouble deltaKE = newKE - KE;</codetable>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\"><code>mass, velocity, height, PE, KE, deltaPE, deltaKE</code></span>",
+    "Answer2": "<span class=\"code\"><code>mass, velocity, height, gravity, newPE, newKE</code></span>",
+    "Answer3": "<span class=\"code\"><code>mass, velocity, height, gravity</code></span>",
+    "Answer4": "<span class=\"code\"><code>2, 3, 4, PE, KE</code></span>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In the given program, mass, velocity, height, PE, KE, deltaPE, and deltaKE are the variables. They are assigned certain values and these values can be modified as the program progresses.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

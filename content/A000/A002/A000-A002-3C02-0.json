@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "3C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Yukon</span> is working on a project to improve the inventory management system for a local bookstore. They want to design a system where the bookstore&#39;s software communicates with the supplier&#39;s software to automatically order more books when inventory gets low. Which combination of software and hardware might <span class=\"qname\">Yukon</span> need for this project?</p>",
+    "QuestionImage": null,
+    "Answer1": "Text editing software and a printer",
+    "Answer2": "Inventory management software and a barcode scanner",
+    "Answer3": "Social media platform and a smartphone",
+    "Answer4": "Music streaming service and earphones",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Inventory management software helping in tracking and maintaining inventory levels can be integrated with a barcode scanner that scans the books in stock. When the inventory level of a certain book gets low, the software can automatically send a request to the supplier&#39;s server to order more copies.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

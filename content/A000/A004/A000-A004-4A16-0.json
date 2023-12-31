@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A16",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Comet</span> wants to create an interactive educational software program which accurately represents the interactions between gravitational, electric and magnetic forces. Their idea is to allow the user to modify parameters like mass, charge, and the applied magnetic field and see the effects on a simulated particle. What kind of event-driven programming features should <span class=\"qname\">Comet</span> consider integrating into their program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Simulate a button press event every time the value of a parameter is updated",
+    "Answer2": "Trigger an update of the simulated particle&#39;s trajectory whenever a parameter value is changed",
+    "Answer3": "Randomly generate new parameters at set time intervals",
+    "Answer4": "Implement an event that automatically resets all parameters to their initial values after a simulation",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In an event-driven programming model, <span class=\"qname\">Comet</span> should tie the update of the simulation to the event of changing a parameter value. This kind of implementation means the simulation is immediately responsive to the user&#39;s input, and will update to reflect the new parameter values as soon as they are entered.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

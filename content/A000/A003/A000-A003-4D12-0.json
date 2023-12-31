@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4D12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Morgan</span> is studying sports psychology and interested in the impact of mental state on a player&#39;s performance. They collect data on their own performance in chess matches, documenting their feelings of stress before each match and the outcome of each game. Upon creating a scatterplot, they observe a clear pattern between increased stress and greater likelihood of losing. <span class=\"qname\">Morgan</span> wonders if they can use these findings to estimate their future performance. Which of the following would best represent a computational model for <span class=\"qname\">Morgan</span>&#39;s investigation?</p>",
+    "QuestionImage": null,
+    "Answer1": "A list of stress measurements",
+    "Answer2": "A bar chart displaying the number of games won vs. lost",
+    "Answer3": "A scatter plot with a trend line showing a correlation between stress level and game outcome",
+    "Answer4": "A diagram showing the layout of a chess board",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A computational model that best represents <span class=\"qname\">Morgan</span>&#39;s investigation is a scatter plot with a trend line showing a correlation between stress level and game outcome. This model successfully represents the relationship between two different elements of data, indicating a clear pattern and allowing for future predictions.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

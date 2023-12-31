@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "2C01",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Justice</span> is working on a school lab computer.  Justice moves the computer mouse - <span style=\"text-decoration: underline;\">&nbsp;&nbsp;&nbsp;(a)&nbsp;&nbsp;&nbsp;</span> -  which sends electronic signals that are interpreted by the computer operating system - <span style=\"text-decoration: underline;\">&nbsp;&nbsp;&nbsp;(b)&nbsp;&nbsp;&nbsp;</span>.   The operating system uses these electronic signals to move the cursor on the monitor to the <span class=\"ui\">OK</span> button.</p><p>Which of the following provides the best answers for (a) and (b)?</p>",
-        "QuestionImage": null,
-        "Answer1": "(a) = software, (b) = hardware",
-        "Answer2": "(a) = software, (b) = software",
-        "Answer3": "(a) = hardware, (b) = hardware",
-        "Answer4": "(a) = hardware, (b) = software",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>A computer mouse is <em>hardware</em> as it has physical components.   A computer operating system (e.g., Microsoft Windows) is <em>software</em> as it provides instructions to a computer and does not have any specific physical components associated with it. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Tiger</span> has been studying the Islamic Golden Age and its scientific advancements, particularly the invention of the astrolabe. The astrolabe, a device used to solve problems related to time and the position of the stars, has multiple rotating parts each playing a specific role. Similarly, a computer also has many internal and external parts that function together to form a system. Which part of the computer is similar to the rotating parts of the astrolabe that use data to solve calculations?</p>",
+    "QuestionImage": null,
+    "Answer1": "The Central Processing Unit (CPU)",
+    "Answer2": "The Solid-State Drive (SSD)",
+    "Answer3": "The RAM (Random Access Memory)",
+    "Answer4": "The Wi-Fi Card",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The Central Processing Unit (CPU), similar to the rotating parts of the astrolabe, performs most calculations within a computer. Like how the rotating parts of the astrolabe use data to solve calculations, the CPU processes instructions to solve tasks.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

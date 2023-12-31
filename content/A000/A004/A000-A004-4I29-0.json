@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4I29",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Milan</span> loves science and is particularly interested in weather and climate studies. <span class=\"qname\">Milan</span> has gathered loads of weather data over several years, including information about temperature, wind speed, humidity, and precipitation. <span class=\"qname\">Milan</span> was pleasantly surprised to discover a website that allows them to upload his data, and in return, the website generates detailed climate graphs that help <span class=\"qname\">Milan</span> understand long-term climate trends in the area. However, <span class=\"qname\">Milan</span> is concerned because he also realizes that the location data attached to the datasets could be used to determine exactly where he lives. Which of the following is a correct interpretation of <span class=\"qname\">Milan</span>&#39;s privacy concern?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Milan</span> is rightfully concerned; the website could potentially use the location data to find out exactly where <span class=\"qname\">Milan</span> lives without their knowledge.",
+    "Answer2": "<span class=\"qname\">Milan</span> shouldn&#39;t be worried because the website only intends to use the data for weather-related purposes, and they wouldn\u2019t use the location data in any other way.",
+    "Answer3": "<span class=\"qname\">Milan</span> shouldn&#39;t be concerned because the website can\u2019t determine his exact location from the weather data alone.",
+    "Answer4": "<span class=\"qname\">Milan</span> is unnecessarily worried; the use of location data for generating weather trend reports doesn&#39;t give out his exact location data.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Milan</span>&#39;s concern is valid. Even though the website&#39;s immediate purpose is to generate climate graphs, location data could potentially be used to determine <span class=\"qname\">Milan</span>&#39;s exact location, and this might not be made explicitly clear to users like <span class=\"qname\">Milan</span>.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

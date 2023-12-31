@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "1A15",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Harley</span> is passionate about physics and wants to code a procedure to help them test the laws of physics more efficiently. They are creating a function that calculates the gravitational, electric, and magnetic forces. They currently have a code that calculates these values individually. Given the coding scenario, can you suggest what <span class=\"qname\">Harley</span> should do next to enhance their code?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action CalculateGravitationalForce(number mass1, number mass2, number distance)</td></tr><tr><td>2</td><td><div class=\"ci4\">// Code to calculate gravitational force</div></td></tr><tr><td>3</td><td>end</td></tr><tr><td>4</td><td></td></tr><tr><td>5</td><td>action CalculateElectricForce(number charge1, number charge2, number distance)</td></tr><tr><td>6</td><td><div class=\"ci4\">// Code to calculate electric force</div></td></tr><tr><td>7</td><td>end</td></tr><tr><td>8</td><td></td></tr><tr><td>9</td><td>action CalculateMagneticForce(number charge, number velocity, number magneticField)</td></tr><tr><td>10</td><td><div class=\"ci4\">// Code to calculate magnetic force</div></td></tr><tr><td>11</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Harley</span> should repeat the code three times, once for each force.",
+    "Answer2": "<span class=\"qname\">Harley</span> should create a loop to calculate the forces.",
+    "Answer3": "<span class=\"qname\">Harley</span> should create a function to calculate each force and then call these functions within their main program.",
+    "Answer4": "<span class=\"qname\">Harley</span> should remove any functions and put all the code on the main line of the program.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Harley</span>&#39;s next step should be to create individual functions to calculate each of the forces. This will allow them to call these functions whenever they need to estimate one of the forces, rather than having repeated code. This step follows the programming development strategy of decomposing problems into smaller sub-problems and enhancing the program&#39;s readability and maintainability.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action CalculateGravitationalForce(number mass1, number mass2, number distance)</td></tr><tr><td>2</td><td><div class=\"ci4\">// Code to calculate gravitational force</div></td></tr><tr><td>3</td><td>end</td></tr><tr><td>4</td><td></td></tr><tr><td>5</td><td>action CalculateElectricForce(number charge1, number charge2, number distance)</td></tr><tr><td>6</td><td><div class=\"ci4\">// Code to calculate electric force</div></td></tr><tr><td>7</td><td>end</td></tr><tr><td>8</td><td></td></tr><tr><td>9</td><td>action CalculateMagneticForce(number charge, number velocity, number magneticField)</td></tr><tr><td>10</td><td><div class=\"ci4\">// Code to calculate magnetic force</div></td></tr><tr><td>11</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

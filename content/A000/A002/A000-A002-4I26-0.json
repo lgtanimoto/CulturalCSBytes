@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "4I26",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Arora</span> has developed an algorithm to sort a list of objects in alphabetical order by a field and another algorithm to search whether a matching item exists in that list.   Two applications that <span class=\"qname\">Arora</span> has developed using these algorithms are 1) converting an Internet domain name to an IP address and 2) using a product id to update store inventory when a product is purchased.</p><p>Which of the following is another application that <span class=\"qname\">Arora</span> could use their algorithms for?</p>",
-        "QuestionImage": null,
-        "Answer1": "Providing an AI to play tic-tac-toe",
-        "Answer2": "Predicting the probability that it will rain tomorrow",
-        "Answer3": "Calculating the average daily bill of customers at a restaurant",
-        "Answer4": "Spell-checking a document",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Spell-checking a document requires first sorting the list of valid words.   If the binary search algorithm cannot find the word in the list, then it is flagged as incorrect.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4I26",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Xen</span> has been assigned to create a sustainable business algorithm for their company to assess and improve its corporate social responsibility efforts. They&#39;ve created an algorithm to calculate a sustainability score, which helps businesses monitor their impact in terms of environmental, economic, and social factors. However, they&#39;re not sure if their algorithm will apply to all companies across different sectors. What should <span class=\"qname\">Xen</span> do to ensure the applicability of their algorithm to different sectors?</p>",
+    "QuestionImage": null,
+    "Answer1": "They should design their algorithm so it exclusively favors businesses in the energy sector, since they impact the environment the most.",
+    "Answer2": "They should design their algorithm so it accounts for the specific attributes of each company under consideration, including the sector in which it operates.",
+    "Answer3": "They should design their algorithm to only consider environmental factors as they are universally applicable to all sectors.",
+    "Answer4": "They should avoid considering economic factors in their algorithm as they vary greatly between sectors.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>An algorithm can be adapted to solve problems across different disciplines if it is designed to account for the particular attributes of each situation. In this case, each sector might have different impacts and responsibilities in the areas of environment, economy, and society, and the algorithm should take these into consideration for a fair and accurate sustainability score.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number environmental_impact = getEnvironmentalImpact(company)</td></tr><tr><td>2</td><td>number economic_impact = getEconomicImpact(company)</td></tr><tr><td>3</td><td>number social_impact = getSocialImpact(company)</td></tr><tr><td>4</td><td>number total_impact = environmental_impact + economic_impact + social_impact</td></tr><tr><td>5</td><td>number sustainability_score = total_impact / getCompanySize(company)</td></tr><tr><td>6</td><td>output sustainability_score</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Breeze</span> is working on a school project about the advancement in medical technology. Among the technologies they&#39;re studying, one of them is an MRI machine (Magnetic Resonance Imaging) which gives detailed images of the inside of a patient\u2019s body. Which of the following components is crucial for the MRI Machine to function and store the images it produces?</p>",
+    "QuestionImage": null,
+    "Answer1": "Speaker",
+    "Answer2": "Keyboard",
+    "Answer3": "Hard Drive",
+    "Answer4": "Monitor",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The hard drive is crucial for storing the images produced by the MRI machine. While the monitor displays the images, and the keyboard might be used to input patient data or control the machine, it\u2019s the hard drive that stores the amount of data involved in MRI images.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

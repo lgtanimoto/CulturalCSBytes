@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "1A08",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Chris</span> is eating cold cereal for breakfast before school.   Which of the following best describes the <em>algorithm</em> <span class=\"qname\">Chris</span> should use to make breakfast?</p>",
-        "QuestionImage": null,
-        "Answer1": "Cereal, Milk, Bowl, Spoon",
-        "Answer2": "After waking up, ask parent to make cornflakes for breakfast",
-        "Answer3": "Get out bowl and spoon.  Pour cereal out of box into bowl. Pour milk into bowl. Eat with spoon until cereal and milk are gone.",
-        "Answer4": "Eat.  Put pot on stove, turn on stove, and boil for seven minutes. Turn off stove.  Puts two eggs in pot.  Put water in pot.",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>An <em>algorithm</em> is a step-by-step series of instructions to accomplish a given task.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1A08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Darby</span> has been recruited by a staffing agency to assist with a company&#39;s hiring process. They need to create a program algorithm to perform the process of &#39;Reviewing Applicants&#39; as described by the company: First, an application is received. Next, if the application is complete, it&#39;s assigned to a hiring manager. If the application is incomplete, it&#39;s set aside. If the hiring manager rates the application positively, schedule an interview. If it&#39;s rated negatively, inform the applicant that they won&#39;t be moving forward. Which of the following pseudocodes best represents this process?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>procedure ReviewingApplicants</td></tr><tr><td><div class=\"ci4\">while applications remain</div></td></tr><tr><td><div class=\"ci4\">if application is complete then</div></td></tr><tr><td><div class=\"ci8\">assign to hiring manager</div></td></tr><tr><td><div class=\"ci8\">if rated positively</div></td></tr><tr><td><div class=\"ci12\">schedule interview</div></td></tr><tr><td><div class=\"ci8\">else</div></td></tr><tr><td><div class=\"ci12\">reject applicant</div></td></tr><tr><td><div class=\"ci8\">end if</div></td></tr><tr><td><div class=\"ci4\">else</div></td></tr><tr><td><div class=\"ci8\">set aside</div></td></tr><tr><td><div class=\"ci4\">end if</div></td></tr><tr><td><div class=\"ci4\">end while</div></td></tr><tr><td>end procedure</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>procedure ReviewingApplicants</td></tr><tr><td><div class=\"ci4\">while applications remain</div></td></tr><tr><td><div class=\"ci4\">if application is incomplete</div></td></tr><tr><td><div class=\"ci8\">set aside</div></td></tr><tr><td><div class=\"ci4\">else</div></td></tr><tr><td><div class=\"ci8\">assign to hiring manager</div></td></tr><tr><td><div class=\"ci8\">if application is incompelete</div></td></tr><tr><td><div class=\"ci12\">set aside</div></td></tr><tr><td><div class=\"ci8\">else</div></td></tr><tr><td><div class=\"ci12\">reject or interview applicant</div></td></tr><tr><td><div class=\"ci8\">end if</div></td></tr><tr><td><div class=\"ci4\">end if</div></td></tr><tr><td><div class=\"ci4\">end while</div></td></tr><tr><td>end procedure</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>procedure ReviewingApplicants</td></tr><tr><td><div class=\"ci4\">while applications remain</div></td></tr><tr><td><div class=\"ci8\">assign to hiring manager</div></td></tr><tr><td><div class=\"ci8\">if rated negatively</div></td></tr><tr><td><div class=\"ci12\">reject applicant</div></td></tr><tr><td><div class=\"ci8\">else</div></td></tr><tr><td><div class=\"ci12\">schedule interview</div></td></tr><tr><td><div class=\"ci8\">end if</div></td></tr><tr><td><div class=\"ci4\">end while</div></td></tr><tr><td>end procedure</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>procedure ReviewingApplicants</td></tr><tr><td><div class=\"ci4\">while applications remain</div></td></tr><tr><td><div class=\"ci8\">if application is complete</div></td></tr><tr><td><div class=\"ci12\">assign to hiring manager</div></td></tr><tr><td><div class=\"ci12\">if rated negatively</div></td></tr><tr><td><div class=\"ci12\">reject applicant</div></td></tr><tr><td><div class=\"ci12\">else</div></td></tr><tr><td><div class=\"ci12\">schedule interview</div></td></tr><tr><td><div class=\"ci12\">end if</div></td></tr><tr><td><div class=\"ci8\">end if</div></td></tr><tr><td><div class=\"ci4\">end while</div></td></tr><tr><td>end procedure</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The proper pseudocode would include all steps from receiving the application, checking if it&#39;s complete or not, assigning it to a hiring manager, up to making a decision based on the manager&#39;s rating and either scheduling an interview or rejecting the candidate.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1D07",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Drew</span> is tracking the number of water bottles sold at soccer games against the temperature at the start of the game.  After 9 games, <span class=\"qname\">Drew</span> has created the charts below.   Knowing that today's temperature at game time will be 85 degrees, how many bottles of water should <span class=\"qname\">Drew</span> expect to sell?</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A001-1D07-0Q.png\"></p>",
-        "QuestionImage": "A000-A001-1D07-0Q.png",
-        "Answer1": "70 bottles",
-        "Answer2": "45 bottles",
-        "Answer3": "80 bottles",
-        "Answer4": "90 bottles",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 1,
-        "Explanation": "<p>The dotted blue trend line in the top graph crosses 80 bottles at 85 degrees F.   While the bar chart at the bottom contains valid data, it is very difficult to use for prediction purposes.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1D07",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>During the electrical revolution in the mid-19th century, communication became much faster due to the widespread use of telegrams. <span class=\"qname\">Munich</span> found data showing that in the 19th century, the number of telegrams sent increased by about 20% each year. If a line plot shows the number of telegrams sent each year, what does <span class=\"qname\">Munich</span> predict about the trend?</p>",
+    "QuestionImage": null,
+    "Answer1": "The number of telegrams sent each year might remain unchanged.",
+    "Answer2": "The number of telegrams sent each year might show a downward trend.",
+    "Answer3": "The number of telegrams sent each year might show an upward trend.",
+    "Answer4": "The number of telegrams sent each year might fluctuate violently.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Considering that the number of telegrams sent each year increased by about 20%,  <span class=\"qname\">Munich</span> should predict that the line plot would show an upward trend.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

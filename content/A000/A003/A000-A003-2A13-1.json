@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A13",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Trinity</span> is designing a simple football game simulation. Several users have suggested that the game would be more interesting if weather conditions were taken into account, as they can affect the game conditions. <span class=\"qname\">Trinity</span> wants to integrate this feature into their program. Which of the following represents the best approach for <span class=\"qname\">Trinity</span> to add this feature?</p>",
+    "QuestionImage": null,
+    "Answer1": "Ignore the user&#39;s suggestion as it doesn&#39;t align with <span class=\"qname\">Trinity</span>&#39;s initial plans for the program.",
+    "Answer2": "Add a random weather generator that significantly changes the gameplay regardless of user input.",
+    "Answer3": "Implement the weather conditions feature by creating different scenarios and adjusting the gameplay accordingly, also giving users the option to turn off this feature.",
+    "Answer4": "Create a complex weather system that involves high-level physics equations to simulate precise weather conditions, although this might make the game too complex for casual players.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The third option would take into account user feedback, making sure the gameplay is affected by weather conditions, while also providing an option for users to turn off this feature if they prefer the game without it. It maintains the game&#39;s accessibility and respects the players&#39; preferences, showing an appreciation for iterative planning and user consideration that is essential in successful program development.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

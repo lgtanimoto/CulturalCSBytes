@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A21",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Riley</span> has developed a mobile application for their entrepreneurship class. The app was intended to help customer to order groceries from their local shops. After a round of user testing, <span class=\"qname\">Riley</span> noticed that older users were having trouble navigating the app due to the small font size and complex interface. Which of the following revisions would be the most effective way of making the app more accessible for the older users?</p>",
+    "QuestionImage": null,
+    "Answer1": "Increase the number of features on the home screen to provide more options.",
+    "Answer2": "Add flashy animations and sound effects",
+    "Answer3": "Use brighter, contrasting colors and larger fonts while reducing unnecessary complexity in the user interface.",
+    "Answer4": "Reduce the number of available shops to make the list shorter and easier to read.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Accessibility in any application is a key factor in attracting and keeping a wide range of users. Large font sizes and high contrast colors make text more readable. Additionally, a less complex interface makes it easy for anyone to use the app, regardless of their technological proficiency.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

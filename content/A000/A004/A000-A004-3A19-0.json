@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3A19",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Darby</span> is working on a program to calculate the level of air pollution at a specific location based on the amount of harmful gases detected in the air. They define initial variables like emissionLevelCO2 (Carbon dioxide), emissionLevelSO2 (Sulfur dioxide), and emissionLevelNO2 (Nitrogen dioxide), but they do not provide any comments or notes about what the variables represent or what types of calculations they are performing. Adding more comments to their code could help others understand and debug the program. What are some suitable places to add comments?</p>",
+    "QuestionImage": null,
+    "Answer1": "On the lines where they define the variables.",
+    "Answer2": "On the lines where they perform calculations.",
+    "Answer3": "At the beginning of the program where they define the purpose of the program.",
+    "Answer4": "All of the above.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Comments should be added in all of the above cases. They help readers understand what is being stored in a variable, what a specific section of code does (such as calculations), and what the overall program is designed to do.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

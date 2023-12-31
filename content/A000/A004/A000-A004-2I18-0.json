@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2I18",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>In a research, <span class=\"qname\">Xen</span> notes that the production and use of cell phones over the last 20 years has transformed cultures across the world by enabling instant communication and providing easy access to information. They believe that the cultural adoption of cell phones has led to the creation of new technologies as well. Which of the following examples does NOT support <span class=\"qname\">Xen</span>&#39;s thesis?</p>",
+    "QuestionImage": null,
+    "Answer1": "Cell phone use has led to the creation of GPS technologies.",
+    "Answer2": "The popularity of texting on cell phones has influenced the development of shorthand language and emojis.",
+    "Answer3": "The use of cell phones has spawned the creation of mobile games like Pokemon Go, impacting leisure time activities and public spaces.",
+    "Answer4": "The use of cell phones has caused a decrease in the popularity of traditional landlines phones.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While it&#39;s true that cell phone use has contributed to a decrease in landline popularity, this is a consequence of cultural shift, not an example of a new technology created by the influence of cell phone use.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

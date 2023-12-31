@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "1A10",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Rory</span> is programming a humanoid robot to get off the sofa, walk to the light switch, and turn off the lights in a room.  Which of the following most closely represents the code that <span class=\"qname\">Rory</span> needs to write:</p>",
-        "QuestionImage": null,
-        "Answer1": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while not= AtLocation(lightSwitch)<div class=\"ci4\">RightWalk(1)</div><div class=\"ci4\">LeftWalk(1)</div>end<br>TurnOffLight()</div>",
-        "Answer2": "<div class=\"code\">TurnOffLight()<br>repeat while not= AtLocation(lightSwitch)<div class=\"ci4\">RightWalk(1)</div><div class=\"ci4\">LeftWalk(1)</div>end<br>TurnToward(lightSwitch)<br>StandUp()</div>",
-        "Answer3": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat 1000 times<div class=\"ci4\">RightWalk(1)</div>end<br>LeftWalk(1)<br>TurnOffLight()</div>",
-        "Answer4": "<div class=\"code\">StandUp()<br>TurnToward(lightSwitch)<br>repeat while AtLocation(lightSwitch)<div class=\"ci4\">RightWalk(1)</div><div class=\"ci4\">LeftWalk(1)</div><div class=\"ci4\">TurnOffLight()</div>end</div>",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>First, robot stands up so it can walk.  Second, robot turns toward the light switch so it walks in the correct direction.  Third, the robot walks right-left until it reaches the light switch.  Finally, the robot turns off the light. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1A10",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Frankie</span> is interested in starting a business and wants to ensure they choose a well-rounded idea. They&#39;ve created an algorithm that rates each business idea on attributes such as profitability, creativity, and feasibility. Based on the following code snippet, if &#39;Profitability&#39; is set to &#39;High&#39;, &#39;Creativity&#39; is set to &#39;Medium&#39;, and &#39;Feasibility&#39; is set to &#39;Low&#39;, what would the code snippet output?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer Profitability = 3 //High</td></tr><tr><td>2</td><td>integer Creativity = 2 //Medium</td></tr><tr><td>3</td><td>integer Feasibility = 1 //Low</td></tr><tr><td>4</td><td>integer IdeaRating = Profitability + Creativity + Feasibility</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>if IdeaRating &gt; 8</td></tr><tr><td>7</td><td><div class=\"ci4\">output \"Excellent Idea\"</div></td></tr><tr><td>8</td><td>elif IdeaRating &gt; 6</td></tr><tr><td>9</td><td><div class=\"ci4\">output \"Good Idea\"</div></td></tr><tr><td>10</td><td>elif IdeaRating &gt; 4</td></tr><tr><td>11</td><td><div class=\"ci4\">output \"Average Idea\"</div></td></tr><tr><td>12</td><td>else</td></tr><tr><td>13</td><td><div class=\"ci4\">output \"Poor Idea\"</div></td></tr><tr><td>14</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Good Idea",
+    "Answer2": "Average Idea",
+    "Answer3": "Poor Idea",
+    "Answer4": "Excellent Idea",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Frankie</span> assigns 3 points for &#39;High&#39;, 2 points for &#39;Medium&#39;, 1 point for &#39;Low&#39;. So if Profitability = &#39;High&#39; (3 points), Creativity = &#39;Medium&#39; (2 points), Feasibility = &#39;Low&#39; (1 point), the total score will be 6. According to <span class=\"qname\">Frankie</span>&#39;s conditionals, a score of 6 will output &#39;Good Idea&#39;.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer Profitability = 3 //High</td></tr><tr><td>2</td><td>integer Creativity = 2 //Medium</td></tr><tr><td>3</td><td>integer Feasibility = 1 //Low</td></tr><tr><td>4</td><td>integer IdeaRating = Profitability + Creativity + Feasibility</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>if IdeaRating &gt; 8</td></tr><tr><td>7</td><td><div class=\"ci4\">output \"Excellent Idea\"</div></td></tr><tr><td>8</td><td>elif IdeaRating &gt; 6</td></tr><tr><td>9</td><td><div class=\"ci4\">output \"Good Idea\"</div></td></tr><tr><td>10</td><td>elif IdeaRating &gt; 4</td></tr><tr><td>11</td><td><div class=\"ci4\">output \"Average Idea\"</div></td></tr><tr><td>12</td><td>else</td></tr><tr><td>13</td><td><div class=\"ci4\">output \"Poor Idea\"</div></td></tr><tr><td>14</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

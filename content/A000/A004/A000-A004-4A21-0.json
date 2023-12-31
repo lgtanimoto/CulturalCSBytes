@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A21",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Xen</span> is working on an application that helps users understand their carbon footprint based on the mode of transportation they choose. The application calculates emissions based on mileage, car type, or type of public transportation used. However, some users find the application difficult to use due to complex terms and calculations. <span class=\"qname\">Xen</span> decides to refine the application to make it more accessible. What can <span class=\"qname\">Xen</span> do to achieve this?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Xen</span> can add a detailed technical manual explaining the formulas and chemical mechanisms of carbon emissions.",
+    "Answer2": "<span class=\"qname\">Xen</span> can try to simplify the terminology and provide real-world examples equating specific amounts of CO2 emissions to everyday situations.",
+    "Answer3": "<span class=\"qname\">Xen</span> can remove the carbon emission feature as it seems too complex for users.",
+    "Answer4": "<span class=\"qname\">Xen</span> can enhance the application&#39;s visualizations, adding more graphs and charts to represent carbon emissions.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Although all the suggested improvements could have an impact, the best way to make the application more accessible is to simplify complex terminologies and provide real-world examples, making it easier for a wider audience to understand. Detailed technical manuals may only confuse non-technical users and removing the feature altogether defeats the purpose of the app. Visual enhancements can be complementary, but they won&#39;t necessarily help to decipher complex terms or calculations.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

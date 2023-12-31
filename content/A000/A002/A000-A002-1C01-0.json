@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "1C01",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>The students in <span class=\"qname\">Pat</span>'s science class are trying to determine how the weight of a marble affects its speed down a curved and twisted ramp.  They have 25 marbles to test.   What type of software should the students use to track this information and start analyzing this information?</p>",
-        "QuestionImage": null,
-        "Answer1": "Word processor software (e.g., Google Docs, Microsoft Word)",
-        "Answer2": "Spreadsheet software (e.g., Google Sheets, Microsoft Excel)",
-        "Answer3": "Social media software (e.g., Facebook, TikTok)",
-        "Answer4": "Internet browser software (Google Chrome, Apple Safari)",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Spreadsheet software provides computation, organization, analysis, charting, and storage of data tables.  Of the choices provided, only spreadsheet software has the ability to process and chart numerical data.<p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Robin</span> is starting their first job and has decided they need to start budgeting their income.  Which of the following types of software would be best suited to help <span class=\"qname\">Robin</span> plan their monthly spending and saving?</p>",
+    "QuestionImage": null,
+    "Answer1": "Video editing software (e.g., Adobe Premiere, HitFilm Express)",
+    "Answer2": "Audio recording software (e.g., GarageBand, Adobe Audition)",
+    "Answer3": "Personal finance software (e.g., Quicken, Mint.com)",
+    "Answer4": "Graphic design software (e.g., Adobe Illustrator, Canva)",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Personal finance software like Quicken or Mint.com provides tools to track income, spending, and to plan budgets. They are specifically designed for managing personal finances, including budget planning. While the other software types mentioned have a lot of advantages in their respective fields, they are not applicable when it comes to budgeting and financial planning.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

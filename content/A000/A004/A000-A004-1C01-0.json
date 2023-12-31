@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "1C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Skyler</span> is working on a project about air pollution levels in different cities over time. They have to collect, store and graph data to show the changes. Which software should <span class=\"qname\">Skyler</span> use to best manage this project?</p>",
+    "QuestionImage": null,
+    "Answer1": "Video Editing software (e.g., Adobe Premiere, iMovie)",
+    "Answer2": "Graphic Design software (e.g., Adobe Photoshop, GIMP)",
+    "Answer3": "Spreadsheet software (e.g., Google Sheets, Microsoft Excel)",
+    "Answer4": "Audio Editing software (e.g., Audacity, Adobe Audition)",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Spreadsheet software like Google Sheets or Microsoft Excel would be the best choice for <span class=\"qname\">Skyler</span> to collect, store, and graph data. This type of software is built to handle large amounts of numerical data, and can also create different types of graphs to visualize that data.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

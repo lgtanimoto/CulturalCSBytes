@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1D06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ziv</span> is part of the school&#39;s softball team and they have been tasked with visually tracking the team&#39;s home runs over the season. They have the raw data and intend to present it in different formats for the upcoming team meeting. Besides a bar chart, which other types of visual representation could <span class=\"qname\">Ziv</span> use to present the home run data?</p>",
+    "QuestionImage": null,
+    "Answer1": "Pie chart",
+    "Answer2": "Line graph",
+    "Answer3": "Scatter plot",
+    "Answer4": "All of the above",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Although each type of chart depicts information differently, they can all be used to represent the same data. A pie chart shows proportion, a line graph indicates a trend over time, and a scatter plot can show a correlation between two different variables.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

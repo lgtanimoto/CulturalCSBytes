@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A14",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Spencer</span> works in a clothing factory. Their task is to inspect the finished garments and mark them as &#39;Passed&#39; if they meet the required quality standards and &#39;Failed&#39; if they do not. They are equipped with a computer program that helps them mark the inspection results in a list that stores whether each garment passed or failed.  <span class=\"qname\">Spencer</span> wants to quickly find out how many garments failed the quality inspection. How can they modify the program to compute this?</p>",
+    "QuestionImage": null,
+    "Answer1": "Add a separate variable for each garment to keep track of its status.",
+    "Answer2": "Use a loop to iterate over the list and increment a count each time the garment status is &#39;Failed&#39;.",
+    "Answer3": "Sort the list in alphabetical order so that all the &#39;Failed&#39; garments are grouped together.",
+    "Answer4": "Delete all the &#39;Passed&#39; garments from the list, then count the remaining &#39;Failed&#39; garments.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Using a loop to iterate over the list and increment a count each time the garment status is &#39;Failed&#39; is the most efficient way to solve this problem.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>list&lt;text&gt; inspectionStatus = [&#39;Passed&#39;, &#39;Passed&#39;, &#39;Failed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Failed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Failed&#39;, &#39;Failed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Failed&#39;, &#39;Passed&#39;, &#39;Passed&#39;, &#39;Failed&#39;, &#39;Passed&#39;]</td></tr><tr><td>2</td><td>integer failedCount = 0</td></tr><tr><td>3</td><td>for every item i in inspectionStatus</td></tr><tr><td>4</td><td>   if i == \"Failed\"</td></tr><tr><td>5</td><td><div class=\"ci4\">failedCount = failedCount + 1</div></td></tr><tr><td>6</td><td>   end</td></tr><tr><td>7</td><td>end</td></tr><tr><td>8</td><td>output failedCount</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

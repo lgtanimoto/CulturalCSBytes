@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4A19",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> is developing a program that computes the total yardage gained in a football match. Their code initially summed up all yardage without differentiating between teams. However, feedback from users revealed that they would prefer yardage for each team individually. Users also want a message if no yards were gained at all. What modifications should <span class=\"qname\">Equator</span> make to cater to the users&#39; needs?</p>",
+    "QuestionImage": null,
+    "Answer1": "Split the yardage calculation into two segments, each for a team, and add a conditional clause to output a message if total yardage equals zero.",
+    "Answer2": "Remove the yardage calculation entirely as it seems to be confusing the users.",
+    "Answer3": "No changes are required as long as the calculation is accurate.",
+    "Answer4": "Add more team details to distract the users from the yardage calculation.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Equator</span> needs to incorporate the feedback from the users. They can achieve this by segregating the calculation of yardage for each team. Additionally, a conditional clause should be added to check if the total yardage is zero, in which case a suitable message should be displayed.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer teamAYardage = 0</td></tr><tr><td>2</td><td>integer teamBYardage = 0</td></tr><tr><td>3</td><td>while hasMorePlays()</td></tr><tr><td>4</td><td><div class=\"ci4\">Play currentPlay = getNextPlay()</div></td></tr><tr><td>5</td><td><div class=\"ci4\">if currentPlay.team == &#39;A&#39;</div></td></tr><tr><td>6</td><td><div class=\"ci8\">teamAYardage = teamAYardage + currentPlay.yardage</div></td></tr><tr><td>7</td><td><div class=\"ci4\">else if currentPlay.team == &#39;B&#39;</div></td></tr><tr><td>8</td><td><div class=\"ci8\">teamBYardage = teamBYardage + currentPlay.yardage</div></td></tr><tr><td>9</td><td><div class=\"ci4\">end</div></td></tr><tr><td>10</td><td>end</td></tr><tr><td>11</td><td></td></tr><tr><td>12</td><td>if teamAYardage + teamBYardage == 0</td></tr><tr><td>13</td><td><div class=\"ci4\">output \"No yards were gained in this match.\"</div></td></tr><tr><td>14</td><td>else</td></tr><tr><td>15</td><td><div class=\"ci4\">output \"Team A gained \" + teamAYardage + \" yards.\"</div></td></tr><tr><td>16</td><td><div class=\"ci4\">output \"Team B gained \" + teamBYardage + \" yards.\"</div></td></tr><tr><td>17</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

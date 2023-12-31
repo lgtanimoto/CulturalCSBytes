@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chile</span> is playing a soccer game where various components interact just like a computing system. If we consider this soccer game as a computing system, goalkeeper can be seen as the &#39;memory controller&#39;, controlling the data going in and out. What computing device part can be best associated with the referee who oversees the overall game make sure rules are followed?</p>",
+    "QuestionImage": null,
+    "Answer1": "Keyboard",
+    "Answer2": "Operating System",
+    "Answer3": "Hard Disk",
+    "Answer4": "Power Supply",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Just like the referee, the Operating System in a computing device makes sure that all applications and processes are running correctly and following the rules of the computing environment.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

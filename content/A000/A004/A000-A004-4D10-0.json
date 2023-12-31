@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4D10",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>In biology class, <span class=\"qname\">Vesper</span> is studying different ecosystems and mapping them out with their biodiversity. They have two options on how to organize the data: in a 2D grid where each cell represents a different species or in a 3D model where the X-axis represents one ecosystem, the Y-axis represents another ecosystem, and the Z-axis represents different species. What might be a tradeoff <span class=\"qname\">Vesper</span> should consider when deciding how to store and organize their data?</p>",
+    "QuestionImage": null,
+    "Answer1": "A 2D grid is simple to understand and work with, but it may limit the number of ecosystems <span class=\"qname\">Vesper</span> can represent.",
+    "Answer2": "A 3D model can represent more information, but it may be harder to visualize.",
+    "Answer3": "A 3D model is easier to work with because it can store more data.",
+    "Answer4": "A 2D grid is always better because it is simpler.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Option 1 is correct. A 2D grid representation is easier to understand and work with but could limit the number of ecosystems that <span class=\"qname\">Vesper</span> can represent, whereas a 3D model can store more information but may be complicated and harder to visualize and interpret.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

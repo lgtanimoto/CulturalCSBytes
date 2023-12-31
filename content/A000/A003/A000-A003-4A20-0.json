@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4A20",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>Taylor is developing a website for their school&#39;s gymnastics team. They discover an amazing library of code that could add some really cool effects to the site. Taylor would like to share the website with all of the school, including other students who might learn from their code. While reading the license that comes with the library, they realize that it limits distribution and modification of the code. What is the most suitable course of action for Taylor?</p>",
+    "QuestionImage": null,
+    "Answer1": "Ignore the license and use the library.",
+    "Answer2": "Use the library but do not share the code with others.",
+    "Answer3": "Look for an equivalent library that allows distribution and modification.",
+    "Answer4": "Share the code with others but do not use it themselves.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Although the library with the license would be useful, it is important for Taylor to respect the license. By looking for an equivalent library that allows distribution and modification, Taylor would be able to still add cool effects to the website and share their source code with others, following the regulations of the license.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

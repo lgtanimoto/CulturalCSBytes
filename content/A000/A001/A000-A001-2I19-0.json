@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "2I19",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Cresent</span> is creating an online menu for residents of a retirement community to order their meals from the community cafeteria.   For a typical meal, four main selections change daily.   In addition, the cafeteria offers 30-40 other items including main dishes, side orders, drinks, and desserts for each meal that change infrequently.  Many of the members of the retirement community have poor eyesight and other health issues associated with old age.</p><p>Which of the following would <span class=\"em_neg\">NOT</span> improve the accessibility and usability of the online menu when a resident uses it on a tablet computer?</p>",
-        "QuestionImage": null,
-        "Answer1": "Listing all 40 menu items alphabetically on a single screen",
-        "Answer2": "A feature that will suggest items to order based on a residents' previous orders and stated preferences",
-        "Answer3": "A color scheme that is primarily large black text on a white background with a few color accents",
-        "Answer4": "An interface with large buttons that takes the resident step by step to order the main dish, then side orders, then drinks, and finally dessert.",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Listing all 40 menu items alphabetically will force much text onto a small screen making it difficult for residents with poor vision to read and to find what the main dishes are for that meal.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2I19",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Asteriod</span> is interested in the Islamic Golden Age and its numerous scientific advancements. They decide to create an educational app that presents the information engagingly with links, images, videos, and text. However, there is one thing they are particularly concerned about: making the app accessible and usable for a wide range of users. What should <span class=\"qname\">Asteriod</span> keep in mind during development?</p>",
+    "QuestionImage": null,
+    "Answer1": "Ensure the font size is small so they can fit more information on the screen.",
+    "Answer2": "Exclusively use high contrast colors for text to make it stand out against the background.",
+    "Answer3": "Add auto-captioning feature to support users who are deaf or hard of hearing and options for text-to-speech for those who are visually impaired.",
+    "Answer4": "Make the app available only in English to simplify the development process.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Creating an accessible app means considering the diverse needs of all users. While high contrast colors can be helpful, the best option provided is to add auto-captioning features for videos to support users with hearing impairments and text-to-speech for users who are visually impaired. They should attempt to cater to all possible user needs.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

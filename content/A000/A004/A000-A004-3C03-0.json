@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3C03",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kenya</span> is developing a simulation of Earth&#39;s rotation around the sun and the moon&#39;s rotation around Earth to demonstrate the changing seasons and moon phases. They test their program but find that while the Earth and moon are rotating correctly, the seasons aren&#39;t changing accurately. What might be the problem with <span class=\"qname\">Kenya</span>&#39;s simulation program?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Kenya</span> might not have correctly incorporated Earth&#39;s tilt in their code",
+    "Answer2": "<span class=\"qname\">Kenya</span>&#39;s device has insufficient disk space",
+    "Answer3": "<span class=\"qname\">Kenya</span>&#39;s CPU is overheating",
+    "Answer4": "<span class=\"qname\">Kenya</span>&#39;s mouse is malfunctioning",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>If the Earth&#39;s tilt relative to the sun is not correctly modeled, the change of seasons will not be accurately represented in the simulation. Insufficient disk space, an overheating CPU, or a malfunctioning mouse would not affect the accuracy of the seasons in the simulation. Technical issues of this nature would prevent the software from running smoothly (or at all), but wouldn&#39;t inherently affect the correctness of the scientific model being simulated.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

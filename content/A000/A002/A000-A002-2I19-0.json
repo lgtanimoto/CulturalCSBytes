@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "2I19",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Cresent</span> is creating an online menu for residents of a retirement community to order their meals from the community cafeteria.   For a typical meal, four main selections change daily.   In addition, the cafeteria offers 30-40 other items including main dishes, side orders, drinks, and desserts for each meal that change infrequently.  Many of the members of the retirement community have poor eyesight and other health issues associated with old age.</p><p>Which of the following would <span class=\"em_neg\">NOT</span> improve the accessibility and usability of the online menu when a resident uses it on a tablet computer?</p>",
-        "QuestionImage": null,
-        "Answer1": "Listing all 40 menu items alphabetically on a single screen",
-        "Answer2": "A feature that will suggest items to order based on a residents' previous orders and stated preferences",
-        "Answer3": "A color scheme that is primarily large black text on a white background with a few color accents",
-        "Answer4": "An interface with large buttons that takes the resident step by step to order the main dish, then side orders, then drinks, and finally dessert.",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Listing all 40 menu items alphabetically will force much text onto a small screen making it difficult for residents with poor vision to read and to find what the main dishes are for that meal.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2I19",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Starshine</span> has just finished designing a mobile game that&#39;s fun and educational. However, they\u2019ve received feedback from some users that they&#39;re struggling to navigate through the game due to color blindness. <span class=\"qname\">Starshine</span> realizes that they need to increase the accessibility of the game for all users. What can <span class=\"qname\">Starshine</span> do to make the game more accessible to color-blind users?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Starshine</span> can change the color scheme of the game to bright neon colors.",
+    "Answer2": "<span class=\"qname\">Starshine</span> can add patterns or textures in addition to color to distinguish game elements.",
+    "Answer3": "<span class=\"qname\">Starshine</span> can add more levels to the game to divert attention from color issues.",
+    "Answer4": "<span class=\"qname\">Starshine</span> can write a disclaimer in the game description warning color-blind users of potential navigation difficulties.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Adding additional visual cues such as patterns or textures can supplement color differentiation, making elements distinguishable to color-blind users. This increases accessibility by ensuring that everyone, regardless of their vision, can navigate and enjoy the game.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

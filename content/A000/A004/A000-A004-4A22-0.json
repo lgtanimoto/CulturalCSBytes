@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A22",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Skyler</span>&#39;s team is tasked with coding a traffic signal program for a small town. <span class=\"qname\">Skyler</span> is in charge of creating the code for the main intersection&#39;s traffic signals. Their task is to ensure the traffic light does its normal cycle: green for 60 seconds, yellow for 5 seconds, and red for 55 seconds. Based on the above context, which role will best suit <span class=\"qname\">Skyler</span> in the project?</p>",
+    "QuestionImage": null,
+    "Answer1": "Traffic Signal Designer",
+    "Answer2": "Project Manager",
+    "Answer3": "Town Planner",
+    "Answer4": "Coding Specialist",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>As <span class=\"qname\">Skyler</span> is responsible for creating the traffic signal program, they would most closely fit the role of a &#39;Traffic Signal Designer&#39;. The other roles do not specifically relate to <span class=\"qname\">Skyler</span>&#39;s task of designing and coding the traffic signal system.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

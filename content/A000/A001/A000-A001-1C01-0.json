@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1C01",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>The students in <span class=\"qname\">Pat</span>'s science class are trying to determine how the weight of a marble affects its speed down a curved and twisted ramp.  They have 25 marbles to test.   What type of software should the students use to track this information and start analyzing this information?</p>",
-        "QuestionImage": null,
-        "Answer1": "Word processor software (e.g., Google Docs, Microsoft Word)",
-        "Answer2": "Spreadsheet software (e.g., Google Sheets, Microsoft Excel)",
-        "Answer3": "Social media software (e.g., Facebook, TikTok)",
-        "Answer4": "Internet browser software (Google Chrome, Apple Safari)",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Spreadsheet software provides computation, organization, analysis, charting, and storage of data tables.  Of the choices provided, only spreadsheet software has the ability to process and chart numerical data.<p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Yukon</span> is studying ancient civilizations and their contributions to modern day science, mathematics, and engineering. They need a software application to organize their notes, sources, and final report. Which of the following software would be BEST suited for <span class=\"qname\">Yukon</span>&#39;s task?</p>",
+    "QuestionImage": null,
+    "Answer1": "Presentation software (e.g., PowerPoint, Google Slides)",
+    "Answer2": "Website designer software (e.g., WordPress, Wix)",
+    "Answer3": "Word processing software (e.g., Word, Google Docs)",
+    "Answer4": "Image editing software (e.g., Photoshop, GIMP)",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Word processing software like Word or Google Docs is the most suitable software for <span class=\"qname\">Yukon</span>&#39;s task. These applications allow for organization of notes, sourcing, creation of a detailed report, and formatting of the text. Moreover, it allows for collaboration and cloud storage, which are also beneficial for such tasks.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

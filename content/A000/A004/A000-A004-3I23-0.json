@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "3I23",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Discovery</span>, being a scientist, understands that information about the earth, moon, sun, and seasons can be beneficial for public knowledge. But they also realize the importance of keeping certain scientific data private and secure. If <span class=\"qname\">Discovery</span> decides to build an interactive model showcasing these celestial mechanics, which one of the following can be a potential trade-off from making this information public?</p>",
+    "QuestionImage": null,
+    "Answer1": "The information could be used to better understand weather patterns and agricultural cycles, potentially improving food production.",
+    "Answer2": "Individuals with malicious intent could potentially use the model&#39;s code for illicit activities.",
+    "Answer3": "Publicizing the information could encourage individuals and organizations to use this data for environmentally friendly decision-making.",
+    "Answer4": "The model could be used for educational purposes, enhancing scientific literacy amongst the public.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While allowing information to be public can have numerous societal benefits, a potential risk is that people with malicious intentions could exploit the provided information or the system&#39;s code for nefarious purposes, potentially posing threats to the security of systems or networks.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

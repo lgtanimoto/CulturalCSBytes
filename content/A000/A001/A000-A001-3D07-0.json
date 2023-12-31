@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "3D07",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Ocean has learned that the first letter in their name 'O' has the same binary encoding (01001111) as the number 79.   Because remembering the binary digits of 'O' is difficult, Ocean wants to remember the hexadecimal encoding.</p><p>What is the hexadecimal encoding for the letter 'O'?</p>",
-        "QuestionImage": null,
-        "Answer1": "&nbsp;&nbsp;79&nbsp;&nbsp;",
-        "Answer2": "&nbsp;&nbsp;4F&nbsp;&nbsp;",
-        "Answer3": "&nbsp;&nbsp;97&nbsp;&nbsp;",
-        "Answer4": "&nbsp;&nbsp;117&nbsp;&nbsp;",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Hexadecimal is base 16 with digits 0 -  9 and A - F for 11 through 15.   One can convert from binary to hexadecimal by taking the binary digits four at a time.  '1111' is 'F' and '0100' is '4'.   Thus '4F' is the hexadecimal representation of the letter 'O'.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "3D07",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Jessie</span>, an avid music fan, has noticed a pattern over the last few years. They have noticed that whenever a piece of technology related to music consumption (e.g., a new music streaming platform) is released, there&#39;s a correlated change in the type of music that becomes popular. As an aspiring data analyst and musician, <span class=\"qname\">Jessie</span> is curious about the possible codependent relationship between changes in music technology and changes in popular music genres. They decide to perform a detailed study in their CS class. </p><p>As a part of their study, <span class=\"qname\">Jessie</span> is planning to use the Spotify Web API to fetch the data of the Top 50 songs for each year from 2010 to 2020. Using this data, <span class=\"qname\">Jessie</span> plans to analyze the &#39;genre&#39; and &#39;popularity&#39; fields to find which type of music has been popular each year. Afterwards they will compare this with timelines of music tech releases. </p><p>Which of the following most likely describes the code <span class=\"qname\">Jessie</span> would write to present the patterns in this data?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Jessie</span> would write a script to analyze the dataset and would use a visual encoding scheme to represent the data. This could involve creating graphs to present the percentage of popular genres each year and marking those with release years of notable music tech.",
+    "Answer2": "<span class=\"qname\">Jessie</span> would use HTML to create a web page that would react to the changing trends in the music industry.",
+    "Answer3": "<span class=\"qname\">Jessie</span> would develop a music player to play the most popular song of each year.",
+    "Answer4": "<span class=\"qname\">Jessie</span> would write a script to make the most popular song of each year automatically download to all classmates&#39; computers.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>With <span class=\"qname\">Jessie</span>&#39;s objective of identifying and describing patterns in data and mapping this to music tech release timelines, creating a visual representation using charts or graphs would be the best option. This would allow them to clearly see correlations between music genre popularity and technology release dates, if any exist.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1D05",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Quinn</span> is a big fan of soccer and they follow multiple international soccer leagues. They have compiled a database where they store team names, player names, player&#39;s goals, and assists. <span class=\"qname\">Quinn</span> wants to retrieve a list of players who have over 10 goals and over 10 assists. Which of the following commands will help <span class=\"qname\">Quinn</span> retrieve such player data?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\"><code>SELECT player_name FROM soccer_table WHERE goals&gt;10 AND assists&gt;10;</code></span>",
+    "Answer2": "<span class=\"code\"><code>SELECT player_name FROM soccer_table WHERE goals=10 AND assists=10;</code></span>",
+    "Answer3": "<span class=\"code\"><code>SELECT player_name FROM soccer_table WHERE goals&lt;10 OR assists&lt;10;</code></span>",
+    "Answer4": "<span class=\"code\"><code>SELECT player_name FROM soccer_table WHERE goals&gt;=10 AND assists&gt;=10;</code></span>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The SQL statement in Answer 1 is correct. When we want to retrieve data based on more than one condition, we can use the AND / OR clauses. Answer 1 will retrieve players who have scored more than 10 goals and have more than 10 assists.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

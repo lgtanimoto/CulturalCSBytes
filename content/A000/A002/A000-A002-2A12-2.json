@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A12",
+  "QuestionAltCode": 2,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chengdu</span> is developing an inventory management program for their family&#39;s grocery store. <span class=\"qname\">Chengdu</span> noticed that the application used by their cousin&#39;s hardware store has a useful feature for tracking stock. How can <span class=\"qname\">Chengdu</span> use this for their grocery inventory management program dynamically to monitor and update grocery items in stock?</p>",
+    "QuestionImage": null,
+    "Answer1": "By completely rewriting the program and only borrowing the UI design",
+    "Answer2": "By copying the entire application&#39;s code and using it as their own",
+    "Answer3": "By identifying the parts of the cousin&#39;s application that deals with stock tracking and incorporating similar logic into their grocery program",
+    "Answer4": "By creating an entirely new feature that&#39;s unrelated to stock tracking",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The best approach would be to understand, modify and incorporate only the parts of the cousin&#39;s program that handle stock tracking - this aligns with the principle of reusing and remixing existing code to create something new or add more features to a program.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action updateInventory(item : text, quantity : integer)</td></tr><tr><td>2</td><td><div class=\"ci4\">if items:HasKey(item)</div></td></tr><tr><td>3</td><td><div class=\"ci8\">integer currentStock = items:Get(item)</div></td></tr><tr><td>4</td><td><div class=\"ci8\">items:Set(item, currentStock + quantity)</div></td></tr><tr><td>5</td><td><div class=\"ci4\">else</div></td></tr><tr><td>6</td><td><div class=\"ci8\">items:Set(item, quantity)</div></td></tr><tr><td>7</td><td><div class=\"ci4\">end</div></td></tr><tr><td>8</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

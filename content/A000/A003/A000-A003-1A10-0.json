@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1A10",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Milan</span> is a high school basketball player who wants to improve their free throw shooting percentage. They learned in their psychology class that visualizing successful outcomes can help performance. With this in mind, they decide to write a program that simulates making 10 out of 10 free throw shots. This program runs every night before <span class=\"qname\">Milan</span> goes to sleep in hope of improving their performance. Which of the following pseudocode best represents the program <span class=\"qname\">Milan</span> needs to design?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\"><code>for each shot from 1 to 10: print &#39;Missed&#39;</code></span>",
+    "Answer2": "<span class=\"code\"><code>for each shot from 1 to 10: print &#39;Scored&#39;</code></span>",
+    "Answer3": "<span class=\"code\"><code>while not asleep: print &#39;Missed&#39; for each shot from 1 to 10</code></span>",
+    "Answer4": "<span class=\"code\"><code>while not asleep: print &#39;Scored&#39; for each shot from 1 to 10</code></span>",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Milan</span> is visualizing successful outcomes - thus, they want to simulate making all the shots. The second option - using a simple loop to print &#39;Scored&#39; for each shot - is the correct pseudocode representation of what <span class=\"qname\">Milan</span> is trying to achieve.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

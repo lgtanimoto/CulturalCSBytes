@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4D12",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>To better understand the impact of the invention of the printing press during the Renaissance, Edge wants to build a computational model that simulates the spread of printed books throughout Europe. They discover that in 1454 AD, there were 180 printed books in Mainz, Germany and that the number of printed books doubled each year. In what year does the number of printed books cross 1,000? Use the binary number system (with 10 as 2^1, 100 as 2^2, 1000 as 2^3) to help with the calculation.</p>",
+    "QuestionImage": null,
+    "Answer1": "1457 AD",
+    "Answer2": "1456 AD",
+    "Answer3": "1458 AD",
+    "Answer4": "1459 AD",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In 1454 AD, there were 180 books. In 1455, it doubled to 360 (approx 2^2 in binary or 4 sets of 180). In 1456, it doubled to 720. Finally, in 1457, it doubled to 1440, which crossed 1000 books. Therefore, using binary calculations, you can deduct that the books crossed 1,000 in 1457 AD. </p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

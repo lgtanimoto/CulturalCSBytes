@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4N07",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kendall</span> is creating a fictional language for their fantasy novel. They want to create a script for the language that fits the society and the culture of the people in it. However, they also want to make sure the script does not compromise on the security of the information. Considering security measures and usability, which one of the following could be a reasonable way for <span class=\"qname\">Kendall</span> to approach this task?</p>",
+    "QuestionImage": null,
+    "Answer1": "Create a very complex writing system that only a select few can understand.",
+    "Answer2": "Design a writing system which includes a varying number of symbols for each sound to ensure unpredictability.",
+    "Answer3": "Develop a script which is easy to understand and write, but includes certain symbols that are only known to a select few for sending secret messages.",
+    "Answer4": "Invent a writing system that can only be read under specific light conditions.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While all other options provide high security, they compromise on usability. A writing system too complex or unpredictable will be hard to use in daily life and one that can only be read under specific conditions limits accessibility. Option 3 balances between usability, with an easy to understand and write system, and security by including secret symbols.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

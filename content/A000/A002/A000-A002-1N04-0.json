@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "1N04",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Jordan</span> is watching a video on the importance of good passwords to protect your personal information.   Two important aspects of a good password are length and complexity.  Which of the following is the best password for <span class=\"qname\">Jordan</span> to use for their accounts on school computers?</p>",
-        "QuestionImage": null,
-        "Answer1": "<span class=\"code\">!dadsPizzaisthegr8est</span>",
-        "Answer2": "<span class=\"code\">password</span>",
-        "Answer3": "<span class=\"code\">808-555-1212</span> <i>(note: student's cell phone number</i>",
-        "Answer4": "<span class=\"code\">@^0*)zeq(&%#!$</span>",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>!dadsPizzaisthegr8est</em> is the longest, reasonably complex, and  relatively easy for Jordan to remember.  <em>@^0*)zeq(&%#!$</em> is too difficult to remember without writing down or using a password manager.   The others are too easy or contain other personal information.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1N04",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Xen</span>&#39;s accounting teacher has started a new module on data security within accounting systems. Their teacher emphasizes the importance of strong passwords to protect sensitive data from unauthorized access. Keeping this in mind, if the school were to update its password policies, which of the following is the best example of a strong password?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Xen</span>&#39;s name followed by their birth year.",
+    "Answer2": "The word &#39;Password&#39; followed by a series of sequential numbers (123456).",
+    "Answer3": "A random sequence of capital and lowercase letters, numbers and symbols, such as &#39;!5Zg29#ht&amp;9&#39;.",
+    "Answer4": "The name of the school followed by the current year.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>As per the computer science principles, a strong password should be difficult to guess or brute force. It&#39;s recommended to include a mix of upper and lowercase letters, numbers and special characters. It shouldn&#39;t contain personal information like your name, birthdate, or common words/phrases.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

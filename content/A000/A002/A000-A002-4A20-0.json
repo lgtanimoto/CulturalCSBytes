@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A20",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Zane</span> has been asked to perform market research and analysis for their company&#39;s newest project. While browsing online, they stumble upon a code library that perfectly fits their needs. However, they notice it has a license attached. Why should <span class=\"qname\">Zane</span> evaluate the license before using the code library?</p>",
+    "QuestionImage": null,
+    "Answer1": "To understand whether the license allows them to redistribute and edit the code",
+    "Answer2": "So <span class=\"qname\">Zane</span> can find out if they need to hire a lawyer",
+    "Answer3": "To know if the code is free",
+    "Answer4": "To see if the code is outdated",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>License evaluation is crucial when utilizing libraries or open-source software. This will allow <span class=\"qname\">Zane</span> to understand the rules of using, editing, and redistributing the code. Software licenses can have restrictions, and violating these can lead to legal issues. It&#39;s worth noting that &#39;free&#39; in terms of open-source usually refers to freedom, not price. Hence, even &#39;free&#39; software can come with restrictive licenses.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}
