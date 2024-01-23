@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> is developing a software for sports psychologists to track and predict an athlete&#39;s performance based on previous games. <span class=\"qname\">Equator</span> wants to include a feature that calculates the athlete&#39;s &#39;hot-streaks&#39; - a series of games where the athlete performs significantly above their average. The current code fails to identify these &#39;hot-streaks&#39;. Which of the following changes should <span class=\"qname\">Equator</span> make to effectively identify the &#39;hot-streaks&#39;?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number average = calculateAveragePerformance()</td></tr><tr><td>2</td><td>repeat with each number performance in previousGames</td></tr><tr><td>3</td><td><div class=\"ci4\">if performance &gt; average</div></td></tr><tr><td>4</td><td><div class=\"ci8\">output performance</div></td></tr><tr><td>5</td><td><div class=\"ci4\">else</div></td></tr><tr><td>6</td><td><div class=\"ci8\">output &#39;Hot-streak&#39;</div></td></tr><tr><td>7</td><td><div class=\"ci4\">end</div></td></tr><tr><td>8</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Replace the &#39;&gt;&#39; operator with the &#39;&lt;&#39; operator in line 3",
+    "Answer2": "Replace the &#39;average&#39; variable with the &#39;performance&#39; variable in line 3",
+    "Answer3": "Replace the &#39;average&#39; variable with the &#39;performance&#39; variable in line 1",
+    "Answer4": "Replace the &#39;performance&#39; variable with the &#39;average&#39; variable in line 4",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A hot-streak is a period where the athlete performs better than usual. Therefore, the condition in line 5 should be &#39;if performance &gt; average&#39; instead of &#39;if performance &lt; average&#39;. This modification will allow the code to accurately identify the athlete&#39;s &#39;hot-streaks&#39;.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number average = calculateAveragePerformance()</td></tr><tr><td>2</td><td>repeat with each number performance in previousGames</td></tr><tr><td>3</td><td><div class=\"ci4\">if performance &lt; average</div></td></tr><tr><td>4</td><td><div class=\"ci8\">output performance</div></td></tr><tr><td>5</td><td><div class=\"ci4\">else</div></td></tr><tr><td>6</td><td><div class=\"ci8\">output &#39;Hot-streak&#39;</div></td></tr><tr><td>7</td><td><div class=\"ci4\">end</div></td></tr><tr><td>8</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

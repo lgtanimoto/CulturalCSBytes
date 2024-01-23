@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A17",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Starshine</span> is designing a program to calculate lap times for the members of their school&#39;s swim team. A code snippet of <span class=\"qname\">Starshine</span>&#39;s program looks as follows:Looking at <span class=\"qname\">Starshine</span>\u2019s code, their classmate Rio thinks the code could benefit from some comments. Where should <span class=\"qname\">Starshine</span> add a comment to improve understanding of the code?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>text name = getPlayerName()</td></tr><tr><td>2</td><td>number lapTime = getLapTime(name)</td></tr><tr><td>3</td><td>if lapTime &lt; bestTime</td></tr><tr><td>4</td><td><div class=\"ci4\">output name + \" has the best time.\"</div></td></tr><tr><td>5</td><td>else</td></tr><tr><td>6</td><td><div class=\"ci4\">output name + \" does not have the best time.\"</div></td></tr><tr><td>7</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\">At the end of line 2, to explain the purpose of the <code>lapTime</code> variable</span>",
+    "Answer2": "Before line 1, to explain the purpose of the program",
+    "Answer3": "<span class=\"code\">At the end of line 1, to explain the purpose of the <code>name</code> variable</span>",
+    "Answer4": "All of the above",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Comments are helpful for understanding code at each step. They can explain the purpose of variables, what your code is intended for, and the logic you&#39;re using for the functions and structures. Hence, <span class=\"qname\">Starshine</span> should insert comments at all mentioned places to make their code more understandable.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>text name = getPlayerName()</td></tr><tr><td>2</td><td>number lapTime = getLapTime(name)</td></tr><tr><td>3</td><td>if lapTime &lt; bestTime</td></tr><tr><td>4</td><td><div class=\"ci4\">output name + \" has the best time.\"</div></td></tr><tr><td>5</td><td>else</td></tr><tr><td>6</td><td><div class=\"ci4\">output name + \" does not have the best time.\"</div></td></tr><tr><td>7</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

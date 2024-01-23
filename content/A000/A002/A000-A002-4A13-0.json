@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Frankie</span> is working on a project for their finance class which focuses on analyzing a company&#39;s financial health through various metrics or Key Performance Indicators (KPIs). <span class=\"qname\">Frankie</span> plans to leverage their programming knowledge to create a program that will automate the calculation of some of these KPIs using the company\u2019s Financial Statements. <span class=\"qname\">Frankie</span>\u2019s classmates are having a hard time understanding the programming aspect of <span class=\"qname\">Frankie</span>&#39;s finance project. How can <span class=\"qname\">Frankie</span> decompose or break down their program into steps or modules that are understandable even to non-programmers?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Frankie</span> should write the entire program in one go and then try to explain it to their classmates.",
+    "Answer2": "<span class=\"qname\">Frankie</span> should create a step-by-step flow diagram of the program logic using financial terms instead of the technical terms.",
+    "Answer3": "<span class=\"qname\">Frankie</span> should write the program without explaining the process, as it might confuse non-technical people.",
+    "Answer4": "<span class=\"qname\">Frankie</span> should create a glossary of the technical terms used in the program to explain it to the classmates.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Decomposition is all about breaking down the problem into manageable pieces. Since the classmates are having a hard time understanding the programming part, instead of using programming language terms <span class=\"qname\">Frankie</span> can use finance terms and explain the logic flow using a diagram. This way the classmates will understand the process using the context of their own knowledge and subject expertise.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4D10",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>For their final computing project, <span class=\"qname\">Dakota</span>, a member of the school&#39;s cross country team, decided to create a running app that organizes and stores personal fitness data. <span class=\"qname\">Dakota</span> wants to include an array list of this week&#39;s running distances in miles and an array of how long it took in minutes. Compare the advantages and disadvantages of the data storage solutions in this context.</p>",
+    "QuestionImage": null,
+    "Answer1": "Array lists and arrays both store and organize data in an efficient manner, but arrays are static and cannot hold data types.",
+    "Answer2": "Although an array offers faster access time, it is not dynamic. Array lists are dynamic in size but offer less efficient access.",
+    "Answer3": "Arrays are dynamic and can hold multiple data types, while array lists are static and cannot hold multiple data types.",
+    "Answer4": "Array lists can hold more than one data type and have a dynamic size, but have longer access times. Arrays have quicker access times but are fixed in size and can only hold one data type.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In this scenario, while an array could be more time efficient, an array list might be more beneficial for <span class=\"qname\">Dakota</span> because the team&#39;s running distances could vary each week. The array list&#39;s ability to dynamically resize could accommodate these varying amounts of data, albeit with a slightly slower access time. An array, on the other hand, is fixed in size and can only hold one data type, but has quicker access times.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

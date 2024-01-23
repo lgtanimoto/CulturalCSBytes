@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2N04",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Rowan</span> is playing an online real-time strategy game with their friends from different parts of the country. They notice that sometimes, their commands to their game pieces are not executed immediately. As a student studying both computer science and psychology, this delay reminds them of the way a human brain may need time to process complex tasks. <span class=\"qname\">Rowan</span> imagines this delay could be due to how information is transmitted over the internet. How might this be happening in terms of information transmission?</p>",
+    "QuestionImage": null,
+    "Answer1": "Each command that <span class=\"qname\">Rowan</span> inputs is being sent as one large packet directly to the game server.",
+    "Answer2": "<span class=\"qname\">Rowan</span>&#39;s commands are first screened by their local internet provider before being sent to the game server.",
+    "Answer3": "Each command from <span class=\"qname\">Rowan</span> is divided into smaller packets, transmitted through various network devices, reassembled at the game server, and then executed.",
+    "Answer4": "<span class=\"qname\">Rowan</span>&#39;s internet connectivity has no impact on this delay; it&#39;s fully reliant on the game&#39;s internal processing.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Information is segmented into smaller packets before being transmitted over the internet. These packets are relayed through various network devices and then reassembled at the destination, in this case, the game server. This process could result in a slight delay, which <span class=\"qname\">Rowan</span> notices as a lag between their command and the response in the game.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2C01",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Frankie</span> designs a new and unique device involving the integration of several central processing units (CPUs) together to create a high-speed computing system. They want to protect their design so that others cannot copy it. What is the best way for <span class=\"qname\">Frankie</span> to protect their innovative system?</p>",
+    "QuestionImage": null,
+    "Answer1": "Register the system as a trademark",
+    "Answer2": "Register the system as copyright",
+    "Answer3": "Apply for a patent for the system",
+    "Answer4": "Get an ISBN number for the system",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Given that <span class=\"qname\">Frankie</span>&#39;s innovation involves a unique design of hardware, they should apply for a patent. A patent gives an inventor the right to prevent others from making, using, or selling an invention for a certain number of years. Trademarks protect brand names and logos, copyright protects original works of authorship, and ISBN numbers are used for identifying books.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4C03",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Dakota</span>, a programmer and baseball enthusiast, has developed an application to automatically calculate a player&#39;s batting average in real time during a game. However, they have noticed that sometimes the calculation seems to be inaccurate. What can be <span class=\"qname\">Dakota</span>&#39;s systematic troubleshooting strategy to identify and fix this error?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Dakota</span> should panic and randomly try to fix different parts of his code",
+    "Answer2": "<span class=\"qname\">Dakota</span> should start with checking if each value required for the calculation is being captured accurately during the game, and whether the arithmetic operation is coded correctly",
+    "Answer3": "<span class=\"qname\">Dakota</span> should delete and recreate the entire application",
+    "Answer4": "<span class=\"qname\">Dakota</span> should ignore it, hoping the error will disappear over time",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The right troubleshooting approach would be to start with identifying whether the retrieved values during the game are accurate and check if the calculation process is implemented correctly. This step-by-step process will help <span class=\"qname\">Dakota</span> identify where the error occurrence is most probable.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

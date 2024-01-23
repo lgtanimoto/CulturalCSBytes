@@ -1,3 +1,4 @@
+
 const router = require('express').Router({mergeParams: true});
 const pool = require('../db');
 const { verifyCompleteSession, verifyCurrentEnrollment, verifyCurrentSession, verifyNextSession } = require('../middleware');
@@ -24,7 +25,8 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
 
     /* Create a string for the list of all the cultures, starting with the preferred culture */
     
-    const cultures = [preferredCulture];
+    // const cultures = [preferredCulture];
+    const cultures = [];
     additionalCultures = additionalCultures ? additionalCultures.filter(culture => culture !== preferredCulture) : [];
     cultures.push(...additionalCultures);
 
@@ -35,20 +37,25 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
         );
     }
 
+
     async function insertSessionQuestions() {
         /* Get the question distribution for each culture */
 
         const cultureDistr = [];
-        let rem = 20;
+        let rem = 20;   // for now fix all sessions at 20 questions
+        var base_alloc = Math.ceil(rem / (cultures.length));  // calculate base number of questions for each culture- for now let all be same
+        var too_big = base_alloc * (cultures.length) - rem;   // calculate the number of questions that will have too many
+
         for (let i = 0; i < cultures.length; i++) {
-            let alloc = i === 0 ? 
-                Math.round(20.0 * 2 / (cultures.length + 1)) :
-                Math.round(rem / (cultures.length - i));
+            var alloc = base_alloc;
+            // if (i == 0) alloc = 2 * alloc;
+            if (i < too_big) alloc--;
             cultureDistr.push(alloc);
-            rem -= alloc;
         }
 
         /* Get the difficulty distribution for each culture */
+
+/*  Ignore difficulty because too difficult to set with AI questions - 12/29/2023
 
         const totalDistr = [];
 
@@ -69,11 +76,12 @@ async function initSession(sessionId, preferredCulture, difficulty, additionalCu
             totalDistr.push(...diffDistr);
         }
 
+*/
         /* Pass the session to add the questions to and the distribution of culture/difficulty */
 
         await pool.query(
             'CALL insert_session_questions($1, $2, $3)',
-            [sessionId, cultures, totalDistr]
+            [sessionId, cultures, cultureDistr]   //just one value for each culture 12/29/2023
         );
     }
 

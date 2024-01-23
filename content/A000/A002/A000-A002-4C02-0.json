@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "4C02",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Following their teacher\u2019s instructions, <span class=\"qname\">Brilliant</span> opens the word processing document that they started yesterday.  The operating system on <span class=\"qname\">Brilliant</span>'s computer receives the request to open the document and delivers it to the program as a single stream of bytes even though it may exist in several fragments in different locations on the computer hard drive.</p><p>What <em>abstraction</em> provides the most value in the above scenario?</p>",
-        "QuestionImage": null,
-        "Answer1": "document",
-        "Answer2": "teacher",
-        "Answer3": "fragments",
-        "Answer4": "bytes",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Document.  An <em>abstraction</em> in computer science is generalizing the details of an object or system to focus attention on details of greater importance.   The operating system provides the abstraction of a document to the word processing program so that the word processing program does not need to figure out how to retrieve a sequential stream of bytes from several fragmented locations on a network.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>In <span class=\"qname\">Finley</span>&#39;s economics class, they have been discussing the concept of supply and demand. After class, <span class=\"qname\">Finley</span> was curious if they could apply their Computer Science knowledge to illustrate this economic model visually. They come up with the following Quorum code to model the interaction between price (P), demand (D), and supply (S). Can you understand the code and note which line indicates &#39;Supply equals Demand&#39;, which is the point of equilibrium?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action main()</td></tr><tr><td>2</td><td><div class=\"ci4\">integer P = 1</div></td></tr><tr><td>3</td><td><div class=\"ci4\">integer D = 10</div></td></tr><tr><td>4</td><td><div class=\"ci4\">integer S = 5</div></td></tr><tr><td>5</td><td><div class=\"ci4\">repeat while P &lt;= 10</div></td></tr><tr><td>6</td><td><div class=\"ci8\">D = 10 - P</div></td></tr><tr><td>7</td><td><div class=\"ci8\">S = P</div></td></tr><tr><td>8</td><td><div class=\"ci8\">if D = S</div></td></tr><tr><td>9</td><td><div class=\"ci12\">output \"Equilibrium at Price: \" + P</div></td></tr><tr><td>10</td><td><div class=\"ci8\">end</div></td></tr><tr><td>11</td><td><div class=\"ci8\">P = P + 1</div></td></tr><tr><td>12</td><td><div class=\"ci4\">end</div></td></tr><tr><td>13</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Line 9",
+    "Answer2": "Line 7",
+    "Answer3": "Line 8",
+    "Answer4": "Line 10",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The line &#39;if D = S&#39; (Line 8) represents that Supply equals Demand, which is the point of equilibrium in this economic model. When supply and demand are equal, the economy is said to be at equilibrium. The price at which this occurs is the equilibrium price and the quantity is the equilibrium quantity.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action main()</td></tr><tr><td>2</td><td><div class=\"ci4\">integer P = 1</div></td></tr><tr><td>3</td><td><div class=\"ci4\">integer D = 10</div></td></tr><tr><td>4</td><td><div class=\"ci4\">integer S = 5</div></td></tr><tr><td>5</td><td><div class=\"ci4\">repeat while P &lt;= 10</div></td></tr><tr><td>6</td><td><div class=\"ci8\">D = 10 - P</div></td></tr><tr><td>7</td><td><div class=\"ci8\">S = P</div></td></tr><tr><td>8</td><td><div class=\"ci8\">if D = S</div></td></tr><tr><td>9</td><td><div class=\"ci12\">output \"Equilibrium at Price: \" + P</div></td></tr><tr><td>10</td><td><div class=\"ci8\">end</div></td></tr><tr><td>11</td><td><div class=\"ci8\">P = P + 1</div></td></tr><tr><td>12</td><td><div class=\"ci4\">end</div></td></tr><tr><td>13</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

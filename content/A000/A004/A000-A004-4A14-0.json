@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A14",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chengdu</span> is curious about genetic inheritance and variation. They realize that a person&#39;s DNA is like a list of characteristics inherited from the person&#39;s parents. They decide to simulate this by creating a program that combines two lists of characteristics to create a new list, representing the DNA of a child. In the context of this simulation, how can <span class=\"qname\">Chengdu</span> use lists to simulate genetic variation? Choose the most accurate representation.</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Chengdu</span> could create a function that combines elements from both lists at the same position to simulate how genes combine during reproduction.",
+    "Answer2": "<span class=\"qname\">Chengdu</span> could create a function that chooses a random element from either list to simulate how traits can be randomly inherited from either parent.",
+    "Answer3": "<span class=\"qname\">Chengdu</span> could create a function that sorts the elements by alphabetical order to simulate how traits can become dominant or recessive.",
+    "Answer4": "<span class=\"qname\">Chengdu</span> could create a function that sums the elements from both lists to simulate how traits accumulate during reproduction.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The most accurate representation of genetic variation would be a function that chooses random elements from either parent, as this simulates the randomness of genetic inheritance. The other options either do not accurately represent genetic inheritance (summing or alphabetical sorting) or oversimplify the process (combining elements at the same position).</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

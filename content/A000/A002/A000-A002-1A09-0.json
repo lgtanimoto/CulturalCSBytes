@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "1A09",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>&quot;'Boolean', that's a funny name.   Is it a kind of bean?&quot; asked <span class=\"qname\">Wisdom</span> in their computer science class.</p><p>&quot;No,&quot; replied <span class=\"qname\">Wisdom</span>'s teacher.  &quot;A 'Boolean' is a variable representing yes or no, true or false, on or off...&quot;</p><p>What is another representation of a <em>Boolean</em> that <span class=\"qname\">Wisdom</span>'s teacher could have added to the explanation?</p>",
-        "QuestionImage": null,
-        "Answer1": "'A', 'B', 'C', or 'D'",
-        "Answer2": "0 or 1",
-        "Answer3": "The text strings &quot;true&quot; or &quot;false&quot;",
-        "Answer4": "The temperature of an object",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>Boolean</em> variables are often stored as binary 0 or 1 internally within a computer program.   Boolean variables can only have two possible values.  String values which can store many possible values cannot be Boolean variables.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1A09",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Yukon</span> is planning their monthly budget. They have recently started learning programming and they want to write a program to handle their finances. <span class=\"qname\">Yukon</span> thought of representing his salary, expenses, and savings digitally. Which of the following best represents how <span class=\"qname\">Yukon</span> should represent these variables in a program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Salary: string, Expenses: Integer, Savings: Integer",
+    "Answer2": "Salary: Integer, Expenses: Integer, Savings: Integer",
+    "Answer3": "Salary: Float, Expenses: String, Savings: Float",
+    "Answer4": "Salary: Float, Expenses: Float, Savings: Float",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In <span class=\"qname\">Yukon</span>&#39;s case, they would likely want to use a data type that can handle decimal numbers since money often involves cents. This would mean using a float (or double) for the salary, expenses, and savings.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>float salary = 5000.0</td></tr><tr><td>2</td><td>float expenses = 2000.5</td></tr><tr><td>3</td><td>float savings = salary - expenses</td></tr><tr><td>4</td><td>output \"This month&#39;s savings: \" + savings</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

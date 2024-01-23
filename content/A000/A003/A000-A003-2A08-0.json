@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Comet</span> is preparing to participate in a powerlifting competition. <span class=\"qname\">Comet</span> has two different plans to follow. Plan A includes strength training with high weight and low repetitions, while Plan B includes endurance training with low weight and high repetitions. Which plan should <span class=\"qname\">Comet</span> follow to prepare for the competition?</p>",
+    "QuestionImage": null,
+    "Answer1": "Plan A",
+    "Answer2": "Plan B",
+    "Answer3": "Follow both Plan A and Plan B simultaneously",
+    "Answer4": "Neither Plan A nor Plan B",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>For a powerlifting competition, one needs to lift the maximum amount of weight in one repetition. So <span class=\"qname\">Comet</span> would benefit more from Plan A which includes high weight and low repetitions.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A10",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Starshine</span> is beginning a new weightlifting routine. They plan to start by lifting 10 pounds and will increase the weight they lift by 5 pounds each week. They&#39;ve set a goal to eventually lift 75 pounds. In which week will <span class=\"qname\">Starshine</span> reach their weightlifting goal?</p>",
+    "QuestionImage": null,
+    "Answer1": "Week 14",
+    "Answer2": "Week 7",
+    "Answer3": "Week 10",
+    "Answer4": "Week 13",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>This is a simple looping problem. Starting at 10 pounds, <span class=\"qname\">Starshine</span> will add 5 pounds per week. So, 10 (for week 1) + 5*13 (for the next 13 weeks) = 75 pounds, which <span class=\"qname\">Starshine</span> will reach during the 14th week.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "1C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kendall</span> has decided to build a custom computer. They need a device designed to rotate and move air to cool down the components of the computer. What is the correct technical name for this device?</p>",
+    "QuestionImage": null,
+    "Answer1": "Heat sink",
+    "Answer2": "Liquid coolers",
+    "Answer3": "Fans",
+    "Answer4": "Radiators",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Fans are used in computers to move air and cool down the components. Heat sinks dissipate heat in the area of a heat-producing component, and liquid coolers or radiators also dissipate heat but via different mechanisms.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

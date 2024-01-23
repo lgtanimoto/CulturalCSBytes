@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1A12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Harley</span> aspires to be a gymnast. To monitor their progress, they decided to create a program that breaks down their training routine into smaller tasks. <span class=\"qname\">Harley</span>&#39;s daily routine includes warm-up, skill training, strength and conditioning, and cool down. Each task begins only after the previous one is completed. Depending on their daily performance, <span class=\"qname\">Harley</span> changes their strength and conditioning duration. What does the following program output if <span class=\"qname\">Harley</span> performed exceedingly well today?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer performance = 8</td></tr><tr><td>2</td><td>integer strengthDuration = 40</td></tr><tr><td>3</td><td></td></tr><tr><td>4</td><td>// program proceeds to the next task only after the previous one is complete</td></tr><tr><td>5</td><td>output \"Warm-up: 20 minutes\"</td></tr><tr><td>6</td><td>output \"Skill Training: 50 minutes\"</td></tr><tr><td>7</td><td></td></tr><tr><td>8</td><td>// If <span class=\"qname\">Harley</span> performs really well, increase strength and conditioning duration</td></tr><tr><td>9</td><td>if performance &gt; 7</td></tr><tr><td>10</td><td><div class=\"ci4\">strengthDuration = strengthDuration + 20</div></td></tr><tr><td>11</td><td>end</td></tr><tr><td>12</td><td></td></tr><tr><td>13</td><td>output \"Strength and Conditioning: \" + strengthDuration + \" minutes\"</td></tr><tr><td>14</td><td>output \"Cool down: 15 minutes\"</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>Warm-up: 20 minutes</td></tr><tr><td>Skill Training: 50 minutes</td></tr><tr><td>Strength and Conditioning: 40 minutes</td></tr><tr><td>Cool down: 15 minutes</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>Warm-up: 20 minutes</td></tr><tr><td>Skill Training: 50 minutes</td></tr><tr><td>Strength and Conditioning: 60 minutes</td></tr><tr><td>Cool down: 15 minutes</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>Warm-up: 20 minutes</td></tr><tr><td>Skill Training: 50 minutes</td></tr><tr><td>Strength and Conditioning: 30 minutes</td></tr><tr><td>Cool down: 15 minutes</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>Warm-up: 20 minutes</td></tr><tr><td>Skill Training: 50 minutes</td></tr><tr><td>Strength and Conditioning: 30 minutes</td></tr><tr><td>Cool down: 10 minutes</td></tr></table>",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Harley</span>&#39;s training plan has a built-in conditional. If their performance was exceedingly well today, the strength and conditioning phase duration is increased by 20 minutes, making the total strength and conditioning time 60 minutes.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer performance = 8</td></tr><tr><td>2</td><td>integer strengthDuration = 40</td></tr><tr><td>3</td><td></td></tr><tr><td>4</td><td>// program proceeds to the next task only after the previous one is complete</td></tr><tr><td>5</td><td>output \"Warm-up: 20 minutes\"</td></tr><tr><td>6</td><td>output \"Skill Training: 50 minutes\"</td></tr><tr><td>7</td><td></td></tr><tr><td>8</td><td>// If <span class=\"qname\">Harley</span> performs really well, increase strength and conditioning duration</td></tr><tr><td>9</td><td>if performance &gt; 7</td></tr><tr><td>10</td><td><div class=\"ci4\">strengthDuration = strengthDuration + 20</div></td></tr><tr><td>11</td><td>end</td></tr><tr><td>12</td><td></td></tr><tr><td>13</td><td>output \"Strength and Conditioning: \" + strengthDuration + \" minutes\"</td></tr><tr><td>14</td><td>output \"Cool down: 15 minutes\"</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

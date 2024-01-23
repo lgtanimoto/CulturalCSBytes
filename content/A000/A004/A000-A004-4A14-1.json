@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A14",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Remington</span> is working on a traffic light system project where they need to store the sequence of lights (Red, Green, Yellow). They wanted to print out the sequence in order. What is the best way to store and iterate through the signal order?</p>",
+    "QuestionImage": null,
+    "Answer1": "Store each color in separate variables and print them separately.",
+    "Answer2": "Store the colors in a list and use a simple loop to iterate and print them.",
+    "Answer3": "Create a function for each color signal and call them sequence.",
+    "Answer4": "No need to store the signals, just print them out directly each time.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Using a list to store the signals and a simple loop to iterate through them is the most efficient way. It simplifies the solution by generalizing the computational problem, eliminating the need to handle each color separately.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>`action Main`</td></tr><tr><td>2</td><td>\tlist&lt;text&gt; signals </td></tr><tr><td>3</td><td>\tsignals:Add(\"Red\")</td></tr><tr><td>4</td><td>\tsignals:Add(\"Green\")</td></tr><tr><td>5</td><td>\tsignals:Add(\"Yellow\")</td></tr><tr><td>6</td><td>\trepeat until signals:length() &gt; 0</td></tr><tr><td>7</td><td>\t\toutput signals:RemoveAt(0)</td></tr><tr><td>8</td><td>\tend</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

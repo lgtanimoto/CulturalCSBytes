@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A14",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Arden</span> is creating a marketing application for his business project about the key aspects of marketing mix - product, price, place, and promotion. <span class=\"qname\">Arden</span> found a snippet of code online that might help with their project. This program creates the foundations of a product catalog including a method to add, update and remove products. How should <span class=\"qname\">Arden</span> make sure that they are respecting the original creator&#39;s intellectual property rights?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Arden</span> should reach out to the original creator and ask for permission to use the code.",
+    "Answer2": "<span class=\"qname\">Arden</span> should credit the owner in the comments of the code and in the project documentation.",
+    "Answer3": "<span class=\"qname\">Arden</span> should make significant changes to the code before using it in their own project.",
+    "Answer4": "<span class=\"qname\">Arden</span> should not concern theirselves with this issue because the code is available online.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Even if the original creator cannot be reached or does not claim credit, it&#39;s always a best practice to attribute the original creator. If <span class=\"qname\">Arden</span> uses the code in a presentation, he should also acknowledge the original code owner.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>list&lt;product&gt; ProductList</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>action AddProduct(Product p)</td></tr><tr><td>4</td><td><div class=\"ci4\">ProductList:AddToEnd(p)</div></td></tr><tr><td>5</td><td>end</td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td>action UpdateProduct(Product oldP, Product newP)</td></tr><tr><td>8</td><td><div class=\"ci4\">integer index = ProductList:Find(oldP)</div></td></tr><tr><td>9</td><td><div class=\"ci4\">if index &gt; -1</div></td></tr><tr><td>10</td><td><div class=\"ci8\">ProductList:ReplaceAt(index, newP)</div></td></tr><tr><td>11</td><td><div class=\"ci4\">end</div></td></tr><tr><td>12</td><td>end</td></tr><tr><td>13</td><td></td></tr><tr><td>14</td><td>action RemoveProduct(Product p)</td></tr><tr><td>15</td><td><div class=\"ci4\">ProductList:Remove(p)</div></td></tr><tr><td>16</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

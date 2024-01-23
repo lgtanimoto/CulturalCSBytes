@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2D06",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>Emery has collected weather data for their city over the past year. The data shows the average temperature and rainfall for each month. Emery wants to prove the point that the month with the highest rainfall usually also has the lowest average temperature. Which type of graphic would help Emery best organize and present the data to support their claim?</p>",
+    "QuestionImage": null,
+    "Answer1": "Pie Chart",
+    "Answer2": "Line Graph",
+    "Answer3": "Histogram",
+    "Answer4": "Venn Diagram",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A line graph would be the best way to present the data since it can effectively show the relationship between two types of data over a period of time. In this case, the line graph can show the trend of average temperature and rainfall each month. This way, the correlation between a month with high rainfall (peak on one line) and low average temperature (dip on the other line) can be easily seen.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

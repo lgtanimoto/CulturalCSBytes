@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A11",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chile</span> is creating a program to predict the swim times for different types of races. They aim to factor in the swimmer&#39;s base speed, the race distance, and whether the race is freestyle, breaststroke, backstroke, or butterfly. Which of the following represents the best approach to decomposing this problem into manageable subproblems?</p>",
+    "QuestionImage": null,
+    "Answer1": "First, identify the base speed of the swimmer and the race type. Then calculate swim time based on these parameters. Finally, handle exceptions for different race types.",
+    "Answer2": "Begin by coding for each possible race type. Then factor in the base speed of the swimmer and the race distance.",
+    "Answer3": "First, calculate the swim time based on the race distance and the swimmer&#39;s base speed. Then adjust the time based on the swim technique.",
+    "Answer4": "Construct a large switch case that calculates and returns the swim time for each race type.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The most effective approach would be to first decompose the problem based on generic conditions (the swimmer&#39;s base speed and the race distance). Once the base swim time is calculated, you can create manageable subroutines to adjust the swim time based on the type of swim (freestyle, breaststroke, backstroke, butterfly). This approach allows for easy modification and extension as it separates general logic from specific adjustment rules.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

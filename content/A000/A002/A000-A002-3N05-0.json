@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "3N05",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>After <span class=\"qname\">Berkeley</span> visits their favorite social media website and inputs their username and password, they receive a text on their smartphone with a code that they must input into the site to verify their identity.   While <span class=\"qname\">Berkeley</span> finds this process somewhat time-consuming, they appreciate that this method provides both digital and physical methods to verify their identity. </p><p>What is this procedure of requiring both a password and a code sent via text or e-mail is also known as?</p>",
-        "QuestionImage": null,
-        "Answer1": "biometric authentication",
-        "Answer2": "double identification",
-        "Answer3": "two-factor authentication",
-        "Answer4": "dual authorization",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>Two-factor authentication</em>.   Authentication is the process of proving that one is how one identifies themself.   Since two methods of authentication are used here, the term is two-factor authentication. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "3N05",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Emery</span> is starting to budget and plan their financials. They think it&#39;s important to keep track of their receipts. <span class=\"qname\">Emery</span> scans all receipts and saves them on their phone. To protect these important financial documents, what steps should <span class=\"qname\">Emery</span> take to secure their electronic information?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Emery</span> should store all scanned receipts on a thumb drive and hide it.",
+    "Answer2": "<span class=\"qname\">Emery</span> should set a passcode on their phone to restrict unauthorized access. They should also use a secure app to store the scanned images and frequently backup the data to a trusted virtual cloud storage.",
+    "Answer3": "<span class=\"qname\">Emery</span> does not need to do anything since scanned documents can\u2019t be stolen or lost.",
+    "Answer4": "<span class=\"qname\">Emery</span> should share the scanned images with a trusted friend for safekeeping.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Setting up a passcode, use of secure app and consistent back-up are beneficial security measures that <span class=\"qname\">Emery</span> should perform to protect their electronic information. Sharing private information even with trusted ones can potentially risk its security. Copying data only to a thumb drive doesn&#39;t secure it against data loss and storing data on phone without security also risk theft or unauthorized access.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

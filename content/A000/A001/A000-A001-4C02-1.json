@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4C02",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Zane</span> realizes that technology has profoundly changed society throughout history. They are especially interested in the Renaissance period when the invention of the printing press revolutionized knowledge-sharing. This situation can be paralleled to modern-day software engineering principles where different software layers interact and affect each other. In this analogy, consider the printing press as an application software. What would the paper, used in the printing press, represent?</p>",
+    "QuestionImage": null,
+    "Answer1": "System software",
+    "Answer2": "Hardware layer",
+    "Answer3": "Network layer",
+    "Answer4": "User interface",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In this analogy, the printing press, being the application software, uses paper to print and disseminate information. This closely aligns with how the hardware layer (e.g., hard disk drive, monitor) is used by system software to perform tasks across different parts of the computer system, similar to how paper was essential for the functioning of the printing press.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>class Information</td></tr><tr><td>2</td><td><div class=\"ci4\">action Print()</div></td></tr><tr><td>3</td><td><div class=\"ci8\">Text document = \"This is the Era of Renaissance\"</div></td></tr><tr><td>4</td><td><div class=\"ci8\">output document</div></td></tr><tr><td>5</td><td><div class=\"ci4\">end</div></td></tr><tr><td>6</td><td>end</td></tr><tr><td>7</td><td></td></tr><tr><td>8</td><td>action main</td></tr><tr><td>9</td><td><div class=\"ci4\">Information information</div></td></tr><tr><td>10</td><td><div class=\"ci4\">information:Print()</div></td></tr><tr><td>11</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

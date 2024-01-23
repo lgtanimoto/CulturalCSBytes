@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4I27",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Tiger</span>, who is the captain of their school&#39;s cheer team, is leading the creation of a new cheer routine for the upcoming sports season. The team wants to make their routine more inclusive and diverse by adding elements of Indian classical dance.  <span class=\"qname\">Tiger</span> contacts their friend Sasha, who is an expert in Indian classical dance, for help. What tools or methods should <span class=\"qname\">Tiger</span> use to effectively collaborate with Sasha on this project despite their different fields of expertise and cultural backgrounds?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Tiger</span> should visit a library and research on Indian Classical dance and then incorporate it into the routine on their own.",
+    "Answer2": "<span class=\"qname\">Tiger</span> should disregard Sasha\u2019s expertise and assume they know best about the cheer routine.",
+    "Answer3": "<span class=\"qname\">Tiger</span> should use online collaborative tools such as Google docs to share their routine ideas, and video call platforms like Zoom to discuss and work synchronously on the routine with Sasha.",
+    "Answer4": "<span class=\"qname\">Tiger</span> should simply ask Sasha to perform in their routine to make it &#39;diverse&#39;.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Using online collaboration tools and video call platforms allows <span class=\"qname\">Tiger</span> to effectively work with Sasha despite their different expertise, and helps them create an inclusive cheer routine that respects and reflects Sasha&#39;s cultural expertise in Indian classical dance. In this way, the concepts from Indian Classical dance can be properly integrated into cheerleading and not merely used as a prop or performance.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

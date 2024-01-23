@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A23",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Vesper</span> is writing a physics program to calculate the final speed of an object given the initial speed, acceleration, and time. However, they face some difficulty in comprehending the code. The code looks something like this:Which of the following statements best describes how the formula (final_speed = initial_speed + acceleration * time) implemented here works?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action finalSpeed(integer initial_speed, integer acceleration, integer time) returns integer</td></tr><tr><td>2</td><td><div class=\"ci4\">number final_speed = initial_speed + acceleration * time</div></td></tr><tr><td>3</td><td><div class=\"ci4\">return final_speed</div></td></tr><tr><td>4</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "The formula adds the product of the acceleration and time, to the initial speed to calculate the final speed.",
+    "Answer2": "The formula substracts the product of the acceleration and time, from the initial speed to obtain the final speed.",
+    "Answer3": "The formula multiplies the acceleration with time, and ignores the initial speed to get the final speed.",
+    "Answer4": "None of the above.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The code correctly implements the physics formula for final speed (final_speed = initial_speed + acceleration * time). The formula basically says that the final speed of an object is calculated by adding the product of the acceleration and time to the initial speed.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action finalSpeed(integer initial_speed, integer acceleration, integer time) returns integer</td></tr><tr><td>2</td><td><div class=\"ci4\">number final_speed = initial_speed + acceleration * time</div></td></tr><tr><td>3</td><td><div class=\"ci4\">return final_speed</div></td></tr><tr><td>4</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

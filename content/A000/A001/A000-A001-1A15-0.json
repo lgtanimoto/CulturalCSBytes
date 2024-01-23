@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A15",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Taylor</span> is helping their friend Aoki with a coding assignment that calculates the area of a triangle using Heron&#39;s formula. The initial code developed by Aoki was giving the wrong answers, but <span class=\"qname\">Taylor</span> worked collaboratively made a few changes that fixed the code. It underwent several iterations before becoming correct, but <span class=\"qname\">Taylor</span> forgot to document what changes they made to fix the errors. What would be the appropriate explanation <span class=\"qname\">Taylor</span> should provide to describe the changes they made?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Main</td></tr><tr><td>2</td><td><div class=\"ci4\">number side1 = 5.0</div></td></tr><tr><td>3</td><td><div class=\"ci4\">number side2 = 3.0</div></td></tr><tr><td>4</td><td><div class=\"ci4\">number side3 = 7.0</div></td></tr><tr><td>5</td><td><div class=\"ci4\">number semiPerimeter = (side1 + side2 + side3) / 2</div></td></tr><tr><td>6</td><td><div class=\"ci4\">number area = squareRoot(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3))</div></td></tr><tr><td>7</td><td><div class=\"ci4\">output \"Area of the triangle is \"+ area</div></td></tr><tr><td>8</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "I just combined a couple of variables and functions without following any particular process.",
+    "Answer2": "I changed the algorithm multiple times and somehow it worked in the end.",
+    "Answer3": "I tested the program after each change, adjusted different parts of the code based on the error messages and incorrect outputs until it produced the correct area calculations.",
+    "Answer4": "I tried different things until it worked, but I can&#39;t exactly recall what those were.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>An integral part of the development of any code involves the process of debugging and refining it multiple times, termed as the iterative process. In <span class=\"qname\">Taylor</span>&#39;s case, they meticulously tested the code after every change, identified errors, and made necessary corrections until the code started producing the correct results. Such a process of trial and error using organized testing and debugging is a typical coding practice in iterative development.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Main</td></tr><tr><td>2</td><td>   number side1 = 5.0</td></tr><tr><td>3</td><td>   number side2 = 3.0</td></tr><tr><td>4</td><td>   number side3 = 7.0</td></tr><tr><td>5</td><td>   number semiPerimeter = (side1 + side2 + side3) / 2</td></tr><tr><td>6</td><td>   number area = squareRoot(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3))</td></tr><tr><td>7</td><td>   output \"Area of the triangle is \"+ area</td></tr><tr><td>8</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

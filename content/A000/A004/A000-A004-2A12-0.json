@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>As part of a science project, <span class=\"qname\">Tiger</span> is creating a computer program that simulates different ecosystems and recommends the best plants and animals to introduce to improve biodiversity. They also want to include a feature where the program suggests alternative species if the recommended ones aren&#39;t available. <span class=\"qname\">Tiger</span> finds a program online that predicts the impact of introducing a new species to an ecosystem. How should <span class=\"qname\">Tiger</span> proceed?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Tiger</span> should use the existing program as is, without modification, as it already does part of what they need to do.",
+    "Answer2": "<span class=\"qname\">Tiger</span> should modify the existing program, incorporating its portions into their own program to suggest alternate species based on the impact on the ecosystem.",
+    "Answer3": "<span class=\"qname\">Tiger</span> should not use the existing program because it might be illegal to do so.",
+    "Answer4": "<span class=\"qname\">Tiger</span> should rewrite the program from scratch because using someone else&#39;s program is considered cheating.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Tiger</span> is encouraged to modify, remix, or incorporate portions of an existing program into their own work because it helps in developing something new or adding more advanced features. However, <span class=\"qname\">Tiger</span> should ensure that they properly attribute the original creator of the program they are using.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

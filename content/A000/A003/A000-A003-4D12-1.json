@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4D12",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Tiger</span> is the captain of their school&#39;s swim team, and they are curious about the correlation between swimming lengths and time. Specifically, they maintain a simple database that records the lengths (in laps) each member swims and the time (in minutes) it took them. They are interested in predicting how long it would take a swimmer to complete a specified number of laps. Using this information, how could <span class=\"qname\">Tiger</span> complete the computation model in order to make the prediction?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Tiger</span> can use the formula `Time = Length * Average_Speed` to perform the calculation. For this, <span class=\"qname\">Tiger</span> has to compute the average speed from the existing data (total length swam divided by total time taken), and store it as a constant value within the model.",
+    "Answer2": "<span class=\"qname\">Tiger</span> should note down the time each swimmer takes to completed a lap and then simply multiply that with the number of laps to predict time.",
+    "Answer3": "<span class=\"qname\">Tiger</span> should just judge the swimmers&#39; speed visually and make a prediction based on that.",
+    "Answer4": "<span class=\"qname\">Tiger</span> should take the fastest time across all swimmers as the basis for their computation.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The best way to predict this is by calculating the average speed across all the swimming data gathered, which is the total length swam divided by the total time taken. That average speed can then be used in the formula `Time = Length * Average_Speed` to get a reasonable prediction for the time it will take to swim a given number of laps. This computational model captures the relevant relationships in the naturally occurring process of swimming lap times.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

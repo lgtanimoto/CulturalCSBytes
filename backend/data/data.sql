@@ -1,18 +1,24 @@
 -- Test Cultures
 
 INSERT INTO culture (code,name,lang) 
-VALUES ('A000','Default Culture','en-us');
+VALUES ('A000','Mystery','en-us');
 
 INSERT INTO culture (code,name,lang)
-VALUES ('A001','Black','en-us');
+VALUES ('A001','World History','en-us');
 
 INSERT INTO culture (code,name,lang)
-VALUES ('A002','Hispanic-Latinx','en-us');
+VALUES ('A002','Business','en-us');
+
+INSERT INTO culture (code,name,lang)
+VALUES ('A003','Sports and Athletics','en-us');
+
+INSERT INTO culture (code,name,lang)
+VALUES ('A004','Science and Engineering','en-us');
 
 -- Defaults
 
 INSERT INTO question_set (code,name)
-VALUES ('A000','Computer Science Principles Basics');
+VALUES ('A000','Basic CS Principles');
 
 INSERT INTO teacher (username, first_name, last_name, email, password)
 VALUES ('TEACHER#ONE', 'Teacher', 'One', 'lt@atcsed', 'teacher123');
@@ -23,13 +29,19 @@ VALUES (1,'A000','Original Teacher#One Classroom');
 -- Question Set Culture
 
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
-VALUES ('A000','A000','Default QuestionSetCulture',TRUE);
+VALUES ('A000','A000','CSP Mystery QuestionSetCulture',TRUE);
 
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
-VALUES ('A001','A000','Black QuestionSetCulture',FALSE);
+VALUES ('A001','A000','CSP World History QuestionSetCulture',FALSE);
 
 INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
-VALUES ('A002','A000','Hispanic-Latinx QuestionSetCulture',FALSE);
+VALUES ('A002','A000','CSP Business QuestionSetCulture',FALSE);
+
+INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
+VALUES ('A003','A000','CSP Sports and Athletics QuestionSetCulture',FALSE);
+
+INSERT INTO question_set_culture (culture_code,question_set_code,description,isdefault)
+VALUES ('A004','A000','CSP Science and Engineering QuestionSetCulture',FALSE);
 
 -- These add in the first set of metaquestions
 

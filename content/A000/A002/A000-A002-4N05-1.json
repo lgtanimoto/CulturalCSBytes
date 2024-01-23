@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4N05",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Green</span> is a graphic designer who sells their work online. Recently, someone stole their designs and started profiting off them. <span class=\"qname\">Green</span> suspects that someone hacked into their computer and stole their files. Which type of malicious software might have been used to carry out this kind of theft?</p>",
+    "QuestionImage": null,
+    "Answer1": "A worm, which autonomously replicates itself in order to spread to other computers in a network.",
+    "Answer2": "A keylogger, which records every keystroke that <span class=\"qname\">Green</span> makes on their computer.",
+    "Answer3": "Ransomware, which encrypts <span class=\"qname\">Green</span>&#39;s files and demands payment to unlock them.",
+    "Answer4": "Spyware, which collects information about <span class=\"qname\">Green</span>&#39;s activities on their computer and sends it to an external entity.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Spyware can be used to monitor a user&#39;s activities and collect personal data without their knowledge. In this case, spyware likely provided the hacker with access to <span class=\"qname\">Green</span>&#39;s design files. It is important to use up-to-date security software to detect and prevent such threats.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

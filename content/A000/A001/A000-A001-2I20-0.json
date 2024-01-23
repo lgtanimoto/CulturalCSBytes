@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2I20",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Skyler</span> is developing a transcribing program that transforms spoken language into written characters for a linguistics project. The software is currently capable of transcribing English speeches into written text successfully. However, when <span class=\"qname\">Skyler</span> trialed the software with multiple languages around the world, they found that the software struggled with certain non-roman script based languages. What should <span class=\"qname\">Skyler</span> do next to improve the computational artifact?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Skyler</span> should seek the assistance of native speakers of the problematic languages to understand the nuances and complexities that the program is getting wrong.",
+    "Answer2": "<span class=\"qname\">Skyler</span> should only focus on English as it is the most important language to transcribe.",
+    "Answer3": "<span class=\"qname\">Skyler</span> should release the software as it is and wait for user complaints to fix the bugs.",
+    "Answer4": "<span class=\"qname\">Skyler</span> should focus on adding more features to the program instead of making it multi-lingual.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Seeking diverse perspectives, especially from native speakers in this case, would help <span class=\"qname\">Skyler</span> understand the complexities and idiosyncrasies of the languages that are hard to transcribe. This would lead to the improvement of the computational artifact.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

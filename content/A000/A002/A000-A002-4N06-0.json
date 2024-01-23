@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4N06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Surfer</span> has an idea to create a web application that matches babysitters with families in need. The app requires babysitters to provide extensive personal information and checks this against various public and private databases to ensure babysitters&#39; authenticity. In order to protect the babysitters&#39; personal information, <span class=\"qname\">Surfer</span> needs to implement security measures. Which of the following security measures should <span class=\"qname\">Surfer</span> potentially employ?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Surfer</span> should store all personal information in plain text and provide open access to all developers to speed up development time.",
+    "Answer2": "<span class=\"qname\">Surfer</span> should implement strong password protections, enable multi-factor authentication, encrypt all personal information and rigorously control developer access.",
+    "Answer3": "<span class=\"qname\">Surfer</span> should forgo the background checking aspect of the app to avoid storing potentially sensitive information.",
+    "Answer4": "<span class=\"qname\">Surfer</span> should sell the personal information to offset the costs of background checks and database authentication.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Protecting personal data is extremely important both ethically and legally, and it should be a priority in any system that handles such data. Using strong password protections, enabling multi-factor authentication (2FA), and encrypting the data provides a layered security approach. Additionally, limiting developer access to production data can help prevent data leaks and breaches.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

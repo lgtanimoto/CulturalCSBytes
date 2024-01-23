@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4A18",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Zane</span> is a high school basketball coach trying to improve the performance of their team. They turned to sports psychology and found out about the &#39;10,000 hours rule&#39; claiming that practicing a certain task for a total of around 10,000 hours is significant in achieving mastery. <span class=\"qname\">Zane</span> decides to write a program that calculates how many hours and days left for each player to reach that target based on their current record. Consider the code snippet below, what would be the output if the currentHours variable is 2500?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action CalculateRemainingHoursAndDays(number currentHours) returns number</td></tr><tr><td>2</td><td><div class=\"ci4\">number targetHours = 10000</div></td></tr><tr><td>3</td><td><div class=\"ci4\">number remainingHours = targetHours - currentHours</div></td></tr><tr><td>4</td><td><div class=\"ci4\">number remainingDays = remainingHours / 12</div></td></tr><tr><td>5</td><td><div class=\"ci4\">output remainingHours + \" hours or approximately \" + remainingDays + \" days remaining\"</div></td></tr><tr><td>6</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "7500 hours or approximately 313 days remaining",
+    "Answer2": "7500 hours or approximately 625 days remaining",
+    "Answer3": "7500 hours or approximately 1000 days remaining",
+    "Answer4": "7500 hours or approximately 1250 days remaining",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The procedure calculates remaining hours by subtracting the currentHours from 10000. It then converts the remaining hours to days by dividing by 12 (considering a 12-hour practice a day). 7500 hours divided by 12 equals approximately 625 days.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action CalculateRemainingHoursAndDays(number currentHours) returns number</td></tr><tr><td>2</td><td><div class=\"ci4\">number targetHours = 10000</div></td></tr><tr><td>3</td><td><div class=\"ci4\">number remainingHours = targetHours - currentHours</div></td></tr><tr><td>4</td><td><div class=\"ci4\">number remainingDays = remainingHours / 12</div></td></tr><tr><td>5</td><td><div class=\"ci4\">output remainingHours + \" hours or approximately \" + remainingDays + \" days remaining\"</div></td></tr><tr><td>6</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

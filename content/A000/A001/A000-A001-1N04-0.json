@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1N04",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Jordan</span> is watching a video on the importance of good passwords to protect your personal information.   Two important aspects of a good password are length and complexity.  Which of the following is the best password for <span class=\"qname\">Jordan</span> to use for their accounts on school computers?</p>",
-        "QuestionImage": null,
-        "Answer1": "<span class=\"code\">!dadsPizzaisthegr8est</span>",
-        "Answer2": "<span class=\"code\">password</span>",
-        "Answer3": "<span class=\"code\">808-555-1212</span> <i>(note: student's cell phone number</i>",
-        "Answer4": "<span class=\"code\">@^0*)zeq(&%#!$</span>",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>!dadsPizzaisthegr8est</em> is the longest, reasonably complex, and  relatively easy for Jordan to remember.  <em>@^0*)zeq(&%#!$</em> is too difficult to remember without writing down or using a password manager.   The others are too easy or contain other personal information.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1N04",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Muse</span> is developing a text-based computer game set in the Renaissance era. Players are scribes who must leap through dimensional portals (websites) and decode holy scripts (passwords) to progress through the game. In designing one of the in-game password challenges, <span class=\"qname\">Muse</span> wants to highlight the importance of strong passwords while still respecting the time setting. Which of the following in-game prompts best accomplishes <span class=\"qname\">Muse</span>&#39;s goal?</p>",
+    "QuestionImage": null,
+    "Answer1": "Create a simple password consisting of your birth year.",
+    "Answer2": "Use the Holy Name, understood by all men of faith, as your password.",
+    "Answer3": "Create a holy script made of 12 or more, composed of both familiar and strange symbols from the sacred alphabet (letters, numbers, and special symbols).",
+    "Answer4": "Write down your password and place it in a public library for all to see.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A strong password is generally one that is long, complex and uses a variety of characters. In a modern context, this includes a mix of upper and lower case letters, numbers, and special symbols. Answer 3 is the only option that respects time setting and emphasizes the importance of strong passwords.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

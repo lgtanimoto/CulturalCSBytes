@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1D05",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ziv</span> is the statistician for their school&#39;s softball team. They are asked to calculate Batting Average, a statistic calculated by dividing the number of hits by the number of at-bats. At the end of a recent game, <span class=\"qname\">Ziv</span> realized they accidentally deleted their teammate Jordan&#39;s data. <span class=\"qname\">Ziv</span> remembers that Jordan had a batting average of 0.370 and 27 at-bats. Using this information, can <span class=\"qname\">Ziv</span> calculate the number of hits Jordan had? If so, how?</p>",
+    "QuestionImage": null,
+    "Answer1": "No, <span class=\"qname\">Ziv</span> can&#39;t calculate the number of hits because the data was deleted.",
+    "Answer2": "Yes, by multiplying Jordan&#39;s batting average by the number of at-bats.",
+    "Answer3": "Yes, by dividing Jordan&#39;s batting average by the number of at-bats.",
+    "Answer4": "Yes, by subtracting Jordan&#39;s batting average from the number of at-bats.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Yes, <span class=\"qname\">Ziv</span> can multiply Jordan&#39;s batting average by the number of at-bats to calculate number of hits. The formula would be as follows: Hits = batting average * at-bats = 0.370 * 27 = 9.99. In baseball statistics, we would round this down to 9 hits.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

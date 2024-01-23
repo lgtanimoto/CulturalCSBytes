@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "4A20",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kenya</span> is working on an environmental science project involving air quality and pollution data. They found an open source code library that would be perfect for their project, but <span class=\"qname\">Kenya</span> is unsure if they can use all the code library&#39;s resources for their project. <span class=\"qname\">Kenya</span> is considering if the library&#39;s license restricts the use of the computational resources. Which of the following is the best course of action for <span class=\"qname\">Kenya</span>?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Kenya</span> should use the library&#39;s resources without checking the terms of the license.",
+    "Answer2": "<span class=\"qname\">Kenya</span> should assume the license will allow them to use all the resources and proceed with their project.",
+    "Answer3": "<span class=\"qname\">Kenya</span> should write their own code and not use the library&#39;s resources.",
+    "Answer4": "<span class=\"qname\">Kenya</span> should check the specific terms of the license before using the library&#39;s resources.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Kenya</span> should always check the requirements of a license before using any open source code or libraries. Different licenses have different restrictions or limitations, and it&#39;s essential to understand these before using the licensed resources in any project.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

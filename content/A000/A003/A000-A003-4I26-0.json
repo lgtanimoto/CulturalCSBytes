@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4I26",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> is developing a meal planning app that uses an algorithm to generate balanced meals based on user&#39;s dietary preferences and calorie goals. The algorithm analyses the nutrition information of various foods and tries to combine them in a way that will meet the daily recommended intake of various nutrients. How could this algorithm be applied to problems in other disciplines?</p>",
+    "QuestionImage": null,
+    "Answer1": "In sports, to create optimal training routines based on an athlete&#39;s current performance and their training goals.",
+    "Answer2": "In finance, to create a diversified investment portfolio based on an investor\u2019s risk tolerance and financial goals.",
+    "Answer3": "In environmental science, to create sustainable farming plans based on the crop&#39;s nutrient needs and the soil&#39;s nutrient content.",
+    "Answer4": "All of the above.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The algorithm is essentially a optimization problem where the goal is to maximize or minimize a certain parameter (nutrition intake, performance, financial risk, crop yield) under certain constraints (calorie goals, training time, financial goals, soil nutrients). This type of problem is common across many disciplines.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

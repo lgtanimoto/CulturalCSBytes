@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1D07",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Comet</span> is a high school track and field coach. They&#39;re developing a program to analyze the performance data of their athletes over the course of a season. They&#39;ve created a bar chart visualization to track the improvement in time (in seconds) for each athlete. <span class=\"qname\">Comet</span> notes that one of the athletes consistently improves their time by approximately 2 seconds every match. If this trend continues, what should <span class=\"qname\">Comet</span> predict the athlete&#39;s time improvement to be after 5 matches?</p>",
+    "QuestionImage": null,
+    "Answer1": "4 seconds",
+    "Answer2": "6 seconds",
+    "Answer3": "10 seconds",
+    "Answer4": "12 seconds",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Given that the athlete improves consistently by 2 seconds every match, after 5 matches, they would have improved by 5 * 2 = 10 seconds.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer matches = 5</td></tr><tr><td>2</td><td>integer improvementPerMatch = 2</td></tr><tr><td>3</td><td>integer totalImprovement = matches * improvementPerMatch</td></tr><tr><td>4</td><td>output totalImprovement</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

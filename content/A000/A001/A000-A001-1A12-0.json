@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1A12",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>At school, <span class=\"qname\">Chile</span> uses a programming language with code statements to draw lines, circles, triangles, and rectangles filled with 16 different colors on a 400-by-400-pixel grid. <span class=\"qname\">Chile</span> can write programs that combine these code statements with variables, loops, conditionals, and procedures. </p><p>Based on this description, which one of the following could <span class=\"em_neg\">NOT</span> be created with this programming language?</p>",
-        "QuestionImage": null,
-        "Answer1": "A 8 by 8 checkerboard",
-        "Answer2": "A hexagon created from 6 triangles with different colors",
-        "Answer3": "A program tracking the birthday of every student in class",
-        "Answer4": "A pyramid of 10 circles stacked upon each other 4 - 3 - 2 - 1",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Different programming languages or libraries of programming languages have different strengths and uses.   Use the right programming language or library for the right task.  The programming language that <span class=\"qname\">Chile</span> uses provides basic drawing functionality but may not be of any help in tracking student birthdays.   A programming language that provided simple spreadsheet or database functionality would be more useful for tracking birthdays. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Discovery</span> wants to code a simulator about the 18th century Industrial Revolution, focusing on steam power and its impact on manufacturing advancements. They aim to highlight the time efficiency improvements due to machines. Which of the following most closely represents the flow of events of <span class=\"qname\">Discovery</span>&#39;s program?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>1. Start simulation </td></tr><tr><td>2. Steam power introduction </td></tr><tr><td>3. Introduction of machines utilizing steam power </td></tr><tr><td>4. Comparison of manual labor vs machine labor </td></tr><tr><td>5. Show time efficiency improvements </td></tr><tr><td>6. End simulation.</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>1. Start simulation </td></tr><tr><td>2. Comparison of manual labor vs machine labor </td></tr><tr><td>3. Steam power introduction </td></tr><tr><td>4. Introduction of machines utilizing steam power </td></tr><tr><td>5. Show time efficiency improvements </td></tr><tr><td>6. End simulation.</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>1. Start simulation </td></tr><tr><td>2. Steam power introduction </td></tr><tr><td>3. Show time efficiency improvements </td></tr><tr><td>4. Introduction of machines utilizing steam power </td></tr><tr><td>5. Comparison of manual labor vs machine labor </td></tr><tr><td>6. End simulation.</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>1. Start simulation </td></tr><tr><td>2. Introduction of machines utilizing steam power </td></tr><tr><td>3. Show time efficiency improvements </td></tr><tr><td>4. Steam power introduction </td></tr><tr><td>5. Comparison of manual labor vs machine labor </td></tr><tr><td>6. End simulation.</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Discovery</span>&#39;s program first introduces steam power, then introduces the machines that utilize this power, shows a comparison between manual labor and machine labor, and then highlights the time efficiency brought about by these machines.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

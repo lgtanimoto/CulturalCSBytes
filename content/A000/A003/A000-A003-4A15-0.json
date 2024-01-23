@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4A15",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Zane</span> is creating a program to track the number of reps they do with different lifts in their fitness routine. What would be the most beneficial control structure for <span class=\"qname\">Zane</span> to use to keep track of each of their lifts and how many reps they have done with each?</p>",
+    "QuestionImage": null,
+    "Answer1": "A switch statement with each case representing a different lift",
+    "Answer2": "A while loop that continues until <span class=\"qname\">Zane</span> has finished their workout",
+    "Answer3": "An array with the index representing the lifts and the value representing the reps",
+    "Answer4": "A for loop that continues for a specific number of lifts",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>An array would allow <span class=\"qname\">Zane</span> to have a specific place for each lift, and would allow them to easily keep track of the number of reps for each lift. This, in turn, simplifies their code and makes it more efficient. While loops and for loops would only work temporarily, and would require more code, and switch cases wouldn&#39;t allow for counting reps.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer[5] Lifts</td></tr><tr><td>2</td><td>Lifts[0] = 10</td></tr><tr><td>3</td><td>Lifts[1] = 12</td></tr><tr><td>4</td><td>Lifts[2] = 15</td></tr><tr><td>5</td><td>Lifts[3] = 8</td></tr><tr><td>6</td><td>Lifts[4] = 20</td></tr><tr><td>7</td><td>for each item in Lifts</td></tr><tr><td>8</td><td><div class=\"ci4\">output item</div></td></tr><tr><td>9</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

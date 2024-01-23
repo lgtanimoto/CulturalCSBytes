@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2D06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> has been collecting data on how their Wi-Fi signal strength varies as they move around various parts of their home. Having collected substantial data, <span class=\"qname\">Equator</span> decides to visualize it to observe any patterns or relationships. <span class=\"qname\">Equator</span> believes that the signal strength drops substantially in the kitchen compared to other areas of the house. Which type of visual representation would best support <span class=\"qname\">Equator</span>&#39;s claim?</p>",
+    "QuestionImage": null,
+    "Answer1": "A scatter plot with distance from the router as the x-axis and signal strength as the y-axis",
+    "Answer2": "A line graph with the time of day as the x-axis and signal strength as the y-axis",
+    "Answer3": "A pie chart showing the percentage of signal strength in each room",
+    "Answer4": "A bar graph with room names as the x-axis and average signal strength as the y-axis",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Since <span class=\"qname\">Equator</span> wants to compare the signal strength in different areas of the house, a bar graph that shows the average signal strength for each room would be the most effective visual representation. Other graphs such as scatter plots and line graphs would not provide the comparative clarity that a bar graph would.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

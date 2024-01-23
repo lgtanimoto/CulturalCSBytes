@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "3I20",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>&quot;When I grow up, I want to be a police officer and catch criminals who steal others' money,\u201d said eight-year-old Beach.  &quot;So, I don\u2019t need to learn computer science in school.&quot;</p><p>&quot;You are wrong,&quot; replied thirteen-year-old <span class=\"qname\">Lagos</span>.   &quot;If you want to be a police officer, you must still learn computer science because ...&quot</p><p>Which of the following would <span class=\"qname\">Lagos</span> <em>MOST LIKELY</em> give as a reason why future police officers should learn computer science?</p>",
-        "QuestionImage": null,
-        "Answer1": "Computer programming is a significant portion of the exam to be a police officer.",
-        "Answer2": "Police officers who graduate with computer science degrees make 3 times as much starting salary as those who don\u2019t.",
-        "Answer3": "Stealing money using computing technology is easier and less risky for criminals worldwide than other methods.  Cybercrime is rapidly increasing.",
-        "Answer4": "Police departments all have the most advanced computing technology available as shown on television.",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Because cybercrime is rapidly increasing, so is the need for law enforcement to know both cybersecurity and computer forensics.  Because so much data about our lives is tracked digitally, law enforcement also needs computer science skills to search through this data and efficiently and effectively investigate criminal activity.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "3I20",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Emery</span> is a historian researching the impact of technological progress during the Renaissance period. They&#39;ve been studying different computing technologies that were available and how they affected the lives of people during that period. They learn that the invention of the Gutenberg printing press had a significant influence on the population. How might this historical event relate to the present-day digital revolution, in terms of societal impact and effect on career options?</p>",
+    "QuestionImage": null,
+    "Answer1": "As with the Gutenberg press, the digital revolution enables widespread information dissemination, leading to increased access to education and new job opportunities in digital technology.",
+    "Answer2": "The Gutenberg press and the digital revolution have no similarities since computing was not invented during the Renaissance.",
+    "Answer3": "Both periods only offered new job opportunities to the elite classes in society.",
+    "Answer4": "The digital revolution has had less impact on career options compared to the Gutenberg press.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Like the Gutenberg press, the digital revolution has democratized access to information, offering widespread opportunities for learning and skill building. This increased access to knowledge and resources has brought with it an explosion of new job opportunities in the technology sector, just as the Gutenberg press led to the spread of books and an increase in literacy.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

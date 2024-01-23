@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1A08",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Chris</span> is eating cold cereal for breakfast before school.   Which of the following best describes the <em>algorithm</em> <span class=\"qname\">Chris</span> should use to make breakfast?</p>",
-        "QuestionImage": null,
-        "Answer1": "Cereal, Milk, Bowl, Spoon",
-        "Answer2": "After waking up, ask parent to make cornflakes for breakfast",
-        "Answer3": "Get out bowl and spoon.  Pour cereal out of box into bowl. Pour milk into bowl. Eat with spoon until cereal and milk are gone.",
-        "Answer4": "Eat.  Put pot on stove, turn on stove, and boil for seven minutes. Turn off stove.  Puts two eggs in pot.  Put water in pot.",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>An <em>algorithm</em> is a step-by-step series of instructions to accomplish a given task.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Breeze</span> is intrigued by advancements in the field of mechanical engineering and interested to understand the process by which older innovations like printing and papermaking took place. If <span class=\"qname\">Breeze</span> were to make a simple version of printing press at home, what would be a suitable algorithm for it?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>Adjust the movable type. </td></tr><tr><td>Ink it. </td></tr><tr><td>Place the paper over the type. </td></tr><tr><td>Apply the pressure evenly and firmly across the paper. </td></tr><tr><td>Carefully remove the paper.</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>Ink the design area. </td></tr><tr><td>Place the paper over it. </td></tr><tr><td>Apply pressure. </td></tr><tr><td>Remove the paper.</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>Dip the paper in ink </td></tr><tr><td>Press it on a carved surface. </td></tr><tr><td>Apply pressure. </td></tr><tr><td>Remove the paper.</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>Cut a design into a surface. </td></tr><tr><td>Dip the engraving in ink. </td></tr><tr><td>Press a paper onto it. </td></tr><tr><td>Remove the paper.</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The invention of the printing press involved using movable characters, inking them, placing paper on top and applying uniform pressure to ensure an even print, and finally removing the paper. Options 2, 3 and 4 do not reflect this process accurately.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

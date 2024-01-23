@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "3C03",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Vesper</span> is creating an interactive timeline of advancements during the Islamic Golden Age, but they are facing issues with their animation software. The software is not correctly triggering transitions between eras. What systematic approach should <span class=\"qname\">Vesper</span> take to fix this problem?</p>",
+    "QuestionImage": null,
+    "Answer1": "Just remove the eras that aren\u2019t working properly",
+    "Answer2": "Contact the software support team and ask them to fix the problem",
+    "Answer3": "Identify the specific eras that aren\u2019t transitioning correctly, recreate the transitions, and test each era individually",
+    "Answer4": "Give up and find another way to represent the information",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>They should identify the specific eras that aren\u2019t transitioning correctly, recreate the transitions, and test each era individually. Through the process of identifying the specifics of the problem, <span class=\"qname\">Vesper</span> can understand where the error lies and start troubleshooting how to fix it. This systematic approach allows <span class=\"qname\">Vesper</span> to isolate the problem down to a subset of eras and transitions, and to test the effectiveness of their solution.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

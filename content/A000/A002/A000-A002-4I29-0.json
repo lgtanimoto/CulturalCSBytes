@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4I29",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chile</span> is working on a software that is used for recruitment and hiring processes. The software uses automated processes to collect data about applicants from various sources without explicitly asking for their permissions. Which of the following raises the most significant privacy concern and why?</p>",
+    "QuestionImage": null,
+    "Answer1": "The software collects information about an applicant&#39;s past employers, job titles, and durations from their publicly available LinkedIn profile.",
+    "Answer2": "The software tracks an applicant&#39;s browsing history on job search platforms to understand their job preferences.",
+    "Answer3": "The software gathers information from an applicant&#39;s social media for insights about their personality.",
+    "Answer4": "The software pulls data from an applicant&#39;s public GitHub repositories to evaluate their programming skills.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Tracking an applicant&#39;s browsing history without their explicit consent or knowledge is a clear violation of their privacy, even if it is intended for improving job matching. It is information that a user may not expect to be used for hiring decisions and constitutes a considerable privacy concern.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

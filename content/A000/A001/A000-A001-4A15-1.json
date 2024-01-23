@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4A15",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Kendall</span> is developing an algorithm to simulate the signal transmission between two devices using electric pulses. They selected to implement this using a loop structure. The concept behind this is that every transmitted signal pulse will iterate through the loop until it reaches its destination. <span class=\"qname\">Kendall</span>&#39;s classmate questions the use of this implementation, believing a recursion method would have been more efficient. How should <span class=\"qname\">Kendall</span> justify their choice?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Kendall</span> can justify by explaining that recursion may have been more complicated to comprehend and would also consume more memory due to continuous stack frame creation for every function call.",
+    "Answer2": "<span class=\"qname\">Kendall</span> can justify by saying that they selected the loop because they were unsure of how recursion works.",
+    "Answer3": "<span class=\"qname\">Kendall</span> can justify by stating that the loop allows faster execution, since the program doesn&#39;t need to handle and manage many recursive function calls.",
+    "Answer4": "<span class=\"qname\">Kendall</span> can justify by explaining that the loop provides better readability and the signal transmitted in real life is an iterative process, hence more accurately modeled by a loop rather than recursion.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The decision between recursion and iteration involves a tradeoff between implementation, readability, and program performance. While recursion can often provide elegant solutions to certain types of problems, a loop structure can be easier to understand and debug, and may provide better performance as it does not require the overhead of repeated function calls. This is particularly true in a problem such as simulating a iterative process like signal transmission.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer signal = 10</td></tr><tr><td>2</td><td>while signal &gt; 0</td></tr><tr><td>3</td><td><div class=\"ci4\">output \"Signal sent\"</div></td></tr><tr><td>4</td><td><div class=\"ci4\">signal = signal - 1</div></td></tr><tr><td>5</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

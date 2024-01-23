@@ -757,7 +757,8 @@ CREATE OR REPLACE FUNCTION select_questions(culture_id TEXT, difficulty_code INT
         RETURN QUERY
             SELECT question.id AS question_id, question.json AS question_json 
             FROM question JOIN question_set_culture ON question.qsc_id = question_set_culture.id
-            WHERE question.difficulty = difficulty_code AND question_set_culture.culture_code = culture_id
+            WHERE question_set_culture.culture_code = culture_id
+--            WHERE question.difficulty = difficulty_code AND question_set_culture.culture_code = culture_id  remove difficulty as selection process
             ORDER BY RANDOM() LIMIT num_questions;
     END
     $$;
@@ -783,9 +784,14 @@ CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, culture
         FOREACH culture_name IN ARRAY cultures
         LOOP
             SELECT culture.code INTO culture_id FROM culture WHERE culture.name = culture_name;
-            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 1, distr[culture_count * 3 + 1]);
-            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 2, distr[culture_count * 3 + 2]);
-            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 3, distr[culture_count * 3 + 3]);
+            INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 0, distr[culture_count + 1]);
+
+--			No longer using difficulty for distribution 12/29/2023
+--          INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 1, distr[culture_count * 3 + 1]);
+--          INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 2, distr[culture_count * 3 + 2]);--
+--          INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 3, distr[culture_count * 3 + 3]);
+--
+
             culture_count = culture_count + 1;
         END LOOP;
         FOR question_id, question_json IN 

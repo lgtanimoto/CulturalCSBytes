@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A08",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Dakota</span> is trying to model the process of how 15th century explorers used the astrolabe during their expeditions. Using simple commands such as `turnRight`, `moveForward`, `lookAtStar`, `calculateAngle`, `determineDirection`, which of the following pseudo-codes best describes this process?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>start</td></tr><tr><td>turnRight</td></tr><tr><td>determineDirection</td></tr><tr><td>lookAtStar</td></tr><tr><td>calculateAngle</td></tr><tr><td>moveForward</td></tr><tr><td>end</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>start</td></tr><tr><td>lookAtStar</td></tr><tr><td>turnRight</td></tr><tr><td>moveForward</td></tr><tr><td>calculateAngle</td></tr><tr><td>determineDirection</td></tr><tr><td>end</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>start</td></tr><tr><td>lookAtStar</td></tr><tr><td>calculateAngle</td></tr><tr><td>determineDirection</td></tr><tr><td>moveForward</td></tr><tr><td>end</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>start</td></tr><tr><td>determineDirection</td></tr><tr><td>lookAtStar</td></tr><tr><td>turnRight</td></tr><tr><td>calculateAngle</td></tr><tr><td>moveForward</td></tr><tr><td>end</td></tr></table>",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The explorers had to first look at a star, then calculate its angle to determine their direction using the astrolabe. Once they knew which direction they had to go, they then moved forward in that direction. The actions `turnRight` does not properly represent any part of this historical process.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

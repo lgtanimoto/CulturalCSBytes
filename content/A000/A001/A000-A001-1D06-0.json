@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1D06",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>After asking each member of the track team, <span class=\"qname\">Juneau</span> determined that 5 had birthdays in spring, 10 in summer, 8 in fall, and 6 in winter.   Which of the following are appropriate charts to visualize this information? </p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A001-1D06-0Q.png\"></p>",
-        "QuestionImage": "A000-A001-1D06-0Q.png",
-        "Answer1": "Bar chart only",
-        "Answer2": "Pie chart only",
-        "Answer3": "Line chart only",
-        "Answer4": "Both the bar chart and the pie chart",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 1,
-        "Explanation": "<p>Both the bar chart and pie chart are appropriate for visualizing categorical data.   The line chart implies that each point happened in sequence.  But because team members may be born in different years, there is none.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1D06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Robin</span> is studying ancient civilizations for their history class and becames intrigued by the invention of writing systems. They decided to research and collect data on the earliest known forms of writing systems and their times of discovery. This includes cuneiform from Sumer, hieroglyphs from Egypt, oracle bone script from China and other fascinating systems of symbolic representation. After gathering all their data, how should <span class=\"qname\">Robin</span> present this information in various visual formats?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Robin</span> can create a timeline showcasing the chronology of when these writing systems were discovered.",
+    "Answer2": "<span class=\"qname\">Robin</span> can create a world map pinpointing the locations where these writing systems were discovered, with callouts for the specific time of discovery.",
+    "Answer3": "<span class=\"qname\">Robin</span> can develop pie charts showing the distribution of these writing systems in different continents or regions over time.",
+    "Answer4": "All of the above are valid ways to visually represent the data.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Different visual formats cater to different aspects of the data. The timeline helps to understand how writing systems evolved over time. The world map shows the geographical distribution and discoveries, and the pie charts can provide a clear picture of the prevalence of different writing systems in different regions. So, all stated ways are good examples of presenting the data.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

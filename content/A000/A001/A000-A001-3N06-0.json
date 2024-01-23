@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "3N06",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Nashville</span> is sending a message to Memphis using Caesar cipher encryption to keep it a secret from 8-year-old Raleigh. The original message is:</p><p><div class=\"code ci8\">WE WILL EAT PIZZA TONIGHT</div></p><p>The encrypted message is:</p><p><div class=\"code ci8\">DL DPSS LHA WPGGH AVUPNOA</div></p><p>What is the shift value that <span class=\"qname\">Nashville</span> used for the Caesar cipher to encrypt this message?</p>",
-        "QuestionImage": null,
-        "Answer1": "3",
-        "Answer2": "5",
-        "Answer3": "7",
-        "Answer4": "10",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>The Caesar cipher is one of the simplest encryption techniques in which each letter in a message is replaced by a letter that is some fixed number of positions (shift value) down in the alphabet.   With a shift value of <em>7</em>, each letter of the alphabet is replaced as follows:<p><p><div class=\"code ci8\">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</div></p><p><div class=\"code ci8\">H I J K L M N O P Q R S T U V W X Y Z A B C D E F G</div></p><p>Because the Caesar cipher is easy to decrypt even without the shift value, it is not used in much in real-life.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "3N06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Breeze</span> is researching about the electrical revolution and its impact on modern communication. During this, they encountered the concept of encryption and how it became crucial in guaranteeing a secure data transmission. How would <span class=\"qname\">Breeze</span> explain the process of encryption and why it is important in modern communication?</p>",
+    "QuestionImage": null,
+    "Answer1": "Encryption is the process of masking information so that it becomes readable only if the correct key is applied. It&#39;s not important in modern communication as it only makes the transmission process slower.",
+    "Answer2": "Encryption is the conversion of plain information into a coded version, readable only by authorized individuals. It&#39;s important since it eliminates the risk of data theft during transmission.",
+    "Answer3": "Encryption scrambles data into a series of random numbers. It adds unnecessary complexity to communication.",
+    "Answer4": "Encryption is the transformation of information into an unreadable format. It&#39;s a fairly new development and its significance will become evident in the future.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Encryption is a process that transforms readable data, known as plaintext, into a coded form, called ciphertext, that&#39;s not readable by unauthorized users. It&#39;s crucial in modern communication as it ensures your data is safe from snooping or alteration during transmission. Only the people with the correct encryption key can decrypt and read the data.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

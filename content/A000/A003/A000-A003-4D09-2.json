@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4D09",
+  "QuestionAltCode": 2,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Xen</span>, a soccer enthusiast, decides to create a program that will predict the outcome of a soccer match based on the positions of all the players, ball, and goals. In order to accomplish this, <span class=\"qname\">Xen</span> needs to create a representation of the players&#39; positions using bits. Consider an 8-bit number where the first four bits represents the x-coordinate and the last four bits represents the y-coordinate. The position of a player is represented as &#39;11010101&#39;. What does this translate to in the real-world x,y coordinates of a soccer field?</p>",
+    "QuestionImage": null,
+    "Answer1": "x:13, y:5",
+    "Answer2": "x:5, y:13",
+    "Answer3": "x:10, y:1",
+    "Answer4": "x:1, y:10",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>An 8-bit number is divided into two 4-bit numbers, with each 4-bit number being a number from 0 to 15. By converting each 4-bit number from binary to decimal, we get &#39;1101&#39; as 13 and &#39;0101&#39; as 5. Therefore, the player&#39;s coordinates on a real-world soccer field would be x:13, y:5.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>text binary_representation = \"11010101\"</td></tr><tr><td>2</td><td>number x = binaryToDecimal(binary_representation:sub(1, 4))</td></tr><tr><td>3</td><td>number y = binaryToDecimal(binary_representation:sub(5, 8))</td></tr><tr><td>4</td><td>output \"x: \" + x + \", y: \" + y</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

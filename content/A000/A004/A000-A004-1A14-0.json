@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "1A14",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Spencer</span> is trying to develop a roller coaster simulation program. They need to calculate the kinetic, potential, and change in energy for the roller coaster over time. However, there seems to be a problem with the calculation of the total energy. <span class=\"qname\">Spencer</span> is getting the potential energy as zero. What correction should <span class=\"qname\">Spencer</span> make in the energy calculation program?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number kineticEnergy = 0.5 * mass * speed * speed</td></tr><tr><td>2</td><td>number potentialEnergy = mass * gravity</td></tr><tr><td>3</td><td>number totalEnergy = kineticEnergy</td></tr><tr><td>4</td><td>if potentialEnergy &gt; 0</td></tr><tr><td>5</td><td><div class=\"ci4\">totalEnergy = totalEnergy + potentialEnergy</div></td></tr><tr><td>6</td><td>end</td></tr><tr><td>7</td><td>output totalEnergy</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\">Modify line 4: <code>totalEnergy = kineticEnergy + potentialEnergy</code></span>",
+    "Answer2": "<span class=\"code\">Modify line 3: <code>potentialEnergy = mass * height</code></span>",
+    "Answer3": "<span class=\"code\">Modify line 1: <code>while hasNextNumber()</code></span>",
+    "Answer4": "<span class=\"code\">Modify line 5: <code>output totalEnergy</code></span>",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The potential energy calculation formula is incorrect in the program. It should be potentialEnergy = mass * gravity * height. So, correcting the potential energy calculation to potentialEnergy = mass * height would resolve the issue.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number kineticEnergy = 0.5 * mass * speed * speed</td></tr><tr><td>2</td><td>number potentialEnergy = mass * gravity</td></tr><tr><td>3</td><td>number totalEnergy = kineticEnergy</td></tr><tr><td>4</td><td>if potentialEnergy &gt; 0</td></tr><tr><td>5</td><td><div class=\"ci4\">totalEnergy = totalEnergy + potentialEnergy</div></td></tr><tr><td>6</td><td>end</td></tr><tr><td>7</td><td>output totalEnergy</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

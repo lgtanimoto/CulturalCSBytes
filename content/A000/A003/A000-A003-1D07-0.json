@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1D07",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Tiger</span> is a swim coach who is tracking their team&#39;s progress. They have created a graph that shows the number of laps each swimmer can swim over time. <span class=\"qname\">Tiger</span> notices that one of the swimmer&#39;s lap counts is consistently increasing. Can <span class=\"qname\">Tiger</span> predict the performance of this swimmer in the future?</p>",
+    "QuestionImage": null,
+    "Answer1": "Yes, <span class=\"qname\">Tiger</span> can predict the swimmer will continue to improve as long as the pattern continues.",
+    "Answer2": "No, <span class=\"qname\">Tiger</span> cannot predict the swimmer&#39;s future performance as it&#39;s dependent on the swimmer&#39;s health on the day of the swim.",
+    "Answer3": "Yes, <span class=\"qname\">Tiger</span> can predict the swimmer will swim a constant number of laps in every training session.",
+    "Answer4": "No, <span class=\"qname\">Tiger</span> cannot make any predictions because swimming performance is unpredictable. ",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Data visualizations such as patterns in charts or graphs help to make predictions. So, in this case, if the lap count is consistently increasing over time, it suggests that the swimmer&#39;s performance is likely to continue improving in the future.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>import Libraries.Compute.Event</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>integer lapsSwam</td></tr><tr><td>4</td><td></td></tr><tr><td>5</td><td>class Swimmer</td></tr><tr><td>6</td><td><div class=\"ci4\">action swim(integer laps)</div></td></tr><tr><td>7</td><td><div class=\"ci8\">lapsSwam = laps</div></td></tr><tr><td>8</td><td><div class=\"ci8\">Event:Fire(\"Swim\")</div></td></tr><tr><td>9</td><td><div class=\"ci4\">end</div></td></tr><tr><td>10</td><td>end</td></tr><tr><td>11</td><td></td></tr><tr><td>12</td><td>use Swimmer</td></tr><tr><td>13</td><td></td></tr><tr><td>14</td><td>Swimmer swimmer</td></tr><tr><td>15</td><td>integer trainingDay = 1</td></tr><tr><td>16</td><td></td></tr><tr><td>17</td><td>from swimmer.Swim repeat time</td></tr><tr><td>18</td><td><div class=\"ci4\">swimmer:swim(2 * trainingDay)</div></td></tr><tr><td>19</td><td><div class=\"ci4\">output \"Day \", trainingDay, \" : Swimmer swam \", swimmer.lapsSwam, \" laps\"</div></td></tr><tr><td>20</td><td><div class=\"ci4\">trainingDay = trainingDay + 1</div></td></tr><tr><td>21</td><td>end</td></tr><tr><td>22</td><td></td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

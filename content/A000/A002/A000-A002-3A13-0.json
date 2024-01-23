@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "3A13",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Goalie</span> loves the World Cup and their favorite player Lionel Messi.   <span class=\"qname\">Goalie</span> is trying to write a computer program to generate a song for the 2022 World Cup which lasts 28 days.   A partial early version of the program is below:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A002-3A13-0Q.png\"></p><p>What output will be produced by a call to the procedure <em>Day3()</em>?</p>",
-        "QuestionImage": "A000-A002-3A13-0Q.png",
-        "Answer1": "<div class=\"code\">Winning goal by Lionel Messi<br>Winning goal by Lionel Messi<br>Two corner kicks<br>Three throw-ins</div>",
-        "Answer2": "<div class=\"code\">Three throw-ins<br>Two corner kicks<br>Winning goal by Lionel Messi<br>Winning goal by Lionel Messi</div>",
-        "Answer3": "<div class=\"code\">Three throw-ins<br>Two corner kicks<br>Winning goal by Lionel Messi</div>",
-        "Answer4": "<div class=\"code\">Winning goal by Lionel Messi<br>Two corner kicks<br>Three throw-ins</div>",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Understand control flow to break down the output by each line in the <em>Day3</em> procedure:</p><table><thead><tr><th>Line #</th><th>Statement</th><th>Output</th></tr></thead><tbody><tr class=\"code\"><td>Line 2</td><td>Day1()</td><td>//Winning goal by Lionel Messi</td></tr><tr class=\"code\"><td>Line 3</td><td>Day2()</td><td>//Winning goal by Lionel Messi<br>//Two corner kicks</td></tr><tr class=\"code\"><td>Line 4</td><td>output &quot;Three throw-ins&quot;</td><td>//Three throw-ins</td></tr></tbody></table>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "3A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Quinn</span> is coding an application to help her younger brother understand personal financial planning. He is currently trying to balance his high school job earnings, club fees, and a small coffee habit. Which of the following processes would best assist <span class=\"qname\">Quinn</span> in breaking down this problem into simpler tasks:</p>",
+    "QuestionImage": null,
+    "Answer1": "Calculate total income, add the costs of all expenses, and finally calculate the balance",
+    "Answer2": "Calculate total income, calculate the cost of each individual expense, and then calculate the balance",
+    "Answer3": "Calculate the cost of each individual expense, calculate the balance, and then calculate total income",
+    "Answer4": "Calculate the balance, calculate total income, and then calculate the cost of each individual expense",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>First, <span class=\"qname\">Quinn</span> should add up the total earnings (income). Then, she needs to calculate the cost for each expense item. This will give insight into where the money is going. Eventually, subtracting the total expenses from the total income gives the balancing amount. This approach divides the problem into manageable sub-problems to solve it efficiently.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

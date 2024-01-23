@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3I21",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Haskell</span> and their friends are basketball enthusiasts, they&#39;re also developing a new basketball video game. After months of testing, they&#39;ve noticed the game begins to predict when the AI-controlled teams should commit fouls, but this prediction is greatly skewed. Teams with white-colored jersey avatars statistically commit fewer fouls than the teams with black-colored jersey avatars. Although this was unintentional, they recognize that the coding of their game may implicitly carry a bias. What approach should <span class=\"qname\">Haskell</span> and their team do to address the issue?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Haskell</span> should leave it as it is - after all, it&#39;s just a game.",
+    "Answer2": "<span class=\"qname\">Haskell</span> should let the users figure out their own solution to this problem.",
+    "Answer3": "<span class=\"qname\">Haskell</span> should apologize to the community without making any code modifications.",
+    "Answer4": "<span class=\"qname\">Haskell</span> and their team should work to identify the section of their code that is attributing the color of the avatar&#39;s jersey to the chance of committing a foul, and correct it. The AI should consider only factors related to gameplay, e.g., aggression, defense ratings, etc.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Bias, intentional or not, in a game design can reinforce stereotypes and unfair practices. Identifying and rectifying this bias will lead to a more equitable and fair game play. The AI&#39;s decision to commit a foul should be independent of the jersey&#39;s color.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

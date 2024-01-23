@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3I22",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Rowan</span> is the captain of their high school soccer team and they have been tasked with designing a new team logo. They need input from other team members, coaching staff, and fans to make sure the logo represents the team and community well. Which of the following strategies would be the MOST effective in gathering feedback during the process?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Rowan</span> creates the logo by themselves, based on their liking, and shares the final design with everyone",
+    "Answer2": "<span class=\"qname\">Rowan</span> creates a survey to collect ideas and feedback from team members, coaches, and fans about what they want to see in the new logo",
+    "Answer3": "<span class=\"qname\">Rowan</span> designs several different logos and chooses the best one according to their personal preference",
+    "Answer4": "<span class=\"qname\">Rowan</span> asks for feedback after the final design is already printed on team jerseys",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>By creating a survey, <span class=\"qname\">Rowan</span> can gather everyone&#39;s ideas and feedback at once, turning this task into a collaborative effort. This strategy can ensure that the new logo represents the views of the entire team and fans, rather than just <span class=\"qname\">Rowan</span>&#39;s personal preference.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4A16",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ellis</span> is creating a program to keep the scoreboard of their school&#39;s volleyball team. The program increases the score of the team by one point every time the team scores a point. After <span class=\"qname\">Ellis</span> ran the program during the game, they noticed that the final score of the team was lower than the actual points they scored. What could be the potential issue with <span class=\"qname\">Ellis</span>&#39;s program?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Ellis</span>&#39;s program does not have an event handler to increment the score",
+    "Answer2": "The initial score set in <span class=\"qname\">Ellis</span>&#39;s program is too high",
+    "Answer3": "<span class=\"qname\">Ellis</span>&#39;s program increments the score by two points instead of one",
+    "Answer4": "<span class=\"qname\">Ellis</span>&#39;s program does not have a display function to show the score",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>From the issue, it seems like the program is not correctly counting every point scored by the team. This is likely due to the lack of an event handler that increments the score for each point earned. An event when the team scores needs to trigger the increment operation to correctly keep count of the score.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer teamScore = 0</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>action ScorePoint()</td></tr><tr><td>4</td><td><div class=\"ci4\">teamScore = teamScore + 1</div></td></tr><tr><td>5</td><td>end</td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td>action DisplayScore()</td></tr><tr><td>8</td><td><div class=\"ci4\">output teamScore</div></td></tr><tr><td>9</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

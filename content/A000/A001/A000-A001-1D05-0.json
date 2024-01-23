@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1D05",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Java</span> wonders about data.   &quot;I know can find data when I open an Excel workbook or Google Sheets, but where else can I find computing data?&quot;</p><p>Sumatra replies, &quot;Really, all information stored or used by a computer is data.   This includes web pages or streaming video.&quot;</p><p>Which of the following could Sumatra <span class=\"em_neg\">NOT</span> include as an example of computer data?</p>",
-        "QuestionImage": null,
-        "Answer1": "Google Chrome or Apple Safari browser code",
-        "Answer2": "CPU (Central processing unit)",
-        "Answer3": "Downloaded music files",
-        "Answer4": "Word processing documents for homework",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>All information stored or used by a computer is data.  One of the innovations of computing is that even computing code is data.   Of the above responses, only the CPU is hardware that uses data rather than data that is being used. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1D05",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Comet</span> is doing a project on the Scientific Revolution in Europe, examining how new scientific discoveries and shifting views changed the way people think about the natural world. They want to create a database to organize and retrieve information about different scientists, their discoveries, and their impact on society. They decided to have the following attributes: Scientist&#39;s Name, Birth-Death, Primary Field, Key Discovery, and Impact. What is the best way for <span class=\"qname\">Comet</span> to structure their database to efficiently search, retrieve, and modify data?</p>",
+    "QuestionImage": null,
+    "Answer1": "Creating a text document and use the &#39;Find and Replace&#39; function to search for specific information.",
+    "Answer2": "Storing all of the information in an image, and segregate data based on different zones in the image.",
+    "Answer3": "Using a spreadsheet tool, such as Microsoft Excel or Google Sheets, where each row represents a scientist, and each column represents an attribute.",
+    "Answer4": "Writing down all of the information on index cards and manually sorting and retrieving them.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A spreadsheet allows efficient storing, organizing, and processing of data. In this scenario, each row could represent a different scientist and each column could be used for the scientist\u2019s different attributes. This would allow <span class=\"qname\">Comet</span> to easily sort the data by any attribute, search for specific information, and update data as needed.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

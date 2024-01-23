@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A15",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Comet</span> is writing a program to simulate the growth and reproduction of an organism. Every day, one organism reproduces into two. <span class=\"qname\">Comet</span> wants his program to calculate how many organisms there will be after a certain number of days. However, his program doesn&#39;t give the correct answer. Here is <span class=\"qname\">Comet</span>&#39;s current code. What should <span class=\"qname\">Comet</span> change to fix the program?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number organisms = 1</td></tr><tr><td>2</td><td>for i = 1 to days</td></tr><tr><td>3</td><td><div class=\"ci4\">organisms = organisms + 1</div></td></tr><tr><td>4</td><td>end</td></tr><tr><td>5</td><td>output organisms</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"code\">Change line 3: <code>number of organisms = organisms * 2</code></span>",
+    "Answer2": "<span class=\"code\">Change line 1: <code>number organisms = 0</code></span>",
+    "Answer3": "<span class=\"code\">Insert new line after line 2: <code>days = days + 1</code></span>",
+    "Answer4": "<span class=\"code\">Change line 3: <code>organisms = organisms * i</code></span>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The growth of the organism is a process of doubling the previous day&#39;s number of organisms. So, after the for-loop, the number of organisms should be multiplied with 2 each day. Hence, changing line 3 to &#39;organisms = organisms * 2&#39; would fix the program.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number organisms = 1</td></tr><tr><td>2</td><td>for i = 1 to days</td></tr><tr><td>3</td><td><div class=\"ci4\">organisms = organisms + 1</div></td></tr><tr><td>4</td><td>end</td></tr><tr><td>5</td><td>output organisms</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

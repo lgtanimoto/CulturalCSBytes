@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>Just as plants perform photosynthesis to convert light energy into chemical energy, storing it as glucose, computers require a power supply to convert electrical energy into a form that is usable by the computer&#39;s components. If <span class=\"qname\">Chengdu</span>&#39;s computer suddenly shuts down due to issues with its power supply, what is the most likely effect on the computer&#39;s system and data?</p>",
+    "QuestionImage": null,
+    "Answer1": "Nothing, as the computer will operate normally once power is restored",
+    "Answer2": "Unsaved data will be lost, but saved data and the operating system will remain unaffected",
+    "Answer3": "Both saved and unsaved data will be lost, but the operating system will remain unaffected",
+    "Answer4": "Both the operating system and all data will be affected",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Any unsaved data will be lost as it is stored in RAM, which is volatile memory that requires a power source to maintain the data it holds. When a computer loses power abruptly, the data in RAM disappears. However, saved data, which is stored on non-volatile storage devices like hard drives and SSDs, remains safe, and the operating system will not be affected as it is also stored in non-volatile memory.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A12",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Chile</span> is working on a project to analyze customer reviews from an e-commerce website for a market research. They have access to a library that can scrape reviews from websites, and another library that can perform sentiment analysis on text. How can <span class=\"qname\">Chile</span> remix these components to create a new program that not only fetches reviews but also analyzes sentiment?</p>",
+    "QuestionImage": null,
+    "Answer1": "Create a new program that uses the scraping library to fetch reviews, then input each review into the sentiment analysis library.",
+    "Answer2": "Create two separate programs: one for scraping reviews and the other for sentiment analysis.",
+    "Answer3": "Run the sentiment analysis library on the whole website instead of individual reviews.",
+    "Answer4": "Use the scraping library to fetch reviews and print them, without any sentiment analysis.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The concept of remixing in coding involves constructing new programs by reusing and re-configuring existing blocks of code. <span class=\"qname\">Chile</span> can create a new, single program that imports and utilizes both the scraping library and the sentiment analysis library to achieve the desired result. This is a more efficient solution than creating two separate programs or ignoring the sentiment analysis entirely.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

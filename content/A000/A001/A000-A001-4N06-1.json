@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4N06",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>Astro is designing an app about Renaissance Era sea explorations for a class project. The app includes interactive maps and logs containing details about famous journeys and the nautical technologies used during that period. Which of the following is an appropriate security measure Astro should implement to protect the interactive content in the app?</p>",
+    "QuestionImage": null,
+    "Answer1": "Making all nautical logs public, so they can be verified for accuracy by users",
+    "Answer2": "None, as it&#39;s a historical app and has no sensitive information",
+    "Answer3": "Implement an authentication system so only registered users can access certain interactive contents",
+    "Answer4": "Encrypt the app to make it inaccessible without a decryption key",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Even if the app primarily contains readily available historical information, implementing an authentication system is a good security measure. It creates a level of access control, which can protect against illegitimate changes to interactive content such as maps or logs. This not only safeguards the app&#39;s content integrity but also enhances user experience by allowing personalized interactions.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

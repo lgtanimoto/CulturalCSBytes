@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2A16",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Valen</span> is part of a group project on the &#39;Transportation Revolution&#39;. The group decides to animate the birth and growth of canals, railways, and telegraph lines over time. <span class=\"qname\">Valen</span>\u2019s role is to write the codes for the animation. What should <span class=\"qname\">Valen</span> do first to ensure successful collaboration within the team?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Valen</span> should start writing the code for the animation immediately",
+    "Answer2": "<span class=\"qname\">Valen</span> should wait for the team to provide precise instructions before starting to code",
+    "Answer3": "<span class=\"qname\">Valen</span> should independently do research on the revolution to ensure the animation is historically accurate",
+    "Answer4": "<span class=\"qname\">Valen</span> should have a clear discussion with the team to understand their expectations on visual depiction, timeline, and additional visual cues to add more context to the animation",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The most effective and collaborative way forward is for <span class=\"qname\">Valen</span> to discuss and understand the expectations and requirements of the team. Building such a comprehensive animation would require a good understanding of historical points, significant events, aesthetic expectations, important visual cues, and so forth. Gathering this information would also help <span class=\"qname\">Valen</span> contribute meaningful suggestions about the animation.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2D06",
+  "QuestionAltCode": 2,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Skyler</span> is working on their robotics project and is trying to analyze data related to the robot&#39;s battery life in hours over different terrains. They have determined the following battery life for each terrain: Sand: 2.5 hours, Grass: 4 hours, Concrete:6 hours.</p><p>What type of chart is most appropriate to display this data?</p>",
+    "QuestionImage": null,
+    "Answer1": "Pie chart",
+    "Answer2": "Line chart",
+    "Answer3": "Bar chart",
+    "Answer4": "Any of the above would be appropriate",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 1,
+    "Explanation": "<p>Bar charts are most appropriate for displaying data for elements of different types.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>data.Add(\"Sand\", 2.5)</td></tr><tr><td>2</td><td>data.Add(\"Grass\", 4)</td></tr><tr><td>3</td><td>data.Add(\"Concrete\", 6)</td></tr><tr><td>4</td><td>Chart chart</td></tr><tr><td>5</td><td>chart.Add(data)</td></tr><tr><td>6</td><td>chart.SetTitle(\"Robot&#39;s Battery Life on Different Terrains\")</td></tr><tr><td>7</td><td>chart.SetXTitle(\"Terrains\")</td></tr><tr><td>8</td><td>chart.SetYTitle(\"Battery Life (hours)\")</td></tr><tr><td>9</td><td>chart.Draw()</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

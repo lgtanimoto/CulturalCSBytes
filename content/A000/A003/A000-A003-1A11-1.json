@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1A11",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ellis</span> is a choreographer for a gymnastics team and they have the task of programming a robot to demonstrate a sequence of gymnastics moves to the team. The code snippet demonstrates the sequence for a cartwheel:What other gymnastics move could <span class=\"qname\">Ellis</span> add to the sequence and where would it go in the current code?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Main</td></tr><tr><td>2</td><td><div class=\"ci4\">DoStart()</div></td></tr><tr><td>3</td><td><div class=\"ci4\">DoCartwheel()</div></td></tr><tr><td>4</td><td><div class=\"ci4\">DoFinish()</div></td></tr><tr><td>5</td><td>end</td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td>action DoStart</td></tr><tr><td>8</td><td><div class=\"ci4\">Stand()</div></td></tr><tr><td>9</td><td><div class=\"ci4\">ReachArms()</div></td></tr><tr><td>10</td><td>end</td></tr><tr><td>11</td><td></td></tr><tr><td>12</td><td>action DoCartwheel</td></tr><tr><td>13</td><td><div class=\"ci4\">BendLegs()</div></td></tr><tr><td>14</td><td><div class=\"ci4\">Launch()</div></td></tr><tr><td>15</td><td><div class=\"ci4\">BalanceOnHands()</div></td></tr><tr><td>16</td><td><div class=\"ci4\">Land()</div></td></tr><tr><td>17</td><td>end</td></tr><tr><td>18</td><td></td></tr><tr><td>19</td><td>action DoFinish</td></tr><tr><td>20</td><td><div class=\"ci4\">Stand()</div></td></tr><tr><td>21</td><td><div class=\"ci4\">TakeBow()</div></td></tr><tr><td>22</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Forward roll, after the cartwheel",
+    "Answer2": "Backflip, before the cartwheel",
+    "Answer3": "Handstand, in the middle of the cartwheel",
+    "Answer4": "Jump, replace the cartwheel",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Adding a forward roll after the cartwheel would make sense, as it is a different move and would follow logically in the sequence. The other options either disrupt the cartwheel sequence or replace it entirely.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Main</td></tr><tr><td>2</td><td><div class=\"ci4\">DoStart()</div></td></tr><tr><td>3</td><td><div class=\"ci4\">DoCartwheel()</div></td></tr><tr><td>4</td><td><div class=\"ci4\">DoFinish()</div></td></tr><tr><td>5</td><td>end</td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td>action DoStart</td></tr><tr><td>8</td><td><div class=\"ci4\">Stand()</div></td></tr><tr><td>9</td><td><div class=\"ci4\">ReachArms()</div></td></tr><tr><td>10</td><td>end</td></tr><tr><td>11</td><td></td></tr><tr><td>12</td><td>action DoCartwheel</td></tr><tr><td>13</td><td><div class=\"ci4\">BendLegs()</div></td></tr><tr><td>14</td><td><div class=\"ci4\">Launch()</div></td></tr><tr><td>15</td><td><div class=\"ci4\">BalanceOnHands()</div></td></tr><tr><td>16</td><td><div class=\"ci4\">Land()</div></td></tr><tr><td>17</td><td>end</td></tr><tr><td>18</td><td></td></tr><tr><td>19</td><td>action DoFinish</td></tr><tr><td>20</td><td><div class=\"ci4\">Stand()</div></td></tr><tr><td>21</td><td><div class=\"ci4\">TakeBow()</div></td></tr><tr><td>22</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

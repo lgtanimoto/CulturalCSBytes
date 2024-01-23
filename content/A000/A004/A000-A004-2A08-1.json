@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A08",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Breeze</span> has been tasked with simulating the position of Earth relative to the Sun based on the day of the year, to demonstrate the formation of different seasons. They have come up with the program below, but after starting the program, it does not stop printing. </p><p>How could this code be modified to more accurately output the Earth's position?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer earthXPosition = 0</td></tr><tr><td>2</td><td>integer earthYPosition = 0</td></tr><tr><td>3</td><td>integer i = 0</td></tr><tr><td>4</td><td>output \"Simulation of Earth\u2019s position relative to the Sun\"</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>while i &lt;= 365</td></tr><tr><td>7</td><td><div class=\"ci4\">earthXPosition = earthXPosition + sin(i * (2 * pi)/365))</div></td></tr><tr><td>8</td><td><div class=\"ci4\">earthYPosition = earthYPosition + cos(i * (2 * pi)/365)</div></td></tr><tr><td>9</td><td><div class=\"ci4\">output \"Day \" + i + \": ( \" + earthXPosition + \", \" + earthYPosition + \" )\"</div></td></tr><tr><td>10</td><td><div>repeat</div></td></tr><tr><td>11</td><td><div>i = i + 1</div></td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Use nested loops to iterate through the position of Earth for each day",
+    "Answer2": "Store the final positions of Earth after each day in a data structure and update it after every run",
+    "Answer3": "<span class=\"code\">Move the line <code>i = i + 1</code> in Line 11 to a line between Line 9 and Line 10</span>",
+    "Answer4": "<span class=\"code\">Change Line 6 to <code>while i &gt;= 365</code></span>",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 1,
+    "Explanation": "<p>The current code results in an infinite loop because the value of the variable <code>i</code> is never updated from 0 within the loop.  To correct this, the line <code>i = i + 1</code> must be moved within the while loop</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer earthXPosition = 0</td></tr><tr><td>2</td><td>integer earthYPosition = 0</td></tr><tr><td>3</td><td>integer i = 0</td></tr><tr><td>4</td><td>output \"Algorithm B: Simulation of Earth\u2019s position relative to the Sun\"</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>while i &lt;= 365</td></tr><tr><td>7</td><td><div class=\"ci4\">earthXPosition = earthXPosition + sin(i * (pi/180))</div></td></tr><tr><td>8</td><td><div class=\"ci4\">earthYPosition = earthYPosition + cos(i * (pi/180))</div></td></tr><tr><td>9</td><td><div class=\"ci4\"></div></td></tr><tr><td>10</td><td><div class=\"ci4\">repeat</div></td></tr><tr><td>11</td><td><div class=\"ci4\">output \"Day \" + i + \": ( \" + earthXPosition + \", \" + earthYPosition + \" )\"</div></td></tr><tr><td>12</td><td><div class=\"ci4\">i = i +1</div></td></tr><tr><td>13</td><td><div class=\"ci4\">until i &gt; 365 or (earthXPosition = 0 and earthYPosition = 0)</div></td></tr><tr><td>14</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

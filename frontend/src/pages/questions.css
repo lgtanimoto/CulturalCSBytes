@@ -147,6 +147,17 @@ em {
     margin-bottom: 1em
 }
 
+.codetable {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightyellow;
+}
+
+.codetable td {
+	border: hidden;
+	border-right: solid 1px;
+	border-collapse: collapse;
+}	
+
 #explanation {
     display: none;
 }

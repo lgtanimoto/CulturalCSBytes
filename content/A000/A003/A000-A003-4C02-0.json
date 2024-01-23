@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Riley</span> is creating an application to track their daily food intake and calculate their total daily calories. The application has a user-interface where <span class=\"qname\">Riley</span> can enter the type and quantity of food they eat each day. Behind the scenes, the application has a database that stores the nutritional information of each food item. When <span class=\"qname\">Riley</span> enters a food item, the application uses system software to access the hardware, compute the total calories, and return the result to <span class=\"qname\">Riley</span>. Which step demonstrates the interaction between the application software and system software?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Riley</span> entering the type and quantity of food they eat each day.",
+    "Answer2": "The application storing the nutritional information of each food item.",
+    "Answer3": "The application using system software to access the hardware and calculate the total calories.",
+    "Answer4": "The application returning the computed calorie result to <span class=\"qname\">Riley</span>.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The application software (food intake tracker app) interacts with the system software when it needs to access the hardware (computer&#39;s CPU and memory) to perform tasks like fetching data from the database and calculating total calories. The system software manages these hardware resources and allows the app to use them.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action EnterFoodItem(itemName, quantity)</td></tr><tr><td>2</td><td><div class=\"ci4\">number calories = GetCaloriesFromDatabase(itemName)</div></td></tr><tr><td>3</td><td><div class=\"ci4\">totalCalories = totalCalories + (calories * quantity)</div></td></tr><tr><td>4</td><td>end</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>action GetCaloriesFromDatabase(itemName)</td></tr><tr><td>7</td><td><div class=\"ci4\">// Imagine code here to fetch calories from a database using system calls</div></td></tr><tr><td>8</td><td><div class=\"ci4\">return fetchedCalories</div></td></tr><tr><td>9</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "2A11",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">River</span> is making a peanut butter and jelly sandwich for lunch.   Which of the following is an <em>algorithm</em> that <em>decomposes</em> the steps to make a peanut butter and jelly sandwich into a precise sequence of instructions?</p>",
-        "QuestionImage": "",
-        "Answer1": "<div class=\"code\">Peanut butter, grape jelly, and two pieces of bread</div>",
-        "Answer2": "<div class=\"code\">for breakfast, make fried eggs<br>for lunch, make peanut butter and jelly sandwich<br>for dinner, bake a pizza<br>for dessert, buy some ice cream<div>",
-        "Answer3": "<div class=\"code\">Get the bread, peanut butter, and grape jelly out of the refrigerator<br>Eat the sandwich</div> ",
-        "Answer4": "<div class=\"code\">Get the bread, peanut butter, and grape jelly out of the refrigerator<br>Open all containers<br>Take two pieces of bread out and lay them on a counter<br>Spread peanut butter on the top of one piece of bread and grape jelly on the other.<br>Put the two pieces of bread together with the peanut butter and jelly on the inside</div>",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>Decomposition</em> is breaking a process down into well-defined steps.   <span class=\"qcanswer\">Answer D</span> is the answer that best breaks down how to make a peanut butter and jelly sandwich</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2A11",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Rebel</span> is working on a project about the impact of the printing press during the Renaissance. They want to create a text-based timeline to illustrate the important events led by the invention of the printing press. To make the timeline, they need to develop a program that inputs the year and event and outputs them in chronological order. How should <span class=\"qname\">Rebel</span> decompose this problem to make it manageable?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Rebel</span> should start by creating a function that sorts the input data and then write a code that inputs the year and event. After that, <span class=\"qname\">Rebel</span> should create a function to output the data in chronological order.",
+    "Answer2": "<span class=\"qname\">Rebel</span> should first research and write down all the events and their dates. Then, <span class=\"qname\">Rebel</span> should write a program that prints out these information.",
+    "Answer3": "<span class=\"qname\">Rebel</span> should first create a function that inputs the year and event, develop a function that sorts the data based on the year, and then create a function that outputs the data.",
+    "Answer4": "<span class=\"qname\">Rebel</span> should write code that directly inputs the year and event and outputs them in chronological order. An algorithm or function is not necessary for this process.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In order to break down this problem, <span class=\"qname\">Rebel</span> should first create a function that inputs the year and event, develop a function that sorts the data based on the year, and then create a function that outputs the data.  Each step isolated to an individual function will allow the problem to be solved in smaller, more manageable parts, which can then be combined to solve the overall larger problem.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

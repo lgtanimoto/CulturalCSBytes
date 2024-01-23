@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2I21",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> is creating a website that discusses the contributions of ancient civilizations to today&#39;s science, mathematics and engineering practices. They have found images of ancient artifacts and diagrams online that they believe will enhance their website&#39;s content. What would be an appropriate approach for <span class=\"qname\">Equator</span> to take regarding the online images they want to use?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Equator</span> should directly download and upload the images to their website without any changes.",
+    "Answer2": "<span class=\"qname\">Equator</span> should change the colors of the images to create a more cohesive design and avoid copyright claims.",
+    "Answer3": "<span class=\"qname\">Equator</span> should look for images that are labeled for reuse or are part of the public domain, and provide appropriate credits if required.",
+    "Answer4": "<span class=\"qname\">Equator</span> should take screenshots of the images to avoid directly copying them and then upload them to their website.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Equator</span> must check whether the images are labeled for reuse or are in the public domain. They must also provide appropriate credits, if needed. This will ensure respect for the creators&#39; rights and adherence to copyright laws.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

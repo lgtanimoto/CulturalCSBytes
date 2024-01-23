@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "4A17",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Frankie</span> is creating a program to simulate a basic manufacturing assembly line in the Industrial Revolution era, using the concept of steam power. They are finding it hard to manage the code because they&#39;ve tried to write it all in one piece. What should <span class=\"qname\">Frankie</span> do to simplify the management of their code and make it easier to handle?</p>",
+    "QuestionImage": null,
+    "Answer1": "Copy and paste the same logic everywhere.",
+    "Answer2": "Write all the code in one big procedure.",
+    "Answer3": "Break down the problem into smaller procedures and modules that handle specific aspects of the manufacturing process.",
+    "Answer4": "Avoid any use of procedures or modules to keep the code simple.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>By breaking down a problem into smaller, manageable procedures and modules, <span class=\"qname\">Frankie</span> can handle specific aspects of the manufacturing process. This process, known as decomposition, simplifies code management, increases readability, and enables code reusability.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Main</td></tr><tr><td>2</td><td><div class=\"ci4\">SteamEngine()</div></td></tr><tr><td>3</td><td><div class=\"ci4\">TransportGoods()</div></td></tr><tr><td>4</td><td><div class=\"ci4\">ProcessGoods()</div></td></tr><tr><td>5</td><td>end</td></tr><tr><td>6</td><td></td></tr><tr><td>7</td><td>action SteamEngine</td></tr><tr><td>8</td><td><div class=\"ci4\"></div></td></tr><tr><td>9</td><td><div class=\"ci4\">// Write code for steam engine</div></td></tr><tr><td>10</td><td>end</td></tr><tr><td>11</td><td></td></tr><tr><td>12</td><td>action TransportGoods</td></tr><tr><td>13</td><td><div class=\"ci4\"></div></td></tr><tr><td>14</td><td><div class=\"ci4\">// Write code for transportation of goods</div></td></tr><tr><td>15</td><td>end</td></tr><tr><td>16</td><td></td></tr><tr><td>17</td><td>action ProcessGoods</td></tr><tr><td>18</td><td><div class=\"ci4\"></div></td></tr><tr><td>19</td><td><div class=\"ci4\">// Write code for goods processing</div></td></tr><tr><td>20</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

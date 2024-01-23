@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Haskell</span> is creating a program that tracks their monthly expenses considering their income and spending on rent, food, and entertainment. Given the following code snippet, what will be the output when <span class=\"qname\">Haskell</span>&#39;s income is $5000, and their expenses are as follows: rent $2000, food $1500, entertainment $500?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer income = 5000</td></tr><tr><td>2</td><td>integer rent = 2000</td></tr><tr><td>3</td><td>integer food = 1500</td></tr><tr><td>4</td><td>integer entertainment = 500</td></tr><tr><td>5</td><td>integer remaining = income - (rent + food + entertainment)</td></tr><tr><td>6</td><td>if remaining &lt; 0</td></tr><tr><td>7</td><td><div class=\"ci4\">output \"Budget status: Warning! You have overspent by \" + (-remaining) + \" this month.\"</div></td></tr><tr><td>8</td><td>else</td></tr><tr><td>9</td><td><div class=\"ci4\">output \"Budget status: Good job! You have saved \" + remaining + \" this month.\"</div></td></tr><tr><td>10</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "Budget status: Good job! You have saved $1000 this month.",
+    "Answer2": "Budget status: Warning! You have overspent by $1000 this month.",
+    "Answer3": "Budget status: Good job! You have saved $2000 this month.",
+    "Answer4": "Budget status: Warning! You have overspent by $500 this month.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The program calculates <span class=\"qname\">Haskell</span>&#39;s remaining budget by subtracting their total expenses from their income. In this case, $5000 - ($2000 + $1500 + $500) equals $1000. As this remaining amount is not less than 0, the message &#39;Good job! You have saved $1000 this month.&#39; gets output.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer income = 5000</td></tr><tr><td>2</td><td>integer rent = 2000</td></tr><tr><td>3</td><td>integer food = 1500</td></tr><tr><td>4</td><td>integer entertainment = 500</td></tr><tr><td>5</td><td>integer remaining = income - (rent + food + entertainment)</td></tr><tr><td>6</td><td>if remaining &lt; 0</td></tr><tr><td>7</td><td><div class=\"ci4\">output \"Budget status: Warning! You have overspent by \" + (-remaining) + \" this month.\"</div></td></tr><tr><td>8</td><td>else</td></tr><tr><td>9</td><td><div class=\"ci4\">output \"Budget status: Good job! You have saved \" + remaining + \" this month.\"</div></td></tr><tr><td>10</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

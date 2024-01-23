@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1A13",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>When creating a promotional website for a friend's band, <span class=\"qname\">Luca</span> finds a professional, close-up photo on another friend's Instagram of a famous musician with over ten billion song views on YouTube.   <span class=\"qname\">Luca</span> wants to use the Instagram photo to show how the famous musician has inspired many of the songs performed by the band.   What should <span class=\"qname\">Luca</span> do?",
-        "QuestionImage": null,
-        "Answer1": "Avoid using the photo because the copyright owner of the photo is unknown",
-        "Answer2": "Download the photo from Instagram and post it to the band's website without attribution.  The copyright owner is unknown, and the photo is of a famous person",
-        "Answer3": "Download the photo from Instagram and post it to the band's website with attribution by providing a link to Instagram.",
-        "Answer4": "Take a screen snapshot of the photo from Instagram and save it.   You now own the copyright to the photo so can post it to the band website without attribution.",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Because the photo is a close-up professional photo of a famous person, it is highly unlikely that the friend is the copyright owner of the photo.  Instagram is also not the copyright owner. You should only use photos you have taken, a person has given you permission to use, or where copyright, usage, and attribution information are clear. </p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Phoenix</span> is working on a history project about innovations in papermaking and printing technology. They decide to develop a computer program as part of their project that showcases the timeline of these innovations. Which of the following actions would be the most appropriate way for <span class=\"qname\">Phoenix</span> to give attribution for the information used in their program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Copying and pasting information directly from the internet into their program with no reference to the source",
+    "Answer2": "Rewording the information found on the internet and not citing the sources",
+    "Answer3": "Including a &#39;Credits&#39; page in their program that lists all the sources and their respective authors where they obtained the information",
+    "Answer4": "Informing the teacher privately about the sources but not including it in the program",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Providing attribution in the form of a &#39;Credits&#39; page in their program is the appropriate way of crediting the sources. This will make the source information accessible to everyone who uses the program.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

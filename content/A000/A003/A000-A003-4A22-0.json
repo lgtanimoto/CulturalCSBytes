@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4A22",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Harley</span> and their friends are designing a computer program that simulates a volleyball game. They are all assigned different roles in the team. Which of the following is a role that <span class=\"qname\">Harley</span> would NOT have in this project?</p>",
+    "QuestionImage": null,
+    "Answer1": "Coding the physics of the volleyball",
+    "Answer2": "Designing the graphical user interface",
+    "Answer3": "Drawing up the plans for the volleyball court",
+    "Answer4": "Baking cookies for the team&#39;s snack breaks",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>While baking cookies could be a fun and appreciated activity for the team, it isn&#39;t a role involved in designing or developing the computational artifact of a volleyball game simulation.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

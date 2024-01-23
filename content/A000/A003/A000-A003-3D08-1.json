@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3D08",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Sydney</span> is part of a cheerleading team and was given the task to collect the heights of all their team members to determine the most effective formations for stunts. They decided to make use of a computational tool to make data collection, storage, and analysis easier. Given that the heights of members range from 5 feet to 6 feet 2 inches, with measurements given in inches, their cheerleading captain asked them to transform the data into feet for a more meaningful comparison. Which of the following scripts best takes <span class=\"qname\">Sydney</span>&#39;s measured data and converts it into feet?</p>",
+    "QuestionImage": null,
+    "Answer1": "<table class=\"codetable\"><tr><td>for each height in &#39;height_data&#39;</td></tr><tr><td><div class=\"ci4\">inches_divided = height_data(height)//12</div></td></tr><tr><td><div class=\"ci4\">feet_and_inches = inches_divided + &#39;\" &#39; + height_data(height)%12 + &#39;\" &#39;\"</div></td></tr><tr><td><div class=\"ci4\">append feet_and_inches to converted_data</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer2": "<table class=\"codetable\"><tr><td>for each height in &#39;height_data&#39;</td></tr><tr><td><div class=\"ci4\">height_in_feet = height_data(height)/12</div></td></tr><tr><td><div class=\"ci4\">append height_in_feet to converted_data</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer3": "<table class=\"codetable\"><tr><td>for each height in &#39;height_data&#39;</td></tr><tr><td><div class=\"ci4\">inches_remaining = height_data(height)%12</div></td></tr><tr><td><div class=\"ci4\">height_in_feet = (height_data(height) - inches_remaining) / 12</div></td></tr><tr><td><div class=\"ci4\">append height_in_feet to converted_data</div></td></tr><tr><td>end</td></tr></table>",
+    "Answer4": "<table class=\"codetable\"><tr><td>for each height in &#39;height_data&#39;</td></tr><tr><td><div class=\"ci4\">divide_by_twelve = height_data(height) * .08333</div></td></tr><tr><td><div class=\"ci4\">append divide_by_twelve to converted_data</div></td></tr><tr><td>end</td></tr></table>",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Sydney</span>&#39;s script should convert the height from inches to feet and inches to provide more meaningful data. Answer 1 correctly translates the height in inches first into a whole number of feet using integer division (//) and then calculates the remaining inches with the modulo operation (%). The results are combined into a string that represents the height in feet and inches.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

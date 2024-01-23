@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4I24",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Jessie</span> works at a distribution warehouse for a global eCommerce company. They use integrated management software that automates ordering and inventory check for optimal efficiency. They remember a time before these systems were implemented, when things were done manually. <span class=\"qname\">Jessie</span> is discussing the changes with their colleague, whose perspective of the improvements is quite negative. Out of the following, which is NOT a valid argument that <span class=\"qname\">Jessie</span> could make in favor of the new system?</p>",
+    "QuestionImage": null,
+    "Answer1": "Since the system is automated, it significantly reduces the chance of human-error in processing orders.",
+    "Answer2": "The new system allows for real-time inventory checks, which makes the ordering process more efficient and ensures products are rarely out of stock.",
+    "Answer3": "The system has resulted in job losses, as fewer people are needed to manage inventory and process orders.",
+    "Answer4": "The use of such systems has made the global supply chain more connected, enabling businesses to better coordinate and manage their inventory flow.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Although technology can sometimes replace human labor, this is not a valid argument in favor of the new system from an economic and social perspective, as job losses can negatively impact individuals and communities.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

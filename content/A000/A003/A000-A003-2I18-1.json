@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2I18",
+  "QuestionAltCode": 1,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Current</span>, a gymnastics enthusiast, has been watching the sport evolve over the years. They noticed that there has been a drastic change in scoring methodology with the introduction of a computerized scoring system. The system considers not just the completion of the exercise, but also the complexity of the technique and the level of execution. What was a significant influence of the integration of this computer technology in Gymnastics?</p>",
+    "QuestionImage": null,
+    "Answer1": "The athletes started focusing only on perfecting the landing of each technique to maximize their score.",
+    "Answer2": "The athletes started exploring more complex techniques in their routines to score higher.",
+    "Answer3": "The athletes started delivering crowd-pleasing performances that had less complex techniques but more aesthetics.",
+    "Answer4": "The athletes started lobbying for their scores to be based on their personal records and not just one performance.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The introduction of the computerized scoring system placed more emphasis on the complexity of the techniques and the level of execution. As a result, athletes, to maximize their scores, started incorporating more complex techniques in their routines. This was a significant shift in the sport, introducing more challenging and innovative techniques.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

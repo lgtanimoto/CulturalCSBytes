@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "1A15",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Xen</span> is developing a computer program to analyze the globalization impact on international business. The program will take statistical inputs on different business sectors and create comprehensive reports. An initial part of the program structure would be the code below:Which of the instructions was run first in these actions?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Startup()</td></tr><tr><td>2</td><td><div class=\"ci4\">number Business = 0</div></td></tr><tr><td>3</td><td><div class=\"ci4\">number Statistics = 0</div></td></tr><tr><td>4</td><td>end</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>action CheckBusinessStatistics(number Business, number Statistics)</td></tr><tr><td>7</td><td><div class=\"ci4\">if Business &gt; Statistics</div></td></tr><tr><td>8</td><td><div class=\"ci8\">output \"The business is doing well.\"</div></td></tr><tr><td>9</td><td><div class=\"ci4\">else</div></td></tr><tr><td>10</td><td><div class=\"ci8\">output \"Statistics indicate need for improvement.\"</div></td></tr><tr><td>11</td><td><div class=\"ci4\">end</div></td></tr><tr><td>12</td><td>end</td></tr><tr><td>13</td><td></td></tr><tr><td>14</td><td>action Report()</td></tr><tr><td>15</td><td><div class=\"ci4\">CheckBusinessStatistics(Business, Statistics)</div></td></tr><tr><td>16</td><td>end</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "The procedure named Startup()",
+    "Answer2": "The variable declaration implementation named Statistics ",
+    "Answer3": "The variable declaration named Business",
+    "Answer4": "The input given to the function named Report()",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The Startup procedure was executed first. Since it&#39;s the initial action of the program, it is usually designed to set up the necessary conditions or variables for the program. Here, the Startup procedure is likely initializing the Business and Statistics variables.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>action Startup()</td></tr><tr><td>2</td><td><div class=\"ci4\">number Business = 0</div></td></tr><tr><td>3</td><td><div class=\"ci4\">number Statistics = 0</div></td></tr><tr><td>4</td><td>end</td></tr><tr><td>5</td><td></td></tr><tr><td>6</td><td>action CheckBusinessStatistics(number Business, number Statistics)</td></tr><tr><td>7</td><td><div class=\"ci4\">if Business &gt; Statistics</div></td></tr><tr><td>8</td><td><div class=\"ci8\">output \"The business is doing well.\"</div></td></tr><tr><td>9</td><td><div class=\"ci4\">else</div></td></tr><tr><td>10</td><td><div class=\"ci8\">output \"Statistics indicate need for improvement.\"</div></td></tr><tr><td>11</td><td><div class=\"ci4\">end</div></td></tr><tr><td>12</td><td>end</td></tr><tr><td>13</td><td></td></tr><tr><td>14</td><td>action Report()</td></tr><tr><td>15</td><td><div class=\"ci4\">CheckBusinessStatistics(Business, Statistics)</div></td></tr><tr><td>16</td><td>end</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

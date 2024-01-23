@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1A09",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>&quot;'Boolean', that's a funny name.   Is it a kind of bean?&quot; asked <span class=\"qname\">Wisdom</span> in their computer science class.</p><p>&quot;No,&quot; replied <span class=\"qname\">Wisdom</span>'s teacher.  &quot;A 'Boolean' is a variable representing yes or no, true or false, on or off...&quot;</p><p>What is another representation of a <em>Boolean</em> that <span class=\"qname\">Wisdom</span>'s teacher could have added to the explanation?</p>",
-        "QuestionImage": null,
-        "Answer1": "'A', 'B', 'C', or 'D'",
-        "Answer2": "0 or 1",
-        "Answer3": "The text strings &quot;true&quot; or &quot;false&quot;",
-        "Answer4": "The temperature of an object",
-        "CorrectAnswer": 2,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>Boolean</em> variables are often stored as binary 0 or 1 internally within a computer program.   Boolean variables can only have two possible values.  String values which can store many possible values cannot be Boolean variables.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1A09",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>Charlie is developing an educational game that allows players to navigate a replica of the globe during the Renaissance era using various historical navigational technologies. They need to create a simple scoring system for the game. When a player successfully travels from one location to another, they receive &#39;x&#39; points, where &#39;x&#39; represents the number of nautical miles traveled. Charlie uses the variable &#39;milesTravelled&#39; to track the distance a player has traveled, and &#39;playerScore&#39; to track the player&#39;s score. If a player travels 3000 nautical miles, what will be the value of &#39;playerScore&#39; at the end of the journey?</p><div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number playerScore = 0</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>action travel(number milesTravelled) returns integer</td></tr><tr><td>4</td><td><div class=\"ci4\">return playerScore + milesTravelled</div></td></tr><tr><td>5</td><td>end action</td></tr></table></div>",
+    "QuestionImage": null,
+    "Answer1": "3000",
+    "Answer2": "1000",
+    "Answer3": "0",
+    "Answer4": "Cannot be determined from the given information",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>According to the game&#39;s scoring system, each successful journey increases the &#39;playerScore&#39; by &#39;x&#39; points, where &#39;x&#39; represents the number of nautical miles traveled. As such, if a player has traveled 3000 nautical miles, their &#39;playerScore&#39; will be increased by 3000 points.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>number playerScore = 0</td></tr><tr><td>2</td><td></td></tr><tr><td>3</td><td>action travel(number milesTravelled)</td></tr><tr><td>4</td><td><div class=\"ci4\">playerScore = playerScore + milesTravelled</div></td></tr><tr><td>5</td><td>end action</td></tr></table></div>",
+    "AnswerImage": null
+  }
 }

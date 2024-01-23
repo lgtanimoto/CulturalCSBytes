@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "4C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Starshine</span> is controlling the lights for their school\u2019s dance team performance. They use a mobile app that communicates with the lighting system to turn the lights on and off, adjust brightness, change colors, and control various light effects. How is the concept of abstraction evident in this scenario?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Starshine</span> needs to understand the internal electrical circuits of the lighting system.",
+    "Answer2": "<span class=\"qname\">Starshine</span> needs to manage the software programming of the mobile app.",
+    "Answer3": "<span class=\"qname\">Starshine</span> uses the app without knowing the underlying implementation details of the lighting system.",
+    "Answer4": "<span class=\"qname\">Starshine</span> must manually adjust each individual light by using switches and knobs.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>In this scenario, the mobile app is an abstraction that hides the complex interactions between the software and hardware of the lighting system. <span class=\"qname\">Starshine</span> can easily control the lights without needing to know anything about the underlying implementation details, such as electrical circuits or software programming.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

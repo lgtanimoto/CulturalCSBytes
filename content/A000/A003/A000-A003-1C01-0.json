@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "1C01",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p>As a statistics enthusiast, <span class=\"qname\">Harley</span> is part of their school&#39;s soccer team. They want to understand the correlation between the mental state of the players and their performance in the game. <span class=\"qname\">Harley</span> decides to track data such as the mood of the players, number of hours slept, goals scored, and a rating of their overall performance in the game. What type of software should <span class=\"qname\">Harley</span> use to collect, organize, and analyze this data accurately?</p>",
+    "QuestionImage": null,
+    "Answer1": "Presentation software (e.g., Google Slides, Microsoft PowerPoint)",
+    "Answer2": "Video editing software (e.g., Adobe Premiere, iMovie)",
+    "Answer3": "Spreadsheet software (e.g., Google Sheets, Microsoft Excel)",
+    "Answer4": "Email software (e.g., Outlook, Gmail)",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Spreadsheet software like Google Sheets or Microsoft Excel is most suitable for collecting, organizing, and analyzing data. These programs offer functionality such as formulas and charts to help <span class=\"qname\">Harley</span> understand the correlation between players&#39; mental state and their performance.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

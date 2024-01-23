@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "3I22",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Emery</span>&#39;s Advanced Tech Company is planning to launch a new smartphone model. <span class=\"qname\">Emery</span> wants to ensure that the product they are creating is socially responsible, environmentally friendly and also fulfills the needs of their potential customers. Which of the following methods should <span class=\"qname\">Emery</span> use to make sure that their product adheres to these standards and address all stakeholders&#39; concerns?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Emery</span> should create the product in secret without consulting or surveying anyone to make a big surprise splash in the market.",
+    "Answer2": "<span class=\"qname\">Emery</span> should manually contact each potential customer to know their specific requirements.",
+    "Answer3": "<span class=\"qname\">Emery</span> should use strategies like crowdsourcing to gather ideas about the product features and potential concerns from users and also conduct surveys to reach a larger audience to maximize their input.",
+    "Answer4": "<span class=\"qname\">Emery</span> should only focus on the profits, and ignore the environmental and social responsibilities.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Collaborating with many contributors or crowdsourcing the gathering of ideas for a computational artifact is one way to ensure that it meets the needs of the users. Surveys allow you to reach a large audience and get feedback from them directly, which can be invaluable when trying to understand their needs and wants. This method also allows for addressing social responsibilities and environmental consequences of the computational artifact.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

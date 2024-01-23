@@ -1,0 +1,22 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "2A08",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Current</span> is creating a program that simulates an ecosystem. They need to program a piece of code that sorts species based on their population size from smallest to largest. <span class=\"qname\">Current</span> tries different algorithms, but doesn&#39;t know which to use. Which algorithm would be the most appropriate for this task?</p>",
+    "QuestionImage": null,
+    "Answer1": "Bubble Sort",
+    "Answer2": "Binary Search",
+    "Answer3": "Conditional categorization",
+    "Answer4": "Any of these would be appropriate",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 1,
+    "Explanation": "<p>The Bubble Sort algorithm can be used to sort an array in increasing order. Binary search is use to search ro4 a value in an array.   Catgorization can sort elements into categories but does not put them in order. ",
+    "AnswerImage": null
+  }
+}

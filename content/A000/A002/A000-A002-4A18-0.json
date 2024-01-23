@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4A18",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Breeze</span> is working with their school to develop a program to streamline their recruitment and hiring process. They are using different procedures within their program to manage job postings, review applications, schedule interviews, and notify applicants. What would be an efficient way to structure their program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Put all procedures into one program and sequentially call each procedure depending on the stage the applicant is in without interlinking or correlating them.",
+    "Answer2": "Separate all procedures into independent programs which do not interact with each other.",
+    "Answer3": "Integrate all procedures into one massive function, processing and managing numerous operations at once.",
+    "Answer4": "Create independent but interrelated procedures which respond to each other&#39;s results, and are organized according to the hiring process stages within the program.",
+    "CorrectAnswer": 4,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Creating independent but interrelated procedures allows <span class=\"qname\">Breeze</span> to handle each stage of the hiring process separately yet systematically. This enables easy updates to specific processes without affecting others and allows for efficient datasharing between processes, improving the entire hiring procedure.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

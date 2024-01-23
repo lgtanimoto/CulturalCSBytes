@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "3I20",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Ziv</span> is a swim coach who is considering using a swimming analysis app that offers real-time feedback on swimmers&#39; performance, like stroke efficiency, lap time, and kick strength. However, to use this app each of <span class=\"qname\">Ziv</span>&#39;s athletes needs to wear an expensive smart swimming suit, which many could not afford. What are the trade-offs that <span class=\"qname\">Ziv</span> needs to consider while deciding whether to use this technology or not?</p>",
+    "QuestionImage": null,
+    "Answer1": "If <span class=\"qname\">Ziv</span> uses this app, all swimmers will need to buy the expensive swimming suit, otherwise, they won&#39;t be able to participate in training sessions.",
+    "Answer2": "If <span class=\"qname\">Ziv</span> decides not to use the app, less data will be available to improve the swimmers&#39; performance, but all swimmers would be able to participate in training.",
+    "Answer3": "The app would enable <span class=\"qname\">Ziv</span> to give individual feedback more efficiently and accurately, but would exclude those who can&#39;t afford the smart suit.",
+    "Answer4": "Using the app would give <span class=\"qname\">Ziv</span> a competitive advantage as a coach, but it may create a financial barrier to join the team.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The trade-off <span class=\"qname\">Ziv</span> needs to consider includes ensuring equal participation for all athletes while utilizing technology to enhance performance. It&#39;s important to consider accessibility to ensure all athletes can afford to participate in the sport regardless of their financial situations.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

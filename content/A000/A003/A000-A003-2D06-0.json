@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2D06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Taylor</span> is a high school weightlifter who has been documenting their lifting progress every month over the past year. <span class=\"qname\">Taylor</span> plans to showcase this data to their colleagues in the form of a graph that proves the relationship between consistent weightlifting and increased strength. What type of graph should <span class=\"qname\">Taylor</span> use to best display this correlation?</p>",
+    "QuestionImage": null,
+    "Answer1": "Pie chart",
+    "Answer2": "Line graph",
+    "Answer3": "Bar graph",
+    "Answer4": "Scatter plot",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A line graph is the best option for displaying changes over time. In this case, <span class=\"qname\">Taylor</span> would be able to clearly show the increase in their weightlifting ability over the past year.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

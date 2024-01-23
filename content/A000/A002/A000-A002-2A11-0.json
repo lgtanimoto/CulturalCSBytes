@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "2A11",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">River</span> is making a peanut butter and jelly sandwich for lunch.   Which of the following is an <em>algorithm</em> that <em>decomposes</em> the steps to make a peanut butter and jelly sandwich into a precise sequence of instructions?</p>",
-        "QuestionImage": "",
-        "Answer1": "<div class=\"code\">Peanut butter, grape jelly, and two pieces of bread</div>",
-        "Answer2": "<div class=\"code\">for breakfast, make fried eggs<br>for lunch, make peanut butter and jelly sandwich<br>for dinner, bake a pizza<br>for dessert, buy some ice cream<div>",
-        "Answer3": "<div class=\"code\">Get the bread, peanut butter, and grape jelly out of the refrigerator<br>Eat the sandwich</div> ",
-        "Answer4": "<div class=\"code\">Get the bread, peanut butter, and grape jelly out of the refrigerator<br>Open all containers<br>Take two pieces of bread out and lay them on a counter<br>Spread peanut butter on the top of one piece of bread and grape jelly on the other.<br>Put the two pieces of bread together with the peanut butter and jelly on the inside</div>",
-        "CorrectAnswer": 4,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p><em>Decomposition</em> is breaking a process down into well-defined steps.   <span class=\"qcanswer\">Answer D</span> is the answer that best breaks down how to make a peanut butter and jelly sandwich</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "2A11",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Dakota</span> decided to develop a simple economy tracking program for their favorite video game. The game has a limited resources system, where the players can collect wood, stone, and iron. They want to keep track of how much of each resource they have at any given moment. How should <span class=\"qname\">Dakota</span> decompose this problem to start writing the program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Create a variable for the total number of resources without distinguishing the resource types",
+    "Answer2": "Create a separate variable for each resource - wood, stone, and iron - and update them as resources are collected or spent",
+    "Answer3": "Write a function that predicts the amount of resources that will be available in the future",
+    "Answer4": "Write a function for the purchase of each type of resource individually",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Dakota</span> needs to keep track of each resource separately, as they have different values and usages within the game. By creating a separate variable for each resource, they can update the amount of each resource as it is gathered or spent. This is an example of decomposing the problem into smaller, more manageable problems.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

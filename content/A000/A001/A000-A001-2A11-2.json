@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2A11",
+  "QuestionAltCode": 2,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Taylor</span> is working on a school project about the Renaissance&#39;s influence on technologies and innovations. They decide to create a simulation demonstrating how the printing press revolutionized information dissemination. <span class=\"qname\">Taylor</span> wants to create a program that simulates the number of books produced before and after the invention of the printing press, based on the input of years passed. Their initial task would be to break down this problem into a manageable subproblem. What subproblem statement would help <span class=\"qname\">Taylor</span> start the project?</p>",
+    "QuestionImage": null,
+    "Answer1": "Calculate the number of books produced every year.",
+    "Answer2": "Create animations for the printing press.",
+    "Answer3": "Simulate the invention of the printing press.",
+    "Answer4": "Survey people on their favorite Renaissance inventions.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Breaking down the problem into smaller, more manageable tasks is a fundamental part of problem-solving in computer science. In this case, <span class=\"qname\">Taylor</span> should begin by creating a simple program that calculates the number of books produced each year based on given variables. They can later incorporate additional conditions to model the effect of the printing press on book production.</p>",
+    "Code_Snippet": "<div class=\"ci8\"><table class=\"codetable\"><tr><td width=\"4em\">1</td><td>integer yearPass = 50</td></tr><tr><td>2</td><td>// Simulation starts prior to the invention of the printing press, where one book is hand-copied per year</td></tr><tr><td>3</td><td>integer booksCopyPerYear = 1</td></tr><tr><td>4</td><td>integer totalBooks = yearPass * booksCopyPerYear</td></tr><tr><td>5</td><td>// TODO: Modify the program to account for the invention of the printing press</td></tr></table></div>",
+    "AnswerImage": null
+  }
+}

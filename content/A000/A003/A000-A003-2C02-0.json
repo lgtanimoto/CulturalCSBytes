@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2C02",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Delhi</span> manages their school\u2019s football team. They have to keep track of player stats, monitor player health, schedule practices and games, and coordinate with other teams. They use their computer and a variety of software applications to help them with all these tasks. How do the computer hardware and software work together to help <span class=\"qname\">Delhi</span> manage the team?</p>",
+    "QuestionImage": null,
+    "Answer1": "The computer&#39;s hardware executes the instructions of the software, and the software manages the operations of the hardware.",
+    "Answer2": "The software physically changes the hardware to perform tasks.",
+    "Answer3": "The hardware runs without any software.",
+    "Answer4": "The software operates independently of the hardware.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>The computer&#39;s hardware executes the instructions of the software, and the software manages the operations of the hardware. Without both hardware and software, <span class=\"qname\">Delhi</span> wouldn\u2019t be able to perform their tasks. For example, the hardware (like the processor, RAM, and hard disk) execute the software\u2019s instructions, allowing <span class=\"qname\">Delhi</span> to enter and save data, run analyses, send emails, and more.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

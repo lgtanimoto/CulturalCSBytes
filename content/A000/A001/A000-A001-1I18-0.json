@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "1I18",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 1,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Red is angry.  Yesterday after class, someone e-mailed the following message to Sky using Red\u2019s school account:</p><p class=\"qimg\"><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A001-1I18-0Q.png\"></p><p>Red does not have a crush on Sky and does not remember sending the message.  Which of the following is the most likely explanation for the message?</p>",
-        "QuestionImage": "A000-A001-1I18-0Q.png",
-        "Answer1": "Red has a crush on Sky and sent the e-mail to Sky while sleepwalking the previous night.",
-        "Answer2": "Red changed the password for their school account yesterday.",
-        "Answer3": "Red often forgets to log off from the computer at the end of class.   Someone noticed yesterday and sent the mail using Red's account.",
-        "Answer4": "Red clicked on an e-mail with the subject line \"Nigerian prince wants money\" but realized it was a joke sent by their best friend Moss. ",
-        "CorrectAnswer": 3,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Keep your login information private, and remember to log off of devices appropriately.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "1I18",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Phoenix</span> recently discovered a passion for ancient bookbinding and has started using an online platform that provides resources for learning about this craft. The website contains instructions for ancient papermaking, printing techniques, binding styles, and restoration tips. <span class=\"qname\">Phoenix</span> is generally concerned about safety and cybersecurity. In this context, which is the most appropriate measure <span class=\"qname\">Phoenix</span> should take to keep their login information private and secure?</p>",
+    "QuestionImage": null,
+    "Answer1": "<span class=\"qname\">Phoenix</span> should share their login details with friends so they can also learn from the website.",
+    "Answer2": "<span class=\"qname\">Phoenix</span> should use a simple, easy-to-remember password for their login, such as &#39;password123&#39;.",
+    "Answer3": "<span class=\"qname\">Phoenix</span> should use a unique, strong password for their login, and they should remember to log off after each session on the website.",
+    "Answer4": "<span class=\"qname\">Phoenix</span> should stay logged in on all devices, so they do not have to remember their password every time they want to access the website.",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p><span class=\"qname\">Phoenix</span> should use a unique, strong password for their login, and they should remember to log off after each session to prevent anyone else who might use their device from accessing their account. Sharing login details and using easy-to-guess passwords can expose the user&#39;s personal information to potential risk.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

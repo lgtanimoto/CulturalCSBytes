@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A003",
+  "MQCode": "2A13",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Robin</span> is designing a basketball statistics tracking application. They want to include the most relevant stats in the app to make it useful for the users. Which process or method best describes how <span class=\"qname\">Robin</span> should design their program?</p>",
+    "QuestionImage": null,
+    "Answer1": "Decide the features of the application only based on personal preferences",
+    "Answer2": "Determine the features of the app by picking random basketball stats",
+    "Answer3": "Work with prospective users to understand what statistics are most useful to them, design a first version, get user feedback, and continue to revise",
+    "Answer4": "Design the app with the most complicated statistics to make it more professional",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A successful application is designed by involving user preferences and feedback. This iterative process, where the creator works closely with users and constantly revises the product based on their feedback, is a common practice in the development of successful applications.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}

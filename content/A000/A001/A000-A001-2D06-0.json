@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A001",
-    "MQCode": "2D06",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 2,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Black high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p><span class=\"qname\">Denali</span>'s class is studying their school's perception of different types of ice cream.  The results of this study were as follows:</p><table><thead><th></th><th>Students polled</th><th>Students extremely satisfied</th><th>Percentage extremely satisfied</th></thead></tr><tr><th>Ice Cream A</th><td>50</td><td>45</td><td>90%</td></tr><tr><th>Ice Cream B</th><td>70</td><td>56</td><td>80%</td></tr><tr><th>Ice Cream C</th><td>60</td><td>50</td><td>84%</td></tr></table><p>Students in <span class=\"qname\">Denali</span>'s class prepared the following 5 charts.  Which of the following charts best highlights that Ice Cream A had the highest percentage of students that were extremely satisfied?</p><p><img id=\"qimg0\" class=\"qimg\" src=\"images\\A000-A001-2D06-0Q.png\"></p>",
-        "QuestionImage": "A000-A001-2D06-0Q.png",
-        "Answer1": "Chart A",
-        "Answer2": "Chart B",
-        "Answer3": "Chart C",
-        "Answer4": "Chart D",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 4,
-        "Explanation": "<p>Chart B shows the number of extremely satisfied students \u2013 not the percentage satisfied.  Chart C, the pie chart, is inappropriate since it implies that the percentages shown have the same denominator.   Chart D, the line chart, is inappropriate because it implies that there is a linear relationship between Ice Cream A, B, and C.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A001",
+  "MQCode": "2D06",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Madagasgar</span> has a theory that the growth in the number of people with home internet access over the last 20 years has directly influenced the number of people shopping online. They have collected data from their local city office showing the percentage of homes with internet access for each year as well as data showing the sales from online shopping for each year. <span class=\"qname\">Madagasgar</span> wants to present this data to their class. What would be the most appropriate way for <span class=\"qname\">Madagasgar</span> to visually present this data to support their theory?</p>",
+    "QuestionImage": null,
+    "Answer1": "A pie chart for each year showing the percentage of homes with internet and the amount of online sales.",
+    "Answer2": "A scatter plot with two series, one for the homes with internet access and the other for online sales.",
+    "Answer3": "Two separate bar charts, one for the percentage of homes with internet and another for the online sales.",
+    "Answer4": "A single bar chart with the data on homes with internet access and online sales stacked for each year.",
+    "CorrectAnswer": 2,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>A scatter plot with two series would allow a visual comparison of the rates of change over time for both home internet access and online shopping sales. This would display the correlation and possibly suggest a cause-and-effect relationship, supporting <span class=\"qname\">Madagasgar</span>&#39;s theory.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

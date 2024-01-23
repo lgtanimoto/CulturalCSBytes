@@ -1,22 +1,23 @@
 {
-    "__comment__": "",
-    "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
-    "QuestionSetCode": "A000",
-    "CultureCode": "A002",
-    "MQCode": "4I30",
-    "QuestionAltCode": 0,
-    "QuestionDifficulty": 3,
-    "QuestionCurrent": true,
-    "QuestionJSON": {
-        "Question": "<p class=\"start_culture\">This question should be customized to appeal to Hispanic-Latinx high school students.  If you would like to contribute content, please contact <a href=\"mailto:lt@atcsed.org\">lt@atcsed.org</a></p><p>Sixteen-year-old <span class=\"qname\">Comet</span> has developed an application that will recommend music playlists for high school students based on their school, currently popular music, the time of day, their location, their current activity, and previous music selections.   Students using the app must provide an e-mail and mobile phone number to use the application.  <span class=\"qname\">Comet</span>'s good friend Temperance is amazed by how well <span class=\"qname\">Comet</span>'s application works but is concerned about the privacy provided by <span class=\"qname\">Comet</span>'s application.</p><p>Which of the following is likely one of Temperance's privacy concerns?</p>",
-        "QuestionImage": null,
-        "Answer1": "<span class=\"qname\">Comet</span> will need to do much more development work and perhaps invest in some security software to implement privacy safeguards.",
-        "Answer2": "If students' private information in <span class=\"qname\">Comet</span>'s application is leaked or misused, students will forgive <span class=\"qname\">Comet</span> because the application is so popular.",
-        "Answer3": "Because the application is for high school students, <span class=\"qname\">Comet</span> does not need to worry about children under 13 using the application and the Children's Online Privacy Protection Act.",
-        "Answer4": "The lack of privacy safeguards in <span class=\"qname\">Comet</span>'s current application makes it harder to sell personalized ads.",
-        "CorrectAnswer": 1,
-        "FixedOrderFromBottom": 0,
-        "Explanation": "<p>Properly developing an application - and maintaining it - to address privacy and security issues requires considerable time and effort beyond just developing the basic functionality provided by the application.  Privacy in computer software has many social, economic, legal, ethical, and safety implications.</p>",
-        "AnswerImage": null
-    }
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A002",
+  "MQCode": "4I30",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Equator</span> is considering setting up an online business where they would sell handmade crafts. However, they are worried about how privacy laws might impact their venture, especially the ones surrounding customer data. <span class=\"qname\">Equator</span> knows that they need to gather certain data from customers to successfully run their business and make strategic decisions, but they also understand the importance of their customers&#39; privacy. What is one way in which privacy laws could potentially negatively impact <span class=\"qname\">Equator</span>&#39;s online business?</p>",
+    "QuestionImage": null,
+    "Answer1": "Privacy laws could limit the amount of personal data <span class=\"qname\">Equator</span> can collect, potentially limiting their understanding of their customers&#39; preferences.",
+    "Answer2": "Privacy laws could make the business seem more trustworthy, potentially attracting more customers.",
+    "Answer3": "Privacy laws could lead to increased transparency, potentially improving relationships with customers.",
+    "Answer4": "Privacy laws could ensure that <span class=\"qname\">Equator</span> avoids legal problems, potentially increasing overall business stability.",
+    "CorrectAnswer": 1,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Privacy laws often restrict the amount and kind of personal data that businesses can collect from their customers. While these laws are designed to protect individuals&#39; privacy, they could potentially limit a business owner&#39;s understanding of their customers, thereby impacting decision-making and marketing strategies.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
 }

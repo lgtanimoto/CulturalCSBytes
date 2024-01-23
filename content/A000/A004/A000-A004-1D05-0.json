@@ -1,0 +1,23 @@
+{
+  "__comment__": "Generated with assistance of ChatGPT 4.0 July 2023",
+  "__copyright__": "Copyright All Together Computer Science Education 2023.  This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/",
+  "QuestionSetCode": "A000",
+  "CultureCode": "A004",
+  "MQCode": "1D05",
+  "QuestionAltCode": 0,
+  "QuestionDifficulty": 1,
+  "QuestionCurrent": true,
+  "QuestionJSON": {
+    "Question": "<p><span class=\"qname\">Valen</span> is working on a biology project about the growth and reproduction of a special type of bacteria. <span class=\"qname\">Valen</span> knows that these bacteria reproduce by dividing into two every hour. <span class=\"qname\">Valen</span> started with a single bacteria at 9:00 AM.  How many bacteria will <span class=\"qname\">Valen</span> have in their petri dish at 5:00 PM if none of the bacteria die?</p>",
+    "QuestionImage": null,
+    "Answer1": "64",
+    "Answer2": "256",
+    "Answer3": "512",
+    "Answer4": "128",
+    "CorrectAnswer": 3,
+    "FixedOrderFromBottom": 0,
+    "Explanation": "<p>Bacteria multiply by doubling every hour. So, the number of bacteria in the petri dish will be 2 to the power of hours. By 5:00 PM, 8 hours have passed, so there will be 2^8 or 512 bacteria.</p>",
+    "Code_Snippet": "",
+    "AnswerImage": null
+  }
+}
