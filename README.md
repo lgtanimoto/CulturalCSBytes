@@ -59,6 +59,8 @@ Open the `schema.sql` file in the `backend/data` directory. Do the following:
 
 If you are instead reseeding the database (which may frequently happen), you still need to follow all of these directions.
 
+**Note**: If you come across the following error `No such file or directory` when you run `\i` command, just copy and paste the `.sql` file contents into the `psql` shell and that should work fine too.
+
 ### Backend setup
 Now we will use the terminal session that is connected to the backend service (the current directory is the backend directory).
 1. Before anything, in the text editor/IDE, go to the backend directory and create a `.env` file. This file will define the environment variables that our backend service will use. Details about using such file can be found [here](https://www.npmjs.com/package/dotenv).
@@ -98,6 +100,43 @@ From here on out, you will still need three terminal sessions, but all you will 
 - Start the Postgres service (and optionally connect to it).
 - Start the backend service by running `npm run dev`.
 - Start the frontend service by running `npm start`.
+
+## Deployment
+
+### Database
+
+We deploy to an [Amazon RDS](https://docs.aws.amazon.com/rds/) database. Look [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToPostgreSQLInstance.html#USER_ConnectToPostgreSQLInstance.psql) for 
+
+1. To connect, need to type this command in CLI shell. See [here](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ConnectToPostgreSQLInstance.html#USER_ConnectToPostgreSQLInstance.psql) for details.
+   ```
+   psql \
+       --host=<DB instance endpoint> \
+       --port=<port> \
+       --username=<master username> \
+       --password \
+       --dbname=<database name>
+   ```
+2. Then just run the three commands below, in order, as normal. Database is now set.
+    1. `\i backend/data/schema.sql`
+    2. `\i backend/data/data.sql`
+    3. `\i backend/data/resources.sql`
+3. Make sure to update the following environment variables in the `.env` file to the production config.
+    1. `RDS_HOSTNAME`
+    2. `RDS_PORT`
+    3. `RDS_DB_NAME`
+    4. `RDS_USERNAME`
+    5. `RDS_PASSWORD`
+4. Run the following Node scripts in the `backend` directory, it will run connected to the production database.
+    1. `node content.js`
+    2. `node resources.js`
+  
+### Backend
+
+We use [Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html) for deploying both the backend and frontend. Here are some detailed instructions for deploying to ELB with Node.js, see this [documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_nodejs.html). Make sure you have AWS CLI installed first, see [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+### Frontend
+
+Same instructions as backend.
 
 ## Programming Resources
 I found [The Stoic Programmers](https://www.youtube.com/@TheStoicProgrammers) especially useful for the backend development of the portion. It provides useful information on both building the REST API and the JWT authentication and authorization, as well as how to combine the two together. Many YouTube tutorials neglect the authentication and authorization piece, which is a must-have when working with any industry project. However, this channel provides it all.
