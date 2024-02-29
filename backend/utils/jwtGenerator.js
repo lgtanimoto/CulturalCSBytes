@@ -8,7 +8,7 @@ function jwtGenerator(userId) {
             id: userId
         }
     };
-    return jwt.sign(payload, process.env.JWTSECRET);
+    return jwt.sign(payload, process.env.JWT_SECRET);
 }
 
 module.exports = jwtGenerator;

@@ -4,4 +4,4 @@
     ('CDHSICS001', 'CodeHS Intro to Computer Science in JavaScript', 'https://www.youtube.com/playlist?list=PLUEYQSaHI9SIppmESoHkHk7vibURTYRal', null, null),
     ('KHANWIP001', 'Khan Academy What Is Programming', 'https://www.youtube.com/watch?v=FCMxA3m_Imc', null, null),
     ('CODEFCS001', 'Change the Face of Computer Science', 'https://www.youtube.com/watch?v=uhcA6K8rWp0&pp=ygUeYmxhY2sgc3R1ZGVudCBjb21wdXRlciBzY2llbmNl', null, null),
-    ('MITLMHS001', 'The need for more Hispanics in science, technology, engineering, and math', 'https://www.youtube.com/watch?v=uDhqaN2Hpuk', null, null)
+    ('MITLMHS001', 'The need for more Hispanics in science, technology, engineering, and math', 'https://www.youtube.com/watch?v=uDhqaN2Hpuk', null, null);
