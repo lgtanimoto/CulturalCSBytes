@@ -1,8 +1,9 @@
+const { strictEqual } = require('assert');
 const pool = require('./db');
 const fs = require('fs');
 
 async function insertQuestions(culture) {
-    const jsonDir = `../content/A000/${culture}/`;
+    const jsonDir = `./content/A000/${culture}/`;
     const imgsDir = jsonDir + 'images/';
 
     const re = new RegExp(`^A000-${culture}-\\d[A-Z]\\d{2}-\\d\\.json$`);
@@ -28,6 +29,7 @@ async function insertQuestions(culture) {
                     'SELECT id FROM question_set_culture WHERE question_set_code = $1 AND culture_code = $2',
                     [QuestionSetCode, CultureCode]
                 );
+                if (qsc.rows.length === 0) return -1;
                 return qsc.rows[0].id;
             }
     
@@ -36,6 +38,7 @@ async function insertQuestions(culture) {
                     'SELECT id FROM meta_question WHERE code = $1',
                     [MQCode]
                 );
+                if (mq.rows.length === 0) return -1;
                 return mq.rows[0].id;
             }
     
@@ -54,29 +57,35 @@ async function insertQuestions(culture) {
                 }
             }
             
-            await pool.query(
-                'INSERT INTO question (qsc_id, mq_id, alt_code, difficulty, json, blob, version, iscurrent) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
-                [qscId, mqId, QuestionAltCode, QuestionDifficulty, QuestionJSON, blob, 0, QuestionCurrent]
-            );
+            if (qscId !== -1 && mqId !== -1) {
+                await pool.query(
+                    'INSERT INTO question (qsc_id, mq_id, alt_code, difficulty, json, blob, version, iscurrent) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)',
+                    [qscId, mqId, QuestionAltCode, QuestionDifficulty, QuestionJSON, blob, 0, QuestionCurrent]
+                );
+            }
         })
     );
     
     console.log(`Inserted questions for culture ${culture}`);
 }
 
-Promise.all([
-    insertQuestions('A000'),
-    insertQuestions('A001'),
-    insertQuestions('A002'),
-    insertQuestions('A003'),
-    insertQuestions('A004')
+module.exports = {
+    insertQuestions,
+};
 
-])
-.then(() => {
-    pool.end(() => {
-        console.log('pool has ended');
-    });
-})
-.catch(err => {
-    console.log(err);
-});
+// Promise.all([
+//     insertQuestions('A000'),
+//     insertQuestions('A001'),
+//     insertQuestions('A002'),
+//     insertQuestions('A003'),
+//     insertQuestions('A004')
+
+// ])
+// .then(() => {
+//     pool.end(() => {
+//         console.log('pool has ended');
+//     });
+// })
+// .catch(err => {
+//     console.log(err);
+// });

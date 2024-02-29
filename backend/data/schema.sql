@@ -1,24 +1,4 @@
-﻿-- Database Creation - Run database commands SEPARATELY, then comment out and run rest of file
-
--- Database: ccsb
-
--- DROP DATABASE IF EXISTS ccsb;
-
--- CREATE DATABASE ccsb
---     WITH
---     OWNER = postgres
---     ENCODING = 'UTF8'
---     TABLESPACE = pg_default
---     CONNECTION LIMIT = -1
---     IS_TEMPLATE = False;
-
--- Sequence Creation - This added on 9/29/2022
-
--- SEQUENCE: public.student_id_seq
-
--- DROP SEQUENCE IF EXISTS public.student_id_seq;
-
-CREATE SEQUENCE IF NOT EXISTS public.student_id_seq
+﻿CREATE SEQUENCE IF NOT EXISTS public.student_id_seq
     INCREMENT 1
     START 1
     MINVALUE 1
@@ -27,10 +7,6 @@ CREATE SEQUENCE IF NOT EXISTS public.student_id_seq
 
 ALTER SEQUENCE public.student_id_seq
     OWNER TO postgres;
-
--- SEQUENCE: public.teacher_id_seq
-
--- DROP SEQUENCE IF EXISTS public.teacher_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.teacher_id_seq
     INCREMENT 1
@@ -42,11 +18,6 @@ CREATE SEQUENCE IF NOT EXISTS public.teacher_id_seq
 ALTER SEQUENCE public.teacher_id_seq
     OWNER TO postgres;
 
-
--- SEQUENCE: public.classroom_id_seq
-
--- DROP SEQUENCE IF EXISTS public.classroom_id_seq;
-
 CREATE SEQUENCE IF NOT EXISTS public.classroom_id_seq
     INCREMENT 1
     START 1
@@ -56,10 +27,6 @@ CREATE SEQUENCE IF NOT EXISTS public.classroom_id_seq
 
 ALTER SEQUENCE public.classroom_id_seq
     OWNER TO postgres;
-
--- SEQUENCE: public.question_set_culture_id_seq
-
--- DROP SEQUENCE IF EXISTS public.question_set_culture_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.question_set_culture_id_seq
     INCREMENT 1
@@ -71,10 +38,6 @@ CREATE SEQUENCE IF NOT EXISTS public.question_set_culture_id_seq
 ALTER SEQUENCE public.question_set_culture_id_seq
     OWNER TO postgres;
 
--- SEQUENCE: public.meta_question_id_seq
-
--- DROP SEQUENCE IF EXISTS public.meta_question_id_seq;
-
 CREATE SEQUENCE IF NOT EXISTS public.meta_question_id_seq
     INCREMENT 1
     START 1
@@ -84,10 +47,6 @@ CREATE SEQUENCE IF NOT EXISTS public.meta_question_id_seq
 
 ALTER SEQUENCE public.meta_question_id_seq
     OWNER TO postgres;
-
--- SEQUENCE: public.enrollment_id_seq
-
--- DROP SEQUENCE IF EXISTS public.enrollment_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.enrollment_id_seq
     INCREMENT 1
@@ -99,10 +58,6 @@ CREATE SEQUENCE IF NOT EXISTS public.enrollment_id_seq
 ALTER SEQUENCE public.enrollment_id_seq
     OWNER TO postgres;
 
--- SEQUENCE: public.question_id_seq
-
--- DROP SEQUENCE IF EXISTS public.question_id_seq;
-
 CREATE SEQUENCE IF NOT EXISTS public.question_id_seq
     INCREMENT 1
     START 1
@@ -112,10 +67,6 @@ CREATE SEQUENCE IF NOT EXISTS public.question_id_seq
 
 ALTER SEQUENCE public.question_id_seq
     OWNER TO postgres;
-
--- SEQUENCE: public.session_id_seq
-
--- DROP SEQUENCE IF EXISTS public.session_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.session_id_seq
     INCREMENT 1
@@ -127,10 +78,6 @@ CREATE SEQUENCE IF NOT EXISTS public.session_id_seq
 ALTER SEQUENCE public.session_id_seq
     OWNER TO postgres;
 
--- SEQUENCE: public.session_question_id_seq
-
--- DROP SEQUENCE IF EXISTS public.session_question_id_seq;
-
 CREATE SEQUENCE IF NOT EXISTS public.session_question_id_seq
     INCREMENT 1
     START 1
@@ -140,10 +87,6 @@ CREATE SEQUENCE IF NOT EXISTS public.session_question_id_seq
 
 ALTER SEQUENCE public.session_question_id_seq
     OWNER TO postgres;
-
--- SEQUENCE: public.resource_culture_links_id_seq
-
--- DROP SEQUENCE IF EXISTS public.resource_culture_links_id_seq;
 
 CREATE SEQUENCE IF NOT EXISTS public.resource_culture_links_id_seq
     INCREMENT 1
@@ -155,10 +98,6 @@ CREATE SEQUENCE IF NOT EXISTS public.resource_culture_links_id_seq
 ALTER SEQUENCE public.resource_culture_links_id_seq
     OWNER TO postgres;
 
--- SEQUENCE: public.resource_qsc_links_id_seq
-
--- DROP SEQUENCE IF EXISTS public.resource_qsc_links_id_seq;
-
 CREATE SEQUENCE IF NOT EXISTS public.resource_qsc_links_id_seq
     INCREMENT 1
     START 1
@@ -169,10 +108,6 @@ CREATE SEQUENCE IF NOT EXISTS public.resource_qsc_links_id_seq
 ALTER SEQUENCE public.resource_qsc_links_id_seq
     OWNER TO postgres;
 
--- SEQUENCE: public.resource_question_links_id_seq
-
--- DROP SEQUENCE IF EXISTS public.resource_question_links_id_seq;
-
 CREATE SEQUENCE IF NOT EXISTS public.resource_question_links_id_seq
     INCREMENT 1
     START 1
@@ -182,13 +117,6 @@ CREATE SEQUENCE IF NOT EXISTS public.resource_question_links_id_seq
 
 ALTER SEQUENCE public.resource_question_links_id_seq
     OWNER TO postgres;
-
--- END OF SEQUENCE CREATION
-
-
--- Table: public.student
-
--- DROP TABLE IF EXISTS public.student;
 
 CREATE TABLE IF NOT EXISTS public.student
 (
@@ -201,17 +129,10 @@ CREATE TABLE IF NOT EXISTS public.student
     registration_date date NOT NULL DEFAULT CURRENT_DATE,
     zip character varying(5) COLLATE pg_catalog."default",
     CONSTRAINT student_pkey PRIMARY KEY (id)
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.student
     OWNER to postgres;
-
-
--- Table: public.teacher
-
--- DROP TABLE IF EXISTS public.teacher;
 
 CREATE TABLE IF NOT EXISTS public.teacher
 (
@@ -222,34 +143,20 @@ CREATE TABLE IF NOT EXISTS public.teacher
     email character varying(32) COLLATE pg_catalog."default" NOT NULL,
     password character varying(512) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT teacher_pkey PRIMARY KEY (id)
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.teacher
     OWNER to postgres;
-
-
--- Table: public.question_set
-
--- DROP TABLE IF EXISTS public.question_set;
 
 CREATE TABLE IF NOT EXISTS public.question_set
 (
     code character(4) COLLATE pg_catalog."default" NOT NULL,
     name character varying(64) COLLATE pg_catalog."default",
     CONSTRAINT question_set_pkey PRIMARY KEY (code)
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.question_set
     OWNER to postgres;
-
-
--- Table: public.culture
-
--- DROP TABLE IF EXISTS public.culture;
 
 CREATE TABLE IF NOT EXISTS public.culture
 (
@@ -258,17 +165,10 @@ CREATE TABLE IF NOT EXISTS public.culture
     lang character(5) COLLATE pg_catalog."default",
     icon bytea,
     CONSTRAINT culture_pkey PRIMARY KEY (code)
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.culture
     OWNER to postgres;
-
-
--- Table: public.resources
-
--- DROP TABLE IF EXISTS public.resources;
 
 CREATE TABLE IF NOT EXISTS public.resources
 (
@@ -279,17 +179,10 @@ CREATE TABLE IF NOT EXISTS public.resources
     memo text COLLATE pg_catalog."default",
     code character(10) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT resources_pkey PRIMARY KEY (code)
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.resources
     OWNER to postgres;
-
-
--- Table: public.classroom
-
--- DROP TABLE IF EXISTS public.classroom;
 
 CREATE TABLE IF NOT EXISTS public.classroom
 (
@@ -308,35 +201,20 @@ CREATE TABLE IF NOT EXISTS public.classroom
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.classroom
     OWNER to postgres;
-
--- Index: fki_classroom_question_set_code_fk
-
--- DROP INDEX IF EXISTS public.fki_classroom_question_set_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_classroom_question_set_code_fk
     ON public.classroom USING btree
     (question_set_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_classroom_teacher_fk
-
--- DROP INDEX IF EXISTS public.fki_classroom_teacher_fk;
-
 CREATE INDEX IF NOT EXISTS fki_classroom_teacher_fk
     ON public.classroom USING btree
     (teacher_id ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.question_set_culture
-
--- DROP TABLE IF EXISTS public.question_set_culture;
 
 CREATE TABLE IF NOT EXISTS public.question_set_culture
 (
@@ -356,35 +234,20 @@ CREATE TABLE IF NOT EXISTS public.question_set_culture
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.question_set_culture
     OWNER to postgres;
-
--- Index: fki_qsc_culture_code_fk
-
--- DROP INDEX IF EXISTS public.fki_qsc_culture_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_qsc_culture_code_fk
     ON public.question_set_culture USING btree
     (culture_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_qsc_question_set_code_fk
-
--- DROP INDEX IF EXISTS public.fki_qsc_question_set_code_fk;
-
 CREATE INDEX IF NOT EXISTS fki_qsc_question_set_code_fk
     ON public.question_set_culture USING btree
     (question_set_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.meta_question
-
--- DROP TABLE IF EXISTS public.meta_question;
 
 CREATE TABLE IF NOT EXISTS public.meta_question
 (
@@ -398,26 +261,15 @@ CREATE TABLE IF NOT EXISTS public.meta_question
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.meta_question
     OWNER to postgres;
-
--- Index: fki_mq_question_set_code_fk
-
--- DROP INDEX IF EXISTS public.fki_mq_question_set_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_mq_question_set_code_fk
     ON public.meta_question USING btree
     (question_set_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.enrollment
-
--- DROP TABLE IF EXISTS public.enrollment;
 
 CREATE TABLE IF NOT EXISTS public.enrollment
 (
@@ -437,35 +289,20 @@ CREATE TABLE IF NOT EXISTS public.enrollment
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.enrollment
     OWNER to postgres;
-
--- Index: fki_enrollment_classroom_id_fk
-
--- DROP INDEX IF EXISTS public.fki_enrollment_classroom_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_enrollment_classroom_id_fk
     ON public.enrollment USING btree
     (classroom_id ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_enrollment_student_id_fk
-
--- DROP INDEX IF EXISTS public.fki_enrollment_student_id_fk;
-
 CREATE INDEX IF NOT EXISTS fki_enrollment_student_id_fk
     ON public.enrollment USING btree
     (student_id ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.question
-
--- DROP TABLE IF EXISTS public.question;
 
 CREATE TABLE IF NOT EXISTS public.question
 (
@@ -489,33 +326,20 @@ CREATE TABLE IF NOT EXISTS public.question
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.question
     OWNER to postgres;
-
--- Index: fki_question_mq_id_fk
-
--- DROP INDEX IF EXISTS public.fki_question_mq_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_question_mq_id_fk
     ON public.question USING btree
     (mq_id ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_question_qsc_id_fk
-
--- DROP INDEX IF EXISTS public.fki_question_qsc_id_fk;
-
 CREATE INDEX IF NOT EXISTS fki_question_qsc_id_fk
     ON public.question USING btree
     (qsc_id ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.session
 
 CREATE TABLE IF NOT EXISTS public.session
 (
@@ -537,26 +361,15 @@ CREATE TABLE IF NOT EXISTS public.session
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.session
     OWNER to postgres;
-
--- Index: fki_session_enrollment_id_fk
-
--- DROP INDEX IF EXISTS public.fki_session_enrollment_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_session_enrollment_id_fk
     ON public.session USING btree
     (enrollment_id ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.session_question
-
--- DROP TABLE IF EXISTS public.session_question;
 
 CREATE TABLE IF NOT EXISTS public.session_question
 (
@@ -581,35 +394,20 @@ CREATE TABLE IF NOT EXISTS public.session_question
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.session_question
     OWNER to postgres;
-
--- Index: fki_sq_question_id_fk
-
--- DROP INDEX IF EXISTS public.fki_sq_question_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_sq_question_id_fk
     ON public.session_question USING btree
     (question_id ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_sq_session_id_fk
-
--- DROP INDEX IF EXISTS public.fki_sq_session_id_fk;
-
 CREATE INDEX IF NOT EXISTS fki_sq_session_id_fk
     ON public.session_question USING btree
     (session_id ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.resource_culture_links
-
--- DROP TABLE IF EXISTS public.resource_culture_links;
 
 CREATE TABLE IF NOT EXISTS public.resource_culture_links
 (
@@ -627,35 +425,20 @@ CREATE TABLE IF NOT EXISTS public.resource_culture_links
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.resource_culture_links
     OWNER to postgres;
-
--- Index: fki_rcl_culture_code_fk
-
--- DROP INDEX IF EXISTS public.fki_rcl_culture_code_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rcl_culture_code_fk
     ON public.resource_culture_links USING btree
     (culture_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_rcl_resource_code_fk
-
--- DROP INDEX IF EXISTS public.fki_rcl_resource_code_fk;
-
 CREATE INDEX IF NOT EXISTS fki_rcl_resource_code_fk
     ON public.resource_culture_links USING btree
     (resource_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.resource_qsc_links
-
--- DROP TABLE IF EXISTS public.resource_qsc_links;
 
 CREATE TABLE IF NOT EXISTS public.resource_qsc_links
 (
@@ -673,35 +456,20 @@ CREATE TABLE IF NOT EXISTS public.resource_qsc_links
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.resource_qsc_links
     OWNER to postgres;
-
--- Index: fki_f
-
--- DROP INDEX IF EXISTS public.fki_f;
 
 CREATE INDEX IF NOT EXISTS fki_f
     ON public.resource_qsc_links USING btree
     (resource_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_rqsc_qsc_id_fk
-
--- DROP INDEX IF EXISTS public.fki_rqsc_qsc_id_fk;
-
 CREATE INDEX IF NOT EXISTS fki_rqsc_qsc_id_fk
     ON public.resource_qsc_links USING btree
     (qsc_id ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Table: public.resource_question_links
-
--- DROP TABLE IF EXISTS public.resource_question_links;
 
 CREATE TABLE IF NOT EXISTS public.resource_question_links
 (
@@ -719,35 +487,20 @@ CREATE TABLE IF NOT EXISTS public.resource_question_links
         ON UPDATE NO ACTION
         ON DELETE NO ACTION
         NOT VALID
-)
-
-TABLESPACE pg_default;
+) TABLESPACE pg_default;
 
 ALTER TABLE IF EXISTS public.resource_question_links
     OWNER to postgres;
-
--- Index: fki_rql_question_id_fk
-
--- DROP INDEX IF EXISTS public.fki_rql_question_id_fk;
 
 CREATE INDEX IF NOT EXISTS fki_rql_question_id_fk
     ON public.resource_question_links USING btree
     (question_id ASC NULLS LAST)
     TABLESPACE pg_default;
 
--- Index: fki_rql_resource_code_fk
-
--- DROP INDEX IF EXISTS public.fki_rql_resource_code_fk;
-
 CREATE INDEX IF NOT EXISTS fki_rql_resource_code_fk
     ON public.resource_question_links USING btree
     (resource_code COLLATE pg_catalog."default" ASC NULLS LAST)
     TABLESPACE pg_default;
-
-
--- Functions and Stored Procedures
-
--- Function: select_questions
 
 CREATE OR REPLACE FUNCTION select_questions(culture_id TEXT, difficulty_code INTEGER, num_questions INTEGER)
     RETURNS TABLE (question_id INTEGER, question_json JSON)
@@ -758,12 +511,9 @@ CREATE OR REPLACE FUNCTION select_questions(culture_id TEXT, difficulty_code INT
             SELECT question.id AS question_id, question.json AS question_json 
             FROM question JOIN question_set_culture ON question.qsc_id = question_set_culture.id
             WHERE question_set_culture.culture_code = culture_id
---            WHERE question.difficulty = difficulty_code AND question_set_culture.culture_code = culture_id  remove difficulty as selection process
             ORDER BY RANDOM() LIMIT num_questions;
     END
     $$;
-
--- Stored Procedure: insert_session_questions
 
 CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, cultures TEXT[], distr INTEGER[])
     LANGUAGE PLPGSQL
@@ -785,13 +535,6 @@ CREATE OR REPLACE PROCEDURE insert_session_questions(session_id INTEGER, culture
         LOOP
             SELECT culture.code INTO culture_id FROM culture WHERE culture.name = culture_name;
             INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 0, distr[culture_count + 1]);
-
---			No longer using difficulty for distribution 12/29/2023
---          INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 1, distr[culture_count * 3 + 1]);
---          INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 2, distr[culture_count * 3 + 2]);--
---          INSERT INTO temp_question SELECT * FROM select_questions(culture_id, 3, distr[culture_count * 3 + 3]);
---
-
             culture_count = culture_count + 1;
         END LOOP;
         FOR question_id, question_json IN 

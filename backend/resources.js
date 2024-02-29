@@ -1,7 +1,7 @@
 const pool = require('./db');
 const fs = require('fs');
 
-const baseDir = '../content/A000/';
+const baseDir = './content/A000/';
 
 async function insertResources() {
     const baseCsv = `${baseDir}A000-resource.csv`;
@@ -65,17 +65,22 @@ async function insertResourcesCulture(culture) {
     console.log(`Inserted resources for culture ${culture}`);
 }
 
-Promise.all([
-    insertResources(),
-    insertResourcesCulture('A000'),
-    insertResourcesCulture('A001'),
-    insertResourcesCulture('A002')
-])
-.then(() => {
-    pool.end(() => {
-        console.log('pool has ended');
-    });
-})
-.catch(err => {
-    console.log(err);
-});
+module.exports = {
+    insertResources,
+    insertResourcesCulture,
+};
+
+// Promise.all([
+//     insertResources(),
+//     insertResourcesCulture('A000'),
+//     insertResourcesCulture('A001'),
+//     insertResourcesCulture('A002')
+// ])
+// .then(() => {
+//     pool.end(() => {
+//         console.log('pool has ended');
+//     });
+// })
+// .catch(err => {
+//     console.log(err);
+// });

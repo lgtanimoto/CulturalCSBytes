@@ -1,13 +1,14 @@
 const Pool = require('pg').Pool;
+const fs = require('fs');
 
 require('dotenv').config();
 
 const pool = new Pool({
-    user: process.env.RDS_USERNAME,
-    password: process.env.RDS_PASSWORD,
-    host: process.env.RDS_HOSTNAME,
-    port: process.env.RDS_PORT,
-    database: process.env.RDS_DB_NAME
+    host: process.env.POSTGRES_HOST,
+    database: process.env.POSTGRES_DB,
+    user: process.env.POSTGRES_USER,
+    password: fs.readFileSync(process.env.POSTGRES_PASSWORD_FILE, 'utf8'),
+    port: 5432,
 });
 
 module.exports = pool;
